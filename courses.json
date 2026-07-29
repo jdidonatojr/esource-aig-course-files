@@ -27,5 +27,38 @@
         "startSlide": 15
       }
     ]
+  },
+  "1000": {
+    "id": "an_introduction_to_the_esource_ai_sales_channel",
+    "title": "An Introduction to the ESource AI Sales Channel",
+    "totalSlides": 25,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1000-An-Introduction-to-the-ESource-AI-Sales-Channel.pdf",
+    "firstMessage": "Welcome to An Introduction to the ESource AI Sales Channel. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Welcome (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Company Architecture and Offers (slides 3-6)",
+        "startSlide": 3
+      },
+      {
+        "label": "Routing and Qualification Practice (slides 7-11)",
+        "startSlide": 7
+      },
+      {
+        "label": "Sales Methodology and Decision Instruments (slides 12-18)",
+        "startSlide": 12
+      },
+      {
+        "label": "Partner Authority and Compliance (slides 19-23)",
+        "startSlide": 19
+      },
+      {
+        "label": "Closing and Certification (slides 24-25)",
+        "startSlide": 24
+      }
+    ]
   }
 }
