@@ -1,1 +1,31 @@
-{}
+{
+  "1": {
+    "id": "gemini_notebook_in_action",
+    "title": "Gemini Notebook in Action",
+    "totalSlides": 16,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1-Gemini-Notebook-in-Action.pdf",
+    "firstMessage": "Welcome to Gemini Notebook in Action. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Context (slides 1-4)",
+        "startSlide": 1
+      },
+      {
+        "label": "Exercise Overview (slides 5-5)",
+        "startSlide": 5
+      },
+      {
+        "label": "Hands-On Steps (slides 6-12)",
+        "startSlide": 6
+      },
+      {
+        "label": "Review and Takeaway (slides 13-14)",
+        "startSlide": 13
+      },
+      {
+        "label": "Knowledge Check and Closing (slides 15-16)",
+        "startSlide": 15
+      }
+    ]
+  }
+}
