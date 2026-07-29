@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — Gemini Notebook in Action",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "What is the primary function of Gemini Notebook that distinguishes it from general web search tools?",
+      "choices": [
+        "It browses the open web to find additional context for your questions",
+        "It works exclusively from sources you provide, with no outside web searches or hallucinated context",
+        "It automatically shares your work with colleagues and team members",
+        "It stores all your notebooks in a public database for others to access"
+      ],
+      "answer": 1,
+      "slide": 2,
+      "feedback_correct": "Exactly—Gemini Notebook's grounded approach means every insight can be traced back to material you actually provided.",
+      "feedback_incorrect": "Gemini Notebook is designed to work only with sources you add, not external web content. This grounding is actually a key feature because it ensures your output is based on your material, not hallucinated information."
+    },
+    {
+      "question": "Which panel inside Gemini Notebook is used to generate a Video Overview?",
+      "choices": [
+        "The Sources panel",
+        "The Workspace panel",
+        "Studio",
+        "The Archive panel"
+      ],
+      "answer": 2,
+      "slide": 3,
+      "feedback_correct": "Right—Studio is where you turn your loaded sources into rich content formats like Video Overviews.",
+      "feedback_incorrect": "Studio is the content generation side of Gemini Notebook where you create outputs like Video Overviews and Audio Overviews from your sources."
+    },
+    {
+      "question": "What is a Video Overview designed to be?",
+      "choices": [
+        "A casual conversation between two hosts about random topics",
+        "A structured, presenter-style summary built from your source material",
+        "An unedited recording of the original webpage read aloud",
+        "A visual infographic with no audio or narration"
+      ],
+      "answer": 1,
+      "slide": 3,
+      "feedback_correct": "You've got it—a Video Overview is like a briefing, a structured summary meant to help someone get up to speed quickly.",
+      "feedback_incorrect": "A Video Overview is a structured, presenter-style briefing drawn from your source material, designed to help you or others understand content quickly without reading the whole thing."
+    },
+    {
+      "question": "What is the correct URL to access Gemini Notebook?",
+      "choices": [
+        "gemini.google.com",
+        "notebook.ai.com",
+        "notebook.google.com",
+        "studio.google.com"
+      ],
+      "answer": 2,
+      "slide": 6,
+      "feedback_correct": "Correct—notebook.google.com is where you sign in to access Gemini Notebook.",
+      "feedback_incorrect": "The correct URL is notebook.google.com. Make sure to sign in with your Google account when you land there."
+    },
+    {
+      "question": "When you add a website source to Gemini Notebook, what indicates that the source has been successfully processed?",
+      "choices": [
+        "A green checkmark appears next to the URL",
+        "Your source appears in the Sources list with a title and short summary",
+        "You receive an email confirmation from Google",
+        "The Video Overview automatically generates without any additional action"
+      ],
+      "answer": 1,
+      "slide": 9,
+      "feedback_correct": "Exactly—the appearance of the title and summary in the Sources panel confirms that Gemini Notebook has read and indexed your material.",
+      "feedback_incorrect": "After adding a website, watch the Sources panel on the left. When processing is complete, your source will display with a title pulled from the page and a short summary underneath—that is your confirmation."
+    },
+    {
+      "question": "According to the course, what types of sources can you add to Gemini Notebook besides websites?",
+      "choices": [
+        "Only websites and email newsletters",
+        "PDFs, Google Docs, YouTube videos, and sets of notes",
+        "Only video files and podcasts",
+        "Websites and images only"
+      ],
+      "answer": 1,
+      "slide": 14,
+      "feedback_correct": "Perfect—the course mentions that the same sequence works with PDFs, Google Docs, YouTube videos, and notes, making the tool flexible for different material.",
+      "feedback_incorrect": "The course notes that you can add various types of sources including PDFs, Google Docs, YouTube videos, and notes. This flexibility lets you work with your actual material in different formats."
+    },
+    {
+      "question": "Why does the course emphasize naming your notebook something meaningful rather than leaving it generic?",
+      "choices": [
+        "Google requires descriptive names for all notebooks",
+        "A meaningful name makes it easier to find the notebook later when you have multiple notebooks",
+        "The name determines how fast the Video Overview will generate",
+        "Meaningful names automatically improve the quality of generated content"
+      ],
+      "answer": 1,
+      "slide": 7,
+      "feedback_correct": "Spot on—a meaningful name helps you organize and locate your notebooks when you have created several of them.",
+      "feedback_incorrect": "The benefit of a meaningful name is organizational—when you create multiple notebooks for different projects or topics, a clear name helps you find the right one quickly."
+    },
+    {
+      "question": "Based on the course, what is the primary real-world use case for generating a Video Overview from a source?",
+      "choices": [
+        "To replace reading entirely so you never have to learn new information",
+        "To create entertainment videos for social media sharing",
+        "To get a quick structured briefing before a meeting or help a colleague get up to speed fast",
+        "To automatically publish content to your company website"
+      ],
+      "answer": 2,
+      "slide": 3,
+      "feedback_correct": "Exactly—the course frames Video Overviews as briefings: the kind of thing you watch before a meeting or send to someone who needs quick context.",
+      "feedback_incorrect": "A Video Overview is designed as a briefing tool—useful before meetings or to quickly bring colleagues up to speed. It is grounded in your actual source material, making it a practical tool for information synthesis."
+    },
+    {
+      "question": "Why is waiting for the Video Overview to generate (which can take from a few seconds to a couple of minutes) actually a feature rather than a limitation?",
+      "choices": [
+        "It gives you time to check your email or do other tasks",
+        "It ensures you do not have to click any buttons because the system is automatic",
+        "Gemini Notebook is doing real work—synthesizing a structured summary directly from your source material without pulling from the open web",
+        "The longer it takes, the higher quality the final output will be"
+      ],
+      "answer": 2,
+      "slide": 11,
+      "feedback_correct": "Exactly right—the processing time reflects the real work being done to create a grounded, structured summary from your actual source, not instant hallucinated content.",
+      "feedback_incorrect": "The wait time during generation reflects the real synthesis work Gemini Notebook is doing. It is building output entirely from your source material, not from outside the web, which is why it takes a moment and why the output is reliable and grounded."
+    },
+    {
+      "question": "How should you apply what you learned in this course to make it genuinely useful beyond this exercise?",
+      "choices": [
+        "Generate one Video Overview and then stop using Gemini Notebook",
+        "Only use Gemini Notebook with publicly available websites, never with private documents",
+        "Open a new notebook this week with something from your actual work and run the same steps you learned",
+        "Wait for your manager to assign you a specific notebook project before using the tool"
+      ],
+      "answer": 2,
+      "slide": 16,
+      "feedback_correct": "Perfect—the course explicitly states that the next step is to open a new notebook this week with something from your actual work to see what it produces.",
+      "feedback_incorrect": "The course emphasizes that real value comes from applying this skill to your own material. This week, try opening a new notebook with an actual document, report, or webpage from your work and run the same steps you just learned."
+    }
+  ]
+}
