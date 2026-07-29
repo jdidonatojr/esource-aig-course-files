@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — An Introduction to the ESource AI Sales Channel",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "What is the primary commercial offer of ESource AI Group?",
+      "choices": [
+        "The Crash Test",
+        "The Product Launcher",
+        "The Execution Gap Diagnostic",
+        "Custom consulting for AI adoption"
+      ],
+      "answer": 1,
+      "slide": 3,
+      "feedback_correct": "Exactly—The Product Launcher is ESource AI Group's primary offer, focusing on sales-team readiness for product launches and major releases.",
+      "feedback_incorrect": "The Crash Test and Execution Gap Diagnostic belong to ESource Execution Partners, not AI Group. Remember, AI Group sells defined learning and solutions, while Execution Partners diagnoses why AI investments are failing."
+    },
+    {
+      "question": "Which of these is a priority buyer for ESource Execution Partners?",
+      "choices": [
+        "Sales enablement leaders who already have a solution in mind",
+        "Product managers planning a product launch",
+        "CEOs and CFOs when independent diagnosis is needed",
+        "L&D leaders building training programs"
+      ],
+      "answer": 2,
+      "slide": 10,
+      "feedback_correct": "Right—CEOs, COOs, CFOs, and other executive-level buyers with P&L accountability are priority buyers for Execution Partners, especially when they need independent diagnosis.",
+      "feedback_incorrect": "Sales enablement leaders are buyers for Execution Partners only when independent diagnosis is needed, not when they've already decided on a solution. Product managers and L&D leaders are typically AI Group buyers focused on defined solutions."
+    },
+    {
+      "question": "How many stages are in the AI Group sales path?",
+      "choices": [
+        "Four stages",
+        "Five stages",
+        "Six stages",
+        "Seven stages"
+      ],
+      "answer": 2,
+      "slide": 14,
+      "feedback_correct": "Correct—the AI Group sales path has six stages: Identify, Discover, Demonstrate, Prove, Decide, and Scale.",
+      "feedback_incorrect": "The AI Group path has six distinct stages, each with specific entry and exit criteria. Execution Partners also has a parallel six-stage path but organized around different business decisions."
+    },
+    {
+      "question": "What is the duration of a typical paid POC in the AI Group sales path?",
+      "choices": [
+        "5 to 15 days",
+        "15 to 30 days",
+        "30 to 90 days",
+        "90 to 180 days"
+      ],
+      "answer": 2,
+      "slide": 16,
+      "feedback_correct": "That's right—a paid POC typically runs 30 to 90 days and is scoped to one use case, one sponsor, and one user group to prove a specific business outcome.",
+      "feedback_incorrect": "A paid POC is designed to be a focused commercial decision instrument, not a lengthy engagement. Thirty to 90 days is the standard timeframe to gather evidence on whether the solution creates enough value to justify production investment."
+    },
+    {
+      "question": "According to the course, what is the current 90-day effort allocation between The Product Launcher and Crash Tests?",
+      "choices": [
+        "50% Product Launcher, 50% Crash Tests",
+        "40% Product Launcher, 60% Crash Tests",
+        "60% Product Launcher, 40% Crash Tests",
+        "70% Product Launcher, 30% Crash Tests"
+      ],
+      "answer": 2,
+      "slide": 6,
+      "feedback_correct": "Correct—the companywide 90-day effort allocation is deliberately weighted 60% toward The Product Launcher and 40% toward Crash Tests and CrashScans.",
+      "feedback_incorrect": "The allocation reflects a deliberate commercial priority. The Product Launcher is the primary target with the clearest urgent use cases, while Crash Tests are secondary but still important to the overall strategy."
+    },
+    {
+      "question": "Which of the following is NOT in the scope of independent partner authority?",
+      "choices": [
+        "Opening qualified relationships using approved messaging",
+        "Recording every activity in CRM using correct stage definitions",
+        "Committing to a price range for a solution",
+        "Conducting approved discovery using playbook questions"
+      ],
+      "answer": 2,
+      "slide": 19,
+      "feedback_correct": "Exactly—committing to any price range requires escalation and approval; it is not within independent partner authority.",
+      "feedback_incorrect": "Partners can open relationships, conduct discovery, and record activity independently. However, pricing, scope, security positions, roadmap items, and outcomes of any kind all require escalation and approval before commitment."
+    },
+    {
+      "question": "A buyer tells you they know their sales team is unprepared for an upcoming product launch and wants help getting them ready. Which company should you route this opportunity to?",
+      "choices": [
+        "ESource Execution Partners, because they work with C-suite executives",
+        "ESource AI Group, because this is a defined product-launch problem with a direct solution need",
+        "Both companies together, because both can contribute to readiness",
+        "Neither company; suggest they hire an external training firm instead"
+      ],
+      "answer": 1,
+      "slide": 5,
+      "feedback_correct": "Right—this is Routing Rule One: a buyer with a defined product-launch or seller-readiness problem who wants a direct solution routes to AI Group.",
+      "feedback_incorrect": "Routing Rule One is clear: when a buyer has a specific product-launch or seller-readiness problem and wants a solution, route to AI Group. Avoid blending the two companies or pitching them together; that creates deal risk."
+    },
+    {
+      "question": "A CEO suspects that AI pilots across the organization are not delivering value, but she cannot pinpoint why. Which offer is the best entry point?",
+      "choices": [
+        "The Product Launcher",
+        "Custom AI Solutions",
+        "The Crash Test",
+        "AI Classes and Learning Programs"
+      ],
+      "answer": 2,
+      "slide": 4,
+      "feedback_correct": "Correct—when a buyer does not yet know why their AI investments are failing, the Crash Test is the front door into Execution Partners: paid, low-friction, and scoped to one department or workflow.",
+      "feedback_incorrect": "The Crash Test is designed for buyers who need independent diagnosis, not those who already know their solution. The Product Launcher and AI Classes are AI Group offers for buyers who have defined their needs."
+    },
+    {
+      "question": "You discover during discovery that the named sponsor supports the initiative, but the frontline managers and employees who will use the solution are skeptical and see no personal benefit. How should this affect your qualification decision?",
+      "choices": [
+        "Proceed immediately to demonstrate; executive sponsorship is enough",
+        "This is a Team Buy-In qualification risk signal and affects deal readiness, so additional work is needed before advancing",
+        "Redirect to Execution Partners, since they specialize in managing resistance",
+        "Recommend the buyer hire change management consultants and pause your engagement"
+      ],
+      "answer": 1,
+      "slide": 17,
+      "feedback_correct": "Exactly—Team Buy-In is a qualification dimension and execution risk signal, not just a soft cultural issue. When frontline users cannot see a credible win for themselves, the initiative fails regardless of how well the technology works.",
+      "feedback_incorrect": "Team Buy-In is a hard qualification requirement, not something to work around. Every recommendation must show both the P&L benefit and the employee benefit. Weak Team Buy-In indicates the opportunity is not yet qualified to advance."
+    },
+    {
+      "question": "Before routing your first live opportunity to either company, what certification requirement must you complete?",
+      "choices": [
+        "Complete only the Selling the AI Execution Gap course",
+        "Complete Selling the AI Execution Gap and Selling The Product Launcher courses",
+        "Complete all three ESource AI Trainer courses in order: Execution Gap, Product Launcher, and Choosing the Correct Offer",
+        "Complete the optional knowledge check on this course"
+      ],
+      "answer": 2,
+      "slide": 22,
+      "feedback_correct": "Right—all three courses in the ESource AI Trainer curriculum must be completed in order before you advance or route any live opportunity; this is a hard gate.",
+      "feedback_incorrect": "Certification requires all three courses, not just one or two. The courses cover the approved routing rules, qualification standards, messaging boundaries, and commercial discipline that protect both the client relationship and deal quality."
+    }
+  ]
+}
