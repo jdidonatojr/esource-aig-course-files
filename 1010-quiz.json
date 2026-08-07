@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — Gemini Notebook in Action: For Ministries",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "What is the primary function of Gemini Notebook as described in this course?",
+      "choices": [
+        "A Google AI tool that searches the open web and synthesizes information from multiple online sources",
+        "A Google AI tool that works only from sources you give it, with no open web searches or hallucinated context",
+        "A web browser extension that automatically summarizes any webpage you visit",
+        "A video editing software designed specifically for creating ministry content"
+      ],
+      "answer": 1,
+      "slide": 2,
+      "feedback_correct": "Exactly—Gemini Notebook is grounded in only the material you provide, which is actually a feature because it keeps output traceable and reliable.",
+      "feedback_incorrect": "Gemini Notebook does not browse the web or pull in outside context. It works exclusively from the sources you upload, which ensures the output stays grounded in your actual material."
+    },
+    {
+      "question": "Which feature of Gemini Notebook is used to generate a Video Overview?",
+      "choices": [
+        "The Sources panel",
+        "The Workspace panel",
+        "Studio",
+        "The Settings menu"
+      ],
+      "answer": 2,
+      "slide": 3,
+      "feedback_correct": "That's right—Studio is the panel where you generate rich content formats, including Video Overviews.",
+      "feedback_incorrect": "Studio is the content generation side of Gemini Notebook. The Sources panel holds your materials, but Studio is where you turn those materials into structured summaries and other formats."
+    },
+    {
+      "question": "What is a Video Overview in Gemini Notebook?",
+      "choices": [
+        "An automatic compilation of videos from across the internet related to your topic",
+        "A structured, presenter-style summary built directly from your source material",
+        "A live recording tool that lets you create videos while narrating your sources",
+        "A transcript of any video you upload to the platform"
+      ],
+      "answer": 1,
+      "slide": 3,
+      "feedback_correct": "Correct—a Video Overview is a structured briefing-style summary, the kind of thing you might watch before a meeting or send to someone who needs to get up to speed fast.",
+      "feedback_incorrect": "A Video Overview is built from sources you provide, not from the internet. It is a structured presenter-style summary created by the AI, not a live recording you make yourself."
+    },
+    {
+      "question": "In what order do you complete the three main actions to create a Video Overview?",
+      "choices": [
+        "Open Studio, add a website source, then create a new notebook",
+        "Create a new notebook, add a website source, then open Studio and generate a Video Overview",
+        "Add a website source, create a new notebook, then open Studio",
+        "Open Studio, create a new notebook, then add a website source"
+      ],
+      "answer": 1,
+      "slide": 5,
+      "feedback_correct": "Perfect—you create the workspace first, add your source material, and then generate the output in Studio.",
+      "feedback_incorrect": "The sequence matters: you need a notebook to work in, then sources to work from, then Studio to generate your output. Review Slide 5 to see the workflow diagram."
+    },
+    {
+      "question": "What should you do after clicking 'Add Source' and pasting in a website URL?",
+      "choices": [
+        "Immediately open Studio and start generating content",
+        "Wait for Gemini Notebook to finish processing, then confirm the source appears with a title and summary",
+        "Refresh the page to ensure the source loads properly",
+        "Start typing questions about the source in the chat box"
+      ],
+      "answer": 1,
+      "slide": 9,
+      "feedback_correct": "Exactly—you wait for the processing to complete, and you know it is done when the source appears in the Sources list with a title and summary beneath it.",
+      "feedback_incorrect": "After adding a source, Gemini Notebook needs time to process it. You will see a title and summary appear in the Sources panel when it is ready to use. That is your signal to move forward."
+    },
+    {
+      "question": "Why is it significant that Gemini Notebook only works from sources you give it and does not pull from the open web?",
+      "choices": [
+        "It makes the tool slower and less efficient than web-based AI tools",
+        "It is a limitation that users have to work around by manually adding external information",
+        "It ensures the output is grounded and traceable—every insight can be traced back to something you actually provided",
+        "It prevents the tool from working with popular websites or well-known sources"
+      ],
+      "answer": 2,
+      "slide": 2,
+      "feedback_correct": "That is exactly right—because nothing comes in from outside, you can verify where every piece of information originated and trust that it came from your material.",
+      "feedback_incorrect": "The fact that Gemini Notebook does not pull from the web is actually a strength, not a limitation. It means the output stays grounded in your sources and nothing is added from external context, making it reliable and traceable."
+    },
+    {
+      "question": "Based on the course, when would a Video Overview be most useful in a ministry context?",
+      "choices": [
+        "Only for creating entertainment content for social media",
+        "Before a meeting to brief yourself, or to send to colleagues who need to get up to speed fast on specific material",
+        "As a replacement for all written documents in your ministry",
+        "Only when working with video sources, not text or web pages"
+      ],
+      "answer": 1,
+      "slide": 3,
+      "feedback_correct": "Exactly—a Video Overview works as a briefing tool, perfect for helping staff or team members absorb key information quickly.",
+      "feedback_incorrect": "A Video Overview is useful whenever you need a fast summary of source material, whether that is before a meeting or to help someone else understand content quickly. It works with any source type, not just videos."
+    },
+    {
+      "question": "What other content formats are available in Studio besides Video Overview?",
+      "choices": [
+        "Only Video Overview and Audio Overview are available",
+        "Audio Overviews, Infographics, Quizzes, Reports, Flashcards, and more",
+        "Video Overview, document export, and email sharing",
+        "Only formats designed for social media posting"
+      ],
+      "answer": 1,
+      "slide": 10,
+      "feedback_correct": "Right—Studio has many format options beyond Video Overview, giving you flexibility in how you want to present your source material.",
+      "feedback_incorrect": "Studio offers a rich set of content generation options. Audio Overviews work like podcasts, and you can also create Infographics, Quizzes, Reports, Flashcards, and more from the same source material."
+    },
+    {
+      "question": "How should you approach using Gemini Notebook to make it genuinely useful for your actual work?",
+      "choices": [
+        "Use it only for testing and demonstrations, not with real work material",
+        "Load only news articles and industry reports, not internal documents",
+        "Use it this week with something from your actual work—a document, report, or webpage you have been meaning to read—to see what it produces",
+        "Wait until you have completed several more training courses before trying it on real material"
+      ],
+      "answer": 2,
+      "slide": 16,
+      "feedback_correct": "Perfect—the real value comes when you bring your actual material into the tool. That is where it becomes genuinely useful rather than just theoretical.",
+      "feedback_incorrect": "Gemini Notebook becomes useful when you use it with your real work. The course emphasizes taking it directly to something you actually need to process or understand. That is how you unlock its value."
+    },
+    {
+      "question": "If you want a written, reusable reference document of all the steps you completed in the exercise, what should you do?",
+      "choices": [
+        "Take a screenshot of each slide and save them to a folder",
+        "Ask the instructor to produce a written summary by using the prompt provided on Slide 13",
+        "Manually type out all the steps you remember from the exercise",
+        "Export your notebook as a PDF, which automatically documents the steps"
+      ],
+      "answer": 1,
+      "slide": 13,
+      "feedback_correct": "Correct—Slide 13 provides a specific prompt you can copy and use to generate a clean, step-by-step document you can keep and reuse anytime.",
+      "feedback_incorrect": "Rather than creating your own documentation, you can ask for a summary using the prompt on Slide 13. This gives you an official reference document tailored to the exact steps you just completed."
+    }
+  ]
+}
