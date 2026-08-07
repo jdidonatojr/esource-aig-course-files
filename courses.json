@@ -60,5 +60,30 @@
         "startSlide": 24
       }
     ]
+  },
+  "1010": {
+    "id": "gemini_notebook_in_action_for_ministries",
+    "title": "Gemini Notebook in Action: For Ministries",
+    "totalSlides": 16,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1010-Gemini-Notebook-in-Action-For-Ministries.pdf",
+    "firstMessage": "Welcome to Gemini Notebook in Action: For Ministries. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-5)",
+        "startSlide": 1
+      },
+      {
+        "label": "Tool Setup and Navigation (slides 6-10)",
+        "startSlide": 6
+      },
+      {
+        "label": "Hands-On Exercise (slides 11-12)",
+        "startSlide": 11
+      },
+      {
+        "label": "Reinforcement and Next Steps (slides 13-16)",
+        "startSlide": 13
+      }
+    ]
   }
 }
