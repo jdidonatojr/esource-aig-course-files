@@ -85,5 +85,26 @@
         "startSlide": 13
       }
     ]
+  },
+  "1020": {
+    "id": "your_business_brain_powered_by_gemini_notebook",
+    "title": "Your Business Brain Powered by Gemini Notebook",
+    "totalSlides": 11,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1020-Your-Business-Brain-Powered-by-Gemini-Notebook.pdf",
+    "firstMessage": "Welcome to Your Business Brain Powered by Gemini Notebook. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Core Platform Capabilities (slides 3-7)",
+        "startSlide": 3
+      },
+      {
+        "label": "How to Get Started (slides 8-11)",
+        "startSlide": 8
+      }
+    ]
   }
 }
