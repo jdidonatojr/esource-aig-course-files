@@ -6,134 +6,134 @@
   },
   "questions": [
     {
-      "question": "What is the main purpose of Gemini Notebook according to the course?",
+      "question": "What are the four main types of content that can be consolidated in Gemini Notebook according to Slide 3?",
       "choices": [
-        "To replace email and messaging systems",
-        "To centralize documents, insights, and conversations in one hub that you can put to work",
-        "To automate all business decision-making",
-        "To eliminate the need for meetings and collaboration"
+        "Meeting Transcripts, Customer Feedback, Market Research, and Financial Docs",
+        "Email chains, calendar invites, chat messages, and presentations",
+        "Social media posts, blog articles, competitor websites, and news articles",
+        "Sales reports, marketing campaigns, product specs, and engineering docs"
       ],
-      "answer": 1,
-      "slide": 1,
-      "feedback_correct": "Exactly—Gemini Notebook acts as a central command center where all your information lives and works together.",
-      "feedback_incorrect": "While Gemini Notebook is powerful, it's specifically designed as a centralized hub for information management rather than replacing other communication tools or making decisions for you. The key is that it brings everything together so you can use it actively."
-    },
-    {
-      "question": "Which of the following is NOT mentioned as a content type that Gemini Notebook can consolidate?",
-      "choices": [
-        "Meeting transcripts",
-        "Customer feedback and reviews",
-        "Financial documents and contracts",
-        "Personal social media accounts"
-      ],
-      "answer": 3,
+      "answer": 0,
       "slide": 3,
-      "feedback_correct": "Right—the course focuses on business documents like transcripts, feedback, market research, and financial docs, not personal social media.",
-      "feedback_incorrect": "Gemini Notebook is designed to consolidate business-critical documents like meeting transcripts, customer feedback, market research, and financial documents. Personal social media isn't mentioned as part of the platform's capabilities."
+      "feedback_correct": "Exactly! These four content types represent the core of what makes Gemini Notebook a true single source of truth.",
+      "feedback_incorrect": "Take another look at Slide 3's breakdown of content types. The slide explicitly lists the four main categories that Gemini Notebook consolidates in one place."
     },
     {
-      "question": "According to Slide 4, what does sentiment analysis in Gemini Notebook help you discover?",
+      "question": "According to the course, how much time per week can entrepreneurs reclaim by using Gemini Notebook?",
       "choices": [
-        "How to write better marketing copy",
-        "What customers love, fear, and want based on their feedback",
-        "Which competitors are most threatening",
-        "The optimal price point for your products"
-      ],
-      "answer": 1,
-      "slide": 4,
-      "feedback_correct": "Perfect—sentiment analysis reveals the emotional drivers and genuine desires behind customer feedback.",
-      "feedback_incorrect": "Sentiment analysis goes beyond surface-level data to uncover what customers genuinely love, what concerns them, and what they're actively seeking. This helps you understand the emotional and practical drivers behind their behavior."
-    },
-    {
-      "question": "What benefit does Gemini Notebook provide for employee onboarding?",
-      "choices": [
-        "It eliminates the need for human trainers entirely",
-        "It gives new hires access to a searchable knowledge base and a private expert trained on company documents",
-        "It automatically assigns tasks to new employees based on their background",
-        "It reduces onboarding time to less than one day"
-      ],
-      "answer": 1,
-      "slide": 5,
-      "feedback_correct": "Spot on—new hires get both instant access to consolidated SOPs and FAQs, plus the ability to ask questions privately without worrying about appearing inexperienced.",
-      "feedback_incorrect": "Gemini Notebook supports onboarding by providing a searchable knowledge base and a personal expert available 24/7, but it works alongside human trainers rather than replacing them. The key is making resources accessible and questions answerable privately."
-    },
-    {
-      "question": "Which output type from the Studio Panel would be most useful for preparing materials for an investor meeting?",
-      "choices": [
-        "Audio overview of industry trends",
-        "Mind map of scattered business notes",
-        "Slide deck automatically generated from raw data",
-        "Searchable knowledge base of company documents"
-      ],
-      "answer": 2,
-      "slide": 7,
-      "feedback_correct": "Exactly—the slide deck capability transforms raw data into a professional investor presentation in minutes, ready to share.",
-      "feedback_incorrect": "While audio overviews, mind maps, and knowledge bases are all valuable, the slide deck feature is specifically designed to generate polished, presentation-ready materials directly from your raw data, making it ideal for investor meetings."
-    },
-    {
-      "question": "In the four-step workflow described on Slide 8, what happens after you ask a question about your uploaded documents?",
-      "choices": [
-        "You export the results immediately",
-        "The system generates answers that you can then export",
-        "You need to wait for a human analyst to respond",
-        "You upload additional documents for comparison"
-      ],
-      "answer": 1,
-      "slide": 8,
-      "feedback_correct": "Right—the flow is Upload, Ask, Answers, then Export. Once you get your answers, that's when you share or download the results.",
-      "feedback_incorrect": "The workflow follows a clear sequence: Upload your documents, Ask your questions, receive Answers from the system, and then Export those results. The answers come before exporting, not after."
-    },
-    {
-      "question": "According to the course, how much time per week do entrepreneurs typically reclaim by using Gemini Notebook instead of managing scattered documents?",
-      "choices": [
-        "1-3 hours",
-        "5-10 hours",
-        "15-20 hours",
-        "30+ hours"
+        "1-2 hours per week",
+        "5-10 hours per week",
+        "15-20 hours per week",
+        "20-30 hours per week"
       ],
       "answer": 1,
       "slide": 9,
-      "feedback_correct": "Perfect—the course explicitly states that entrepreneurs are reclaiming 5–10 hours every week, time they can redirect to what truly matters.",
-      "feedback_incorrect": "According to Slide 9, the transformation from overwhelmed to in control results in entrepreneurs reclaiming 5–10 hours every week by eliminating manual searching and automating summaries."
+      "feedback_correct": "That's right! The course emphasizes that this time savings is real and meaningful for busy entrepreneurs.",
+      "feedback_incorrect": "Check Slide 9 under the 'After' section—it specifically mentions the time reclaimed when using Gemini Notebook. This is one of the key payoffs presented."
     },
     {
-      "question": "What strategic approach does the course recommend for getting started with Gemini Notebook?",
+      "question": "What are the three key capabilities of the Studio Panel mentioned on Slide 7?",
       "choices": [
-        "Upload your entire company document library at once",
-        "Start with one pain point and one document set, then scale from there",
-        "Wait until you have all your documents perfectly organized",
-        "Use it only for customer feedback analysis initially"
+        "Email automation, calendar scheduling, and contact management",
+        "Mind Map, Slide Deck, and Audio Overview",
+        "Data entry, file conversion, and backup storage",
+        "Team collaboration, task assignment, and progress tracking"
+      ],
+      "answer": 1,
+      "slide": 7,
+      "feedback_correct": "Perfect! These three Studio Panel features transform raw data into polished, ready-to-use business outputs.",
+      "feedback_incorrect": "Refer back to Slide 7 to see the Studio Panel's three main capabilities. These tools help you convert scattered information into professional, shareable assets."
+    },
+    {
+      "question": "Which document formats does Gemini Notebook accept according to Slide 10?",
+      "choices": [
+        "Only PDFs and Google Docs",
+        "PDFs, Docs, audio, and websites",
+        "Only spreadsheets and presentations",
+        "Only text files and images"
       ],
       "answer": 1,
       "slide": 10,
-      "feedback_correct": "Excellent—the course emphasizes starting small with one specific pain point to see results quickly, then scaling up from there.",
-      "feedback_incorrect": "Slide 10 teaches a pragmatic approach: pick one pain point, upload that specific document set, ask your question, and act on the results. This 'start small, scale fast' strategy prevents overwhelm and lets the results motivate further adoption."
+      "feedback_correct": "Correct! Gemini Notebook's flexibility with file formats makes it easy to start using regardless of how your documents are currently stored.",
+      "feedback_incorrect": "Look at Slide 10's 'Upload to Gemini Notebook' step, which specifically lists the formats the tool accepts. This flexibility is a key advantage."
     },
     {
-      "question": "How does Gemini Notebook's approach to market research differ from traditional static reports?",
+      "question": "What specific three aspects of customer understanding are highlighted through Sentiment Analysis on Slide 4?",
       "choices": [
-        "It eliminates the need to read reports entirely",
-        "It transforms static reports into queryable documents you can actually search through",
-        "It only works with reports from specific data vendors",
-        "It automatically identifies which competitors will succeed"
+        "Customer age, location, and purchase history",
+        "Website clicks, page views, and bounce rates",
+        "What customers love, fear, and want",
+        "Product price, competitor pricing, and profit margins"
       ],
-      "answer": 1,
-      "slide": 3,
-      "feedback_correct": "Correct—instead of passively reading through static PDFs, you can search and query market research documents to get specific insights instantly.",
-      "feedback_incorrect": "The key innovation with Gemini Notebook is that it makes static reports interactive and searchable rather than static documents you have to manually read through. This transforms how you extract value from market research."
+      "answer": 2,
+      "slide": 4,
+      "feedback_correct": "Excellent! Sentiment Analysis reveals the emotional drivers behind customer behavior, which is much deeper than surface-level metrics.",
+      "feedback_incorrect": "Slide 4 breaks down Sentiment Analysis as a way to understand the emotional side of your customers. Review that section to see what specific emotional insights it uncovers."
     },
     {
-      "question": "Which of the following best reflects the synthesis of the entire course message?",
+      "question": "According to Slide 8, what is the correct sequence of the four-step workflow in Gemini Notebook?",
       "choices": [
-        "Gemini Notebook is a storage solution that organizes all your files in one place",
-        "Gemini Notebook is a tool that centralizes information and immediately transforms it into actionable intelligence, helping you understand customers, onboard faster, and reclaim time for strategic work",
-        "Gemini Notebook is primarily designed for financial document management and compliance",
-        "Gemini Notebook replaces the need for business intelligence analysts and strategic consultants"
+        "Ask, Upload, Answers, Export",
+        "Export, Ask, Upload, Answers",
+        "Upload, Ask, Answers, Export",
+        "Answers, Export, Upload, Ask"
+      ],
+      "answer": 2,
+      "slide": 8,
+      "feedback_correct": "That's the right sequence! Understanding this workflow shows how information flows from raw data to actionable insights.",
+      "feedback_incorrect": "Review Slide 8's end-to-end workflow diagram. The sequence matters because each step builds on the previous one to transform information into shareable results."
+    },
+    {
+      "question": "How does Gemini Notebook transform the onboarding process for new hires according to Slide 5?",
+      "choices": [
+        "By automating payroll and benefits enrollment",
+        "By providing a private, always-available expert grounded in your business documents",
+        "By scheduling training sessions with department managers",
+        "By automating performance reviews and feedback collection"
       ],
       "answer": 1,
-      "slide": 1,
-      "feedback_correct": "Perfect—you've synthesized the core message: it's not just storage, it's an active system that transforms scattered information into insights you can act on immediately.",
-      "feedback_incorrect": "While Gemini Notebook does organize files, its true value comes from actively transforming information into answers and insights. It supports—rather than replaces—human judgment and expertise, and serves multiple business functions beyond just financial documents."
+      "slide": 5,
+      "feedback_correct": "Exactly! This transforms onboarding from a bottleneck into an empowering, self-service experience for new hires.",
+      "feedback_incorrect": "Slide 5 introduces a unique vision of onboarding where new hires have 24/7 access to knowledge grounded in actual company documents. This is different from traditional training approaches."
+    },
+    {
+      "question": "Based on Slide 10's guidance, which approach should you take when starting with Gemini Notebook?",
+      "choices": [
+        "Try to upload your entire company's document library on day one",
+        "Pick one pain point and start with a focused document set",
+        "Wait to adopt the tool until you've reorganized all your files",
+        "Only use it for financial documents at first, then expand later"
+      ],
+      "answer": 1,
+      "slide": 10,
+      "feedback_correct": "Perfect! Starting small and focused allows you to see results quickly, which builds momentum for broader adoption.",
+      "feedback_incorrect": "Slide 10 explicitly recommends choosing one pain point to address first. This focused approach helps you prove the value before scaling to other use cases."
+    },
+    {
+      "question": "What is the relationship between the three use case scenarios mentioned on Slide 11 (research overload, customer confusion, and team inefficiency) and Gemini Notebook's core value proposition?",
+      "choices": [
+        "They represent industries where Gemini Notebook cannot be used",
+        "They are common business pain points that Gemini Notebook is specifically designed to solve",
+        "They are hypothetical problems that don't apply to real businesses",
+        "They show why entrepreneurs should avoid using any automation tools"
+      ],
+      "answer": 1,
+      "slide": 11,
+      "feedback_correct": "Exactly! These scenarios illustrate the real-world problems that Gemini Notebook addresses, helping you identify which pain point to tackle first.",
+      "feedback_incorrect": "Slide 11 presents these use cases as invitations for you to see yourself in them. They're concrete examples of the types of challenges Gemini Notebook was built to solve."
+    },
+    {
+      "question": "How do the capabilities described on Slide 6 (Financial Deep Dives, Legal & Compliance, and Competitor Analysis) reflect the course's broader theme of transformation?",
+      "choices": [
+        "They show that Gemini Notebook only works for large corporations with dedicated staff",
+        "They demonstrate how strategic intelligence moves from tedious manual work to instant, fingertip access",
+        "They prove that AI tools are replacing human decision-making in businesses",
+        "They indicate that Gemini Notebook is primarily a document storage solution"
+      ],
+      "answer": 1,
+      "slide": 6,
+      "feedback_correct": "Great synthesis! These examples show how Gemini Notebook transforms strategic analysis from time-consuming research into instant, actionable intelligence.",
+      "feedback_incorrect": "Look at Slide 6's title—'Strategic Intelligence at Your Fingertips'—and consider how each capability shifts from a pain point (manual searching, slow analysis) to an advantage (instant answers, real-time queries). This reflects the overall transformation theme of the course."
     }
   ]
 }
