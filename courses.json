@@ -110,5 +110,26 @@
         "startSlide": 10
       }
     ]
+  },
+  "1030": {
+    "id": "the_esource_product_launcher_guide",
+    "title": "The ESource Product Launcher Guide",
+    "totalSlides": 8,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1030-The-ESource-Product-Launcher-Guide.pdf",
+    "firstMessage": "Welcome to The ESource Product Launcher Guide. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Challenge (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Product Launcher System (slides 3-5)",
+        "startSlide": 3
+      },
+      {
+        "label": "Pilot Implementation (slides 6-8)",
+        "startSlide": 6
+      }
+    ]
   }
 }
