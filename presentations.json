@@ -2,15 +2,16 @@
   "1": {
     "id": "presentation-1",
     "title": "Product Launcher Guide",
-    "totalSlides": 8,
+    "totalSlides": 9,
     "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/Product-Launcher-Guide.pdf",
     "firstMessage": "Welcome! I'm Marcus Twayne, and today I'll be presenting the Product Launcher Guide. We'll look at how to get your sellers truly ready before their first customer conversation. When you're ready to begin, just say so.",
-    "sections": [
-      { "label": "Introduction", "startSlide": 1 },
-      { "label": "The System", "startSlide": 3 },
-      { "label": "Core Capabilities", "startSlide": 4 },
-      { "label": "Pilot Value", "startSlide": 6 },
-      { "label": "Takeaways", "startSlide": 8 }
+        "sections": [
+      { "label": "The Hook", "startSlide": 1 },
+      { "label": "Introduction", "startSlide": 2 },
+      { "label": "The System", "startSlide": 4 },
+      { "label": "Core Capabilities", "startSlide": 5 },
+      { "label": "Pilot Value", "startSlide": 7 },
+      { "label": "Takeaways", "startSlide": 9 }
     ]
   }
 }
