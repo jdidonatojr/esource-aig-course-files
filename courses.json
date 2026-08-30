@@ -140,7 +140,7 @@
     "firstMessage": "Welcome to Build Your Professional Portfolio with ChatGPT Sites. Are you ready to begin?",
     "sections": [
       {
-        "label": "Introduction (slides 1-3)",
+        "label": "Introduction and Vision (slides 1-3)",
         "startSlide": 1
       },
       {
@@ -148,24 +148,16 @@
         "startSlide": 4
       },
       {
-        "label": "Refine and Improve (slides 8-12)",
+        "label": "Evaluate and Improve (slides 8-14)",
         "startSlide": 8
       },
       {
-        "label": "Portfolio Benchmarks (slides 13-14)",
-        "startSlide": 13
-      },
-      {
-        "label": "Tell Your Professional Story (slides 15-18)",
+        "label": "Deepen Your Story (slides 15-20)",
         "startSlide": 15
       },
       {
-        "label": "Advanced Portfolio Strategies (slides 19-22)",
-        "startSlide": 19
-      },
-      {
-        "label": "Next Steps (slide 23)",
-        "startSlide": 23
+        "label": "Refine, Publish, and Iterate (slides 21-23)",
+        "startSlide": 21
       }
     ]
   }
