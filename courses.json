@@ -144,19 +144,19 @@
         "startSlide": 1
       },
       {
-        "label": "Build Your First Portfolio (slides 4-7)",
+        "label": "Build Your First Portfolio (slides 4-9)",
         "startSlide": 4
       },
       {
-        "label": "Evaluate and Improve (slides 8-14)",
-        "startSlide": 8
+        "label": "Review and Refine (slides 10-14)",
+        "startSlide": 10
       },
       {
         "label": "Deepen Your Story (slides 15-20)",
         "startSlide": 15
       },
       {
-        "label": "Refine, Publish, and Iterate (slides 21-23)",
+        "label": "Polish and Deploy (slides 21-23)",
         "startSlide": 21
       }
     ]
