@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — CTFS for TechIQ",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "What does CTFS stand for?",
+      "choices": [
+        "Clinical Trial Finance Suite",
+        "Centralized Trial Financial System",
+        "Clinical Trials Financial Services",
+        "Comprehensive Trial Finance Solution"
+      ],
+      "answer": 0,
+      "slide": 1,
+      "feedback_correct": "That's right—CTFS is IQVIA's Clinical Trial Financial Suite, designed to unify financial operations across trials.",
+      "feedback_incorrect": "While that sounds reasonable, CTFS specifically stands for Clinical Trial Financial Suite. This is the foundation for understanding what the platform does."
+    },
+    {
+      "question": "According to the course, by what percentage have trial sites grown since 2019?",
+      "choices": [
+        "30%",
+        "49%",
+        "60%",
+        "75%"
+      ],
+      "answer": 1,
+      "slide": 2,
+      "feedback_correct": "Correct—the 49% growth in trial sites since 2019 is one of the key drivers of financial complexity mentioned in the course.",
+      "feedback_incorrect": "The course specifically states that trial sites have grown by 49% since 2019. Note that 60% refers to the increase in protocol amendments, not sites."
+    },
+    {
+      "question": "Which of the following is NOT listed as a core capability of CTFS?",
+      "choices": [
+        "Budgeting and grant management",
+        "Patient recruitment and enrollment",
+        "Site payments",
+        "Forecasting and reconciliation"
+      ],
+      "answer": 1,
+      "slide": 5,
+      "feedback_correct": "Exactly—patient recruitment is outside the scope of CTFS, which focuses exclusively on financial operations within clinical trials.",
+      "feedback_incorrect": "CTFS covers budgeting, contracting, payments, and forecasting, but it is specifically a financial platform, not a recruitment or enrollment tool."
+    },
+    {
+      "question": "What is the first module that has been launched on the CTFS platform?",
+      "choices": [
+        "Participant payments",
+        "Contract automation",
+        "CTFS Site Payments",
+        "Budgeting and forecasting"
+      ],
+      "answer": 2,
+      "slide": 8,
+      "feedback_correct": "That's correct—CTFS Site Payments is the inaugural module, bringing invoice creation, validation, and payment visibility together.",
+      "feedback_incorrect": "While other modules like contract automation and participant payments are on the roadmap, CTFS Site Payments is the first module to launch on the platform."
+    },
+    {
+      "question": "How many countries does CTFS support for participant payments?",
+      "choices": [
+        "More than 100",
+        "More than 150",
+        "More than 180",
+        "More than 200"
+      ],
+      "answer": 2,
+      "slide": 10,
+      "feedback_correct": "Yes—CTFS supports participant payments across more than 180 countries, demonstrating its true global reach.",
+      "feedback_incorrect": "The course states that participant payment capabilities extend across more than 180 countries specifically. Note that 200+ refers to the geographies supported overall, not just participant payments."
+    },
+    {
+      "question": "According to the course, what is the projected reduction in financial processing time that CTFS can achieve?",
+      "choices": [
+        "Up to 25% faster",
+        "Up to 50% faster",
+        "Up to 75% faster",
+        "Up to 90% faster"
+      ],
+      "answer": 1,
+      "slide": 11,
+      "feedback_correct": "That's right—customer outcomes include a projected reduction of up to 50% in financial processing time through CTFS automation.",
+      "feedback_incorrect": "The course specifically cites 50% faster financial processing as a proven outcome. This is based on IQVIA's experience processing over $10.5 billion in payments."
+    },
+    {
+      "question": "Which system integration capability is NOT mentioned as part of CTFS's enterprise IT design?",
+      "choices": [
+        "EDC (Electronic Data Capture)",
+        "CTMS (Clinical Trial Management System)",
+        "ERP (Enterprise Resource Planning)",
+        "CRM (Customer Relationship Management)"
+      ],
+      "answer": 3,
+      "slide": 12,
+      "feedback_correct": "Correct—while EDC, CTMS, and ERP are specifically mentioned as systems CTFS connects with, CRM is not listed as an integration capability.",
+      "feedback_incorrect": "CTFS is designed to connect with EDC, CTMS, ERP, and banking platforms through its API-first architecture, but CRM integration is not mentioned in the course materials."
+    },
+    {
+      "question": "What is the key principle behind CTFS's approach to scaling with a sponsor's portfolio?",
+      "choices": [
+        "All modules must be implemented simultaneously for maximum efficiency",
+        "Customers should replace all legacy systems before adopting CTFS",
+        "Modular capabilities allow expansion across financial workflows without complex reimplementation",
+        "CTFS only supports large enterprise trials with multiple study sites"
+      ],
+      "answer": 2,
+      "slide": 13,
+      "feedback_correct": "Exactly—CTFS is designed to grow with a customer's needs through modular SaaS capabilities, allowing them to start focused and expand over time.",
+      "feedback_incorrect": "CTFS is intentionally built modular to avoid requiring a single large-scale transformation. Organizations can begin with one capability like site payments and expand gradually."
+    },
+    {
+      "question": "Based on the course, what does the shift from manual workflows to orchestration in CTFS prioritize?",
+      "choices": [
+        "Removing all human oversight from financial processes",
+        "Focusing human attention on exceptions and decisions requiring expertise rather than repetitive data handling",
+        "Completely automating contract interpretation",
+        "Eliminating the need for financial compliance reviews"
+      ],
+      "answer": 1,
+      "slide": 6,
+      "feedback_correct": "Perfect—the orchestration approach is designed to reduce manual data entry while maintaining appropriate oversight, focusing expertise where it matters most.",
+      "feedback_incorrect": "Orchestration doesn't remove human judgment; it redirects human effort. The goal is to automate repetitive tasks like data entry and validation so experts can focus on complex decisions and anomalies."
+    },
+    {
+      "question": "According to the course, which combination of factors makes the case for CTFS strongest?",
+      "choices": [
+        "Only financial cost reduction matters",
+        "Only operational speed improvements matter",
+        "Clinical, financial, and technology priorities are considered together",
+        "Only site satisfaction needs to be addressed"
+      ],
+      "answer": 2,
+      "slide": 15,
+      "feedback_correct": "That's correct—the course emphasizes that the strongest case for CTFS emerges when clinical, financial, and technology priorities are all considered together.",
+      "feedback_incorrect": "While individual benefits like cost reduction, speed, and site satisfaction are all valuable, the course emphasizes that CTFS delivers the strongest case when all three dimensions—clinical, financial, and technology—are evaluated as part of an integrated strategy."
+    }
+  ]
+}
