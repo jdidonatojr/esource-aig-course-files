@@ -6,134 +6,134 @@
   },
   "questions": [
     {
-      "question": "What is the primary goal you will have completed by the end of this course?",
+      "question": "What are the four key deliverables you will have by the end of this course?",
       "choices": [
-        "A complete, visitor-ready portfolio site with the skills to keep improving it",
-        "A perfect résumé that never needs to be updated",
-        "A social media profile across all major platforms",
-        "A printed portfolio book distributed to hiring managers"
+        "Portfolio Site, Personal Positioning, Case Study, and AI Assistant",
+        "Resume, LinkedIn Profile, Cover Letter, and Job Applications",
+        "Website Design, Content Writing, Video Production, and Photography",
+        "Business Plan, Marketing Strategy, Financial Projections, and Pitch Deck"
       ],
       "answer": 0,
       "slide": 2,
-      "feedback_correct": "Exactly right—the course equips you with a polished portfolio and the ongoing skills to refine it continuously.",
-      "feedback_incorrect": "The course focuses on building a complete portfolio site and developing your ability to improve it over time, not on creating static résumés or printed materials."
+      "feedback_correct": "Exactly—these four deliverables represent your complete toolkit for a professional online presence.",
+      "feedback_incorrect": "The course focuses on building specific portfolio assets using ChatGPT Sites. Review Slide 2 to see the four core deliverables you'll create."
     },
     {
-      "question": "According to the course, what should you gather before you start building your portfolio site?",
+      "question": "According to the course, what is the core question your portfolio must answer?",
       "choices": [
-        "Only a professional headshot and your LinkedIn URL",
-        "Career documents, work evidence, and personal assets like résumés, project samples, and a professional headshot",
-        "A perfectly polished résumé and at least five years of work history",
-        "Testimonials from at least ten clients before you begin"
-      ],
-      "answer": 1,
-      "slide": 5,
-      "feedback_correct": "You've got it—gathering existing career documents, work samples, and personal assets gives you everything you need to start.",
-      "feedback_incorrect": "The course emphasizes that you likely already have most of what you need. You should collect career documents, work evidence, and personal assets before building, without waiting for perfection."
-    },
-    {
-      "question": "What is the key difference between a portfolio and a résumé, according to this course?",
-      "choices": [
-        "A portfolio uses color while a résumé is black and white",
-        "A portfolio is longer and more detailed than a résumé",
-        "The difference is not format—it is proof that shows results and context, not just listed experience",
-        "A portfolio is only for creative professionals, while a résumé is for everyone"
-      ],
-      "answer": 2,
-      "slide": 8,
-      "feedback_correct": "Perfect—a portfolio tells the full story with evidence, while a résumé simply lists what you've done, leaving questions unanswered.",
-      "feedback_incorrect": "The course emphasizes that the real difference is proof. A portfolio shows the challenge you faced, actions you took, results you achieved, and what you learned—not just a longer list of experiences."
-    },
-    {
-      "question": "What is the Portfolio Promise, and what question must your site answer?",
-      "choices": [
-        "A promise to update your site weekly and respond to all visitors within 24 hours",
-        "The answer to 'Why should this person be trusted with important work?'—and you have 30 seconds to make it clear",
-        "A guarantee that your site will rank first on Google search results",
-        "A promise to include at least ten case studies and client testimonials"
+        "How much money can you make?",
+        "Why should this person be trusted with important work?",
+        "What is your educational background?",
+        "How many years of experience do you have?"
       ],
       "answer": 1,
       "slide": 9,
-      "feedback_correct": "Exactly—the Portfolio Promise is about establishing trust immediately by answering why someone should trust you with important work within the first 30 seconds.",
-      "feedback_incorrect": "The Portfolio Promise is fundamentally about trust and making your value proposition crystal clear right at the top. You have limited time—about 30 seconds—to answer this core question."
+      "feedback_correct": "You've got it—trust is the foundation of every strong portfolio, and you need to establish it within 30 seconds.",
+      "feedback_incorrect": "The Portfolio Promise isn't about credentials alone—it's about demonstrating trustworthiness. Review Slide 9 to understand what truly matters to visitors."
     },
     {
-      "question": "Which of the following is NOT mentioned as a benchmark for a strong first portfolio site?",
+      "question": "What is the key difference between a portfolio and a résumé?",
       "choices": [
-        "Easy to Scan and Specific",
-        "Honest and Audience-Aware",
-        "Evidence-Based and Clear Next Steps",
-        "Maximum length of at least 50 pages with extensive multimedia"
+        "A portfolio is longer and more detailed than a résumé",
+        "A résumé lists experience, while a portfolio provides proof with context and results",
+        "A portfolio is only for creative professionals, while a résumé is for everyone",
+        "A résumé is digital, while a portfolio is always printed"
       ],
-      "answer": 3,
-      "slide": 13,
-      "feedback_correct": "Right—length and complexity are not benchmarks. The course emphasizes that a strong portfolio should be clear, not complex.",
-      "feedback_incorrect": "The six actual benchmarks are: Easy to Scan, Specific, Honest, Audience-Aware, Evidence-Based, and Clear Next Steps. The course teaches that complexity isn't necessary—clarity is what matters most."
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "Perfect—proof and context transform a simple list of duties into a compelling narrative about your impact.",
+      "feedback_incorrect": "The difference isn't about length or format. A portfolio tells the story of what changed because of your work, with evidence. See Slide 8 for clarification."
     },
     {
-      "question": "What does the course recommend you do immediately after your site first appears, before making any edits?",
+      "question": "Before you start building your portfolio site with ChatGPT, what should you do first?",
       "choices": [
-        "Start editing sections that look generic or unclear",
-        "Publish it immediately to get visitor feedback",
-        "Pause and ask five critical questions to evaluate objectively what feels strong, generic, missing, too long, and what a visitor would understand in 30 seconds",
-        "Share it with everyone on social media to build initial traffic"
+        "Immediately open ChatGPT Sites and start writing",
+        "Gather your raw materials like résumé, LinkedIn bio, project samples, and testimonials",
+        "Hire a professional web designer to plan the layout",
+        "Research your competitors' portfolio sites for inspiration"
       ],
-      "answer": 2,
+      "answer": 1,
+      "slide": 5,
+      "feedback_correct": "You're prepared—gathering your materials first ensures ChatGPT has the best information to work with and speeds up the build.",
+      "feedback_incorrect": "The course emphasizes gathering what you already have before building. You likely have everything needed. Check Slide 5 for the full list of materials to collect."
+    },
+    {
+      "question": "According to Slide 7, what should you do immediately after your portfolio site first appears?",
+      "choices": [
+        "Start editing and redesigning everything you see",
+        "Ask five critical review questions before making any changes",
+        "Publish it immediately to get feedback from visitors",
+        "Delete sections that don't match your original vision"
+      ],
+      "answer": 1,
       "slide": 7,
-      "feedback_correct": "Perfect—the course teaches you to resist the urge to immediately edit and instead step back to evaluate objectively first.",
-      "feedback_incorrect": "The course emphasizes that diagnosis comes before editing. Take time to ask critical questions about what's working and what isn't, rather than jumping into changes right away."
+      "feedback_correct": "Excellent—stepping back for objective evaluation prevents wasted edits and helps you focus on what actually matters.",
+      "feedback_incorrect": "The instinct to immediately edit can lead to unnecessary changes. Slide 7 teaches you to pause and ask diagnostic questions first."
     },
     {
-      "question": "According to the 3-Pass Edit activity, what is the focus of Pass 3?",
+      "question": "What are the three focused passes recommended in the Mini Activity for editing your portfolio?",
       "choices": [
-        "Clarify the message and check if your introduction is instantly clear",
-        "Strengthen your evidence by adding quantified accomplishments and specific impact stories",
-        "Improve the layout and ensure the site is scannable with clear headings",
-        "Check for spelling and grammar errors"
+        "Design, Content, and Publishing",
+        "Clarify the message, Improve the layout, and Strengthen the proof",
+        "Grammar, Spelling, and Punctuation",
+        "Add visuals, Remove text, and Update links"
       ],
       "answer": 1,
       "slide": 12,
-      "feedback_correct": "Great—Pass 3 focuses on strengthening your evidence with concrete results and impact, which builds credibility.",
-      "feedback_incorrect": "The three passes are: Pass 1 (Clarify the message), Pass 2 (Improve the layout), and Pass 3 (Strengthen your evidence). Each pass has a specific, focused goal."
+      "feedback_correct": "You've identified the three strategic passes that build on each other to create a polished, functional portfolio.",
+      "feedback_incorrect": "The three-pass edit focuses on meaning and function, not just mechanics. Review Slide 12 to understand each pass's specific goal."
     },
     {
-      "question": "How does the course recommend you handle confidential or sensitive work when presenting it in your portfolio?",
+      "question": "Which of the following is NOT listed as a benchmark for a strong first portfolio site?",
       "choices": [
-        "Avoid mentioning any work that involves confidentiality agreements",
-        "Share all details to show your full capabilities and expertise",
-        "Present your work professionally without revealing information you should not share, and anonymize details when needed",
-        "Only include work from clients who explicitly gave you permission to show everything"
+        "Easy to Scan and Audience-Aware",
+        "Specific and Honest",
+        "Evidence-Based and Visually stunning with professional graphics",
+        "Clear Next Steps"
       ],
       "answer": 2,
-      "slide": 18,
-      "feedback_correct": "Exactly—you can showcase your accomplishments and expertise while respecting NDAs and confidentiality agreements by being strategic about what you disclose.",
-      "feedback_incorrect": "The course teaches that you should balance transparency with discretion. You can share your work accomplishments while respecting confidentiality—use anonymization when needed and never disclose proprietary information without permission."
+      "slide": 13,
+      "feedback_correct": "Correct—the course teaches that a strong portfolio needs to be clear and functional, not necessarily flashy or graphics-heavy.",
+      "feedback_incorrect": "Slide 13 lists six benchmarks for a strong portfolio, and visual complexity isn't among them. Focus on clarity over decoration."
     },
     {
-      "question": "What is a Portfolio AI Teammate, and how does it differ from just using ChatGPT during the course?",
+      "question": "According to the course, what is the purpose of using a prompt to get feedback on your portfolio before making changes?",
       "choices": [
-        "It's a different AI tool that only works with portfolio websites and costs extra to use",
-        "A personal assistant that works for you continuously—capturing accomplishments as they happen, helping create case studies, and keeping your portfolio current long after the course ends",
-        "A one-time feature that ChatGPT Sites provides during the initial portfolio build",
-        "A team of actual humans who help you manage your portfolio website"
+        "To make you feel confident about your work",
+        "To identify what is holding your portfolio back and prioritize improvements by impact",
+        "To find a professional designer who can rebuild your site",
+        "To get permission from an expert before publishing"
       ],
       "answer": 1,
-      "slide": 22,
-      "feedback_correct": "Spot on—your AI Teammate is an ongoing tool that continues supporting your career growth beyond the course, capturing wins as they happen and helping you stay current.",
-      "feedback_incorrect": "The Portfolio AI Teammate is not a one-time tool—it's designed to be a continuous part of your professional growth system, helping you capture new accomplishments, create case studies while projects are fresh, and customize versions for different audiences."
+      "slide": 10,
+      "feedback_correct": "Exactly—diagnosis comes before treatment, which prevents wasted effort on low-impact changes.",
+      "feedback_incorrect": "The feedback step isn't about validation or permission—it's about strategic diagnosis. Slide 10 shows how to identify what matters most before editing."
     },
     {
-      "question": "What does the course describe as the end result of completing its full program?",
+      "question": "The course emphasizes that a portfolio should clearly communicate three core elements about you. Which of the following is NOT one of them?",
       "choices": [
-        "A static website that showcases your past experience",
-        "A professional storytelling system combining your experience, evidence, ChatGPT Sites, and an AI teammate that you continue using long after the course ends",
-        "A résumé that is optimized for applicant tracking systems",
-        "A social media presence that drives traffic to your portfolio"
+        "Who you help (your target audience)",
+        "What problems you solve",
+        "How much you charge for your services",
+        "How you work (your process and approach)"
+      ],
+      "answer": 2,
+      "slide": 3,
+      "feedback_correct": "Right—Slide 3 identifies the three core elements of your portfolio's message, and pricing strategy is not one of them.",
+      "feedback_incorrect": "Slide 3 outlines the Big Idea behind portfolio messaging. Review those three core elements: who you help, what problems you solve, and how you work."
+    },
+    {
+      "question": "How does the course suggest approaching the challenge of making your portfolio stand out from AI-generated content?",
+      "choices": [
+        "Avoid using ChatGPT Sites and build your site manually instead",
+        "Use Section 1 to build a first version quickly, then Section 2 teaches you to personalize it and make it distinctly yours",
+        "Add more complex graphics and animations to distract from AI writing",
+        "Copy content from successful competitors' portfolios"
       ],
       "answer": 1,
-      "slide": 23,
-      "feedback_correct": "Excellent—the course aims to create a dynamic, ongoing system, not just a one-time website. Your AI teammate continues to support your career growth well beyond the course.",
-      "feedback_incorrect": "The course is designed to build a professional storytelling system that evolves with you. It's not just a static website or résumé—it's a tool and approach you'll use continuously for ongoing career development."
+      "slide": 14,
+      "feedback_correct": "Perfect—the course acknowledges that the first version is AI-generated and intentionally teaches personalization in the full course.",
+      "feedback_incorrect": "The course's strategy is to build fast first, then personalize. Slide 14 and 15 reveal that making it distinctly yours is the work of Section 2 and beyond."
     }
   ]
 }
