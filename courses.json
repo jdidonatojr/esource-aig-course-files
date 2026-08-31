@@ -160,5 +160,30 @@
         "startSlide": 14
       }
     ]
+  },
+  "1050": {
+    "id": "ctfs_for_techiq",
+    "title": "CTFS for TechIQ",
+    "totalSlides": 17,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1050-CTFS-for-TechIQ.pdf",
+    "firstMessage": "Welcome to CTFS for TechIQ. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Context (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "The CTFS Solution (slides 4-8)",
+        "startSlide": 4
+      },
+      {
+        "label": "Platform Capabilities (slides 9-13)",
+        "startSlide": 9
+      },
+      {
+        "label": "Implementation and Future (slides 14-17)",
+        "startSlide": 14
+      }
+    ]
   }
 }
