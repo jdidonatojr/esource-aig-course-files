@@ -133,31 +133,31 @@
     ]
   },
   "1040": {
-    "id": "build_your_professional_portfolio_with_chatgpt_sites",
-    "title": "Build Your Professional Portfolio with ChatGPT Sites",
-    "totalSlides": 23,
-    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1040-Build-Your-Professional-Portfolio-with-ChatGPT-Sites.pdf",
-    "firstMessage": "Welcome to Build Your Professional Portfolio with ChatGPT Sites. Are you ready to begin?",
+    "id": "build_with_chatgpt_sites_from_professional_portfolio_to_practical_business_sites",
+    "title": "Build with ChatGPT Sites: From Professional Portfolio to Practical Business Sites",
+    "totalSlides": 15,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1040-Build-with-ChatGPT-Sites-From-Professional-Portfolio-to-Practical-Business-Sites.pdf",
+    "firstMessage": "Welcome to Build with ChatGPT Sites: From Professional Portfolio to Practical Business Sites. Are you ready to begin?",
     "sections": [
       {
-        "label": "Introduction and Vision (slides 1-3)",
+        "label": "Introduction and Overview (slides 1-3)",
         "startSlide": 1
       },
       {
-        "label": "Build Your First Portfolio (slides 4-7)",
+        "label": "Fast Portfolio Build (slides 4-6)",
         "startSlide": 4
       },
       {
-        "label": "Evaluate and Refine (slides 8-14)",
-        "startSlide": 8
+        "label": "Review and Refine (slides 7-11)",
+        "startSlide": 7
       },
       {
-        "label": "Personalize Your Story (slides 15-20)",
-        "startSlide": 15
+        "label": "Polish and Benchmark (slides 12-13)",
+        "startSlide": 12
       },
       {
-        "label": "Polish and Deploy (slides 21-23)",
-        "startSlide": 21
+        "label": "Checkpoint and Next Steps (slides 14-15)",
+        "startSlide": 14
       }
     ]
   }
