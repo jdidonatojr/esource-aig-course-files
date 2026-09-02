@@ -106,5 +106,34 @@
         "startSlide": 7
       }
     ]
+  },
+  "5": {
+    "id": "georgia_edge_original",
+    "title": "Georgia EDGE Original",
+    "totalSlides": 12,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/Georgia-EDGE-Original.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting Georgia EDGE Original. Sit back and enjoy — I'll move us through the slides. If you have a question at any point, just raise your hand using the hand button, or simply start speaking.",
+    "sections": [
+      {
+        "label": "The Opportunity (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "The Problem (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "The Solution (slides 6-8)",
+        "startSlide": 6
+      },
+      {
+        "label": "Implementation and Leadership (slides 9-10)",
+        "startSlide": 9
+      },
+      {
+        "label": "Call to Action (slides 11-12)",
+        "startSlide": 11
+      }
+    ]
   }
 }
