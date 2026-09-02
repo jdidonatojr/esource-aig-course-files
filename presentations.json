@@ -40,15 +40,19 @@
     "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting Product Launcher Suite of Tools. Sit back and enjoy — I'll move us through the slides. If you have a question at any point, just raise your hand using the hand button, or simply start speaking.",
     "sections": [
       {
-        "label": "Problem Statement (slides 1-3)",
+        "label": "Problem and Opportunity (slides 1-2)",
         "startSlide": 1
       },
       {
-        "label": "Product Launcher System (slides 4-5)",
-        "startSlide": 4
+        "label": "Product-to-Revenue Readiness Framework (slides 3-4)",
+        "startSlide": 3
       },
       {
-        "label": "Results and Evidence (slide 6)",
+        "label": "System in Action (slide 5)",
+        "startSlide": 5
+      },
+      {
+        "label": "Results and Impact (slide 6)",
         "startSlide": 6
       },
       {
