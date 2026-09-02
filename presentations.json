@@ -34,25 +34,25 @@
   },
   "2": {
     "id": "product_launcher_demo_executive_deck",
-    "title": "Product Launcher Demo - Executive Deck",
+    "title": "Product Launcher Demo -  Executive Deck",
     "totalSlides": 6,
     "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/Product-Launcher-Demo---Executive-Deck.pdf",
-    "firstMessage": "Welcome to Product Launcher Demo - Executive Deck. Are you ready to begin?",
+    "firstMessage": "Welcome to Product Launcher Demo -  Executive Deck. Are you ready to begin?",
     "sections": [
       {
         "label": "The Launch Risk (slides 1-2)",
         "startSlide": 1
       },
       {
-        "label": "Proving Readiness (slides 3-3)",
+        "label": "From Problem to Solution (slides 3-4)",
         "startSlide": 3
       },
       {
-        "label": "Product Launcher Demo (slides 4-5)",
-        "startSlide": 4
+        "label": "What You Saw (slide 5)",
+        "startSlide": 5
       },
       {
-        "label": "Getting Started (slides 6-6)",
+        "label": "Start Your Launch (slide 6)",
         "startSlide": 6
       }
     ]
