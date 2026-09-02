@@ -56,5 +56,30 @@
         "startSlide": 7
       }
     ]
+  },
+  "3": {
+    "id": "ai_execution_gap_smb",
+    "title": "AI Execution Gap SMB",
+    "totalSlides": 8,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/AI-Execution-Gap-SMB.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting AI Execution Gap SMB. Sit back and enjoy — I'll move us through the slides. If you have a question at any point, just raise your hand using the hand button, or simply start speaking.",
+    "sections": [
+      {
+        "label": "Opening & Context (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "The ESource Approach (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "Diagnostic Deep Dive (slides 6-7)",
+        "startSlide": 6
+      },
+      {
+        "label": "Next Steps (slide 8)",
+        "startSlide": 8
+      }
+    ]
   }
 }
