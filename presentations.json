@@ -37,18 +37,22 @@
     "title": "Product Launcher Demo - Executive Deck",
     "totalSlides": 6,
     "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/Product-Launcher-Demo---Executive-Deck.pdf",
-    "firstMessage": "Welcome to Product Launcher Demo - Executive Deck. Are you ready to begin?",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting Product Launcher Demo - Executive Deck. Sit back and enjoy — I'll move us through the slides. If you have a question at any point, just raise your hand using the hand button, or simply start speaking.",
     "sections": [
       {
-        "label": "The Launch Risk (slides 1-2)",
+        "label": "The Problem (slides 1-2)",
         "startSlide": 1
       },
       {
-        "label": "Proving Readiness (slides 3-5)",
+        "label": "The Solution (slides 3-3)",
         "startSlide": 3
       },
       {
-        "label": "Getting Started (slide 6)",
+        "label": "Product Launcher Demo (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "Getting Started (slides 6-6)",
         "startSlide": 6
       }
     ]
