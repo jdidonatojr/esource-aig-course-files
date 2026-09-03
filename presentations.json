@@ -135,5 +135,38 @@
         "startSlide": 11
       }
     ]
+  },
+  "6": {
+    "id": "jfp_handbook_training_draft",
+    "title": "JFP Handbook Training Draft",
+    "totalSlides": 27,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/JFP-Handbook-Training-Draft.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting JFP Handbook Training Draft. Sit back and enjoy — I'll move us through the slides. If you have a question at any point, just raise your hand using the hand button, or simply start speaking.",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Employment Rights and Reporting (slides 3-8)",
+        "startSlide": 3
+      },
+      {
+        "label": "Pay, Hours, and Timekeeping (slides 9-13)",
+        "startSlide": 9
+      },
+      {
+        "label": "Time Off and Leave (slides 14-18)",
+        "startSlide": 14
+      },
+      {
+        "label": "Workplace Conduct and Safety (slides 19-24)",
+        "startSlide": 19
+      },
+      {
+        "label": "Closing and Resources (slides 25-27)",
+        "startSlide": 25
+      }
+    ]
   }
 }
