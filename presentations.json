@@ -85,25 +85,25 @@
   "4": {
     "id": "esource_ai_execution_gap_pe_vc",
     "title": "ESource AI Execution Gap PE VC",
-    "totalSlides": 8,
+    "totalSlides": 9,
     "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/ESource-AI-Execution-Gap-PE-VC.pdf",
     "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting ESource AI Execution Gap PE VC. Sit back and enjoy — I'll move us through the slides. If you have a question at any point, just raise your hand using the hand button, or simply start speaking.",
     "sections": [
       {
-        "label": "Opening and Positioning (slides 1-2)",
+        "label": "The AI Execution Gap (slides 1-3)",
         "startSlide": 1
       },
       {
-        "label": "The Problem (slides 3-4)",
-        "startSlide": 3
+        "label": "Diagnosis Framework (slides 4-5)",
+        "startSlide": 4
       },
       {
-        "label": "The Solution (slides 5-6)",
-        "startSlide": 5
+        "label": "ESource Solutions (slides 6-8)",
+        "startSlide": 6
       },
       {
-        "label": "Implementation Approach (slides 7-8)",
-        "startSlide": 7
+        "label": "Getting Started (slide 9)",
+        "startSlide": 9
       }
     ]
   },
