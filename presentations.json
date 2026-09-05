@@ -170,31 +170,27 @@
     ]
   },
   "7": {
-    "id": "esource_channel_partner_opportunity_deck_10of10",
-    "title": "ESource Channel Partner Opportunity Deck 10of10",
-    "totalSlides": 7,
-    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/ESource-Channel-Partner-Opportunity-Deck-10of10.pdf",
-    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting ESource Channel Partner Opportunity Deck 10of10. Sit back and enjoy — I'll move us through the slides. If you have a question at any point, just raise your hand using the hand button, or simply start speaking.",
+    "id": "esource_channel_partner_opportunity",
+    "title": "ESource Channel Partner Opportunity",
+    "totalSlides": 13,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/ESource-Channel-Partner-Opportunity.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting ESource Channel Partner Opportunity. Sit back and enjoy — I'll move us through the slides. If you have a question at any point, just raise your hand using the hand button, or simply start speaking.",
     "sections": [
       {
-        "label": "The Partner Opportunity (slides 1-2)",
+        "label": "Opening the Opportunity (slides 1-2)",
         "startSlide": 1
       },
       {
-        "label": "The Client Problem (slides 3-4)",
+        "label": "Routing and Qualification (slides 3-8)",
         "startSlide": 3
       },
       {
-        "label": "Partnership Models (slide 5)",
-        "startSlide": 5
+        "label": "Partner Participation and Support (slides 9-11)",
+        "startSlide": 9
       },
       {
-        "label": "Execution Support (slide 6)",
-        "startSlide": 6
-      },
-      {
-        "label": "Getting Started (slide 7)",
-        "startSlide": 7
+        "label": "Certification and Next Steps (slides 12-13)",
+        "startSlide": 12
       }
     ]
   }
