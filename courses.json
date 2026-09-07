@@ -5,6 +5,10 @@
     "totalSlides": 16,
     "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/11-Gemini-Notebook-in-Action.pdf",
     "firstMessage": "Welcome to Gemini Notebook in Action. Are you ready to begin?",
+      "apps": [
+    { "name": "NotebookLM", "url": "https://notebooklm.google.com/", "slides": [6, 7, 8, 9, 10, 11, 12] },
+    { "name": "ChatGPT", "url": "https://chatgpt.com/" }
+  ],
     "sections": [
       {
         "label": "Introduction and Context (slides 1-4)",
