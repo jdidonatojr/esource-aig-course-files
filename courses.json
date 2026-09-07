@@ -185,5 +185,38 @@
         "startSlide": 14
       }
     ]
+  },
+  "1060": {
+    "id": "j_f_pennebaker_employee_benefits_and_handbook",
+    "title": "J. F. Pennebaker Employee Benefits and Handbook",
+    "totalSlides": 23,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1060-J-F-Pennebaker-Employee-Benefits-and-Handbook.pdf",
+    "firstMessage": "Welcome to J. F. Pennebaker Employee Benefits and Handbook. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Employment Relationship Basics (slides 3-6)",
+        "startSlide": 3
+      },
+      {
+        "label": "Harassment, Discrimination, Retaliation (slides 7-13)",
+        "startSlide": 7
+      },
+      {
+        "label": "Pay, Classification, and Conduct (slides 14-18)",
+        "startSlide": 14
+      },
+      {
+        "label": "Safety, Leave, and Legal Rights (slides 19-21)",
+        "startSlide": 19
+      },
+      {
+        "label": "Course Completion (slides 22-23)",
+        "startSlide": 22
+      }
+    ]
   }
 }
