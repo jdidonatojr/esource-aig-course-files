@@ -220,35 +220,31 @@
     ]
   },
   "1070": {
-    "id": "board_viaion_and_mission_proposal",
-    "title": "Board Viaion and Mission Proposal",
+    "id": "board_vision_and_mission_proposal",
+    "title": "Board Vision and Mission Proposal",
     "totalSlides": 14,
-    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1070-Board-Viaion-and-Mission-Proposal.pdf",
-    "firstMessage": "Welcome to Board Viaion and Mission Proposal. Are you ready to begin?",
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1070-Board-Vision-and-Mission-Proposal.pdf",
+    "firstMessage": "Welcome to Board Vision and Mission Proposal. Are you ready to begin?",
     "sections": [
       {
-        "label": "Introduction and Problem Statement (slides 1-3)",
+        "label": "Introduction and Problem (slides 1-3)",
         "startSlide": 1
       },
       {
-        "label": "The Proposed Model (slides 4-5)",
+        "label": "The Proposed Model (slides 4-6)",
         "startSlide": 4
       },
       {
-        "label": "Action Learning in Practice (slides 6-8)",
-        "startSlide": 6
+        "label": "Implementation in Practice (slides 7-10)",
+        "startSlide": 7
       },
       {
-        "label": "Organizing Structure and Roles (slides 9-10)",
-        "startSlide": 9
-      },
-      {
-        "label": "Sustainability and Influence (slides 11-12)",
+        "label": "Sustainability and Growth (slides 11-13)",
         "startSlide": 11
       },
       {
-        "label": "Implementation and Alignment (slides 13-14)",
-        "startSlide": 13
+        "label": "Alignment and Decision (slide 14)",
+        "startSlide": 14
       }
     ]
   }
