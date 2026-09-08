@@ -227,24 +227,28 @@
     "firstMessage": "Welcome to Board Vision and Mission Proposal. Are you ready to begin?",
     "sections": [
       {
-        "label": "Introduction and Problem (slides 1-3)",
+        "label": "Introduction and Reframing (slides 1-3)",
         "startSlide": 1
       },
       {
-        "label": "The Proposed Model (slides 4-6)",
+        "label": "The Proposed Model (slides 4-5)",
         "startSlide": 4
       },
       {
-        "label": "Implementation in Practice (slides 7-10)",
-        "startSlide": 7
+        "label": "Action Learning in Practice (slides 6-8)",
+        "startSlide": 6
       },
       {
-        "label": "Sustainability and Growth (slides 11-13)",
-        "startSlide": 11
+        "label": "Organizing Through SIGs (slides 9-11)",
+        "startSlide": 9
       },
       {
-        "label": "Alignment and Decision (slide 14)",
-        "startSlide": 14
+        "label": "From Projects to Influence (slide 12)",
+        "startSlide": 12
+      },
+      {
+        "label": "Implementation Path Forward (slides 13-14)",
+        "startSlide": 13
       }
     ]
   }
