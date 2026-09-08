@@ -251,5 +251,30 @@
         "startSlide": 13
       }
     ]
+  },
+  "1080": {
+    "id": "esource_ai_execution_gap",
+    "title": "ESource AI Execution Gap",
+    "totalSlides": 8,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1080-ESource-AI-Execution-Gap.pdf",
+    "firstMessage": "Welcome to ESource AI Execution Gap. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Context (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "ESource Solution Model (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "Diagnostic and Discovery Process (slides 6-7)",
+        "startSlide": 6
+      },
+      {
+        "label": "Getting Started (slide 8)",
+        "startSlide": 8
+      }
+    ]
   }
 }
