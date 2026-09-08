@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — Board Vision and Mission Proposal",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "According to the AILA proposal, what is the three-step mastery loop that forms the North Star of the new model?",
+      "choices": [
+        "Read → Discuss → Implement",
+        "Learn → Apply → Teach Back",
+        "Plan → Execute → Evaluate",
+        "Consume → Complete → Reflect"
+      ],
+      "answer": 1,
+      "slide": 5,
+      "feedback_correct": "Exactly right—Learn → Apply → Teach Back is the repeatable cycle that keeps knowledge active and connected to real work.",
+      "feedback_incorrect": "While some of these steps sound similar, the proposal specifically names Learn → Apply → Teach Back as the North Star. Each step serves a distinct purpose in deepening mastery."
+    },
+    {
+      "question": "What is the core difference between the traditional course-first model and the problem-first model described in the proposal?",
+      "choices": [
+        "Course-first is self-paced while problem-first is instructor-led",
+        "Course-first teaches concepts in isolation and hopes knowledge transfers later; problem-first brings real workplace challenges into the learning itself",
+        "Course-first is cheaper and problem-first is more expensive",
+        "Course-first uses online content while problem-first uses only in-person workshops"
+      ],
+      "answer": 1,
+      "slide": 3,
+      "feedback_correct": "You've captured the heart of the shift—passive, isolated learning rarely sticks, but learning anchored to an immediate real challenge is far more likely to transfer and be retained.",
+      "feedback_incorrect": "The proposal contrasts these two on the basis of how learning is connected to work, not on delivery method or cost. Review Slide 3 to see how the two approaches differ in their relationship to real problems."
+    },
+    {
+      "question": "In the Ken Smith Canon example, what specific workplace challenge did he focus on using AI?",
+      "choices": [
+        "Automating customer service responses",
+        "Improving team communication processes",
+        "Reducing data entry workload through automation",
+        "Creating better project management workflows"
+      ],
+      "answer": 2,
+      "slide": 7,
+      "feedback_correct": "Yes—Ken's team was spending too much time on manual data entry, so he focused his AI learning on solving that specific bottleneck rather than studying AI in the abstract.",
+      "feedback_incorrect": "The Canon case study shows how action learning works when you start with a real job challenge. Review Slide 7 to see what specific workflow problem Ken tackled."
+    },
+    {
+      "question": "What does the proposal identify as the primary qualification for someone to become a SIG convener?",
+      "choices": [
+        "Advanced technical expertise in AI and machine learning",
+        "Previous experience leading large-scale projects",
+        "Domain context and understanding of the problem area",
+        "Board-level approval and formal certification"
+      ],
+      "answer": 2,
+      "slide": 10,
+      "feedback_correct": "Correct—the convener's strength is their deep knowledge of the domain and the challenge, not necessarily their AI technical skills. The Board provides the AI support.",
+      "feedback_incorrect": "The proposal deliberately shifts away from requiring deep technical expertise for conveners. What matters most is that the convener understands the problem domain and can articulate what the team is trying to solve."
+    },
+    {
+      "question": "According to the proposal, what is the main purpose of the 'Teach Back' step in the mastery loop?",
+      "choices": [
+        "To give members a chance to teach formal classes to other participants",
+        "To turn experience into credible evidence rather than just anecdotes, and to force the member to clarify their own understanding",
+        "To satisfy a requirement that all members must present their work",
+        "To reduce the Board's workload by having members handle training"
+      ],
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "Exactly—Teach Back serves two critical functions: it deepens the learner's own mastery through explanation, and it transforms individual experience into structured, shareable evidence.",
+      "feedback_incorrect": "Teach Back is not just a presentation requirement or a way to reduce Board work. It's a learning mechanism that solidifies understanding and generates credible material. See Slide 8 for how this step changes both the member's learning and AILA's knowledge base."
+    },
+    {
+      "question": "Why does the proposal emphasize that SIGs should be optional rather than mandatory?",
+      "choices": [
+        "Because it reduces costs and overhead for the organization",
+        "Because members might feel overwhelmed by too many choices",
+        "Because high-quality collaboration flows from shared genuine interest and willingness to contribute, not obligation",
+        "Because mandatory groups tend to attract competitive rather than cooperative members"
+      ],
+      "answer": 2,
+      "slide": 11,
+      "feedback_correct": "You've grasped the philosophy—voluntary participation ensures that people in a SIG are truly invested in the problem, which creates better collaboration and stronger work.",
+      "feedback_incorrect": "While costs and member experience matter, the core reason optional design is a strength is about the quality of collaboration that emerges when people choose to participate. Voluntary participation attracts intrinsic motivation."
+    },
+    {
+      "question": "What is the strategic shift that AILA is proposing to make according to Slide 4?",
+      "choices": [
+        "From in-person workshops to fully remote learning",
+        "From a learning provider that delivers courses to a progress ecosystem where members apply learning and stay connected",
+        "From Board-led instruction to peer-to-peer mentoring only",
+        "From AI training to general business consulting"
+      ],
+      "answer": 1,
+      "slide": 4,
+      "feedback_correct": "Perfect—the shift is fundamental: from AILA as a course factory to AILA as an ecosystem where learning, application, and community reinforce each other.",
+      "feedback_incorrect": "The proposal is about a deeper change in AILA's role and value proposition. It's not just a delivery method change, but a fundamental shift in how members interact with the organization and each other."
+    },
+    {
+      "question": "Based on the proposal, how might a high-quality SIG project eventually influence broader organizational or industry practice?",
+      "choices": [
+        "Members from the SIG present findings at internal company meetings",
+        "The Board requires all other SIGs to adopt the same approach",
+        "Selected project work becomes credible evidence that can develop into guides, papers, events, and eventually influence standards",
+        "The project is published immediately as a course module for all AILA members"
+      ],
+      "answer": 2,
+      "slide": 12,
+      "feedback_correct": "Right—Slide 12 shows a clear pathway: project → credible evidence → guide or paper → events and convening → standards and influence. This is how SIG work becomes thought leadership.",
+      "feedback_incorrect": "The proposal lays out a deliberate escalation path for turning strong SIG work into broader influence. Review Slide 12 to see how projects can grow from local problem-solving into organizational and industry guidance."
+    },
+    {
+      "question": "What key insight about member motivation does the proposal emphasize at the very beginning (Slide 2)?",
+      "choices": [
+        "Members want as many course options as possible to choose from",
+        "Members are primarily motivated by certification and credentials",
+        "Members do not ask 'Which course should I take?' but rather 'What do I need AI to help me do now?'",
+        "Members prefer learning in groups rather than independently"
+      ],
+      "answer": 2,
+      "slide": 2,
+      "feedback_correct": "Exactly—this reframing of the member question is foundational to the entire proposal. It shifts focus from learning as content consumption to learning as a tool for solving real problems.",
+      "feedback_incorrect": "The proposal begins by reframing the fundamental question members ask. It's not about course selection or credentials, but about connecting learning directly to a real, immediate need. This insight drives all the subsequent design choices."
+    },
+    {
+      "question": "According to the proposed Path Forward, what is the logical sequence for rolling out this new model?",
+      "choices": [
+        "Launch all SIGs immediately, then listen to member feedback, then expand",
+        "Implement mandatory training for all Board members, then open to general membership",
+        "Listen and invite, add a few initial SIGs with support, then systematically expand based on learning",
+        "Pilot with the largest department first, then scale across the organization"
+      ],
+      "answer": 2,
+      "slide": 13,
+      "feedback_correct": "Yes—the proposal explicitly calls for a disciplined, phased approach: listen to understand what members care about, launch a limited set to learn and refine, then expand thoughtfully.",
+      "feedback_incorrect": "The proposal emphasizes a disciplined rollout rather than a big bang launch. Review Slide 13 to see how phases build on each other: listening informs which SIGs to start, early support informs how to scale."
+    }
+  ]
+}
