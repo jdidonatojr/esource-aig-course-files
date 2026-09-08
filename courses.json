@@ -220,35 +220,27 @@
     ]
   },
   "1070": {
-    "id": "aila_board_master_overview_for_new_vision_and_mission",
-    "title": "AILA Board Master Overview for New Vision and Mission",
+    "id": "aila_board_master_ai_by_solving_job_bottlenecks",
+    "title": "AILA Board Master AI by Solving Job Bottlenecks",
     "totalSlides": 14,
-    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1070-AILA-Board-Master-Overview-for-New-Vision-and-Mission.pdf",
-    "firstMessage": "Welcome to AILA Board Master Overview for New Vision and Mission. Are you ready to begin?",
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1070-AILA-Board-Master-AI-by-Solving-Job-Bottlenecks.pdf",
+    "firstMessage": "Welcome to AILA Board Master AI by Solving Job Bottlenecks. Are you ready to begin?",
     "sections": [
       {
-        "label": "The Case for Change (slides 1-3)",
+        "label": "Introduction and Vision (slides 1-4)",
         "startSlide": 1
       },
       {
-        "label": "The Proposed Model (slides 4-6)",
-        "startSlide": 4
+        "label": "The Mastery Loop Framework (slides 5-8)",
+        "startSlide": 5
       },
       {
-        "label": "How It Works (slides 7-8)",
-        "startSlide": 7
-      },
-      {
-        "label": "Organizing with SIGs (slides 9-10)",
+        "label": "Organizing Through SIGs (slides 9-11)",
         "startSlide": 9
       },
       {
-        "label": "Sustainability and Scale (slides 11-12)",
-        "startSlide": 11
-      },
-      {
-        "label": "Implementation and Alignment (slides 13-14)",
-        "startSlide": 13
+        "label": "Scaling Impact and Influence (slides 12-14)",
+        "startSlide": 12
       }
     ]
   }
