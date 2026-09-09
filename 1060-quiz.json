@@ -6,134 +6,121 @@
   },
   "questions": [
     {
-      "question": "Who should you contact at J. F. Pennebaker Co. for policy questions, concerns, or accommodation requests?",
+      "question": "Who is the primary HR contact at J. F. Pennebaker Co. for policy questions and concerns?",
       "choices": [
         "Your direct supervisor",
         "Melissa Massey",
         "The company CEO",
-        "The legal department"
+        "Any member of management"
       ],
       "answer": 1,
       "slide": 6,
-      "feedback_correct": "That's right — Melissa Massey is your primary HR contact for any policy question, concern, or accommodation request.",
-      "feedback_incorrect": "While your supervisor is important, Melissa Massey in HR is the designated first point of contact for policy questions, concerns, and accommodations. Her email is m.massey@johnpennebaker.com and her number is 678-546-8858."
+      "feedback_correct": "That's right—Melissa Massey is your first point of contact for any policy question, concern, or accommodation request.",
+      "feedback_incorrect": "While supervisors and other managers are available, Melissa Massey is specifically identified as the primary HR contact you should reach out to first."
     },
     {
-      "question": "What does it mean that employment at J. F. Pennebaker Co. is at-will?",
+      "question": "What does \"at-will employment\" mean at J. F. Pennebaker Co.?",
       "choices": [
+        "The company must provide a reason before terminating an employee",
+        "Either you or the company can end the employment relationship at any time, for any reason or no reason, with or without notice",
         "You are guaranteed employment for at least one year",
-        "The handbook serves as a binding employment contract",
-        "Either you or the company may end employment at any time, for any reason or no reason, with or without notice",
-        "You must give two weeks' notice before leaving"
+        "An employee can only be fired for violating a handbook policy"
+      ],
+      "answer": 1,
+      "slide": 3,
+      "feedback_correct": "Exactly—at-will employment goes both ways, and neither party needs cause or advance notice to end the relationship.",
+      "feedback_incorrect": "At-will employment means either party can end the relationship at any time for any reason or no reason at all. No advance notice or cause is required."
+    },
+    {
+      "question": "Which of the following is NOT a protected category under J. F. Pennebaker Co.'s equal opportunity policy?",
+      "choices": [
+        "Military or veteran status",
+        "Sexual orientation",
+        "Marital status",
+        "Disability"
       ],
       "answer": 2,
-      "slide": 3,
-      "feedback_correct": "Correct — at-will employment means either party can end the relationship at any time, for any reason or no reason, with or without advance notice, and that goes both ways.",
-      "feedback_incorrect": "At-will employment is a two-way street. It means the company can separate from you without cause or notice, and you can leave whenever you choose. No manager, handbook language, or verbal promise can change this."
-    },
-    {
-      "question": "Which of the following is a protected category under J. F. Pennebaker Co.'s equal opportunity employment policy?",
-      "choices": [
-        "Job title preference",
-        "Sexual orientation",
-        "Prior work experience",
-        "Geographic location"
-      ],
-      "answer": 1,
       "slide": 5,
-      "feedback_correct": "Exactly — sex, which includes sexual orientation and gender identity, is a protected category covered by the company's equal opportunity policy.",
-      "feedback_incorrect": "Protected categories are specific statuses that cannot be a basis for employment decisions. Sexual orientation falls under sex, making it a protected category. Job title preference, prior work experience, and geographic location are not protected categories."
+      "feedback_correct": "Correct—while the company protects many categories, marital status is not listed among the protected categories in the handbook.",
+      "feedback_incorrect": "The company's protected categories include race, color, religion, national origin, sex (including sexual orientation and gender identity), age 40+, disability, genetic information, military/veteran status, and other statuses protected by law. Marital status is not among them."
     },
     {
-      "question": "What is the difference between quid pro quo harassment and hostile work environment harassment?",
+      "question": "What is the key difference between quid pro quo harassment and hostile work environment harassment?",
       "choices": [
-        "Quid pro quo involves a benefit or threat in exchange for sexual attention, while hostile work environment is unwelcome conduct based on a protected class that is severe or pervasive",
-        "They are the same thing, just with different names",
-        "Hostile work environment always involves a manager, while quid pro quo can come from anyone",
-        "Quid pro quo is illegal, but hostile work environment is only against company policy"
+        "Quid pro quo harassment is only illegal if it results in termination, while hostile work environment is always illegal",
+        "Quid pro quo involves an exchange of a benefit or threat for sexual attention, while hostile work environment is unwelcome conduct based on a protected class that is severe or pervasive enough to interfere with work",
+        "Hostile work environment can only come from a supervisor, while quid pro quo can come from anyone",
+        "Quid pro quo harassment must be reported immediately, while hostile work environment can be reported later"
       ],
-      "answer": 0,
+      "answer": 1,
       "slide": 8,
-      "feedback_correct": "That's the key distinction — quid pro quo is something-for-something (benefit or threat), while hostile work environment is severe or pervasive unwelcome conduct based on protected status.",
-      "feedback_incorrect": "These are two distinct types of sexual harassment. Quid pro quo means a benefit is offered or a threat is made in exchange for sexual attention. Hostile work environment is unwelcome conduct based on a protected class that is severe or pervasive enough to interfere with work."
+      "feedback_correct": "You've got it—quid pro quo is about an exchange (something for something), while hostile work environment is about unwelcome conduct based on a protected class that is severe or pervasive.",
+      "feedback_incorrect": "Quid pro quo harassment specifically involves offering a benefit or making a threat in exchange for sexual attention. Hostile work environment is different—it's about unwelcome conduct based on a protected class that is severe or pervasive enough to interfere with work."
     },
     {
-      "question": "What should you do if you need to report a concern and the person involved is your direct supervisor?",
+      "question": "What is your protection status if you participate in an investigation into someone else's discrimination complaint?",
       "choices": [
-        "Report to your supervisor anyway, so they know what you are saying",
-        "Skip your supervisor and go directly to another manager or Melissa Massey",
-        "Wait to see if the situation improves on its own before reporting",
-        "File a written complaint with corporate headquarters"
-      ],
-      "answer": 1,
-      "slide": 10,
-      "feedback_correct": "Right — if your complaint involves your direct supervisor, you skip that person entirely and go straight to another manager or to Melissa Massey.",
-      "feedback_incorrect": "The procedure is clear: if your supervisor is the subject of your complaint, do not report to them. Go directly to another manager or to Melissa Massey instead. This ensures your report is handled impartially."
-    },
-    {
-      "question": "Your employment classification is Part-Time Non-Exempt. Which of the following statements is true for you?",
-      "choices": [
-        "You work fewer than 40 hours per week and are not eligible for overtime pay",
-        "You work 40 or more hours per week and receive company benefits",
-        "You were hired for a specific task with no fixed end date",
-        "You work fewer than 40 hours per week but are eligible for overtime pay"
-      ],
-      "answer": 3,
-      "slide": 14,
-      "feedback_correct": "Correct — Part-Time Non-Exempt employees work fewer than 40 hours per week but are still eligible for overtime, though they generally do not receive company benefits.",
-      "feedback_incorrect": "Part-Time Non-Exempt means you work fewer than 40 hours per week. However, because you are non-exempt, you are still eligible for overtime pay. You generally do not receive company benefits in this classification."
-    },
-    {
-      "question": "The handbook states that unused vacation time is not paid out upon separation. Can the handbook be changed to guarantee a payout instead?",
-      "choices": [
-        "Yes, the handbook is a binding contract and cannot be changed without employee approval",
-        "No, the handbook is a set of guidelines that may be updated at any time by the company",
-        "Only if the CEO agrees in writing",
-        "Only if every employee signs a petition requesting the change"
-      ],
-      "answer": 1,
-      "slide": 4,
-      "feedback_correct": "That's right — the handbook is a set of guidelines, not a contract. The company may update, change, or remove policies at any time.",
-      "feedback_incorrect": "The handbook is not a contract and does not guarantee any specific benefit. The company may update or change policies at any time. When written changes are made, they are distributed to all employees, but the company has the authority to make those changes unilaterally."
-    },
-    {
-      "question": "You witness a coworker using threatening language toward another employee based on the coworker's race. You report this to Melissa Massey and participate in the investigation. Can the company retaliate against you for reporting and participating?",
-      "choices": [
-        "Yes, if the investigation ultimately does not find a violation",
-        "Yes, if your report was not detailed enough",
-        "No, reporting discrimination and participating in an investigation are both protected conduct",
-        "No, but only if you file the report in writing"
+        "You are not protected because you were not the person harassed",
+        "You are only protected if the investigation finds that a violation occurred",
+        "You are protected regardless of whether the investigation finds a violation",
+        "You have no protection unless you file your own complaint"
       ],
       "answer": 2,
       "slide": 9,
-      "feedback_correct": "Exactly — reporting discrimination and participating in an investigation are protected conduct. The protection applies regardless of whether the investigation ultimately finds a violation.",
-      "feedback_incorrect": "Retaliation for reporting a concern or participating in an investigation is prohibited. This protection applies whether or not the investigation ultimately finds a violation occurred. The only exception is if someone knowingly files a false report in bad faith."
+      "feedback_correct": "Absolutely—participating in an investigation is protected conduct, and that protection applies regardless of the investigation's outcome.",
+      "feedback_incorrect": "Participating in an investigation is protected by company policy whether or not a violation is found. The company's protection covers the act of participation itself, not just the result."
     },
     {
-      "question": "You are a Full-Time Non-Exempt employee and you finish an urgent task five minutes after your shift ends, but you do not record those five minutes. Your manager says it is fine because the task was important. What should you do?",
+      "question": "Based on the employment classifications described, which classification would give you company benefits but NOT eligibility for overtime pay?",
       "choices": [
-        "Accept your manager's decision and continue this practice when urgent tasks arise",
-        "Record all hours you worked, including the five minutes, because working off the clock is never permitted",
-        "Report your manager for wage theft",
-        "Ask Melissa Massey for permission to work off the clock"
+        "Full-Time Non-Exempt",
+        "Part-Time Non-Exempt",
+        "Temporary",
+        "Exempt"
       ],
-      "answer": 1,
-      "slide": 15,
-      "feedback_correct": "Correct — working off the clock is never permitted, regardless of the reason. If you work it, you must record it and get paid for it.",
-      "feedback_incorrect": "Working off the clock is never permitted—not because a manager asked you to, not because you wanted to finish something, not for any reason. If you work those five minutes, you must record them. No exception exists, even for important tasks."
+      "answer": 3,
+      "slide": 14,
+      "feedback_correct": "Right—Exempt employees receive company benefits but are not eligible for overtime pay. Full-Time Non-Exempt gets both benefits and overtime; Part-Time Non-Exempt gets overtime but not benefits; Temporary gets neither.",
+      "feedback_incorrect": "Review the four classifications: Full-Time Non-Exempt gets overtime and benefits, Part-Time Non-Exempt gets overtime but not benefits, Temporary gets neither, and Exempt gets benefits but not overtime."
     },
     {
-      "question": "You discover that your company email is being monitored by management. Under J. F. Pennebaker Co. policy, what should be your expectation about company systems and privacy?",
+      "question": "You believe your supervisor has violated a company policy, but you're unsure if it's serious enough to file a formal complaint. What should you do?",
       "choices": [
-        "Company email and systems are private, and monitoring is only allowed with your written permission",
-        "Company systems are not private and may be monitored at any time for any reason",
-        "Monitoring is only allowed during work hours, not after 5 p.m.",
-        "Only your direct supervisor can monitor company systems, not other managers"
+        "Wait and see if the behavior happens again before reporting",
+        "Discuss it only with coworkers first to get their opinion",
+        "Reach out to Melissa Massey to talk through it, even if you're unsure",
+        "Report it to a different supervisor without contacting HR first"
+      ],
+      "answer": 2,
+      "slide": 11,
+      "feedback_correct": "Exactly—Melissa Massey welcomes conversations about uncertain situations. You can reach out just to talk through it without necessarily filing a formal complaint.",
+      "feedback_incorrect": "The course notes specifically state that if you're unsure whether something rises to the level of a formal complaint, you can reach out to Melissa Massey just to talk through it. She's the right person to call."
+    },
+    {
+      "question": "Your company handbook states that all employees must keep company matters confidential. Can this policy legally prevent you from discussing wages with coworkers?",
+      "choices": [
+        "Yes, because confidentiality policies override all other rights",
+        "Yes, but only if you sign an agreement acknowledging the policy",
+        "No, because Section 7 of the National Labor Relations Act protects your right to discuss wages, hours, and working conditions",
+        "No, but only if you are a union member"
+      ],
+      "answer": 2,
+      "slide": 17,
+      "feedback_correct": "Perfect—Section 7 NLRA rights cannot be taken away by any company policy, and no nondisclosure agreement can legally restrict them.",
+      "feedback_incorrect": "Section 7 of the National Labor Relations Act gives every employee the right to discuss wages, hours, and working conditions with coworkers. No company policy, handbook, or nondisclosure agreement can legally remove or limit these rights."
+    },
+    {
+      "question": "You report a concern about workplace safety to your supervisor, and shortly after, you notice you're being assigned worse shifts and excluded from team meetings. What should you do, and why?",
+      "choices": [
+        "Accept the new assignments because you are at-will and the company can change your conditions anytime",
+        "Report the situation immediately to Melissa Massey as potential retaliation, because reporting concerns is protected conduct",
+        "Wait to see if the pattern continues before taking action",
+        "File a complaint with another supervisor instead of HR"
       ],
       "answer": 1,
-      "slide": 16,
-      "feedback_correct": "That's right — your work computer, company email, and company communications tools are not private. The company may monitor them at any time and for any reason.",
-      "feedback_incorrect": "Company systems have no privacy expectation. Your work computer, email, and all company communications tools may be monitored at any time and for any reason. Use them for business purposes only."
+      "slide": 9,
+      "feedback_correct": "Correct—reporting a concern is protected conduct, and retaliation for that report is prohibited. You should contact Melissa Massey right away.",
+      "feedback_incorrect": "Reporting a concern is protected conduct, and the company will not tolerate retaliation from anyone. Changes in your schedule or team participation following your report could constitute retaliation and should be reported to Melissa Massey immediately."
     }
   ]
 }
