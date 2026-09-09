@@ -280,33 +280,29 @@
   "1090": {
     "id": "esource_sales_channel_partner_program",
     "title": "ESource Sales Channel Partner Program",
-    "totalSlides": 10,
+    "totalSlides": 14,
     "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1090-ESource-Sales-Channel-Partner-Program.pdf",
     "firstMessage": "Welcome to ESource Sales Channel Partner Program. Are you ready to begin?",
     "sections": [
       {
-        "label": "Introduction and Trust (slides 1-2)",
+        "label": "Introduction and Problem Statement (slides 1-2)",
         "startSlide": 1
       },
       {
-        "label": "Company Structure and Authority (slides 3-5)",
+        "label": "The Two-Business Model (slides 3-5)",
         "startSlide": 3
       },
       {
-        "label": "Compliance Requirements (slide 6)",
+        "label": "Routing and Discovery Framework (slides 6-8)",
         "startSlide": 6
       },
       {
-        "label": "Authority in Practice (slide 7)",
-        "startSlide": 7
+        "label": "Partner Authority and Boundaries (slides 9-11)",
+        "startSlide": 9
       },
       {
-        "label": "Discovery and Routing (slides 8-9)",
-        "startSlide": 8
-      },
-      {
-        "label": "Certification Summary (slide 10)",
-        "startSlide": 10
+        "label": "Practice and Application (slides 12-14)",
+        "startSlide": 12
       }
     ]
   }
