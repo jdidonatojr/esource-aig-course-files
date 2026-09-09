@@ -193,5 +193,46 @@
         "startSlide": 12
       }
     ]
+  },
+  "1090": {
+    "id": "esource_sales_channel_partner_program",
+    "title": "ESource Sales Channel Partner Program",
+    "totalSlides": 14,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/ESource-Sales-Channel-Partner-Program.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting ESource Sales Channel Partner Program. Sit back and enjoy — I'll move us through the slides. If you have a question at any point, just raise your hand using the hand button, or simply start speaking.",
+    "sections": [
+      {
+        "label": "Introduction and Program Model (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "Routing Fundamentals (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "Routing Practice (slide 6)",
+        "startSlide": 6
+      },
+      {
+        "label": "Discovery and Process (slides 7-8)",
+        "startSlide": 7
+      },
+      {
+        "label": "Partner Authority and Expectations (slides 9-10)",
+        "startSlide": 9
+      },
+      {
+        "label": "Language and Compliance (slide 11)",
+        "startSlide": 11
+      },
+      {
+        "label": "Discovery Practice (slide 12)",
+        "startSlide": 12
+      },
+      {
+        "label": "Readiness and Next Steps (slides 13-14)",
+        "startSlide": 13
+      }
+    ]
   }
 }
