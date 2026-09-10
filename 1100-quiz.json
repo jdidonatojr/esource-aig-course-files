@@ -1,0 +1,126 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — GT APEX Accelerator Services",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "Who is the counselor presenting Georgia Tech APEX Accelerator services?",
+      "choices": [
+        "Dave Hepner",
+        "Sarah Mitchell",
+        "Robert Chen",
+        "Emily Johnson"
+      ],
+      "answer": 0,
+      "slide": 1,
+      "feedback_correct": "That's correct! Dave Hepner is the counselor for the Georgia Tech APEX Accelerator.",
+      "feedback_incorrect": "The presenter's name appears on the title slide. Dave Hepner is the counselor leading this presentation on GT APEX Accelerator services."
+    },
+    {
+      "question": "What is the website for Georgia Tech APEX Accelerator?",
+      "choices": [
+        "www.gtpac.org",
+        "www.gtapexaccelerator.org",
+        "www.ei2.gatech.edu",
+        "www.georgia-tech-apex.org"
+      ],
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "Excellent! gtapexaccelerator.org is the official website for the Georgia Tech APEX Accelerator program.",
+      "feedback_incorrect": "The correct website is gtapexaccelerator.org. While gtpac.org is mentioned in the course, it refers to the Procurement Assistance Center, not the APEX Accelerator site."
+    },
+    {
+      "question": "Which U.S. government department oversees the APEX Accelerator program?",
+      "choices": [
+        "Department of Commerce",
+        "Department of Labor",
+        "Department of Defense",
+        "Department of Energy"
+      ],
+      "answer": 2,
+      "slide": 8,
+      "feedback_correct": "That's right! The APEX Accelerator falls under the Department of Defense Office of Small Business Programs.",
+      "feedback_incorrect": "The APEX Accelerator is part of the Department of Defense Office of Small Business Programs, not the other departments listed. This is an important distinction for understanding the program's focus."
+    },
+    {
+      "question": "What was the Georgia Tech APEX Accelerator formerly named?",
+      "choices": [
+        "Procurement Assistance Center",
+        "PTAC",
+        "Small Business Accelerator",
+        "Georgia Tech Enterprise Services"
+      ],
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "Correct! The program was formerly known as PTAC (Procurement Assistance Center) before being renamed to APEX Accelerator.",
+      "feedback_incorrect": "The program's previous name was PTAC. Understanding this helps connect it to its historical roots while recognizing its current mission and expanded services."
+    },
+    {
+      "question": "How many programs does the Enterprise Innovation Institute include?",
+      "choices": [
+        "More than five programs",
+        "More than nine programs",
+        "More than twelve programs",
+        "More than fifteen programs"
+      ],
+      "answer": 1,
+      "slide": 6,
+      "feedback_correct": "Perfect! The Enterprise Innovation Institute has more than nine programs under its umbrella.",
+      "feedback_incorrect": "According to the course materials, the EI2 includes more than nine programs. This demonstrates the breadth of Georgia Tech's economic development initiatives."
+    },
+    {
+      "question": "According to the slides, what role does the Enterprise Innovation Institute play within Georgia Tech?",
+      "choices": [
+        "It manages the university's research laboratories",
+        "It serves as Georgia Tech's economic development arm",
+        "It oversees all student entrepreneurship clubs",
+        "It handles the university's marketing and communications"
+      ],
+      "answer": 1,
+      "slide": 6,
+      "feedback_correct": "That's correct! The Enterprise Innovation Institute (EI2) is Georgia Tech's economic development arm.",
+      "feedback_incorrect": "The EI2 specifically functions as Georgia Tech's economic development arm, positioning it as a key bridge between the university and Georgia's economy."
+    },
+    {
+      "question": "Which of the following is one of the programs under the Enterprise Innovation Institute?",
+      "choices": [
+        "VentureLab and ATDC",
+        "International Trade Commission",
+        "Federal Small Business Administration Direct Lending",
+        "State Department Export Services"
+      ],
+      "answer": 0,
+      "slide": 7,
+      "feedback_correct": "Excellent! Both VentureLab and ATDC are programs listed under the Enterprise Innovation Institute.",
+      "feedback_incorrect": "VentureLab and ATDC are both EI2 programs. The other options are external government programs, not part of Georgia Tech's Enterprise Innovation Institute."
+    },
+    {
+      "question": "Based on the course content, what can be inferred about the Georgia Tech APEX Accelerator's primary focus?",
+      "choices": [
+        "Supporting early-stage technology startups in the consumer market",
+        "Providing defense and government contracting assistance to small businesses",
+        "Training military personnel in business management",
+        "Investing venture capital in high-growth companies"
+      ],
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "That's right! Since the APEX Accelerator operates under the Department of Defense Office of Small Business Programs, its primary focus is on helping small businesses with defense and government contracting.",
+      "feedback_incorrect": "Understanding that the APEX Accelerator is part of the Department of Defense's small business office indicates its specialized focus on government and defense contracting, not general startup acceleration or venture capital."
+    },
+    {
+      "question": "How does the Enterprise Innovation Institute's status as 'the largest university-based program of its kind' relate to Georgia Tech's mission?",
+      "choices": [
+        "It demonstrates Georgia Tech's competitive advantage in research rankings",
+        "It shows Georgia Tech's commitment to comprehensive economic development support beyond typical university boundaries",
+        "It proves Georgia Tech has more funding than other universities",
+        "It indicates Georgia Tech prioritizes corporate partnerships over education"
+      ],
+      "answer": 1,
+      "slide": 6,
+      "feedback_correct": "Exactly! This distinction reflects Georgia Tech's commitment to providing extensive economic development outreach and supporting Georgia's economy in meaningful ways.",
+      "feedback_incorrect": "The significance of being the largest program of its kind is that it demonstrates Georgia Tech's comprehensive approach to economic development, going well beyond what typical universities offer in this space."
+    }
+  ]
+}
