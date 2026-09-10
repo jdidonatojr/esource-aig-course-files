@@ -305,5 +305,34 @@
         "startSlide": 12
       }
     ]
+  },
+  "1100": {
+    "id": "gt_apex_accelerator_services",
+    "title": "GT APEX Accelerator Services",
+    "totalSlides": 15,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1100-GT-APEX-Accelerator-Services.pdf",
+    "firstMessage": "Welcome to GT APEX Accelerator Services. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Welcome (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "Organization Overview (slides 4-7)",
+        "startSlide": 4
+      },
+      {
+        "label": "GT APEX Accelerator Services (slides 8-11)",
+        "startSlide": 8
+      },
+      {
+        "label": "Support and Resources (slides 12-13)",
+        "startSlide": 12
+      },
+      {
+        "label": "Q&A and Closing (slides 14-15)",
+        "startSlide": 14
+      }
+    ]
   }
 }
