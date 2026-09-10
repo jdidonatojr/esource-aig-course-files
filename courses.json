@@ -318,19 +318,15 @@
         "startSlide": 1
       },
       {
-        "label": "Organization Overview (slides 4-7)",
+        "label": "EI2 and APEX Overview (slides 4-8)",
         "startSlide": 4
       },
       {
-        "label": "GT APEX Accelerator Services (slides 8-11)",
-        "startSlide": 8
+        "label": "Services and Assistance (slides 9-13)",
+        "startSlide": 9
       },
       {
-        "label": "Support and Resources (slides 12-13)",
-        "startSlide": 12
-      },
-      {
-        "label": "Q&A and Closing (slides 14-15)",
+        "label": "Closing and Contact (slides 14-15)",
         "startSlide": 14
       }
     ]
