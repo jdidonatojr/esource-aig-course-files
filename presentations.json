@@ -234,5 +234,30 @@
         "startSlide": 13
       }
     ]
+  },
+  "8": {
+    "id": "esource_ai_execution_gap",
+    "title": "ESource AI Execution Gap",
+    "totalSlides": 8,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/ESource-AI-Execution-Gap.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting ESource AI Execution Gap. I'll check in with you before each slide — just say yes when you're ready to move on. If you have a question at any point, raise your hand or simply start speaking. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "The Problem (slides 3-4)",
+        "startSlide": 3
+      },
+      {
+        "label": "The Solution (slides 5-7)",
+        "startSlide": 5
+      },
+      {
+        "label": "Closing (slide 8)",
+        "startSlide": 8
+      }
+    ]
   }
 }
