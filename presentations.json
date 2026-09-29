@@ -1,1721 +1,263 @@
-<!-- =====================================================
-     ESOURCE AI GROUP — PRESENTER PAGE (/presenter-aig/)  v3.1
-     Presentation player on the Bill Evans presenter agent.
-     Reads ?course=N; list from esource-aig-course-files/presentations.json
-     v3.3: LANGUAGE GATE.
-     - A centered chooser over a grayed-out screen appears before
-       the welcome video. One choice sets: Bill's greeting, Bill's
-       spoken language, the slide translations, AND the welcome
-       video's subtitles (Vimeo texttrack), then plays the video.
-     - Subtitles only appear for languages already generated on the
-       video in Vimeo (one-time job per video).
-     Carried from v3.2: self-healing flow, voice-timed slide turns,
-     live transcript with duplicate filtering.
-     v4.0: EVENT-DRIVEN slide turns — deadlock-proof owed-turn queue.
-     v4.1: the end-of-voice event must HOLD 1.2s (audio-chunk blips
-     cancel it); the self-healer only sends [CONTINUE] and never turns
-     pages itself — one advance_slide call = exactly one turn.
-     v5.0: CONFIRMED FLOW — same mechanism as the teacher pages. Bill
-     asks, the listener confirms (any language), advance_slide turns the
-     screen INSTANTLY, and Bill presents the slide the tool reply names.
-     No queue, no settle timers. Slide-1 guard: early advance calls are
-     ignored for the first 8 seconds. Pause = simply not confirming
-     (plus the prompt's pause rule); hand-raise unchanged.
-     v5.2: the greeting itself ends with "Are you ready to begin?" —
-     no [BEGIN PRESENTATION] signal, no waiting; the listener's answer
-     starts the deck. (Greeting text lives in presentations.json.)
-     v5.3: slide-1 guard is state-based — while on slide 1, advance_slide
-     is refused until Bill has spoken twice (greeting + slide-1 delivery),
-     so the first "yes" can never skip slide 1.
-     v5.4: Pause/Resume button — pauses WITHOUT ending the session (Bill's
-     audio to zero + mic muted + stay-silent note); Resume restores both
-     and Bill continues on the same slide with his memory intact.
-     Requires the v2.0 prompt (PRESENTING — CONFIRMED FLOW).
-     v5.5: sends course_number (the ?course=N value) so the agent's
-     COURSE SWITCH loads only this presentation's files.
-     v5.6: slide updates say "viewer" (not "learner").
-     v5.7: raised-hand and Pause/Resume buttons removed (the viewer
-     simply starts speaking to ask a question).
-     ===================================================== -->
-<style>
-  #cookie-banner, .cookie-banner,
-  #cookie-consent, .cookie-consent {
-    display: none !important;
-  }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: system-ui, -apple-system, Arial, sans-serif;
-    background: #fff;
-    overflow: hidden;
-  }
-
-  .aila-player {
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    height: 100dvh;
-    width: 100vw;
-    overflow: hidden;
-  }
-
-  .aila-stage {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    height: 100dvh;
-    padding: 16px;
-    box-sizing: border-box;
-    background: #f5f5f7;
-    min-width: 0;
-  }
-
-  .aila-course-label {
-    font-size: 18px;
-    color: #1a1a1a;
-    margin-bottom: 10px;
-    font-weight: 700;
-  }
-
-  .aila-display {
-    flex: 1;
-    background: #000;
-    border-radius: 8px;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-  }
-
-  .aila-video-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: #000;
-  }
-  .aila-video-container iframe {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-
-  .aila-pdf-container {
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  .aila-pdf-page {
-    position: relative;
-  }
-  .aila-pdf-canvas {
-    display: block;
-  }
-  .textLayer {
-    position: absolute;
-    text-align: initial;
-    inset: 0;
-    overflow: hidden;
-    opacity: 1;
-    line-height: 1;
-    text-size-adjust: none;
-    forced-color-adjust: none;
-    transform-origin: 0 0;
-    z-index: 2;
-  }
-  .textLayer :is(span, br) {
-    color: transparent;
-    position: absolute;
-    white-space: pre;
-    cursor: text;
-    transform-origin: 0% 0%;
-  }
-  .textLayer span.markedContent {
-    top: 0;
-    height: 0;
-  }
-  .textLayer ::selection {
-    background: rgba(255, 230, 0, 0.7);
-  }
-  .textLayer br::selection {
-    background: transparent;
-  }
-  .textLayer .endOfContent {
-    display: block;
-    position: absolute;
-    inset: 100% 0 0;
-    z-index: -1;
-    cursor: default;
-    user-select: none;
-  }
-
-  .aila-link-layer {
-    position: absolute;
-    inset: 0;
-    z-index: 3;
-  }
-  .aila-link-layer a {
-    position: absolute;
-    display: block;
-  }
-  .aila-link-layer a:hover {
-    outline: 2px solid rgba(26,115,232,0.7);
-    background: rgba(26,115,232,0.12);
-    border-radius: 3px;
-  }
-
-  .aila-video-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.65);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 20;
-  }
-  .aila-video-overlay.open { display: flex; }
-  .aila-video-overlay-box {
-    position: relative;
-    width: 80%;
-    max-width: 960px;
-    aspect-ratio: 16 / 9;
-    background: #000;
-    border-radius: 8px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
-  }
-  .aila-video-overlay-box iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 8px;
-  }
-  .aila-video-overlay-box.audio {
-    aspect-ratio: auto;
-    height: 90px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    padding: 16px 20px;
-    box-sizing: border-box;
-  }
-  .aila-video-overlay-box audio {
-    width: 100%;
-    display: none;
-  }
-  .aila-video-overlay-box.audio audio {
-    display: block;
-  }
-  .aila-video-overlay-box.audio iframe {
-    display: none;
-  }
-  .aila-video-overlay-box.form {
-    aspect-ratio: auto;
-    width: 86%;
-    height: 88%;
-    max-width: 900px;
-    background: #fff;
-  }
-  .aila-video-overlay-box.form iframe {
-    display: block;
-  }
-  .aila-video-overlay-box.form audio {
-    display: none;
-  }
-  .aila-video-overlay-box.image {
-    aspect-ratio: auto;
-    width: auto;
-    max-width: 92%;
-    max-height: 88%;
-    background: transparent;
-    box-shadow: none;
-  }
-  .aila-video-overlay-box img {
-    display: none;
-    max-width: 100%;
-    max-height: 84vh;
-    border-radius: 8px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
-  }
-  .aila-video-overlay-box.image img { display: block; }
-  .aila-video-overlay-box.image iframe,
-  .aila-video-overlay-box.image audio { display: none; }
-  .aila-video-overlay-close {
-    position: absolute;
-    top: -14px;
-    right: -14px;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: #fff;
-    color: #333;
-    border: none;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-    line-height: 1;
-  }
-
-  .aila-begin-overlay {
-    position: absolute;
-    bottom: 24px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
-    z-index: 10;
-  }
-  .aila-begin-button {
-    background: #1a73e8;
-    color: white;
-    border: none;
-    padding: 14px 32px;
-    font-size: 17px;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 4px 14px rgba(26,115,232,0.4);
-  }
-  .aila-begin-button:hover {
-    background: #1557b0;
-  }
-
-  .aila-skip-link {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    color: #fff;
-    background: rgba(0,0,0,0.6);
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 13px;
-    cursor: pointer;
-    z-index: 10;
-    text-decoration: none;
-  }
-  .aila-skip-link:hover {
-    background: rgba(0,0,0,0.85);
-  }
-
-  .aila-nav {
-    display: none;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 12px;
-    flex-wrap: wrap;
-  }
-  .aila-nav button, .aila-nav select,
-  .aila-fs-arrow, .aila-fs-exit,
-  .aila-begin-button, .aila-skip-link,
-  .aila-video-overlay-close, .aila-hand-button {
-    user-select: none;
-    -webkit-user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    touch-action: manipulation;
-  }
-  .aila-nav-button {
-    background: #fff;
-    border: 1px solid #ccc;
-    padding: 8px 16px;
-    font-size: 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    color: #333;
-  }
-  .aila-nav-button:hover {
-    background: #f0f0f0;
-  }
-  .aila-nav-button:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-  }
-  .aila-slide-indicator {
-    font-size: 14px;
-    color: #555;
-    min-width: 110px;
-    text-align: center;
-  }
-  .aila-section-jump {
-    background: #fff;
-    border: 1px solid #ccc;
-    padding: 8px 12px;
-    font-size: 14px;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  .aila-sync-button {
-    background: #28a745;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    font-size: 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-  }
-  .aila-sync-button:hover {
-    background: #218838;
-  }
-  .aila-voice-button {
-    background: #1a73e8;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    font-size: 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-  }
-  .aila-voice-button:hover { background: #1557b0; }
-
-  .aila-fs-button {
-    background: #fff;
-    border: 1px solid #ccc;
-    padding: 8px 16px;
-    font-size: 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    color: #333;
-  }
-  .aila-fs-button:hover { background: #f0f0f0; }
-  .aila-fs-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 15;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    border: none;
-    background: rgba(0,0,0,0.45);
-    color: #fff;
-    font-size: 26px;
-    cursor: pointer;
-    display: none;
-    line-height: 1;
-  }
-  .aila-fs-arrow:hover { background: rgba(0,0,0,0.7); }
-  .aila-fs-prev { left: 12px; }
-  .aila-fs-next { right: 12px; }
-  .aila-fs-exit {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    z-index: 15;
-    border: none;
-    background: rgba(0,0,0,0.45);
-    color: #fff;
-    font-size: 15px;
-    padding: 8px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    display: none;
-  }
-  .aila-display.fs-active .aila-fs-arrow,
-  .aila-display.fs-active .aila-fs-exit { display: block; }
-  .aila-display.fs-active { background: #000; }
-  .aila-display.fs-fake {
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    z-index: 1000;
-    border-radius: 0;
-  }
-
-  /* Waving hand — raise your hand to ask a question */
-  .aila-hand-button {
-    position: absolute;
-    bottom: 18px;
-    right: 18px;
-    z-index: 16;
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    border: none;
-    background: #fff;
-    font-size: 28px;
-    cursor: pointer;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
-    display: none;
-    line-height: 1;
-  }
-  .aila-hand-button:hover { transform: scale(1.08); }
-  /* Pause / Resume — freezes Bill and the mic without ending the session */
-  .aila-pause-button {
-    position: absolute;
-    bottom: 18px;
-    right: 88px;
-    z-index: 16;
-    height: 58px;
-    border-radius: 29px;
-    border: none;
-    background: #fff;
-    font-size: 16px;
-    font-weight: 700;
-    color: #333;
-    padding: 0 18px;
-    cursor: pointer;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
-    display: none;
-    line-height: 1;
-  }
-  .aila-pause-button:hover { transform: scale(1.05); }
-  .aila-pause-button.paused {
-    background: #1a7f37;
-    color: #fff;
-  }
-  .aila-hand-toast {
-    position: absolute;
-    bottom: 84px;
-    right: 18px;
-    z-index: 16;
-    background: #1a73e8;
-    color: #fff;
-    border-radius: 10px;
-    padding: 10px 14px;
-    font-size: 14px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.35);
-    display: none;
-    max-width: 260px;
-  }
-  .aila-hand-toast.show { display: block; }
-
-  /* Document-ready banner */
-  .aila-doc-toast {
-    position: absolute;
-    top: 12px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 18;
-    background: #1a7f37;
-    color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.35);
-    display: none;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 12px 10px 16px;
-    font-size: 14px;
-    max-width: 92%;
-  }
-  .aila-doc-toast.show { display: flex; }
-  .aila-doc-toast button {
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 8px 14px;
-  }
-  .aila-doc-open { background: #fff; color: #1a7f37; }
-  .aila-doc-dismiss { background: transparent; color: #fff; font-size: 16px; padding: 4px 6px; }
-
-  /* RIGHT RAIL — status light on top, live transcript below */
-  .aila-rail {
-    width: 300px;
-    height: 100vh;
-    height: 100dvh;
-    background: #fafafa;
-    border-left: 1px solid #e0e0e0;
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-  .aila-activation-cue {
-    text-align: center;
-    color: #1a73e8;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 12px;
-    background: rgba(26,115,232,0.08);
-    border-radius: 8px;
-    margin-bottom: 12px;
-    animation: aila-pulse 2s infinite;
-  }
-  @keyframes aila-pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.6; }
-  }
-  .aila-status-card {
-    background: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 10px 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 12px;
-    flex: 0 0 auto;
-  }
-  .aila-status-orb {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background: #cfd8dc;
-    flex: 0 0 auto;
-  }
-  .aila-status-orb.speaking {
-    background: radial-gradient(circle at 30% 30%, #2792dc, #9ce6e6);
-    animation: aila-pulse 1.4s infinite;
-  }
-  .aila-status-orb.listening {
-    background: radial-gradient(circle at 30% 30%, #28a745, #b7f0c0);
-  }
-  .aila-status-text {
-    font-size: 13px;
-    color: #444;
-    min-height: 16px;
-  }
-
-  /* LIVE TRANSCRIPT */
-  .aila-transcript {
-    flex: 1 1 auto;
-    min-height: 0;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding-right: 4px;
-  }
-  .aila-bubble {
-    border-radius: 10px;
-    padding: 8px 11px;
-    font-size: 13px;
-    line-height: 1.45;
-    max-width: 95%;
-    word-wrap: break-word;
-  }
-  .aila-bubble .who {
-    display: block;
-    font-size: 11px;
-    font-weight: 700;
-    margin-bottom: 2px;
-    opacity: 0.7;
-  }
-  .aila-bubble.agent {
-    background: #fff;
-    border: 1px solid #e0e0e0;
-    color: #222;
-    align-self: flex-start;
-  }
-  .aila-bubble.user {
-    background: #1a73e8;
-    color: #fff;
-    align-self: flex-end;
-  }
-  .aila-transcript-empty {
-    color: #999;
-    font-size: 13px;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  /* LANGUAGE GATE — centered chooser over a grayed-out screen */
-  .aila-lang-gate {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.62);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 30;
-  }
-  .aila-lang-gate.hidden { display: none; }
-  .aila-lang-card {
-    background: #fff;
-    border-radius: 14px;
-    padding: 28px 30px;
-    width: min(400px, 88%);
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-    text-align: center;
-  }
-  .aila-lang-card h2 {
-    margin: 0 0 6px 0;
-    font-size: 20px;
-    color: #1a1a1a;
-  }
-  .aila-lang-card p {
-    margin: 0 0 16px 0;
-    font-size: 14px;
-    color: #666;
-  }
-  .aila-lang-card select {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-bottom: 16px;
-    background: #fff;
-  }
-  .aila-lang-go {
-    width: 100%;
-    background: #1a73e8;
-    color: #fff;
-    border: none;
-    padding: 13px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  .aila-lang-go:hover { background: #1557b0; }
-
-  /* MOBILE LAYOUT */
-  @media screen and (max-width: 900px) {
-    .aila-rail { display: none; }
-    .aila-stage { padding: 8px; }
-    .aila-course-label { font-size: 14px; margin-bottom: 6px; }
-    .aila-nav { gap: 8px; margin-top: 8px; }
-    .aila-nav-button, .aila-sync-button,
-    .aila-voice-button, .aila-fs-button, .aila-section-jump {
-      padding: 10px 14px;
-      font-size: 13px;
-    }
-    .aila-slide-indicator { font-size: 13px; min-width: 80px; }
-    .aila-skip-link { font-size: 12px; padding: 5px 10px; }
-    .aila-begin-button { padding: 12px 24px; font-size: 16px; }
-    .aila-video-overlay-box { width: 94%; }
-    .aila-video-overlay-box.form { width: 96%; height: 92%; }
-    .aila-video-overlay-box.image { max-width: 96%; max-height: 84%; }
-    .aila-video-overlay-close { top: -10px; right: -6px; }
-  }
-
-  .aila-error-page {
-    display: none;
-    height: 100vh;
-    width: 100vw;
-    background: #f5f5f7;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  .aila-error-card {
-    background: #fff;
-    border-radius: 12px;
-    padding: 40px;
-    max-width: 540px;
-    width: 100%;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    text-align: center;
-  }
-  .aila-error-card h1 {
-    color: #1a1a1a;
-    font-size: 24px;
-    margin: 0 0 12px 0;
-  }
-  .aila-error-card p {
-    color: #555;
-    font-size: 16px;
-    margin: 0 0 24px 0;
-    line-height: 1.5;
-  }
-  .aila-course-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-  }
-  .aila-course-list li {
-    margin-bottom: 12px;
-  }
-  .aila-course-list a {
-    display: block;
-    padding: 16px 20px;
-    background: #1a73e8;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 500;
-    transition: background 0.15s;
-  }
-  .aila-course-list a:hover {
-    background: #1557b0;
-  }
-</style>
-<!-- ========== ERROR PAGE ========== -->
-<div class="aila-error-page" id="ailaErrorPage">
-<div class="aila-error-card">
-<h1>Please choose a presentation</h1>
-<p>It looks like you arrived without a presentation link. Pick one from the list below to get started.</p>
-<ul class="aila-course-list" id="ailaCourseList">
-</ul>
-</div>
-</div>
-<!-- ========== MAIN PLAYER LAYOUT ========== -->
-<div class="aila-player" id="ailaPlayer" style="display:none;">
-<div class="aila-stage">
-<div class="aila-course-label" id="ailaCourseLabel">
-      Loading…
-    </div>
-<div class="aila-display">
-<div class="aila-video-container" id="ailaVideoContainer">
-<a class="aila-skip-link" href="#" id="ailaSkipLink">Skip intro ▶</a>
-<select class="aila-section-jump" id="ailaLangSelectIntro" style="display:none;"></select>
-<div class="aila-lang-gate" id="ailaLangGate">
-<div class="aila-lang-card">
-<h2>🌐 Choose your language</h2>
-<p>Bill will present in the language you pick.</p>
-<select id="ailaLangSelectGate">
-<option selected="" value="en">English (original)</option>
-<option value="es">Español</option>
-<option value="fr">Français</option>
-<option value="de">Deutsch</option>
-<option value="pt">Português</option>
-<option value="it">Italiano</option>
-<option value="nl">Nederlands</option>
-<option value="pl">Polski</option>
-<option value="tr">Türkçe</option>
-<option value="vi">Tiếng Việt</option>
-<option value="ru">Русский</option>
-<option value="ja">日本語</option>
-<option value="zh">中文（简体）</option>
-<option value="ko">한국어</option>
-<option value="hi">हिन्दी</option>
-<option value="ar">العربية</option>
-</select>
-<button class="aila-lang-go" id="ailaLangGo">Continue ▸</button>
-</div>
-</div>
-<iframe allow="autoplay; fullscreen; picture-in-picture" frameborder="0" id="ailaWelcomeVideo" src="https://player.vimeo.com/video/1221191789?badge=0&amp;autopause=0&amp;player_id=ailaWelcomeVideo&amp;app_id=58479" title="Welcome video">
-</iframe>
-<div class="aila-begin-overlay" id="ailaBeginOverlay">
-<button class="aila-begin-button" id="ailaBeginButton">
-            Begin the Presentation
-          </button>
-</div>
-</div>
-<div class="aila-pdf-container" id="ailaPdfContainer">
-<div class="aila-pdf-page" id="ailaPdfPage">
-<canvas class="aila-pdf-canvas" id="ailaPdfCanvas"></canvas>
-<div class="textLayer" id="ailaTextLayer"></div>
-<div class="aila-link-layer" id="ailaLinkLayer"></div>
-</div>
-</div>
-<!-- DOCUMENT-READY BANNER -->
-<div class="aila-doc-toast" id="ailaDocToast">
-<span>📄 Your document is ready</span>
-<button class="aila-doc-open" id="ailaDocOpen">Open</button>
-<button class="aila-doc-dismiss" id="ailaDocDismiss" title="Dismiss">✕</button>
-</div>
-<!-- FULLSCREEN CONTROLS -->
-<button class="aila-fs-arrow aila-fs-prev" id="ailaFsPrev" title="Previous slide">‹</button>
-<button class="aila-fs-arrow aila-fs-next" id="ailaFsNext" title="Next slide">›</button>
-<button class="aila-fs-exit" id="ailaFsExit" title="Exit full screen">✕ Exit</button>
-<!-- MEDIA OVERLAY -->
-<div class="aila-video-overlay" id="ailaVideoOverlay">
-<div class="aila-video-overlay-box">
-<button class="aila-video-overlay-close" id="ailaVideoOverlayClose" title="Close">✕</button>
-<button class="aila-video-overlay-close" id="ailaVideoOverlayPop" style="right:24px; font-size:14px;" title="Open in its own tab">↗</button>
-<iframe allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" id="ailaVideoOverlayFrame"></iframe>
-<audio controls="controls" id="ailaAudioOverlayPlayer"></audio>
-<img alt="" id="ailaImageOverlayPic">
-</div>
-</div>
-</div>
-<div class="aila-nav" id="ailaNav">
-<button class="aila-nav-button" id="ailaPrevBtn">◂ Previous</button>
-<div class="aila-slide-indicator" id="ailaSlideIndicator">Slide 1 of 1</div>
-<button class="aila-nav-button" id="ailaNextBtn">Next ▸</button>
-<select class="aila-section-jump" id="ailaSectionJump">
-<option value="">Jump to section…</option>
-</select>
-<select class="aila-section-jump" id="ailaLangSelect" title="Slide language">
-<option selected="" value="en">🌐 English (original)</option>
-<option value="es">Español</option>
-<option value="fr">Français</option>
-<option value="de">Deutsch</option>
-<option value="pt">Português</option>
-<option value="it">Italiano</option>
-<option value="nl">Nederlands</option>
-<option value="pl">Polski</option>
-<option value="tr">Türkçe</option>
-<option value="vi">Tiếng Việt</option>
-<option value="ru">Русский</option>
-<option value="ja">日本語</option>
-<option value="zh">中文（简体）</option>
-<option value="ko">한국어</option>
-<option value="hi">हिन्दी</option>
-<option value="ar">العربية</option>
-</select>
-<button class="aila-fs-button" id="ailaFsBtn">⛶ Full screen</button>
-<button class="aila-voice-button" id="ailaVoiceBtn">🔊 Start Presentation</button>
-<button class="aila-sync-button" id="ailaSyncBtn">↻ Sync to current slide</button>
-</div>
-</div>
-<!-- RIGHT RAIL: status light + live transcript -->
-<div class="aila-rail">
-<div class="aila-activation-cue" id="ailaActivationCue">
-      ↓ Click “Begin the Presentation” to start ↓
-    </div>
-<div class="aila-status-card">
-<div class="aila-status-orb" id="ailaStatusOrb"></div>
-<div class="aila-status-text" id="ailaStatusText">Waiting to begin</div>
-</div>
-<div class="aila-transcript" id="ailaTranscript">
-<div class="aila-transcript-empty" id="ailaTranscriptEmpty">The conversation will appear here.</div>
-</div>
-</div>
-</div>
-<!-- ========== EXTERNAL LIBRARIES ========== -->
-<script src="https://player.vimeo.com/api/player.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-<!-- ========== PLAYER LOGIC (module: imports the ElevenLabs SDK) ========== -->
-<script type="module">
-  import { Conversation } from 'https://cdn.jsdelivr.net/npm/@elevenlabs/client/+esm';
-
-  const AGENT_ID = 'agent_4801m0pmrh7tebes3vc7zr90me4c';
-  var COURSES_URL = 'https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/presentations.json';
-
-  fetch(COURSES_URL, { cache: 'no-store' })
-    .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-    .then(function(lib) { bootWithLibrary(lib); })
-    .catch(function(err) {
-      console.warn('presentations.json did not load.', err);
-      document.body.innerHTML =
-        '<div style="display:flex;align-items:center;justify-content:center;height:100vh;' +
-        'font-family:system-ui,-apple-system,Arial,sans-serif;font-size:18px;color:#333;' +
-        'text-align:center;padding:24px;box-sizing:border-box;">' +
-        'Presentation list is temporarily unavailable. Please refresh.</div>';
-    });
-
-  function bootWithLibrary(COURSE_LIBRARY) {
-
-  const urlParams = new URLSearchParams(window.location.search);
-  const courseKey = urlParams.get('course');
-
-  if (!courseKey || !COURSE_LIBRARY[courseKey]) {
-    showErrorPage();
-    return;
-  }
-
-  const COURSE = COURSE_LIBRARY[courseKey];
-
-  function showErrorPage() {
-    document.getElementById('ailaPlayer').style.display = 'none';
-    const errorPage = document.getElementById('ailaErrorPage');
-    errorPage.style.display = 'flex';
-    const courseList = document.getElementById('ailaCourseList');
-    Object.keys(COURSE_LIBRARY).forEach(function(key) {
-      const course = COURSE_LIBRARY[key];
-      const li = document.createElement('li');
-      const a = document.createElement('a');
-      a.href = '?course=' + key;
-      a.textContent = course.title;
-      li.appendChild(a);
-      courseList.appendChild(li);
-    });
-  }
-
-  document.getElementById('ailaPlayer').style.display = 'flex';
-  document.getElementById('ailaCourseLabel').textContent = COURSE.title;
-  document.title = COURSE.title + ' \u2014 ESource AI Group';
-
-  const sectionJump = document.getElementById('ailaSectionJump');
-  COURSE.sections.forEach(function(section) {
-    const option = document.createElement('option');
-    option.value = section.startSlide;
-    option.textContent = section.label;
-    sectionJump.appendChild(option);
-  });
-
-  // STATE
-  let currentSlide = 1;
-  let pdfDoc = null;
-  let highestSlideReached = 1;
-
-  const stored = localStorage.getItem('esource_presenter_progress_' + COURSE.id);
-  if (stored) {
-    try {
-      const data = JSON.parse(stored);
-      highestSlideReached = data.highestSlideReached || 1;
-      currentSlide = data.lastSlide || 1;
-    } catch (e) {}
-  }
-
-  // ============================================================
-  // THE CONVERSATION (ElevenLabs SDK) + FLOW ENGINE
-  // v3.1: advance_slide QUEUES the turn; the page applies it the
-  // moment Bill's audio actually ends. Screen can't outrun voice.
-  // ============================================================
-  var convo = null;             // the live conversation object
-  var voiceActive = false;
-  var agentSpeaking = false;
-  var begun = false;            // has [BEGIN PRESENTATION] been sent
-  var flowPauseUntil = 0;       // hand raise / user speech pauses flow
-  var nudgeTimer = null;
-  var QUIET_MS = 4500;          // gap after speech before flowing on
-  var spokeSinceNudge = false;  // only nudge once per speaking cycle
-  var lastNudgeAt = 0;          // when we last sent a flow signal
-  var lastAdvanceAt = 0;        // when the slide last actually changed
-  var MIN_SLIDE_MS = 2500;      // double-call guard: min time between turns
-  var slidesShownAt = 0;        // when the deck appeared
-  var agentTurns = 0;           // Bill's speaking turns (slide-1 guard)
-  var userSpokeThisSlide = false; // listener spoke on this slide (Q&A)
-
-  function setStatus(mode, text) {
-    var orb = document.getElementById('ailaStatusOrb');
-    orb.className = 'aila-status-orb' + (mode ? ' ' + mode : '');
-    document.getElementById('ailaStatusText').textContent = text;
-  }
-
-  // LIVE TRANSCRIPT
-  var lastBubbleKey = '';
-  function addTranscript(who, text) {
-    var key = who + '|' + text;
-    if (key === lastBubbleKey) return;   // filter duplicate events
-    lastBubbleKey = key;
-    var empty = document.getElementById('ailaTranscriptEmpty');
-    if (empty) empty.remove();
-    var box = document.getElementById('ailaTranscript');
-    var b = document.createElement('div');
-    b.className = 'aila-bubble ' + (who === 'user' ? 'user' : 'agent');
-    var label = document.createElement('span');
-    label.className = 'who';
-    label.textContent = (who === 'user') ? 'You' : 'Bill';
-    b.appendChild(label);
-    b.appendChild(document.createTextNode(text));
-    box.appendChild(b);
-    box.scrollTop = box.scrollHeight;
-  }
-
-  function scheduleNudge() {
-    clearTimeout(nudgeTimer);
-    if (!voiceActive) return;
-    if (currentSlide >= COURSE.totalSlides) return;
-    nudgeTimer = setTimeout(function() {
-      if (!voiceActive) return;
-      if (agentSpeaking) { scheduleNudge(); return; }
-      if (Date.now() < flowPauseUntil) { scheduleNudge(); return; }
-      if (!spokeSinceNudge && (Date.now() - lastNudgeAt) < 12000) {
-        scheduleNudge(); return;
+{
+  "1": {
+    "id": "presentation-1",
+    "title": "Product Launcher Guide",
+    "totalSlides": 9,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/Product-Launcher-Guide.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting Product Launcher Guide. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "The Hook",
+        "startSlide": 1
+      },
+      {
+        "label": "Introduction",
+        "startSlide": 2
+      },
+      {
+        "label": "The System",
+        "startSlide": 4
+      },
+      {
+        "label": "Core Capabilities",
+        "startSlide": 5
+      },
+      {
+        "label": "Pilot Value",
+        "startSlide": 7
+      },
+      {
+        "label": "Takeaways",
+        "startSlide": 9
       }
-      try {
-        if (convo && !begun) {
-          // v5.0: the only page signal left is the opening kick-off.
-          // After that, the LISTENER'S confirmation drives the flow.
-          convo.sendUserMessage('[BEGIN PRESENTATION]');
-          begun = true;
-          lastNudgeAt = Date.now();
-          spokeSinceNudge = false;
-        }
-      } catch (e) { console.warn('nudge failed', e); }
-    }, QUIET_MS);
-  }
-
-  function tellAgentSlide() {
-    try {
-      if (convo) {
-        convo.sendContextualUpdate(
-          'The viewer\'s screen now shows slide ' + currentSlide +
-          ' of ' + COURSE.totalSlides + '.');
+    ]
+  },
+  "2": {
+    "id": "product_launcher_suite_of_tools",
+    "title": "Product Launcher Suite of Tools",
+    "totalSlides": 7,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/Product-Launcher-Suite-of-Tools.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting Product Launcher Suite of Tools. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "The Launch Readiness Problem (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Defining Product-to-Revenue Readiness (slides 3-4)",
+        "startSlide": 3
+      },
+      {
+        "label": "System in Action (slides 5-6)",
+        "startSlide": 5
+      },
+      {
+        "label": "Getting Started (slide 7)",
+        "startSlide": 7
       }
-    } catch (e) {}
-  }
-
-  // Bill's greeting in the viewer's language (same service as slides)
-  async function translatedFirstMessage() {
-    if (currentLang === 'en') return COURSE.firstMessage;
-    try {
-      var r = await fetch(TRANSLATE_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          target_lang: currentLang,
-          lines: [COURSE.firstMessage]
-        })
-      });
-      if (r.ok) {
-        var d = await r.json();
-        if (d.lines && d.lines[0]) return d.lines[0];
+    ]
+  },
+  "3": {
+    "id": "ai_execution_gap_smb",
+    "title": "AI Execution Gap SMB",
+    "totalSlides": 8,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/AI-Execution-Gap-SMB.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting AI Execution Gap SMB. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Opening & Context (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "The ESource Approach (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "Diagnostic Deep Dive (slides 6-7)",
+        "startSlide": 6
+      },
+      {
+        "label": "Next Steps (slide 8)",
+        "startSlide": 8
       }
-    } catch (e) {}
-    return COURSE.firstMessage;
-  }
-
-  async function startConversation() {
-    if (convo) return;
-    setStatus('', 'Connecting…');
-    var greeting = await translatedFirstMessage();
-    try {
-      convo = await Conversation.startSession({
-        agentId: AGENT_ID,
-        overrides: {
-          agent: { firstMessage: greeting, language: currentLang }
-        },
-        dynamicVariables: {
-          course_id: COURSE.id,
-          course_title: COURSE.title,
-          total_slides: String(COURSE.totalSlides),
-          course_number: String(courseKey)   // v5.5: picks this presentation's Workflow branch
-        },
-        clientTools: {
-          display_document: async function(params) {
-            var url = params && (params.url || params.link);
-            if (url) {
-              seenDocLinks[url] = true;
-              latestDocLink = url;
-              document.getElementById('ailaDocToast').classList.add('show');
-              return 'Banner shown. Tell the learner to click Open on the green banner.';
-            }
-            return 'No url received.';
-          },
-          advance_slide: async function() {
-            // v5.0: instant turn — same mechanism as the teacher pages.
-            var now = Date.now();
-            if (now - lastAdvanceAt < MIN_SLIDE_MS) {
-              return 'IGNORED: too soon. Stay on slide ' + currentSlide +
-                ' and keep presenting it fully. Do not call advance_slide again yet.';
-            }
-            if (currentSlide === 1 && agentTurns < 2) {
-              // v5.3: turn 1 is the greeting. Until Bill has ALSO delivered
-              // slide 1 (turn 2), the first "yes" means "present slide 1",
-              // never "advance".
-              return 'IGNORED: slide 1 is ALREADY on the screen and has not ' +
-                'been presented yet. The listener\'s yes meant "begin". ' +
-                'Present slide 1 fully now; call advance_slide only after ' +
-                'slide 1 is finished and the listener confirms again.';
-            }
-            if (currentSlide >= COURSE.totalSlides) {
-              return 'IGNORED: already on the last slide (' + currentSlide +
-                ' of ' + COURSE.totalSlides + '). Do not call advance_slide again.';
-            }
-            currentSlide++;
-            lastAdvanceAt = now;
-            userSpokeThisSlide = false;
-            renderSlide(currentSlide);
-            updateSlideIndicator();
-            return 'DONE: the screen now shows slide ' + currentSlide + ' of ' +
-              COURSE.totalSlides + '. Present this slide now.';
-          }
-        },
-        onModeChange: function(m) {
-          var mode = (m && m.mode) ? m.mode : m;
-          if (mode === 'speaking') {
-            agentSpeaking = true;
-            spokeSinceNudge = true;
-            clearTimeout(nudgeTimer);
-            setStatus('speaking', 'Presenting…');
-          } else {
-            agentSpeaking = false;
-            setStatus('listening', 'Listening');
-            scheduleNudge();   // opening kick-off only (no-op once begun)
-          }
-        },
-        onMessage: function(m) {
-          var src = (m && (m.source || m.role)) || '';
-          var text = (m && (m.message || m.text)) || '';
-          if (!text) return;
-          if (src === 'user') {
-            if (text.indexOf('[') !== 0) {
-              // Real learner speech — show it and give Q&A room to breathe.
-              addTranscript('user', text);
-              userSpokeThisSlide = true;
-              flowPauseUntil = Date.now() + 45000;
-            }
-          } else {
-            agentTurns++;         // v5.3: greeting = 1, slide 1 = 2, ...
-            addTranscript('agent', text);
-            watchForDocLinks(text);
-          }
-        },
-        onStatusChange: function(s) {
-          var st = (s && s.status) ? s.status : s;
-          if (st === 'disconnected') {
-            convo = null;
-            voiceActive = false;
-            agentSpeaking = false;
-            clearTimeout(nudgeTimer);
-            setStatus('', 'Presentation stopped');
-            updateVoiceLabel();
-          }
-        },
-        onError: function(e) {
-          console.warn('conversation error', e);
-        }
-      });
-      voiceActive = true;
-      lastAdvanceAt = Date.now();
-      slidesShownAt = Date.now();   // v5.0: slide-1 guard starts now
-      // v5.2: the greeting itself asks "ready to begin?", so no page
-      // kick-off signal is needed — zero waiting between the greeting
-      // and the ask.
-      begun = true;
-      updateVoiceLabel();
-      setStatus('speaking', 'Presenting…');
-      scheduleNudge();   // safety net in case no mode event arrives
-    } catch (e) {
-      console.error('could not start conversation', e);
-      setStatus('', 'Could not connect — try Start Presentation');
-      convo = null;
-      voiceActive = false;
-      updateVoiceLabel();
-    }
-  }
-
-  async function stopConversation() {
-    clearTimeout(nudgeTimer);
-    if (convo) {
-      try { await convo.endSession(); } catch (e) {}
-    }
-    convo = null;
-    voiceActive = false;
-    agentSpeaking = false;
-    setStatus('', 'Presentation stopped');
-    updateVoiceLabel();
-  }
-
-  // VIMEO WELCOME VIDEO
-  const videoIframe = document.getElementById('ailaWelcomeVideo');
-  const beginOverlay = document.getElementById('ailaBeginOverlay');
-  const skipLink = document.getElementById('ailaSkipLink');
-
-  var vimeoPlayer = null;
-  function initVimeo() {
-    if (typeof Vimeo === 'undefined') {
-      setTimeout(initVimeo, 200);
-      return;
-    }
-    vimeoPlayer = new Vimeo.Player(videoIframe);
-    vimeoPlayer.on('ended', function() {
-      beginOverlay.style.display = 'block';
-    });
-  }
-  initVimeo();
-
-  function advanceToSlides(e) {
-    if (e) e.preventDefault();
-    if (vimeoPlayer) { try { vimeoPlayer.pause(); } catch (err) {} }
-    document.getElementById('ailaVideoContainer').style.display = 'none';
-    document.getElementById('ailaPdfContainer').style.display = 'flex';
-    document.getElementById('ailaNav').style.display = 'flex';
-    loadPdf();
-    startConversation();   // the click is the mic-permission gesture
-  }
-  skipLink.addEventListener('click', advanceToSlides);
-  document.getElementById('ailaBeginButton').addEventListener('click', advanceToSlides);
-
-  // PDF LOADING (preloaded during the welcome video)
-  var pdfLoadPromise = null;
-  function preloadPdf() {
-    if (pdfLoadPromise) return;
-    pdfjsLib.GlobalWorkerOptions.workerSrc =
-      'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-    pdfLoadPromise = pdfjsLib.getDocument({
-      url: COURSE.pdfUrl,
-      withCredentials: false
-    }).promise;
-  }
-  function loadPdf() {
-    preloadPdf();
-    pdfLoadPromise
-      .then(function(pdf) {
-        pdfDoc = pdf;
-        renderSlide(currentSlide);
-        updateSlideIndicator();
-      })
-      .catch(function(error) {
-        console.error('PDF load error:', error);
-        const canvas = document.getElementById('ailaPdfCanvas');
-        const ctx = canvas.getContext('2d');
-        ctx.fillStyle = '#fff';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = '#333';
-        ctx.font = '16px sans-serif';
-        ctx.textAlign = 'center';
-        ctx.fillText('Could not load the presentation PDF.', canvas.width/2, canvas.height/2 - 10);
-        ctx.fillText('Check the console for details.', canvas.width/2, canvas.height/2 + 15);
-      });
-  }
-
-  // MEDIA LINKS -> OVERLAY
-  function toVideoEmbed(url) {
-    var m = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|shorts\/))([A-Za-z0-9_-]{6,})/);
-    if (m) return 'https://www.youtube.com/embed/' + m[1] + '?autoplay=1';
-    m = url.match(/vimeo\.com\/(?:video\/)?(\d+)(?:\/([a-zA-Z0-9]+))?/);
-    if (m) return 'https://player.vimeo.com/video/' + m[1] +
-      (m[2] ? '?h=' + m[2] + '&autoplay=1' : '?autoplay=1');
-    return null;
-  }
-  function toAudioUrl(url) {
-    return /\.(mp3|m4a|wav|ogg)(\?[^ ]*)?$/i.test(url) ? url : null;
-  }
-  function toImageUrl(url) {
-    return /\.(gif|png|jpe?g|webp)(\?[^ ]*)?$/i.test(url) ? url : null;
-  }
-  function toDocUrl(url) {
-    return /esource-course-developer\.vercel\.app\/[^ ]*\.html/i.test(url) ? url : null;
-  }
-  function openVideoOverlay(embedUrl) {
-    document.getElementById('ailaVideoOverlayFrame').src = embedUrl;
-    document.getElementById('ailaVideoOverlay').classList.add('open');
-  }
-  function openFormOverlay(formUrl) {
-    var box = document.querySelector('.aila-video-overlay-box');
-    box.classList.add('form');
-    document.getElementById('ailaVideoOverlayFrame').src = formUrl;
-    document.getElementById('ailaVideoOverlay').classList.add('open');
-  }
-  function openAudioOverlay(audioUrl) {
-    var box = document.querySelector('.aila-video-overlay-box');
-    var player = document.getElementById('ailaAudioOverlayPlayer');
-    box.classList.add('audio');
-    player.src = audioUrl;
-    document.getElementById('ailaVideoOverlay').classList.add('open');
-    player.play().catch(function() {});
-  }
-  function openImageOverlay(imageUrl) {
-    var box = document.querySelector('.aila-video-overlay-box');
-    var pic = document.getElementById('ailaImageOverlayPic');
-    box.classList.add('image');
-    pic.src = imageUrl;
-    document.getElementById('ailaVideoOverlay').classList.add('open');
-  }
-  function closeVideoOverlay() {
-    var box = document.querySelector('.aila-video-overlay-box');
-    var player = document.getElementById('ailaAudioOverlayPlayer');
-    var pic = document.getElementById('ailaImageOverlayPic');
-    document.getElementById('ailaVideoOverlay').classList.remove('open');
-    document.getElementById('ailaVideoOverlayFrame').src = '';
-    player.pause();
-    player.removeAttribute('src');
-    pic.removeAttribute('src');
-    box.classList.remove('audio');
-    box.classList.remove('form');
-    box.classList.remove('image');
-  }
-  document.getElementById('ailaVideoOverlayClose').addEventListener('click', closeVideoOverlay);
-  document.getElementById('ailaVideoOverlayPop').addEventListener('click', function() {
-    var frameSrc = document.getElementById('ailaVideoOverlayFrame').src;
-    var picSrc = document.getElementById('ailaImageOverlayPic').getAttribute('src');
-    var src = frameSrc || picSrc;
-    if (src) { window.open(src, '_blank', 'noopener'); closeVideoOverlay(); }
-  });
-  document.getElementById('ailaVideoOverlay').addEventListener('click', function(e) {
-    if (e.target === this) closeVideoOverlay();
-  });
-
-  // LANGUAGE LAYER — translated slides in place (column-aware)
-  var TRANSLATE_URL = 'https://esource-course-developer.vercel.app/api/translate';
-  var currentLang = 'en';
-  var translationCache = {};
-  var translateToken = 0;
-
-  function setLanguage(lang) {
-    currentLang = lang;
-    document.getElementById('ailaLangSelect').value = lang;
-    var intro = document.getElementById('ailaLangSelectIntro');
-    if (intro) intro.value = lang;
-    renderSlide(currentSlide);
-  }
-  document.getElementById('ailaLangSelect').addEventListener('change', function(e) {
-    setLanguage(e.target.value);
-  });
-
-  // LANGUAGE GATE — the choice that drives everything
-  document.getElementById('ailaLangGo').addEventListener('click', function() {
-    var lang = document.getElementById('ailaLangSelectGate').value;
-    setLanguage(lang);
-    preloadPdf();   // fetch the slides while the video plays
-    document.getElementById('ailaLangGate').classList.add('hidden');
-    // Switch subtitles and play on the SAME player, so the
-    // "video ended" listener stays alive.
-    if (vimeoPlayer) {
-      if (lang !== 'en') {
-        vimeoPlayer.enableTextTrack(lang).catch(function() {});
+    ]
+  },
+  "4": {
+    "id": "esource_ai_execution_gap_pe_vc",
+    "title": "ESource AI Execution Gap PE VC",
+    "totalSlides": 9,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/ESource-AI-Execution-Gap-PE-VC.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting ESource AI Execution Gap PE VC. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "The AI Execution Gap (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "Diagnosis Framework (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "ESource Solutions (slides 6-8)",
+        "startSlide": 6
+      },
+      {
+        "label": "Getting Started (slide 9)",
+        "startSlide": 9
       }
-      vimeoPlayer.play().catch(function() {});
-    }
-  });
-
-  function buildLines(textContent, viewport) {
-    var rows = [];
-    textContent.items.forEach(function(item) {
-      if (!item.str || !item.str.trim()) return;
-      var tx = pdfjsLib.Util.transform(viewport.transform, item.transform);
-      var fontH = Math.hypot(tx[2], tx[3]) || 12;
-      var x = tx[4], y = tx[5];
-      var w = (item.width || 0) * (viewport.scale || 1);
-      var row = null;
-      for (var i = 0; i < rows.length; i++) {
-        if (Math.abs(rows[i].y - y) < fontH * 0.5) { row = rows[i]; break; }
+    ]
+  },
+  "5": {
+    "id": "georgia_edge_original",
+    "title": "Georgia EDGE Original",
+    "totalSlides": 12,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/Georgia-EDGE-Original.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting Georgia EDGE Original. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "The Opportunity (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "The Problem (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "The Solution (slides 6-8)",
+        "startSlide": 6
+      },
+      {
+        "label": "Implementation and Leadership (slides 9-10)",
+        "startSlide": 9
+      },
+      {
+        "label": "Call to Action (slides 11-12)",
+        "startSlide": 11
       }
-      if (!row) {
-        row = { y: y, fontH: fontH, parts: [] };
-        rows.push(row);
+    ]
+  },
+  "6": {
+    "id": "jfp_handbook_training_draft",
+    "title": "JFP Handbook Training Draft",
+    "totalSlides": 27,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/JFP-Handbook-Training-Draft.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting JFP Handbook Training Draft. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Employment Rights and Reporting (slides 3-8)",
+        "startSlide": 3
+      },
+      {
+        "label": "Pay, Hours, and Timekeeping (slides 9-13)",
+        "startSlide": 9
+      },
+      {
+        "label": "Time Off and Leave (slides 14-18)",
+        "startSlide": 14
+      },
+      {
+        "label": "Workplace Conduct and Safety (slides 19-24)",
+        "startSlide": 19
+      },
+      {
+        "label": "Closing and Resources (slides 25-27)",
+        "startSlide": 25
       }
-      row.fontH = Math.max(row.fontH, fontH);
-      row.parts.push({ x: x, w: w, str: item.str });
-    });
-    var lines = [];
-    rows.forEach(function(row) {
-      row.parts.sort(function(a, b) { return a.x - b.x; });
-      var gapLimit = row.fontH * 1.8;
-      var seg = null;
-      row.parts.forEach(function(p) {
-        if (seg && (p.x - seg.endX) > gapLimit) {
-          lines.push(seg);
-          seg = null;
-        }
-        if (!seg) {
-          seg = { y: row.y, x: p.x, endX: p.x + p.w, fontH: row.fontH, texts: [] };
-        }
-        seg.endX = Math.max(seg.endX, p.x + p.w);
-        seg.texts.push(p.str);
-      });
-      if (seg) lines.push(seg);
-    });
-    lines.forEach(function(line) {
-      line.str = line.texts.join(' ').replace(/\s+/g, ' ').trim();
-      line.w = line.endX - line.x;
-    });
-    lines.sort(function(a, b) { return (a.y - b.y) || (a.x - b.x); });
-    return lines.filter(function(l) { return l.str; }).slice(0, 100);
-  }
-
-  function sampleBg(ctx, line, canvas) {
-    try {
-      var sx = Math.max(0, Math.round(line.x));
-      var sy = Math.max(0, Math.round(line.y - line.fontH * 1.5));
-      var data = ctx.getImageData(sx, sy, 4, 4).data;
-      var r = 0, g = 0, b = 0, n = data.length / 4;
-      for (var i = 0; i < data.length; i += 4) { r += data[i]; g += data[i+1]; b += data[i+2]; }
-      return { r: r/n, g: g/n, b: b/n };
-    } catch (e) {
-      return { r: 255, g: 255, b: 255 };
-    }
-  }
-
-  function paintTranslation(lines, translated) {
-    var canvas = document.getElementById('ailaPdfCanvas');
-    var ctx = canvas.getContext('2d');
-    ctx.save();
-    ctx.textBaseline = 'alphabetic';
-    for (var i = 0; i < lines.length; i++) {
-      var line = lines[i];
-      var text = translated[i];
-      if (!text) continue;
-      var bg = sampleBg(ctx, line, canvas);
-      ctx.fillStyle = 'rgb(' + Math.round(bg.r) + ',' + Math.round(bg.g) + ',' + Math.round(bg.b) + ')';
-      ctx.fillRect(line.x - 2, line.y - line.fontH * 1.05, line.w + 4, line.fontH * 1.45);
-      var lum = 0.299 * bg.r + 0.587 * bg.g + 0.114 * bg.b;
-      ctx.fillStyle = (lum > 140) ? '#111111' : '#ffffff';
-      var size = line.fontH;
-      ctx.font = size + 'px system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif';
-      while (size > line.fontH * 0.55 && ctx.measureText(text).width > line.w * 1.12) {
-        size -= 1;
-        ctx.font = size + 'px system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif';
+    ]
+  },
+  "7": {
+    "id": "esource_channel_partner_opportunity",
+    "title": "ESource Channel Partner Opportunity",
+    "totalSlides": 13,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/ESource-Channel-Partner-Opportunity.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting ESource Channel Partner Opportunity. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Opening the Opportunity (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Routing and Qualification (slides 3-8)",
+        "startSlide": 3
+      },
+      {
+        "label": "Partner Participation and Support (slides 9-11)",
+        "startSlide": 9
+      },
+      {
+        "label": "Certification and Next Steps (slides 12-13)",
+        "startSlide": 12
       }
-      ctx.fillText(text, line.x, line.y);
-    }
-    ctx.restore();
-  }
-
-  function applyLanguage(lines, slideNum) {
-    if (currentLang === 'en' || !lines.length) return;
-    var token = ++translateToken;
-    var cache = translationCache[currentLang] = translationCache[currentLang] || {};
-    if (cache[slideNum]) {
-      if (token === translateToken && slideNum === currentSlide) {
-        paintTranslation(lines, cache[slideNum]);
+    ]
+  },
+  "1090": {
+    "id": "esource_sales_channel_partner_program",
+    "title": "ESource Sales Channel Partner Program",
+    "totalSlides": 14,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/ESource-Sales-Channel-Partner-Program.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting ESource Sales Channel Partner Program. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Program Model (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "Routing Fundamentals (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "Routing Practice (slide 6)",
+        "startSlide": 6
+      },
+      {
+        "label": "Discovery and Process (slides 7-8)",
+        "startSlide": 7
+      },
+      {
+        "label": "Partner Authority and Expectations (slides 9-10)",
+        "startSlide": 9
+      },
+      {
+        "label": "Language and Compliance (slide 11)",
+        "startSlide": 11
+      },
+      {
+        "label": "Discovery Practice (slide 12)",
+        "startSlide": 12
+      },
+      {
+        "label": "Readiness and Next Steps (slides 13-14)",
+        "startSlide": 13
       }
-      return;
-    }
-    var label = document.getElementById('ailaCourseLabel');
-    var original = label.textContent;
-    label.textContent = original + '  ·  Translating…';
-    fetch(TRANSLATE_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        target_lang: currentLang,
-        lines: lines.map(function(l) { return l.str; })
-      })
-    })
-      .then(function(r) { if (!r.ok) throw new Error('translate failed'); return r.json(); })
-      .then(function(data) {
-        label.textContent = original;
-        if (!data.lines) return;
-        cache[slideNum] = data.lines;
-        if (token === translateToken && slideNum === currentSlide) {
-          paintTranslation(lines, data.lines);
-        }
-      })
-      .catch(function() {
-        label.textContent = original;
-      });
-  }
-
-  function renderSlide(slideNum) {
-    if (!pdfDoc || slideNum < 1 || slideNum > COURSE.totalSlides) return;
-
-    pdfDoc.getPage(slideNum).then(function(page) {
-      const canvas = document.getElementById('ailaPdfCanvas');
-      const pageDiv = document.getElementById('ailaPdfPage');
-      const textLayerDiv = document.getElementById('ailaTextLayer');
-      const container = document.getElementById('ailaPdfContainer');
-      const containerWidth = container.clientWidth;
-      const containerHeight = container.clientHeight;
-
-      const unscaledViewport = page.getViewport({ scale: 1 });
-      const scale = Math.min(
-        containerWidth / unscaledViewport.width,
-        containerHeight / unscaledViewport.height
-      );
-      const viewport = page.getViewport({ scale: scale });
-
-      pageDiv.style.width = viewport.width + 'px';
-      pageDiv.style.height = viewport.height + 'px';
-
-      canvas.width = viewport.width;
-      canvas.height = viewport.height;
-      canvas.style.width = viewport.width + 'px';
-      canvas.style.height = viewport.height + 'px';
-      const ctx = canvas.getContext('2d');
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      const renderTask = page.render({ canvasContext: ctx, viewport: viewport });
-
-      textLayerDiv.innerHTML = '';
-      textLayerDiv.style.width = viewport.width + 'px';
-      textLayerDiv.style.height = viewport.height + 'px';
-      textLayerDiv.style.setProperty('--scale-factor', scale);
-      page.getTextContent().then(function(textContent) {
-        pdfjsLib.renderTextLayer({
-          textContentSource: textContent,
-          container: textLayerDiv,
-          viewport: viewport
-        });
-        renderTask.promise.then(function() {
-          applyLanguage(buildLines(textContent, viewport), slideNum);
-        });
-      });
-
-      var linkLayerDiv = document.getElementById('ailaLinkLayer');
-      linkLayerDiv.innerHTML = '';
-      linkLayerDiv.style.width = viewport.width + 'px';
-      linkLayerDiv.style.height = viewport.height + 'px';
-      page.getAnnotations().then(function(annotations) {
-        annotations.forEach(function(annot) {
-          if (annot.subtype !== 'Link' || !annot.url) return;
-          var rect = pdfjsLib.Util.normalizeRect(
-            viewport.convertToViewportRectangle(annot.rect));
-          var a = document.createElement('a');
-          a.style.left = rect[0] + 'px';
-          a.style.top = rect[1] + 'px';
-          a.style.width = (rect[2] - rect[0]) + 'px';
-          a.style.height = (rect[3] - rect[1]) + 'px';
-          a.href = annot.url;
-          a.title = annot.url;
-          var embed = toVideoEmbed(annot.url);
-          var audio = toAudioUrl(annot.url);
-          var docPage = toDocUrl(annot.url);
-          var image = toImageUrl(annot.url);
-          if (embed) {
-            a.addEventListener('click', function(e) {
-              e.preventDefault();
-              openVideoOverlay(embed);
-            });
-          } else if (docPage) {
-            a.addEventListener('click', function(e) {
-              e.preventDefault();
-              openFormOverlay(docPage);
-            });
-          } else if (audio) {
-            a.addEventListener('click', function(e) {
-              e.preventDefault();
-              openAudioOverlay(audio);
-            });
-          } else if (image) {
-            a.addEventListener('click', function(e) {
-              e.preventDefault();
-              openImageOverlay(image);
-            });
-          } else {
-            a.target = '_blank';
-            a.rel = 'noopener';
-          }
-          linkLayerDiv.appendChild(a);
-        });
-      });
-
-      if (slideNum > highestSlideReached) {
-        highestSlideReached = slideNum;
+    ]
+  },
+  "8": {
+    "id": "esource_ai_execution_gap",
+    "title": "ESource AI Execution Gap",
+    "totalSlides": 8,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/ESource-AI-Execution-Gap.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting ESource AI Execution Gap. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "The Problem (slides 3-4)",
+        "startSlide": 3
+      },
+      {
+        "label": "The Solution (slides 5-7)",
+        "startSlide": 5
+      },
+      {
+        "label": "Closing (slide 8)",
+        "startSlide": 8
       }
-      saveProgress();
-    });
+    ]
   }
-
-  function updateSlideIndicator() {
-    document.getElementById('ailaSlideIndicator').textContent =
-      'Slide ' + currentSlide + ' of ' + COURSE.totalSlides;
-    document.getElementById('ailaPrevBtn').disabled = (currentSlide <= 1);
-    document.getElementById('ailaNextBtn').disabled = (currentSlide >= COURSE.totalSlides);
-  }
-
-  // RE-FIT SLIDES ON RESIZE OR ROTATION
-  var resizeTimer = null;
-  window.addEventListener('resize', function() {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(function() {
-      if (pdfDoc && document.getElementById('ailaPdfContainer').style.display !== 'none') {
-        renderSlide(currentSlide);
-      }
-    }, 300);
-  });
-
-  // FULL-SCREEN MODE
-  var displayEl = document.querySelector('.aila-display');
-  var fakeFs = false;
-  function fsElement() {
-    return document.fullscreenElement || document.webkitFullscreenElement || null;
-  }
-  function refitSoon() {
-    setTimeout(function() { if (pdfDoc) renderSlide(currentSlide); }, 150);
-  }
-  function enterFakeFs() {
-    fakeFs = true;
-    displayEl.classList.add('fs-fake');
-    displayEl.classList.add('fs-active');
-    refitSoon();
-  }
-  function exitFakeFs() {
-    fakeFs = false;
-    displayEl.classList.remove('fs-fake');
-    displayEl.classList.remove('fs-active');
-    refitSoon();
-  }
-  document.getElementById('ailaFsBtn').addEventListener('click', function() {
-    if (fakeFs) { exitFakeFs(); return; }
-    if (fsElement()) {
-      (document.exitFullscreen || document.webkitExitFullscreen).call(document);
-      return;
-    }
-    if (displayEl.requestFullscreen) {
-      displayEl.requestFullscreen().catch(function() { enterFakeFs(); });
-    } else if (displayEl.webkitRequestFullscreen) {
-      displayEl.webkitRequestFullscreen();
-    } else {
-      enterFakeFs();
-    }
-  });
-  function onFsChange() {
-    var active = !!fsElement();
-    displayEl.classList.toggle('fs-active', active || fakeFs);
-    refitSoon();
-  }
-  document.addEventListener('fullscreenchange', onFsChange);
-  document.addEventListener('webkitfullscreenchange', onFsChange);
-  document.getElementById('ailaFsExit').addEventListener('click', function() {
-    if (fakeFs) { exitFakeFs(); return; }
-    (document.exitFullscreen || document.webkitExitFullscreen).call(document);
-  });
-  document.getElementById('ailaFsPrev').addEventListener('click', function() {
-    document.getElementById('ailaPrevBtn').click();
-  });
-  document.getElementById('ailaFsNext').addEventListener('click', function() {
-    document.getElementById('ailaNextBtn').click();
-  });
-
-  // VOICE TOGGLE — real start/stop via the SDK
-  function updateVoiceLabel() {
-    var btn = document.getElementById('ailaVoiceBtn');
-    btn.textContent = voiceActive ? '⏹ Stop Presentation' : '🔊 Start Presentation';
-    btn.blur();
-  }
-  document.getElementById('ailaVoiceBtn').addEventListener('click', function() {
-    if (voiceActive) {
-      stopConversation();
-    } else {
-      begun = false;   // fresh session re-opens with slide one's flow
-      startConversation();
-    }
-  });
-
-  // DOCUMENT LINKS — from the agent's messages to the banner
-  var seenDocLinks = {};
-  var latestDocLink = null;
-  var DOC_LINK_RE = /https?:\/\/docs\.(?:esourceaigroup|esourceu)\.com\/[^\s"'<>)\]]+/g;
-  function watchForDocLinks(text) {
-    var matches = text.match(DOC_LINK_RE) || [];
-    for (var i = 0; i < matches.length; i++) {
-      var url = matches[i].replace(/[.,;]+$/, '');
-      if (!seenDocLinks[url]) {
-        seenDocLinks[url] = true;
-        latestDocLink = url;
-        document.getElementById('ailaDocToast').classList.add('show');
-      }
-    }
-  }
-  document.getElementById('ailaDocOpen').addEventListener('click', function() {
-    if (latestDocLink) openFormOverlay(latestDocLink);
-  });
-  document.getElementById('ailaDocDismiss').addEventListener('click', function() {
-    document.getElementById('ailaDocToast').classList.remove('show');
-  });
-
-  // NAVIGATION CONTROLS (manual moves also tell the agent)
-  document.getElementById('ailaPrevBtn').addEventListener('click', function() {
-    if (currentSlide > 1) {
-      currentSlide--;
-      lastAdvanceAt = Date.now();
-      renderSlide(currentSlide);
-      updateSlideIndicator();
-      tellAgentSlide();
-    }
-  });
-  document.getElementById('ailaNextBtn').addEventListener('click', function() {
-    if (currentSlide < COURSE.totalSlides) {
-      currentSlide++;
-      lastAdvanceAt = Date.now();
-      renderSlide(currentSlide);
-      updateSlideIndicator();
-      tellAgentSlide();
-    }
-  });
-  document.getElementById('ailaSectionJump').addEventListener('change', function(e) {
-    const target = parseInt(e.target.value);
-    if (target >= 1 && target <= COURSE.totalSlides) {
-      currentSlide = target;
-      lastAdvanceAt = Date.now();
-      renderSlide(currentSlide);
-      updateSlideIndicator();
-      tellAgentSlide();
-    }
-    e.target.value = '';
-  });
-  document.getElementById('ailaSyncBtn').addEventListener('click', function() {
-    tellAgentSlide();
-    alert('The presenter has been synced to slide ' + currentSlide + '.');
-  });
-
-  // RESUME PROGRESS (browser localStorage)
-  function saveProgress() {
-    try {
-      localStorage.setItem('esource_presenter_progress_' + COURSE.id, JSON.stringify({
-        lastSlide: currentSlide,
-        highestSlideReached: highestSlideReached,
-        timestamp: Date.now()
-      }));
-    } catch (e) {}
-  }
-
-  // HIDE ACTIVATION CUE AFTER 60 SECONDS
-  setTimeout(function() {
-    const cue = document.getElementById('ailaActivationCue');
-    if (cue) cue.style.display = 'none';
-  }, 60000);
-
-  } // end bootWithLibrary
-</script>
+}
