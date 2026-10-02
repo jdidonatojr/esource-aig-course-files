@@ -58,22 +58,22 @@
     ]
   },
   "3": {
-    "id": "final_ai_execution_gap_channel_partner_with_facilitator_notes",
-    "title": "Final AI Execution Gap Channel Partner with Facilitator Notes",
+    "id": "final_ai_execution_gap_channel_partner",
+    "title": "Final AI Execution Gap Channel Partner",
     "totalSlides": 8,
-    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/Final-AI-Execution-Gap-Channel-Partner-with-Facilitator-Notes.pdf",
-    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting Final AI Execution Gap Channel Partner with Facilitator Notes. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/Final-AI-Execution-Gap-Channel-Partner.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting Final AI Execution Gap Channel Partner. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
     "sections": [
       {
         "label": "Introduction and Context (slides 1-3)",
         "startSlide": 1
       },
       {
-        "label": "ESource Solution Overview (slides 4-6)",
+        "label": "The ESource Solution (slides 4-6)",
         "startSlide": 4
       },
       {
-        "label": "Implementation Pathway (slides 7-8)",
+        "label": "Implementation Roadmap (slides 7-8)",
         "startSlide": 7
       }
     ]
