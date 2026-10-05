@@ -69,15 +69,15 @@
         "startSlide": 1
       },
       {
-        "label": "ESource Solution Overview (slides 4-6)",
+        "label": "ESource Solutions (slides 4-6)",
         "startSlide": 4
       },
       {
-        "label": "Execution Model and Implementation (slides 7-8)",
+        "label": "Execution Model (slides 7-8)",
         "startSlide": 7
       },
       {
-        "label": "Appendix and Resources (slide 9)",
+        "label": "Appendix Resources (slide 9)",
         "startSlide": 9
       }
     ]
