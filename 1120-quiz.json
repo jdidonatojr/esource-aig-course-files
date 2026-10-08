@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — Project Management - Bid to close",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "What are the six phases of the Pennebaker project lifecycle in order?",
+      "choices": [
+        "Bid Opportunity, Estimate and Bid, Award and Setup, Procurement and Planning, Execution and Management, Closeout",
+        "Bid Opportunity, Award and Setup, Estimate and Bid, Procurement and Planning, Execution and Management, Closeout",
+        "Estimate and Bid, Bid Opportunity, Award and Setup, Procurement and Planning, Execution and Management, Closeout",
+        "Bid Opportunity, Estimate and Bid, Procurement and Planning, Award and Setup, Execution and Management, Closeout"
+      ],
+      "answer": 0,
+      "slide": 3,
+      "feedback_correct": "Exactly right—these six phases always occur in this order and every project moves through all of them.",
+      "feedback_incorrect": "The sequence matters because handoffs depend on phases happening in the right order. Review Slide 3 to lock in the correct sequence."
+    },
+    {
+      "question": "Who is responsible for managing the bid calendar and due dates?",
+      "choices": [
+        "The PM",
+        "Brandy, the Bid Coordinator",
+        "Jay and the Estimating Team",
+        "Contract Administration"
+      ],
+      "answer": 1,
+      "slide": 4,
+      "feedback_correct": "That's correct—Brandy manages the bid calendar and due dates as part of the intake process.",
+      "feedback_incorrect": "The PM does not manage the bid calendar intake. Brandy handles that role, and the PM enters the picture later during the pre-bid walkthrough."
+    },
+    {
+      "question": "What is a submittal and who obtains it?",
+      "choices": [
+        "A signed contract document that the PM must obtain from the client",
+        "A vendor or manufacturer document proving that equipment or material matches the design, obtained by the PM",
+        "A purchase order issued by Jasmine to confirm material delivery",
+        "A formal request for information sent to the architect when drawings are unclear"
+      ],
+      "answer": 1,
+      "slide": 12,
+      "feedback_correct": "Correct—a submittal is the vendor's proof that what they are providing matches the design, and the PM gets it and sends it for approval.",
+      "feedback_incorrect": "A submittal comes from the vendor, not the client, and the PM's job is to obtain it, review it, and send it to the owner or architect for approval."
+    },
+    {
+      "question": "Which two estimating pathways exist, and what determines which one you use?",
+      "choices": [
+        "Pathway A is for direct-request work; Pathway B is for larger scopes with piping takeoff",
+        "Pathway A is for larger scopes or piping takeoff; Pathway B is for direct-request work where a client comes to you",
+        "Both pathways use Trimble AutoBid; the difference is whether the client approves the estimate first",
+        "Pathway A requires a formal Gantt chart; Pathway B is mental planning only"
+      ],
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "Exactly—Pathway A goes to the estimating team for larger or piping scopes, and Pathway B is PM-led for direct-request client work.",
+      "feedback_incorrect": "The pathways are determined by project scope and complexity. Pathway A involves the formal estimating team and Trimble AutoBid; Pathway B is PM-led with simpler tools."
+    },
+    {
+      "question": "What is a documented gap in the current PO request process?",
+      "choices": [
+        "There is no standard submittal checklist for site walkthroughs",
+        "There is no formal purchase approval step or verified budget check before a PO request is submitted",
+        "There is no formal EAC update process at the PM level",
+        "There is no standardized calculation method for percent complete"
+      ],
+      "answer": 1,
+      "slide": 13,
+      "feedback_correct": "Right—there is currently no verified budget check or formal approval step before a PO request goes in, which is a real process gap.",
+      "feedback_incorrect": "This specific gap is about the PO request workflow. There is no controlled budget check before the request is submitted, so PMs must document carefully as a workaround."
+    },
+    {
+      "question": "When a bid is won and a letter of intent is issued, whose responsibility is it to handle the formal contract and bonding?",
+      "choices": [
+        "The PM takes over immediately and signs the contract",
+        "Contract Administration handles the formal contract, bonding, and NTP processing",
+        "The Bid Coordinator finalizes all agreements",
+        "Operations Leadership approves and signs all contracts"
+      ],
+      "answer": 1,
+      "slide": 11,
+      "feedback_correct": "Correct—Contract Administration owns the formal contract, bonding, and NTP processing when a bid is won.",
+      "feedback_incorrect": "The PM does not sign contracts—that is explicitly outside the PM's authority. Contract Administration handles that responsibility."
+    },
+    {
+      "question": "What do WIP and EAC stand for, and what is their function in project management?",
+      "choices": [
+        "WIP is Weekly Invoicing Progress and EAC is Earned Account Code; they track billing",
+        "WIP is Work in Progress (financial snapshot of earned versus spent) and EAC is Estimate at Completion (updated cost prediction); together they are an early warning system",
+        "WIP is Weekly Installation Plan and EAC is Equipment and Closeout; they track field scheduling",
+        "WIP is Worksite Input Process and EAC is Expense Authorization Code; they control spending limits"
+      ],
+      "answer": 1,
+      "slide": 18,
+      "feedback_correct": "Perfect—WIP and EAC together give you an early warning about project profitability before losses become final.",
+      "feedback_incorrect": "WIP and EAC are financial indicators, not administrative codes. WIP shows how much you have earned versus spent, and EAC predicts your final project cost—both critical for catching problems early."
+    },
+    {
+      "question": "Why does the course emphasize that PMs should name the gaps in the current process and work around them carefully?",
+      "choices": [
+        "Because the gaps are the PM's fault and need to be fixed immediately",
+        "Because the process is perfect and there are no real gaps to worry about",
+        "Because the gaps are real, not a weakness, and separating strong PMs is the ability to recognize gaps and compensate for them carefully",
+        "Because gaps only exist in the Closeout phase and can be ignored until the end"
+      ],
+      "answer": 2,
+      "slide": 21,
+      "feedback_correct": "That's right—the course is honest about where the process has real holes, and strong PM practice means recognizing them and working around them, not pretending they do not exist.",
+      "feedback_incorrect": "The course treats gaps as real current-state realities, not failures. A strong PM at Pennebaker acknowledges gaps and builds safeguards, like documenting PO requests when budget control is loose."
+    },
+    {
+      "question": "You are assigned a direct-request job where the client comes to you with a specific need, no formal bid. Which estimating pathway do you follow, and what is your first action?",
+      "choices": [
+        "Pathway A; send the work to Jay and the estimating team to run in Trimble AutoBid",
+        "Pathway B; visit the site, take detailed notes and photos, and contact subcontractors for pricing while copying Jasmine",
+        "Pathway A; build a simple AutoBid symbol and cost entry estimate yourself",
+        "Pathway B; request a formal Gantt chart in Microsoft Project before any estimate work begins"
+      ],
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "Correct—Pathway B is PM-led for direct-request work, and your first action is the site visit with documentation and subcontractor outreach.",
+      "feedback_incorrect": "Direct-request work follows Pathway B, which is PM-led, not Pathway A. Your job is to gather field intelligence, document it, get subcontractor quotes, and build the estimate yourself."
+    },
+    {
+      "question": "What is the current state of Closeout documentation at Pennebaker, and why does this create risk for the PM?",
+      "choices": [
+        "Closeout is fully documented with standardized checklists for all steps from punch list to project archival",
+        "Closeout is the least documented phase; steps like punch list, retainage, and job cost reconciliation are not formally described, creating ambiguity about who owns what",
+        "Closeout is handled entirely by Contract Administration, so the PM has no responsibility in that phase",
+        "Closeout requires a formal Gantt chart and Microsoft Project schedule before any work can begin"
+      ],
+      "answer": 1,
+      "slide": 20,
+      "feedback_correct": "Exactly—Closeout is the least documented phase and that gap means the PM must be extra clear about ownership and sequence to avoid final-phase surprises.",
+      "feedback_incorrect": "Closeout is actually the least documented phase, not the most. This is a real gap that affects billing, retainage, warranty, and final reconciliation—all PM responsibilities that need clear process."
+    }
+  ]
+}
