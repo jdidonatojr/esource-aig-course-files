@@ -330,5 +330,34 @@
         "startSlide": 14
       }
     ]
+  },
+  "1110": {
+    "id": "ai_decisions_at_work",
+    "title": "AI Decisions at Work",
+    "totalSlides": 25,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1110-AI-Decisions-at-Work.pdf",
+    "firstMessage": "Welcome to AI Decisions at Work. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Context (slides 1-7)",
+        "startSlide": 1
+      },
+      {
+        "label": "Decision Evaluation Framework (slides 8-11)",
+        "startSlide": 8
+      },
+      {
+        "label": "Governance and Escalation (slides 12-16)",
+        "startSlide": 12
+      },
+      {
+        "label": "Program Evaluation and Measurement (slides 17-23)",
+        "startSlide": 17
+      },
+      {
+        "label": "Next Steps and Resources (slides 24-25)",
+        "startSlide": 24
+      }
+    ]
   }
 }
