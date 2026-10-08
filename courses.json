@@ -359,5 +359,46 @@
         "startSlide": 24
       }
     ]
+  },
+  "1120": {
+    "id": "project_management_bid_to_close",
+    "title": "Project Management - Bid to close",
+    "totalSlides": 24,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1120-Project-Management---Bid-to-close.pdf",
+    "firstMessage": "Welcome to Project Management - Bid to close. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Framework (slides 1-5)",
+        "startSlide": 1
+      },
+      {
+        "label": "Phase Ownership and Roles (slides 6-6)",
+        "startSlide": 6
+      },
+      {
+        "label": "Bid to Estimate (slides 7-10)",
+        "startSlide": 7
+      },
+      {
+        "label": "Award and Procurement (slides 11-13)",
+        "startSlide": 11
+      },
+      {
+        "label": "Scheduling and Execution (slides 14-16)",
+        "startSlide": 14
+      },
+      {
+        "label": "Progress Tracking and Financial Control (slides 17-19)",
+        "startSlide": 17
+      },
+      {
+        "label": "Closeout and Best Practices (slides 20-22)",
+        "startSlide": 20
+      },
+      {
+        "label": "Closing Resources (slides 23-24)",
+        "startSlide": 23
+      }
+    ]
   }
 }
