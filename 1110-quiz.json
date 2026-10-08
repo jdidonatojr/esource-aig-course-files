@@ -1,0 +1,152 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — AI Decisions at Work",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "According to the course, what is the core gap that causes AI-assisted decisions to go wrong in organizations?",
+      "choices": [
+        "Organizations choose AI tools that are not powerful enough for their needs.",
+        "The space between what an AI tool produces and the judgment required to act on it responsibly.",
+        "Employees do not have enough training time allocated to learning new software.",
+        "AI tools are intentionally designed to be difficult to use in workplace settings."
+      ],
+      "answer": 1,
+      "slide": 3,
+      "feedback_correct": "Exactly—the course frames the problem not as a tool deficiency but as a judgment gap that structured learning is designed to close.",
+      "feedback_incorrect": "The course distinguishes between the tool itself and the human judgment required to use it responsibly. Review Slide 3 to see how the instructor frames this dynamic."
+    },
+    {
+      "question": "What does the Harvard Business School case study reveal about the relationship between tool access and proficiency?",
+      "choices": [
+        "Access to AI tools automatically creates proficiency among all learners.",
+        "Engagement data like login rates and tool usage tell you whether decisions actually improved.",
+        "Reported engagement (51% tutorbot use, 100% Julius.ai use) measures whether people opened the tools, not whether decisions got better.",
+        "Tool proficiency requires only a one-time orientation from faculty."
+      ],
+      "answer": 2,
+      "slide": 4,
+      "feedback_correct": "You have identified the critical distinction the course makes: engagement metrics show presence, not performance or decision quality.",
+      "feedback_incorrect": "The HBS example is central to understanding why engagement data alone is misleading. Reread Slide 4 to see what the high usage percentages actually measure."
+    },
+    {
+      "question": "Which of the following best describes why only 12% of learners in the HBS accounting course became frequent tutorbot users?",
+      "choices": [
+        "The accounting discipline is inherently less suited to AI assistance than other fields.",
+        "Unresolved policy uncertainty, accuracy concerns, and unclear governance caused people to default to caution.",
+        "The tutorbot was designed specifically for MBA students and was too advanced for accounting learners.",
+        "Frequent tutorbot use conflicted with the course grading policies."
+      ],
+      "answer": 1,
+      "slide": 5,
+      "feedback_correct": "This reflects the course's finding that unclear governance directly produces avoidance—when people do not know what is permitted or who is accountable, they stop using the tool.",
+      "feedback_incorrect": "Slide 5 shows that accuracy concerns and policy gaps went unresolved, leaving learners uncertain. Slide 15 makes explicit the link between unclear governance and low adoption."
+    },
+    {
+      "question": "According to the course, what are the three characteristics that indicate a decision is suitable for AI assistance?",
+      "choices": [
+        "The decision involves personal or interpersonal consequences, rare or unique situations, and confidential data.",
+        "Clear inputs, verifiable outputs, and some tolerance for occasional error.",
+        "High stakes, reputational risk, and accountability that cannot be transferred to a tool.",
+        "The decision requires real-time speed, involves large datasets, and affects many employees."
+      ],
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "You have identified the three-part matching test correctly: work that is information-dense, repeatable, and reviewable is where AI adds reliable value.",
+      "feedback_incorrect": "Slide 8 presents the matching logic: AI adds value where tasks have clear inputs and verifiable outputs. Decisions with privacy, reputational, or interpersonal stakes belong outside AI workflows."
+    },
+    {
+      "question": "What does the three-part filter on Slide 9 ask you to evaluate before using AI on any decision?",
+      "choices": [
+        "Whether the AI tool is the most recent version available and how many competitors use the same tool.",
+        "Verifiability of the output, accountability if the output is wrong, and whether the data is appropriate to share with the tool.",
+        "How long the AI tool has been on the market, whether employees prefer it to manual methods, and its cost relative to alternatives.",
+        "The tool's accuracy rate, the number of users in your industry, and whether it complies with ISO standards."
+      ],
+      "answer": 1,
+      "slide": 9,
+      "feedback_correct": "Correct—these three questions form the practical decision test: Can you verify the output? Who is accountable? Is the data appropriate to share?",
+      "feedback_incorrect": "Slide 9 presents a governance-focused filter, not a technical or market-based one. The three questions center on verifiability, accountability, and data appropriateness."
+    },
+    {
+      "question": "Why does the course treat accuracy as an operational problem rather than something fully solved by tool design?",
+      "choices": [
+        "Because only older AI tools have accuracy problems; newer ones are perfect.",
+        "Because even well-designed institutional deployments like HBS identified accuracy as an ongoing friction point, not a one-time configuration issue.",
+        "Because accuracy can never be measured reliably in any workplace setting.",
+        "Because the course recommends avoiding AI tools entirely due to accuracy concerns."
+      ],
+      "answer": 1,
+      "slide": 10,
+      "feedback_correct": "Exactly—even in well-resourced settings, accuracy remains a variable to manage through governance and verification, not an assumption.",
+      "feedback_incorrect": "Slide 10 clarifies that accuracy is not fully solved and must be treated as a variable. The three-part filter is designed to handle this reality honestly."
+    },
+    {
+      "question": "What is an example of an operational constraint that can affect AI deployment in an organization?",
+      "choices": [
+        "Employees might prefer older AI tools they already know.",
+        "Harvard Business Publishing requires prior written permission and disabled data sharing before its catalog content can be used in a generative AI tool.",
+        "AI tools are generally too expensive for most organizations to afford.",
+        "The organization's internet connection might not be fast enough to run AI applications."
+      ],
+      "answer": 1,
+      "slide": 13,
+      "feedback_correct": "You have identified a real governance constraint: content rights and data-sharing terms are operational requirements that must be discovered and managed, not ignored.",
+      "feedback_incorrect": "Slide 13 illustrates that compliance and permissions are not bureaucratic afterthoughts—they are operational constraints you discover during implementation."
+    },
+    {
+      "question": "According to the escalation framework presented in the course, when should you refer an AI output upward to a superior rather than acting on it yourself?",
+      "choices": [
+        "Whenever the AI output disagrees with your personal opinion.",
+        "When the decision involves accountability, privacy, or risk that exceeds your authority.",
+        "Only if the AI tool is brand new and you have not used it before.",
+        "When the output is longer than one paragraph and requires careful reading."
+      ],
+      "answer": 1,
+      "slide": 14,
+      "feedback_correct": "Correct—the third position of the escalation framework is appropriate governance, not indecision; it protects both you and the organization.",
+      "feedback_incorrect": "Slide 14 defines the three-position framework: act (low-risk, verifiable), verify (moderate stakes), and refer upward (high accountability or risk). Refer when the decision exceeds your authority."
+    },
+    {
+      "question": "What is the most important evaluation question to ask before approving any AI learning program?",
+      "choices": [
+        "How much will the program cost and can we get a bulk discount?",
+        "Is this program built around real decisions, or is it a technology demonstration in disguise?",
+        "How many employees are currently enrolled in competing programs?",
+        "Does the vendor offer 24/7 customer support for technical issues?"
+      ],
+      "answer": 1,
+      "slide": 17,
+      "feedback_correct": "Exactly—programs that lead with tool features rather than learner decision outcomes are product demonstrations, not learning programs.",
+      "feedback_incorrect": "Slide 17 makes clear that the first priority is whether a program is actually designed to change what learners can decide, not what they can do with a tool."
+    },
+    {
+      "question": "Based on the course's evaluation checklist, why is \"named accountability\" an essential component of any AI learning program?",
+      "choices": [
+        "It ensures that someone can be blamed if the program does not work.",
+        "It provides a specific faculty member or subject-matter expert whose name is attached to the content and who is responsible for updating it.",
+        "It allows learners to file complaints directly with leadership.",
+        "It guarantees that the program will use only the most expensive AI tools available."
+      ],
+      "answer": 1,
+      "slide": 18,
+      "feedback_correct": "Right—named accountability ensures the program is maintained, updated, and has someone responsible for its quality and outcomes.",
+      "feedback_incorrect": "Slide 18 lists named accountability as a core requirement. This is about ensuring ongoing ownership and quality, not blame; it is a governance safeguard."
+    },
+    {
+      "question": "What does the course recommend you require from a vendor who claims their AI learning program improves decision quality?",
+      "choices": [
+        "A testimonial from one satisfied customer and their marketing brochure.",
+        "Targets set before the program launches, causal evidence beyond faculty observations, and a clear comparison to a baseline.",
+        "A promise that 100% of learners will use the AI tool after completing the program.",
+        "A guarantee that learners will never make mistakes using AI tools again."
+      ],
+      "answer": 1,
+      "slide": 20,
+      "feedback_correct": "You have identified the rigorous measurement standard the course insists on: pre-launch targets, causal evidence, and controlled comparison, not post-hoc claims.",
+      "feedback_incorrect": "Slide 20 distinguishes between observational reports (valuable but not causal evidence) and real measurement (targets set in advance, before-and-after comparison). Review that distinction."
+    }
+  ]
+}
