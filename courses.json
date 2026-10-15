@@ -400,5 +400,42 @@
         "startSlide": 23
       }
     ]
+  },
+  "1130": {
+    "id": "baker_landscape_singleops_on_boarding",
+    "title": "Baker Landscape SingleOps on-boarding",
+    "totalSlides": 12,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1130-Baker-Landscape-SingleOps-on-boarding.pdf",
+    "firstMessage": "Welcome to Baker Landscape SingleOps on-boarding. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Context (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "Phased Implementation Strategy (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "Core Workflow Training (slides 6-8)",
+        "startSlide": 6
+      },
+      {
+        "label": "Reinforcement and Support (slides 8-9)",
+        "startSlide": 8
+      },
+      {
+        "label": "Transformation and Results (slides 9-10)",
+        "startSlide": 9
+      },
+      {
+        "label": "Success Metrics and Roadmap (slides 10-11)",
+        "startSlide": 10
+      },
+      {
+        "label": "Q&A and Closing (slides 11-12)",
+        "startSlide": 11
+      }
+    ]
   }
 }
