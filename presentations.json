@@ -313,5 +313,38 @@
         "startSlide": 7
       }
     ]
+  },
+  "11": {
+    "id": "single_ops_crew_on_boarding",
+    "title": "Single Ops Crew on-boarding",
+    "totalSlides": 12,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/Single-Ops-Crew-on-boarding.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting Single Ops Crew on-boarding. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Context (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "Phased Implementation Strategy (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "Core Workflow and Bilingual Support (slides 6-8)",
+        "startSlide": 6
+      },
+      {
+        "label": "Reinforcement and Adoption (slides 8-9)",
+        "startSlide": 8
+      },
+      {
+        "label": "Transformation and Progress (slides 9-10)",
+        "startSlide": 9
+      },
+      {
+        "label": "Success Metrics and Closeout (slides 11-12)",
+        "startSlide": 11
+      }
+    ]
   }
 }
