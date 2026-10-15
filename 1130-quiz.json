@@ -1,0 +1,152 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — Baker Landscape SingleOps on-boarding",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "According to the course, what are the three simple habits that crews will learn to practice?",
+      "choices": [
+        "Attach clear job photos to the correct job, leave a short note about the work, and follow the approved timekeeping process",
+        "Clean customer records, create bilingual templates, and implement ChatGPT workflows",
+        "Take before-and-after photos, send them via WhatsApp, and call the office with updates",
+        "Estimate work hours, write detailed reports, and upload files to the cloud"
+      ],
+      "answer": 0,
+      "slide": 1,
+      "feedback_correct": "Exactly—the course focuses on these three practical, crew-friendly actions that improve record-keeping without changing how the work itself is done.",
+      "feedback_incorrect": "The course emphasizes simple habits for field crews, not backend administrative tasks or the old WhatsApp workflow. Review Slide 1 to see the three specific habits crews will practice."
+    },
+    {
+      "question": "What is the main problem that fragmented data and low adoption are currently causing for Baker Landscape Design?",
+      "choices": [
+        "Photos are too large to store on phones",
+        "The business cannot grow without administrative burnout",
+        "Crews do not know how to use cameras",
+        "Customer addresses are incomplete in the system"
+      ],
+      "answer": 1,
+      "slide": 2,
+      "feedback_correct": "That's right—the course identifies fragmented data and low adoption as the barriers preventing growth without burning out the office team.",
+      "feedback_incorrect": "The operational barrier described in the course is about how scattered job information creates administrative work, not about technical storage or crew skills. Review Slide 2 for the core problem this training addresses."
+    },
+    {
+      "question": "Why does the course recommend recording work details while they are fresh rather than later?",
+      "choices": [
+        "So the crew can leave the job site faster",
+        "Because the best record is made while the details are fresh and memory is clear",
+        "To prevent the office from asking follow-up questions",
+        "So that photos do not get lost on the phone"
+      ],
+      "answer": 1,
+      "slide": 3,
+      "feedback_correct": "Correct—capturing details in the moment prevents confusion and inaccuracy that comes from guessing or reconstructing information days later.",
+      "feedback_incorrect": "While the course does address speed and follow-up calls, the core reason for recording details immediately is accuracy and clarity. Fresh details reduce errors and the need to search or call back. See Slide 3."
+    },
+    {
+      "question": "In what order does the course plan to roll out the SingleOps system to crews?",
+      "choices": [
+        "Timekeeping first, then photos, then Spanish notes, then system cleanup",
+        "System cleanup, photo adoption, Spanish notes, timekeeping, and full adoption",
+        "All five phases at the same time so crews learn everything together",
+        "Spanish notes first, then timekeeping, then photos, then system cleanup"
+      ],
+      "answer": 1,
+      "slide": 4,
+      "feedback_correct": "Perfect—the phased approach reduces anxiety and lets crews master one new habit before adding the next.",
+      "feedback_incorrect": "The course deliberately phases the rollout to avoid overwhelming crews. Review Slide 4 to see why this step-by-step order matters for adoption and field success."
+    },
+    {
+      "question": "What is the crew's main responsibility regarding the system that the office prepares?",
+      "choices": [
+        "Fix customer records and create bilingual templates",
+        "Design realistic workflows and implement ChatGPT processes",
+        "Choose the correct job before adding information, use the provided template, and speak up when something is wrong",
+        "Train all crew members on all five phases of the rollout"
+      ],
+      "answer": 2,
+      "slide": 5,
+      "feedback_correct": "That's the key distinction—the office handles backend work, and crews keep the system accurate by using it correctly and reporting issues.",
+      "feedback_incorrect": "The office handles system preparation and automation. Crews focus on a smaller but very important set of actions: accuracy and communication. Review Slide 5 to see this responsibility split clearly."
+    },
+    {
+      "question": "Why does the course call moving photos from WhatsApp to SingleOps \"the photo win\"?",
+      "choices": [
+        "Because it requires crews to buy new phones",
+        "Because crews already take photos, so moving them to the correct job is the lowest friction behavioral change",
+        "Because it eliminates the need for any written notes",
+        "Because it allows the office to take photos instead of crews"
+      ],
+      "answer": 1,
+      "slide": 6,
+      "feedback_correct": "Exactly—the course builds on a behavior crews already do, making adoption easier and faster than asking them to learn something brand new.",
+      "feedback_incorrect": "The photo win is about leveraging an existing crew habit. Crews already take photos; the change is where they save them and why. Review Slide 6 to understand this key adoption strategy."
+    },
+    {
+      "question": "According to the course, what should a crew member's short job note answer?",
+      "choices": [
+        "How much the customer was charged and when they will pay",
+        "Which crew leader supervised the work and how many hours were estimated",
+        "What was completed, what still needs to be done, and whether there were any issues",
+        "The customer's phone number and the weather conditions that day"
+      ],
+      "answer": 2,
+      "slide": 6,
+      "feedback_correct": "That's the practical focus—clear notes document what was done, what remains, and any blockers, so the office and next crew have the full picture.",
+      "feedback_incorrect": "Short job notes are about work completion and follow-up, not billing or team details. Review Slide 6 to see the specific information a good note should capture."
+    },
+    {
+      "question": "How does the course address the concern that a crew member might not be fluent in English?",
+      "choices": [
+        "All notes must be written in English only for consistency",
+        "Spanish-speaking crew members should skip the note-taking step",
+        "Spanish inputs are welcome and will be auto-converted into professional customer-ready English summaries; accuracy matters more than perfect grammar",
+        "The office will hire translators to rewrite all crew notes"
+      ],
+      "answer": 2,
+      "slide": 7,
+      "feedback_correct": "Perfect—the course removes the language barrier and emphasizes that clear job details in Spanish are more valuable than poor English.",
+      "feedback_incorrect": "The course explicitly welcomes bilingual crew input and explains how translation supports rather than penalizes Spanish-speaking workers. Review Slide 7 to see how the system is designed to be inclusive."
+    },
+    {
+      "question": "What does the \"champion model\" approach mean in the context of SingleOps training and adoption?",
+      "choices": [
+        "Only the best crews in the company get to use SingleOps",
+        "Crew leads are identified to reinforce field habits daily and support their teammates at the job site",
+        "The crew that records the most photos each week wins a prize",
+        "Office managers compete to see who trains crews the fastest"
+      ],
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "Right—crew leaders serve as daily reinforcers and peer teachers, which is more effective than one-time training alone.",
+      "feedback_incorrect": "The champion model is about using crew leaders as ongoing support and role models on the job, not about competition or elite status. Review Slide 8 to see how peer learning strengthens adoption."
+    },
+    {
+      "question": "According to the course, what is the core difference between the old workflow and the new SingleOps workflow on a typical workday?",
+      "choices": [
+        "Crews no longer take photos; the office takes them instead",
+        "The new workflow is faster, but it requires longer training sessions",
+        "Before: scattered photos in WhatsApp and hopes someone sees them; After: structured data with the correct job, photos, notes, and flags so the office has what it needs without interrupting the next job",
+        "The new workflow uses more manual tracking instead of data-driven records"
+      ],
+      "answer": 2,
+      "slide": 9,
+      "feedback_correct": "Exactly—the transformation moves from chaotic and reactive communication to organized, complete records that reduce follow-up calls and enable scaling.",
+      "feedback_incorrect": "The new workflow builds structure and completeness into field work, not speed or additional complexity. Review Slide 9 to see how the before-and-after comparison shows the improvement in data availability and efficiency."
+    },
+    {
+      "question": "How should leaders frame the 90-day efficiency roadmap to crews so expectations are realistic?",
+      "choices": [
+        "The system will be perfectly fast and accurate by day 30",
+        "Crews should expect to record 100% of all data correctly immediately",
+        "Progress comes gradually as people practice; success looks like more complete photos, clearer notes, fewer follow-up calls, and improved time accuracy—not speed on day one",
+        "The roadmap guarantees specific numeric targets that must be hit every week"
+      ],
+      "answer": 2,
+      "slide": 10,
+      "feedback_correct": "That's the right message—realistic, steady improvement over time builds confidence and sustainable adoption.",
+      "feedback_incorrect": "The course frames the 90-day roadmap as illustration of progress, not a guarantee or speed metric. Review Slide 10 to see how to communicate realistic expectations that maintain crew morale and focus on improvement over time."
+    }
+  ]
+}
