@@ -1,0 +1,126 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — Becoming more influential in everyday conversations",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "According to the course, what are the four communication styles?",
+      "choices": [
+        "Decisive, Evidence-Focused, Possibility-Focused, and Connection-Focused",
+        "Analytical, Creative, Organized, and Empathetic",
+        "Direct, Indirect, Formal, and Casual",
+        "Aggressive, Passive, Assertive, and Collaborative"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "feedback_correct": "Exactly—these four styles form the foundation of understanding what matters to different people in conversations.",
+      "feedback_incorrect": "The four styles in this course are Decisive, Evidence-Focused, Possibility-Focused, and Connection-Focused. Each one reflects a different priority someone might have in a conversation."
+    },
+    {
+      "question": "What is a typical cue that someone has an Evidence-Focused style?",
+      "choices": [
+        "They ask for a recommendation or deadline",
+        "They ask about sources, costs, comparisons, or how something works",
+        "They suggest alternatives or explore new benefits",
+        "They ask who is affected or seek others' input"
+      ],
+      "answer": 1,
+      "slide": 6,
+      "feedback_correct": "That's right—Evidence-Focused people want to understand the reasoning and data behind a proposal.",
+      "feedback_incorrect": "Evidence-Focused people tend to ask about sources, costs, comparisons, or how something works. This differs from other styles: Decisive people want next steps, Possibility-Focused people want alternatives, and Connection-Focused people care about impact on others."
+    },
+    {
+      "question": "When someone asks about a cancellation policy, what should you do before deciding what they really need?",
+      "choices": [
+        "Assume they had a bad experience with a previous booking",
+        "Make an observation of what they asked and consider multiple possible interpretations",
+        "Immediately offer them reassurance and involvement",
+        "Provide them with all the evidence and data you have"
+      ],
+      "answer": 1,
+      "slide": 9,
+      "feedback_correct": "Perfect—observation comes before interpretation, and one question can have multiple explanations.",
+      "feedback_incorrect": "The course emphasizes that observation comes before interpretation. When someone asks about a cancellation policy, they might need evidence about risk, or they might have had a previous problem. Check your understanding rather than assume."
+    },
+    {
+      "question": "What is one example of a blended style mentioned in the course?",
+      "choices": [
+        "Decisive + Evidence-Focused: \"Show me enough to decide\"",
+        "Possibility-Focused + Connection-Focused: \"Let's hear everyone's ideas\"",
+        "Evidence-Focused + Connection-Focused: \"What data matters most to the team?\"",
+        "Decisive + Possibility-Focused + Connection-Focused combined"
+      ],
+      "answer": 0,
+      "slide": 11,
+      "feedback_correct": "Correct—people often care about more than one priority at the same time, and this blend captures someone who wants both speed and supporting information.",
+      "feedback_incorrect": "The course explains that two priorities may matter at the same time. One example given is Decisive + Evidence-Focused (\"Show me enough to decide\"), which addresses both the need for a decision and the need for supporting information."
+    },
+    {
+      "question": "In the five-step conversation framework, what should you do in step two?",
+      "choices": [
+        "Explain the proposal using what you learned about their priorities",
+        "Reflect back \"So your main concern is…\"",
+        "Ask \"What have I missed?\"",
+        "Agree on the next steps and timeline"
+      ],
+      "answer": 1,
+      "slide": 13,
+      "feedback_correct": "That's right—reflecting back shows you listened and gives you a chance to check your understanding before moving forward.",
+      "feedback_incorrect": "In the five-step framework, step two is \"Reflect: So your main concern is…\" This confirms that you understood what matters most to them before you explain your proposal."
+    },
+    {
+      "question": "According to the course, when should you address a concern if a conversation gets difficult?",
+      "choices": [
+        "After you change your presentation style to match their communication preference",
+        "Only if the person explicitly asks you to",
+        "Before changing your presentation style",
+        "During the follow-up email rather than in the conversation"
+      ],
+      "answer": 2,
+      "slide": 15,
+      "feedback_correct": "Exactly—addressing the actual issue is more important than switching styles, because the style change won't help if the real concern remains unspoken.",
+      "feedback_incorrect": "When a conversation gets difficult, the course advises to notice what changed, ask about the concern, and address the issue before changing your presentation style. This ensures you're solving the real problem."
+    },
+    {
+      "question": "Why does the course emphasize that messages and emails \"need extra care\"?",
+      "choices": [
+        "Because written communication is always more formal than spoken conversation",
+        "Because you lose the ability to see cues, ask follow-up questions, and clarify misunderstandings in real time",
+        "Because emails are permanent records that cannot be corrected later",
+        "Because the recipient will always interpret your message differently than you intended"
+      ],
+      "answer": 1,
+      "slide": 16,
+      "feedback_correct": "Exactly—without the back-and-forth of conversation, you need to be extra thoughtful about identifying priorities, considering multiple interpretations, and asking about missing context.",
+      "feedback_incorrect": "Messages and emails need extra care because you can't rely on tone of voice or the ability to ask clarifying questions in the moment. You must identify the request, consider multiple interpretations, and ask about missing context in writing."
+    },
+    {
+      "question": "If you want to adapt a proposal about a two-week trial for a Decisive listener, what should you emphasize?",
+      "choices": [
+        "The setup time (20 minutes) and review process",
+        "The decision point and what will happen after the trial",
+        "All the possible ways the trial could be structured",
+        "How the trial will affect each team member"
+      ],
+      "answer": 1,
+      "slide": 14,
+      "feedback_correct": "That's right—Decisive people want to know what you're recommending and how to move forward, so emphasizing the decision and next steps speaks to their priority.",
+      "feedback_incorrect": "When adapting a message for a Decisive listener, emphasize the decision point and the practical next steps. The course shows that for a two-week trial, you'd highlight the decision and what happens after the trial period ends."
+    },
+    {
+      "question": "How does the course suggest you should prepare for a real conversation to practice being more influential?",
+      "choices": [
+        "Script out every word you plan to say so you don't forget anything",
+        "Choose one real conversation, write the outcome you hope for, list what you know and what you need to ask, and prepare an opening question and short explanation",
+        "Predict all the different communication styles the other person might use and prepare responses for each",
+        "Ask a friend to role-play the conversation with you first so you can practice in a low-stakes setting"
+      ],
+      "answer": 1,
+      "slide": 20,
+      "feedback_correct": "Perfect—this structured preparation helps you be intentional without over-scripting, and it focuses you on what you actually need to learn from the conversation.",
+      "feedback_incorrect": "The course recommends a specific preparation process: choose one real conversation, write the outcome you hope for, list what you know and what you need to ask, and prepare an opening question and short explanation. This balances preparation with flexibility."
+    }
+  ]
+}
