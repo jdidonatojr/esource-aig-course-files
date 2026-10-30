@@ -1,0 +1,152 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — What Do You Know About Your Rights at Work",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "Who should you contact at J. F. Pennebaker Co. if you have a policy question or need to request an accommodation?",
+      "choices": [
+        "Your direct supervisor",
+        "Melissa Massey",
+        "The company president",
+        "Your HR business partner"
+      ],
+      "answer": 1,
+      "slide": 6,
+      "feedback_correct": "That's right—Melissa Massey is your first point of contact for any policy question, concern, or accommodation request.",
+      "feedback_incorrect": "While your supervisor is important, Melissa Massey is the designated primary HR contact for all policy questions and accommodation requests at J. F. Pennebaker Co."
+    },
+    {
+      "question": "What does it mean that employment at J. F. Pennebaker Co. is at-will?",
+      "choices": [
+        "The company can fire you without notice, but you must give two weeks' notice if you quit",
+        "Either you or the company may end the employment relationship at any time, with or without cause or notice",
+        "You are guaranteed employment for one year from your hire date",
+        "The company must provide a written reason if they decide to terminate you"
+      ],
+      "answer": 1,
+      "slide": 3,
+      "feedback_correct": "Exactly—at-will employment means the relationship can be ended by either party at any time, for any reason or no reason, with or without advance notice.",
+      "feedback_incorrect": "At-will employment applies equally to both the employee and the company. Either party can end the relationship at any time for any reason, with or without notice."
+    },
+    {
+      "question": "Is the employee handbook a contract that guarantees your employment for a specific period?",
+      "choices": [
+        "Yes, signing it creates a one-year employment agreement",
+        "Yes, but only if the manager verbally confirms it",
+        "No, the handbook is a set of guidelines, not a contract",
+        "Yes, unless you are classified as temporary"
+      ],
+      "answer": 2,
+      "slide": 4,
+      "feedback_correct": "Correct—the handbook is explicitly a set of guidelines, not a promise of employment for any particular length of time.",
+      "feedback_incorrect": "The handbook is not a contract and does not guarantee employment for any specific period. Signing it or following every policy does not create that promise."
+    },
+    {
+      "question": "Which of the following is a protected characteristic under J. F. Pennebaker Co.'s equal opportunity employment policy?",
+      "choices": [
+        "Your political beliefs and voting record",
+        "Your gender identity and sexual orientation",
+        "Your personal hobbies and interests outside work",
+        "Your marital status and relationship history"
+      ],
+      "answer": 1,
+      "slide": 5,
+      "feedback_correct": "That's correct—sex is a protected category that includes pregnancy, sexual orientation, and gender identity.",
+      "feedback_incorrect": "The protected categories include race, color, religion, national origin, sex (including pregnancy, sexual orientation, and gender identity), age 40 or older, disability, genetic information, and military or veteran status."
+    },
+    {
+      "question": "What is the key difference between quid pro quo harassment and hostile work environment harassment?",
+      "choices": [
+        "Quid pro quo involves a benefit or threat in exchange for sexual attention, while hostile work environment is unwelcome conduct based on a protected class that interferes with work",
+        "Hostile work environment requires a manager to be involved, while quid pro quo can only come from coworkers",
+        "Quid pro quo is illegal but hostile work environment is not covered by company policy",
+        "Hostile work environment requires proof of intentional harm, while quid pro quo does not"
+      ],
+      "answer": 0,
+      "slide": 8,
+      "feedback_correct": "Exactly right—quid pro quo is an exchange of benefits or threats for sexual attention, while hostile work environment is severe or pervasive unwelcome conduct based on a protected class.",
+      "feedback_incorrect": "Quid pro quo means something for something—a benefit or threat linked to sexual attention. Hostile work environment is unwelcome conduct based on a protected class (like sex or race) that is severe or pervasive enough to interfere with work."
+    },
+    {
+      "question": "If you report harassment and the investigation finds no violation occurred, are you still protected from retaliation?",
+      "choices": [
+        "No, you are only protected if the investigation confirms a violation",
+        "Yes, you are protected even if the investigation finds no violation",
+        "No, but only if your report was proven to be dishonest",
+        "Yes, but only if you have documentation of your report"
+      ],
+      "answer": 1,
+      "slide": 9,
+      "feedback_correct": "That's correct—retaliation protection applies regardless of whether the investigation ultimately finds that a violation occurred.",
+      "feedback_incorrect": "The protection against retaliation covers you for reporting a concern and participating in an investigation, regardless of the investigation's outcome—unless you knowingly filed a false report in bad faith."
+    },
+    {
+      "question": "Your direct supervisor is involved in the harassment complaint you need to file. What should you do?",
+      "choices": [
+        "Go directly to your supervisor first to discuss it privately",
+        "Skip your supervisor and go to another manager or Melissa Massey",
+        "File a written complaint with HR before telling anyone else",
+        "Wait to see if the behavior stops on its own before reporting"
+      ],
+      "answer": 1,
+      "slide": 10,
+      "feedback_correct": "Exactly—if your complaint involves your direct supervisor, you skip that person and go directly to another manager or Melissa Massey.",
+      "feedback_incorrect": "When the complaint involves your supervisor, do not report to that person. Instead, go directly to another member of management or to Melissa Massey to ensure fair handling of your concern."
+    },
+    {
+      "question": "What is your employment classification if you are scheduled for 30 hours per week?",
+      "choices": [
+        "Full-Time Non-Exempt",
+        "Temporary",
+        "Part-Time Non-Exempt",
+        "Exempt"
+      ],
+      "answer": 2,
+      "slide": 14,
+      "feedback_correct": "That's right—Part-Time Non-Exempt applies to employees scheduled for fewer than 40 hours per week and eligible for overtime but generally not company benefits.",
+      "feedback_incorrect": "Full-Time Non-Exempt is 40 or more hours per week. At 30 hours per week, you fall into Part-Time Non-Exempt, which makes you eligible for overtime but generally not for company benefits."
+    },
+    {
+      "question": "Your manager asks you to finish an important project after your shift ends, and says you should do it off the clock to avoid overtime costs. What should you do?",
+      "choices": [
+        "Agree to it because the manager asked and it's just this once",
+        "Do the work and record all hours—working off the clock is never permitted",
+        "Refuse and report the manager to Melissa Massey immediately",
+        "Finish the project at home on your own time to avoid the conflict"
+      ],
+      "answer": 1,
+      "slide": 15,
+      "feedback_correct": "Correct—working off the clock is never permitted for any reason. If you work it, you record it and you get paid for it.",
+      "feedback_incorrect": "The policy is clear: if you work it, you record it. Working off the clock is never allowed—not because a manager asked, not for any reason. All hours worked must be recorded and paid."
+    },
+    {
+      "question": "Which of the following rights cannot be restricted by the employee handbook or company policy?",
+      "choices": [
+        "Your right to use company systems for personal email during breaks",
+        "Your right to report concerns to government agencies without fear of retaliation",
+        "Your right to take unlimited vacation time",
+        "Your right to work remotely from home"
+      ],
+      "answer": 1,
+      "slide": 21,
+      "feedback_correct": "Exactly—you may report concerns to any government agency at any time without fear of retaliation, and the handbook cannot restrict this right.",
+      "feedback_incorrect": "The handbook cannot restrict your right to report concerns to government agencies like the EEOC, OSHA, or NLRB. This protection is guaranteed by law and applies to every employee."
+    },
+    {
+      "question": "Under the National Labor Relations Act, what are you legally permitted to do with your coworkers regardless of company policy?",
+      "choices": [
+        "Organize company social events and plan team outings",
+        "Access confidential company information and share it freely",
+        "Discuss your wages, hours, and working conditions",
+        "Make decisions about company hiring and promotion practices"
+      ],
+      "answer": 2,
+      "slide": 17,
+      "feedback_correct": "That's correct—Section 7 of the National Labor Relations Act gives you the right to discuss wages, hours, and working conditions with coworkers, and to engage in protected concerted activity.",
+      "feedback_incorrect": "Section 7 of the NLRA protects your right to discuss wages, hours, and working conditions with coworkers and to engage in concerted activity to address workplace concerns. These rights cannot be taken away by handbook policy."
+    }
+  ]
+}
