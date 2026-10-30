@@ -346,5 +346,38 @@
         "startSlide": 11
       }
     ]
+  },
+  "12": {
+    "id": "what_do_you_know_about_your_rights_at_work",
+    "title": "What Do You Know About Your Rights at Work",
+    "totalSlides": 23,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/What-Do-You-Know-About-Your-Rights-at-Work.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting What Do You Know About Your Rights at Work. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Employment Relationship Basics (slides 3-6)",
+        "startSlide": 3
+      },
+      {
+        "label": "Harassment, Discrimination, Retaliation (slides 7-13)",
+        "startSlide": 7
+      },
+      {
+        "label": "Pay, Classification, and Conduct (slides 14-18)",
+        "startSlide": 14
+      },
+      {
+        "label": "Safety, Time Off, and Legal Rights (slides 19-22)",
+        "startSlide": 19
+      },
+      {
+        "label": "Closing and Next Steps (slide 23)",
+        "startSlide": 23
+      }
+    ]
   }
 }
