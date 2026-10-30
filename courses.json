@@ -437,5 +437,38 @@
         "startSlide": 11
       }
     ]
+  },
+  "1140": {
+    "id": "what_do_you_know_about_your_rights_at_work",
+    "title": "What Do You Know About Your Rights at Work",
+    "totalSlides": 23,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1140-What-Do-You-Know-About-Your-Rights-at-Work.pdf",
+    "firstMessage": "Welcome to What Do You Know About Your Rights at Work. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Employment Relationship Basics (slides 3-6)",
+        "startSlide": 3
+      },
+      {
+        "label": "Harassment, Discrimination, and Reporting (slides 7-13)",
+        "startSlide": 7
+      },
+      {
+        "label": "Pay, Classification, and Conduct (slides 14-18)",
+        "startSlide": 14
+      },
+      {
+        "label": "Safety, Time Off, and Legal Rights (slides 19-21)",
+        "startSlide": 19
+      },
+      {
+        "label": "Knowledge Check and Closing (slides 22-23)",
+        "startSlide": 22
+      }
+    ]
   }
 }
