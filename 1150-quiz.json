@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — Human-Centered Leadership",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "According to the 2026 global survey cited in this course, what percentage of AI and data leaders named human factors as the primary barrier to AI adoption?",
+      "choices": [
+        "76%",
+        "93%",
+        "35%",
+        "44%"
+      ],
+      "answer": 1,
+      "slide": 2,
+      "feedback_correct": "Exactly right—93% of AI and data leaders identified human factors, not technology, as the main blocker to adoption.",
+      "feedback_incorrect": "The survey data shows 93% of leaders cite human factors as the primary barrier. This is a key statistic that reframes the entire challenge from technical to human-centered."
+    },
+    {
+      "question": "What does the course identify as the real obstacle to AI adoption in organizations?",
+      "choices": [
+        "Insufficient AI technology capabilities",
+        "Lack of budget for implementation",
+        "How people are led through the change",
+        "Outdated organizational infrastructure"
+      ],
+      "answer": 2,
+      "slide": 1,
+      "feedback_correct": "Precisely—the course opens with the idea that leadership and how people are guided through change, not the technology itself, is the real barrier.",
+      "feedback_incorrect": "While technology, budget, and infrastructure matter, the course fundamentally reframes the problem: it's about leadership and change management, not technical limitations."
+    },
+    {
+      "question": "According to the course, what percentage of organizations are currently using agentic AI?",
+      "choices": [
+        "20%",
+        "35%",
+        "44%",
+        "76%"
+      ],
+      "answer": 1,
+      "slide": 4,
+      "feedback_correct": "Correct—35% of organizations have already adopted agentic AI, and another 44% are planning to deploy it soon.",
+      "feedback_incorrect": "The 35% figure represents current adoption in just two years, while 44% represents planned deployment. Together, they show how rapidly this technology is spreading."
+    },
+    {
+      "question": "What is the primary purpose of this knowledge check, according to Slide 12?",
+      "choices": [
+        "To assign a score and track learner performance",
+        "To formally test whether you passed the course",
+        "To provide a private, unrecorded moment to consolidate your understanding",
+        "To determine if you need additional training modules"
+      ],
+      "answer": 2,
+      "slide": 12,
+      "feedback_correct": "Exactly—the knowledge check is intentionally private and unscored, designed as a personal reflection tool to consolidate learning.",
+      "feedback_incorrect": "The course explicitly states this knowledge check is optional, private, and unrecorded. It's a self-check tool for your own learning, not an evaluation mechanism."
+    },
+    {
+      "question": "Which of the following best describes how leaders should frame AI according to the course?",
+      "choices": [
+        "As a replacement for human workers to increase efficiency",
+        "As a tool for human growth and development, not replacement",
+        "As a specialized tool only for technical teams",
+        "As a temporary solution until better technology emerges"
+      ],
+      "answer": 1,
+      "slide": 6,
+      "feedback_correct": "Exactly—framing AI as a tool for human growth and development, not replacement, is essential to creating psychological safety and accelerating adoption.",
+      "feedback_incorrect": "The course emphasizes that framing matters critically. AI should be presented as augmenting human capabilities, not threatening human roles, to reduce anxiety and resistance."
+    },
+    {
+      "question": "According to the course, what should leaders do when they hear pushback, confusion, or worry from their team about AI?",
+      "choices": [
+        "Immediately provide solutions and move forward",
+        "Dismiss their concerns as resistance to change",
+        "Treat it as valuable information and listen to understand",
+        "Escalate the concern to senior management"
+      ],
+      "answer": 2,
+      "slide": 5,
+      "feedback_correct": "Right—the course teaches active listening where pushback is treated as valuable signal, not a problem to fix quickly.",
+      "feedback_incorrect": "Human-centered leadership involves listening to understand, not listening to respond. Concerns and confusion contain important information about what's really happening in your team."
+    },
+    {
+      "question": "How does the course suggest leaders should demonstrate AI use to their teams?",
+      "choices": [
+        "By requiring all team members to complete AI training modules",
+        "By sharing personal experimentation publicly, including what the tool got wrong",
+        "By only highlighting successful AI applications to build confidence",
+        "By delegating all AI work to specialized teams"
+      ],
+      "answer": 1,
+      "slide": 7,
+      "feedback_correct": "Precisely—visible role-modeling, including acknowledging limitations and explaining validation processes, shifts culture faster than policies.",
+      "feedback_incorrect": "The course provides a specific example of an Insurance SVP who demonstrated AI use publicly, naming what it got wrong. This transparency is what gives others permission to experiment."
+    },
+    {
+      "question": "The course recommends different communication approaches for different audiences regarding AI adoption. Which of the following correctly pairs an audience with their primary communication need?",
+      "choices": [
+        "Boards want honest, jargon-free answers about what's changing",
+        "Executives want progress metrics and risk awareness",
+        "Employees want speed and competitive framing",
+        "Senior managers want detailed technical specifications"
+      ],
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "Correct—the course teaches that executives need speed and competitive framing, while boards focus on progress signals and risk management.",
+      "feedback_incorrect": "The course teaches audience-specific communication: boards want progress and risk metrics, executives want speed and competitive advantage, and employees want clear, jargon-free explanations of what's changing."
+    },
+    {
+      "question": "According to the course, how does projecting false certainty about AI adoption outcomes affect leadership credibility?",
+      "choices": [
+        "It strengthens credibility by showing confidence",
+        "It has no significant impact on trust",
+        "It erodes credibility when reality doesn't match expectations",
+        "It helps people feel secure despite uncertainty"
+      ],
+      "answer": 2,
+      "slide": 9,
+      "feedback_correct": "Exactly—the course emphasizes that false certainty backfires and erodes credibility; honesty about uncertainty builds trust instead.",
+      "feedback_incorrect": "The course teaches that people trust consistency of behavior and reliability more than perfect answers. Naming what you don't know actually strengthens, not weakens, your credibility."
+    },
+    {
+      "question": "Based on the course content, which combination of leadership behaviors most effectively reduces anxiety and builds trust during AI adoption?",
+      "choices": [
+        "Detailed planning, frequent status updates, and centralized decision-making",
+        "Psychological safety, plain-language communication, and visible role-modeling",
+        "Rapid implementation, minimal discussion, and expert-led change",
+        "Strong accountability measures, clear metrics, and manager directives"
+      ],
+      "answer": 1,
+      "slide": 13,
+      "feedback_correct": "Perfect—the course identifies these three concrete, actionable tools as the core practices that reduce anxiety and build trust during AI adoption.",
+      "feedback_incorrect": "The course synthesizes its key insights into three interconnected practices: creating psychological safety, communicating with empathy and clarity, and modeling AI use visibly. These work together to transform how people experience change."
+    }
+  ]
+}
