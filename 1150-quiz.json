@@ -15,125 +15,125 @@
       ],
       "answer": 1,
       "slide": 2,
-      "feedback_correct": "Exactly right—93% of AI and data leaders identified human factors, not technology, as the main blocker to adoption.",
-      "feedback_incorrect": "The survey data shows 93% of leaders cite human factors as the primary barrier. This is a key statistic that reframes the entire challenge from technical to human-centered."
+      "feedback_correct": "Exactly right—the survey clearly shows that 93% of leaders identify human factors, not technology, as the main blocker to AI adoption.",
+      "feedback_incorrect": "The 2026 survey specifically found that 93% of AI and data leaders named human factors as the barrier. Other percentages in this course refer to adoption rates and executive perspectives, not this particular survey finding."
     },
     {
-      "question": "What does the course identify as the real obstacle to AI adoption in organizations?",
+      "question": "What is the current organizational adoption rate for agentic AI mentioned in this course?",
       "choices": [
-        "Insufficient AI technology capabilities",
-        "Lack of budget for implementation",
-        "How people are led through the change",
-        "Outdated organizational infrastructure"
+        "44%",
+        "76%",
+        "35%",
+        "93%"
       ],
       "answer": 2,
-      "slide": 1,
-      "feedback_correct": "Precisely—the course opens with the idea that leadership and how people are guided through change, not the technology itself, is the real barrier.",
-      "feedback_incorrect": "While technology, budget, and infrastructure matter, the course fundamentally reframes the problem: it's about leadership and change management, not technical limitations."
+      "slide": 4,
+      "feedback_correct": "Correct—agentic AI has reached 35% organizational adoption in just two years, demonstrating it's already a present reality.",
+      "feedback_incorrect": "The course states that 35% of organizations have already adopted agentic AI, with another 44% planning to deploy soon. This means adoption is happening faster than strategy development."
     },
     {
-      "question": "According to the course, what percentage of organizations are currently using agentic AI?",
+      "question": "According to the course, how many executives describe agentic AI as being more like a coworker than a tool?",
       "choices": [
-        "20%",
         "35%",
         "44%",
-        "76%"
+        "76%",
+        "93%"
       ],
-      "answer": 1,
+      "answer": 2,
       "slide": 4,
-      "feedback_correct": "Correct—35% of organizations have already adopted agentic AI, and another 44% are planning to deploy it soon.",
-      "feedback_incorrect": "The 35% figure represents current adoption in just two years, while 44% represents planned deployment. Together, they show how rapidly this technology is spreading."
+      "feedback_correct": "Precisely correct—76% of executives now describe agentic AI as more like a coworker than a traditional tool.",
+      "feedback_incorrect": "The course notes that 76% of executives have shifted their perception of agentic AI from a simple tool to something with agency and capability, like a coworker. This reflects a significant mindset change."
     },
     {
-      "question": "What is the primary purpose of this knowledge check, according to Slide 12?",
+      "question": "What are the three core behaviors of human-centered leadership presented in this course?",
       "choices": [
-        "To assign a score and track learner performance",
-        "To formally test whether you passed the course",
-        "To provide a private, unrecorded moment to consolidate your understanding",
-        "To determine if you need additional training modules"
-      ],
-      "answer": 2,
-      "slide": 12,
-      "feedback_correct": "Exactly—the knowledge check is intentionally private and unscored, designed as a personal reflection tool to consolidate learning.",
-      "feedback_incorrect": "The course explicitly states this knowledge check is optional, private, and unrecorded. It's a self-check tool for your own learning, not an evaluation mechanism."
-    },
-    {
-      "question": "Which of the following best describes how leaders should frame AI according to the course?",
-      "choices": [
-        "As a replacement for human workers to increase efficiency",
-        "As a tool for human growth and development, not replacement",
-        "As a specialized tool only for technical teams",
-        "As a temporary solution until better technology emerges"
+        "Technical competence, process improvement, and strategic planning",
+        "Genuine warmth and empathy, active listening, and diplomatic honesty",
+        "Speed of implementation, risk reduction, and performance metrics",
+        "Policy development, compliance management, and resource allocation"
       ],
       "answer": 1,
-      "slide": 6,
-      "feedback_correct": "Exactly—framing AI as a tool for human growth and development, not replacement, is essential to creating psychological safety and accelerating adoption.",
-      "feedback_incorrect": "The course emphasizes that framing matters critically. AI should be presented as augmenting human capabilities, not threatening human roles, to reduce anxiety and resistance."
+      "slide": 5,
+      "feedback_correct": "Excellent—the course explicitly outlines these three behaviors as the foundation of human-centered leadership.",
+      "feedback_incorrect": "While the other options may be important in business, this course specifically identifies genuine warmth/empathy, active listening, and diplomatic honesty as the three core behaviors of human-centered leadership that reduce anxiety and build trust."
     },
     {
-      "question": "According to the course, what should leaders do when they hear pushback, confusion, or worry from their team about AI?",
+      "question": "Why does the course recommend framing AI as a tool for human growth rather than replacement?",
       "choices": [
-        "Immediately provide solutions and move forward",
-        "Dismiss their concerns as resistance to change",
-        "Treat it as valuable information and listen to understand",
-        "Escalate the concern to senior management"
+        "It makes the technology easier to understand",
+        "It reduces development costs and implementation timelines",
+        "It creates psychological safety and reduces anxiety that blocks adoption",
+        "It guarantees faster competitive advantage"
       ],
       "answer": 2,
-      "slide": 5,
-      "feedback_correct": "Right—the course teaches active listening where pushback is treated as valuable signal, not a problem to fix quickly.",
-      "feedback_incorrect": "Human-centered leadership involves listening to understand, not listening to respond. Concerns and confusion contain important information about what's really happening in your team."
+      "slide": 6,
+      "feedback_correct": "Spot on—framing AI as augmentation rather than replacement is essential for creating psychological safety, which is the foundation that makes everything else possible.",
+      "feedback_incorrect": "The course emphasizes that psychological safety is the prerequisite for adoption. When people fear replacement, resistance and skepticism undermine initiatives. Framing AI as enhancing human capabilities addresses this core concern."
     },
     {
-      "question": "How does the course suggest leaders should demonstrate AI use to their teams?",
+      "question": "What does the course identify as more effective for shifting organizational culture around AI than policy documents?",
       "choices": [
-        "By requiring all team members to complete AI training modules",
-        "By sharing personal experimentation publicly, including what the tool got wrong",
-        "By only highlighting successful AI applications to build confidence",
-        "By delegating all AI work to specialized teams"
+        "Mandatory training programs and compliance certifications",
+        "Leaders visibly demonstrating personal experimentation with AI tools",
+        "Executive announcements about competitive necessity",
+        "Third-party consultants presenting best practices"
       ],
       "answer": 1,
       "slide": 7,
-      "feedback_correct": "Precisely—visible role-modeling, including acknowledging limitations and explaining validation processes, shifts culture faster than policies.",
-      "feedback_incorrect": "The course provides a specific example of an Insurance SVP who demonstrated AI use publicly, naming what it got wrong. This transparency is what gives others permission to experiment."
+      "feedback_correct": "Absolutely correct—visible role-modeling by leaders changes culture faster than any policy, memo, or formal directive.",
+      "feedback_incorrect": "The course emphasizes that when leaders openly experiment, share what tools get wrong, and explain their validation process, it gives team members permission to do the same. This modeling is more powerful than top-down policies."
     },
     {
-      "question": "The course recommends different communication approaches for different audiences regarding AI adoption. Which of the following correctly pairs an audience with their primary communication need?",
+      "question": "According to the course, when communicating about AI adoption to employees, what should leaders prioritize?",
       "choices": [
-        "Boards want honest, jargon-free answers about what's changing",
-        "Executives want progress metrics and risk awareness",
-        "Employees want speed and competitive framing",
-        "Senior managers want detailed technical specifications"
+        "Technical specifications and implementation details",
+        "Honest, jargon-free answers about what's changing and what's staying the same",
+        "Competitive market positioning and revenue projections",
+        "Risk mitigation strategies and compliance requirements"
       ],
       "answer": 1,
       "slide": 8,
-      "feedback_correct": "Correct—the course teaches that executives need speed and competitive framing, while boards focus on progress signals and risk management.",
-      "feedback_incorrect": "The course teaches audience-specific communication: boards want progress and risk metrics, executives want speed and competitive advantage, and employees want clear, jargon-free explanations of what's changing."
+      "feedback_correct": "Exactly right—employees need direct clarity about change, which is best delivered without jargon to build understanding and trust.",
+      "feedback_incorrect": "The course teaches that different audiences need different things: boards want progress and risk signals, executives want speed and competition, but employees specifically need honest, clear answers. Jargon creates distance and skepticism rather than openness."
     },
     {
-      "question": "According to the course, how does projecting false certainty about AI adoption outcomes affect leadership credibility?",
+      "question": "Why does the course argue that naming uncertainty honestly actually builds credibility rather than diminishing it?",
       "choices": [
-        "It strengthens credibility by showing confidence",
-        "It has no significant impact on trust",
-        "It erodes credibility when reality doesn't match expectations",
-        "It helps people feel secure despite uncertainty"
+        "Because it gives people permission to solve problems themselves",
+        "Because it shows that leaders are humble and willing to learn",
+        "Because in uncertain times, people trust consistency of honest behavior more than false certainty that contradicts reality",
+        "Because it reduces legal liability for the organization"
       ],
       "answer": 2,
       "slide": 9,
-      "feedback_correct": "Exactly—the course emphasizes that false certainty backfires and erodes credibility; honesty about uncertainty builds trust instead.",
-      "feedback_incorrect": "The course teaches that people trust consistency of behavior and reliability more than perfect answers. Naming what you don't know actually strengthens, not weakens, your credibility."
+      "feedback_correct": "Perfect—the course explicitly states that consistency of honest behavior builds credibility better than perfect answers, especially during uncertainty.",
+      "feedback_incorrect": "The course teaches that projecting false confidence backfires when reality doesn't match, while reliable honesty about what's known and unknown builds trust. People need to see that leaders are being consistently truthful, not that they have all the answers."
     },
     {
-      "question": "Based on the course content, which combination of leadership behaviors most effectively reduces anxiety and builds trust during AI adoption?",
+      "question": "Based on the core premise of this course, what is suggested as the primary lever for successful AI adoption in organizations?",
       "choices": [
-        "Detailed planning, frequent status updates, and centralized decision-making",
-        "Psychological safety, plain-language communication, and visible role-modeling",
-        "Rapid implementation, minimal discussion, and expert-led change",
-        "Strong accountability measures, clear metrics, and manager directives"
+        "Investing in the most advanced AI technology platforms available",
+        "Creating detailed technical implementation roadmaps and timelines",
+        "How leaders apply human-centered leadership to reduce anxiety and build trust",
+        "Hiring specialized AI talent and data scientists"
       ],
-      "answer": 1,
-      "slide": 13,
-      "feedback_correct": "Perfect—the course identifies these three concrete, actionable tools as the core practices that reduce anxiety and build trust during AI adoption.",
-      "feedback_incorrect": "The course synthesizes its key insights into three interconnected practices: creating psychological safety, communicating with empathy and clarity, and modeling AI use visibly. These work together to transform how people experience change."
+      "answer": 2,
+      "slide": 1,
+      "feedback_correct": "Correct—the course opens with the insight that leadership and how people are led through change, not the technology itself, is often the real obstacle to adoption.",
+      "feedback_incorrect": "While technology, roadmaps, and talent are important, the course's central premise is that the real barrier to AI adoption is how people are led through change. This is why human-centered leadership behaviors matter more than technical capabilities."
+    },
+    {
+      "question": "How can a leader prepare for their next team interaction involving AI adoption based on the call-to-action in this course?",
+      "choices": [
+        "Attend additional technical certifications in AI systems",
+        "Develop comprehensive policy documentation for AI governance",
+        "Choose one specific behavior from the session—such as listening for identity threat, role-modeling experimentation, or being explicit about unknowns—and use it deliberately",
+        "Schedule a follow-up training session with all team members"
+      ],
+      "answer": 2,
+      "slide": 14,
+      "feedback_correct": "Excellent—the course's final call to action emphasizes that leaders should choose and intentionally practice one concrete behavior in their very next interaction, not wait for elaborate preparation.",
+      "feedback_incorrect": "The course emphasizes immediate, practical application of one specific behavior rather than elaborate preparation. Leaders are encouraged to listen for identity threat, role-model their own experimentation, or be explicit about unknowns in their next conversation—today."
     }
   ]
 }
