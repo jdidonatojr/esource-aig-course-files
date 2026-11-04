@@ -470,5 +470,34 @@
         "startSlide": 22
       }
     ]
+  },
+  "1150": {
+    "id": "human_centered_leadership",
+    "title": "Human-Centered Leadership",
+    "totalSlides": 14,
+    "pdfUrl": "https://esource-course-developer.vercel.app/api/course_file?r=jdidonatojr/esource-aig-course-files&f=1150-Human-Centered-Leadership.pdf",
+    "firstMessage": "Welcome to Human-Centered Leadership. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "The Adoption Reality (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "Building Trust and Safety (slides 6-9)",
+        "startSlide": 6
+      },
+      {
+        "label": "Leadership in Action (slides 10-11)",
+        "startSlide": 10
+      },
+      {
+        "label": "Reflection and Application (slides 12-14)",
+        "startSlide": 12
+      }
+    ]
   }
 }
