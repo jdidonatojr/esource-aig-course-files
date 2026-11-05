@@ -503,5 +503,38 @@
         "startSlide": 13
       }
     ]
+  },
+  "1160": {
+    "id": "building_a_course_with_the_esource_course_designer",
+    "title": "Building a Course with the ESource Course Designer",
+    "totalSlides": 24,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1160-Building-a-Course-with-the-ESource-Course-Designer.pdf",
+    "firstMessage": "Welcome to Building a Course with the ESource Course Designer. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "Getting Started (slides 4-8)",
+        "startSlide": 4
+      },
+      {
+        "label": "Loading and Preparing Content (slides 9-10)",
+        "startSlide": 9
+      },
+      {
+        "label": "Building the Course Outline (slides 11-16)",
+        "startSlide": 11
+      },
+      {
+        "label": "Generating Slides and Notes (slides 17-21)",
+        "startSlide": 17
+      },
+      {
+        "label": "Finalizing and Handoff (slides 22-24)",
+        "startSlide": 22
+      }
+    ]
   }
 }
