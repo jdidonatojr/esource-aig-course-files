@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — Building a Course with the ESource Course Designer",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "Where do you access the Course Designer tool?",
+      "choices": [
+        "In a separate application that requires its own login",
+        "As a tab in the Product Launcher Development Suite",
+        "Through a web browser at a dedicated URL",
+        "By downloading a desktop application from the client library"
+      ],
+      "answer": 1,
+      "slide": 3,
+      "feedback_correct": "Exactly—the Course Designer is a tab within the Product Launcher Development Suite, and signing into the suite automatically signs you into the designer.",
+      "feedback_incorrect": "The Course Designer lives inside the Product Launcher Development Suite as a tab. One sign-in gets you access to both the suite and the designer, so there's no separate login needed."
+    },
+    {
+      "question": "What is the first action you must take before building a new course?",
+      "choices": [
+        "Load your source library and tick the documents you want to use",
+        "Enter the audience role and experience level",
+        "Click \"Start a new course\" in the green box and confirm \"Yes, clear it\"",
+        "Create a course title and choose the course length"
+      ],
+      "answer": 2,
+      "slide": 4,
+      "feedback_correct": "That's right—starting clean by clicking \"Start a new course\" resets all fields and files, preventing leftover data from a previous build from bleeding into your new course.",
+      "feedback_incorrect": "Before any other step, you need to click \"Start a new course\" and confirm \"Yes, clear it.\" This empties every field and resets every choice, ensuring you're not mixing content from a previous build into your new one."
+    },
+    {
+      "question": "What is the size limit for files you add yourself as temporary files?",
+      "choices": [
+        "25 MB total across all temporary files",
+        "3 MB total across all temporary files",
+        "10 MB per individual file",
+        "There is no size limit for temporary files"
+      ],
+      "answer": 1,
+      "slide": 6,
+      "feedback_correct": "Correct—temporary files have a 3 MB total limit. If you go over that, you should save them as permanent files instead, which can each be up to 25 MB.",
+      "feedback_incorrect": "Temporary files are limited to 3 MB total across all files you add. If your files exceed that, click \"Save these files to the source library (permanent)\" to store them permanently with a higher individual limit of 25 MB each."
+    },
+    {
+      "question": "How should you handle video files in the Course Designer?",
+      "choices": [
+        "Upload them directly as you would any other file, up to 3 MB",
+        "Convert them to PDF format and then upload them",
+        "Paste the link to the video file directly into the designer and save it to the library",
+        "Request that your instructor upload them to the client library for you"
+      ],
+      "answer": 2,
+      "slide": 8,
+      "feedback_correct": "Perfect—video and audio files cannot be uploaded directly, so you paste the URL link into the designer instead, and that link travels with your course build.",
+      "feedback_incorrect": "Video and audio files cannot be uploaded to the designer at all. Instead, you paste the link to the file directly and save that link to the library, so the content remains accessible through its URL."
+    },
+    {
+      "question": "Which two inputs does the designer use to shape the tone, depth, and examples of a course?",
+      "choices": [
+        "The course title and the course length",
+        "The audience role and their experience level",
+        "The must-include topics and sources to emphasize",
+        "The language style and the course depth"
+      ],
+      "answer": 1,
+      "slide": 11,
+      "feedback_correct": "Exactly—the audience role (like \"new sales rep\") and their experience level determine how the designer writes the course in terms of tone, explanation depth, and examples.",
+      "feedback_incorrect": "The designer uses the audience role and experience level to shape tone, depth, and examples. These two fields are required before you can move forward to drafting the outline."
+    },
+    {
+      "question": "When you click \"Draft these 3 fields from the source library,\" what three things does the designer generate?",
+      "choices": [
+        "The course title, course length, and language style",
+        "The audience role, experience level, and course objectives",
+        "The course goal, learner result, and must-include topics",
+        "The module titles, slide count, and estimated build time"
+      ],
+      "answer": 2,
+      "slide": 12,
+      "feedback_correct": "Correct—the designer reads your documents and writes the course goal, learner result, and a list of must-include topics based on your ticked sources.",
+      "feedback_incorrect": "When you click \"Draft these 3 fields from the source library,\" the designer generates the course goal, learner result, and must-include topics by reading the documents you've ticked. These are starting points for you to edit."
+    },
+    {
+      "question": "Why is reading the course outline carefully before moving to slide generation considered a control point?",
+      "choices": [
+        "Because it is the only time you can add new source documents to the course",
+        "Because the outline drives everything that follows—slides, notes, and the whole course—and changes here are easy while changes after slide generation are expensive",
+        "Because it determines whether the designer can access the source library files",
+        "Because you must approve the outline before the Course Publisher can see the files"
+      ],
+      "answer": 1,
+      "slide": 14,
+      "feedback_correct": "Exactly—the outline is your control point because it shapes every slide and note that comes after. Editing the outline is simple; editing after slides are generated requires much more work.",
+      "feedback_incorrect": "The outline is critical because it drives the slides, notes, and entire course structure. Changes are easy to make at the outline stage, but making the same changes after slides are generated is far more complex and time-consuming."
+    },
+    {
+      "question": "What must be true about the relationship between the number of instructor notes generated and the number of slides in your deck before handing off to the Course Publisher?",
+      "choices": [
+        "There should be twice as many notes as slides to provide thorough instructor guidance",
+        "The counts must be equal; if they are not, you cannot hand off the files",
+        "The number of notes can be up to 20% lower than the number of slides",
+        "There is no requirement—the Course Publisher can work with any ratio of notes to slides"
+      ],
+      "answer": 1,
+      "slide": 20,
+      "feedback_correct": "Perfect—the match message tells you how many notes were generated and how many slides you have, and these numbers must be equal for the Course Publisher to process the files.",
+      "feedback_incorrect": "The count of instructor notes must exactly match the count of slides in your deck. If they do not match, edit the notes or regenerate them until the numbers are equal before handing off to the Course Publisher."
+    },
+    {
+      "question": "You have completed a course build and the instructor notes match your slides. What are the two files you must deliver to the Course Publisher?",
+      "choices": [
+        "The outline file and the INSTRUCTOR_NOTES.txt file",
+        "The PDF exported from Gamma and the INSTRUCTOR_NOTES.txt file",
+        "The original source documents and the formatted Gamma deck",
+        "The saved course file from the designer and a backup copy of your work"
+      ],
+      "answer": 1,
+      "slide": 21,
+      "feedback_correct": "Right—you hand off the PDF you exported from Gamma and the INSTRUCTOR_NOTES.txt file you downloaded. Both files are required; one without the other is not a complete handoff.",
+      "feedback_incorrect": "The two files for the Course Publisher are the PDF you exported from Gamma and the downloaded INSTRUCTOR_NOTES.txt file. Both are essential for a complete handoff."
+    },
+    {
+      "question": "Why should you click \"Save all my work (one file)\" even though the designer saves automatically as you work?",
+      "choices": [
+        "Because automatic saving only works if you are connected to the internet",
+        "Because automatic saving is slower than manual saving",
+        "Because automatic saving only saves to the current computer, and a backup file lets you move or restore your work on any computer",
+        "Because the designer requires a manual save before you can generate slides"
+      ],
+      "answer": 2,
+      "slide": 22,
+      "feedback_correct": "Exactly—automatic saving is convenient for the current machine, but to back up your work or move it to another computer, you need to click \"Save all my work (one file)\" to create a portable backup.",
+      "feedback_incorrect": "The designer does save automatically on your current computer, but that's not a backup. To protect important work or move it between machines, use \"Save all my work (one file)\" to create a single backup file you can store anywhere."
+    }
+  ]
+}
