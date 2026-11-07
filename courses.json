@@ -594,5 +594,46 @@
         "startSlide": 10
       }
     ]
+  },
+  "1190": {
+    "id": "esource_whitelabel_sales_course",
+    "title": "ESource WhiteLabel Sales Course",
+    "totalSlides": 11,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1190-ESource-WhiteLabel-Sales-Course.pdf",
+    "firstMessage": "Welcome to ESource WhiteLabel Sales Course. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Course Overview (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Discovery and Positioning (slides 3-4)",
+        "startSlide": 3
+      },
+      {
+        "label": "Product Demo (slide 5)",
+        "startSlide": 5
+      },
+      {
+        "label": "Pricing Strategy (slide 6)",
+        "startSlide": 6
+      },
+      {
+        "label": "Competitive Landscape (slides 7-8)",
+        "startSlide": 7
+      },
+      {
+        "label": "Security and Trust (slide 9)",
+        "startSlide": 9
+      },
+      {
+        "label": "Closing the Deal (slide 10)",
+        "startSlide": 10
+      },
+      {
+        "label": "Playbook Summary (slide 11)",
+        "startSlide": 11
+      }
+    ]
   }
 }
