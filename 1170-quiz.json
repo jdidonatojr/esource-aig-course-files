@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — ESource Team: How to Activate a New Accounting Firm",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "What is the primary purpose of the License Service in the ESource system?",
+      "choices": [
+        "To store client bank statements and transaction data",
+        "To send sign-in codes, enforce plan limits, and hand out the key that unlocks a firm's books",
+        "To manage the firm's accounting records and client information",
+        "To design the firm's branding and web address"
+      ],
+      "answer": 1,
+      "slide": 2,
+      "feedback_correct": "Exactly right—the License Service handles authentication and access control without ever seeing sensitive client data.",
+      "feedback_incorrect": "The License Service doesn't store client data or manage accounting records. It focuses on sign-in codes, plan enforcement, and access keys while keeping sensitive data on the firm's computer."
+    },
+    {
+      "question": "What is a Firm ID and what are its key characteristics?",
+      "choices": [
+        "The firm's full legal name used in all external communications",
+        "A short, lowercase identifier with no spaces that never changes, like 'smithco'",
+        "The web address where the firm's clients log in",
+        "The tier level that determines the firm's pricing"
+      ],
+      "answer": 1,
+      "slide": 4,
+      "feedback_correct": "Correct—the Firm ID is a permanent, simple identifier chosen carefully because it cannot be changed later.",
+      "feedback_incorrect": "The Firm ID is a short, lowercase code without spaces (like 'smithco'), not the legal name, web address, or tier. It's chosen carefully because it never changes."
+    },
+    {
+      "question": "According to the course, what four things must be in place before you activate a firm?",
+      "choices": [
+        "Signed agreement, plan and tier agreed in writing, security documentation received, and firm's details collected",
+        "Admin page access, logo file uploaded, web address purchased, and owner's first sign-in completed",
+        "Firm ID created, profile branded, DNS records configured, and monthly billing set up",
+        "Staff members added to License tab, Vercel domain configured, Cloudflare DNS record added, and welcome email sent"
+      ],
+      "answer": 0,
+      "slide": 3,
+      "feedback_correct": "Perfect—these four prerequisites ensure the legal, technical, and informational foundation is solid before any activation steps begin.",
+      "feedback_incorrect": "The four things needed before activation are: signed agreement, agreed tier and book limit, received security documentation with a named security lead, and collected firm details. The other options describe steps that happen during activation."
+    },
+    {
+      "question": "In the profiles.js file, what does the 'firm' setting control?",
+      "choices": [
+        "The name displayed at the top of the firm's screen during sign-in",
+        "The legal name of the firm registered with the state",
+        "The name clients see on statement requests and every sheet of Excel reports",
+        "The subdomain used in the firm's web address"
+      ],
+      "answer": 2,
+      "slide": 5,
+      "feedback_correct": "Right—the 'firm' setting is what appears on client-facing documents like statements and reports.",
+      "feedback_incorrect": "The 'firm' setting controls what clients see on statement requests and Excel reports. The 'name' setting (different from 'firm') appears at the top of the screen, and the web address is configured separately."
+    },
+    {
+      "question": "Why is it important to set the Cloudflare proxy cloud to gray instead of orange when adding a domain?",
+      "choices": [
+        "A gray cloud makes the domain load faster",
+        "An orange cloud blocks Vercel's security certificate, preventing the domain from working properly",
+        "A gray cloud reduces costs by lowering bandwidth usage",
+        "An orange cloud requires additional DNS configuration steps"
+      ],
+      "answer": 1,
+      "slide": 6,
+      "feedback_correct": "Exactly—the gray cloud (DNS only) allows Vercel's security certificate to work, while an orange cloud blocks it.",
+      "feedback_incorrect": "When setting up a domain in Cloudflare, the proxy must be set to gray (DNS only) because an orange cloud blocks Vercel's security certificate and prevents the domain from functioning correctly."
+    },
+    {
+      "question": "What is the six-digit code that appears during the owner's first sign-in, and how long does it remain valid?",
+      "choices": [
+        "A permanent access code that the owner stores in the License tab for future use",
+        "A temporary code sent by email that works for ten minutes",
+        "A security code that changes every time the owner signs in and lasts for one hour",
+        "A one-time code that the owner generates from the admin page and lasts for twenty-four hours"
+      ],
+      "answer": 1,
+      "slide": 7,
+      "feedback_correct": "Correct—the email-sent code is temporary and expires after ten minutes for security.",
+      "feedback_incorrect": "The owner receives a six-digit code by email that is valid for only ten minutes. This temporary code adds a security layer to the sign-in process."
+    },
+    {
+      "question": "How is a firm's monthly billing amount determined?",
+      "choices": [
+        "Based on the total number of client books ever added to the firm's account",
+        "Based on the highest number of active client books on any single day during that month, using the firm's tier rates",
+        "Based on a fixed monthly fee plus an additional charge per staff member",
+        "Based on the number of days in the month multiplied by the daily rate"
+      ],
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "Exactly—billing uses the peak book count for the month, which the License Service tracks automatically.",
+      "feedback_incorrect": "Billing is calculated from the 'Highest by month' number—the maximum active client books on any single day in that month—multiplied by the firm's tier rates. This is different from the 'ever-added' count, which tracks cumulative additions."
+    },
+    {
+      "question": "What happens when an employee leaves an accounting firm that uses ESource?",
+      "choices": [
+        "The firm must immediately delete all of that employee's client books",
+        "The employee's laptop automatically locks all books until the firm upgrades to a higher tier",
+        "The owner removes the employee from the License tab, and their computer locks at its next check-in",
+        "ESource staff must manually remove the employee's access from the admin page within 24 hours"
+      ],
+      "answer": 2,
+      "slide": 9,
+      "feedback_correct": "That's right—the owner controls access through the License tab, and the lock happens automatically at the next check-in.",
+      "feedback_incorrect": "When an employee leaves, the firm's owner simply removes them from the License tab. The system then locks that person's computer at its next internet check-in, with no manual ESource intervention needed."
+    },
+    {
+      "question": "Why would a firm show in red on the admin page, and what should you do about it?",
+      "choices": [
+        "The firm's payment is overdue; you should send an invoice reminder immediately",
+        "The firm has exceeded its client book limit; you should reach out to discuss upgrading to the next tier",
+        "The firm's security plan has expired; you should resend the security documentation",
+        "The firm's web address has a DNS configuration error; you should check the Cloudflare settings"
+      ],
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "Correct—red indicates the firm is over its limit, which is a sales opportunity to offer a higher tier.",
+      "feedback_incorrect": "When a firm appears in red on the admin page, it means they have exceeded their client book limit. This is an opportunity to reach out and discuss upgrading to a higher tier with more capacity."
+    },
+    {
+      "question": "Based on the entire activation process, which sequence of steps is in the correct order?",
+      "choices": [
+        "Brand the profile, add the firm on admin page, give the firm its web address, owner's first sign-in",
+        "Add the firm on admin page, brand the profile, give the firm its web address, owner's first sign-in",
+        "Give the firm its web address, add the firm on admin page, brand the profile, owner's first sign-in",
+        "Owner's first sign-in, add the firm on admin page, brand the profile, give the firm its web address"
+      ],
+      "answer": 1,
+      "slide": 4,
+      "feedback_correct": "Perfect—the activation follows the steps in order: admin setup, branding, web address, then handing over the keys to the owner.",
+      "feedback_incorrect": "The activation steps must follow a specific order: first add the firm on the admin page (Step 1), then brand its profile (Step 2), give it a web address (Step 3), and finally enable the owner's first sign-in (Step 4). This order ensures all the backend setup is complete before the firm gains access."
+    }
+  ]
+}
