@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — Getting Started with ESource Bookkeeping Tool",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "What is the web address you use to sign in to the ESource Bookkeeping Tool?",
+      "choices": [
+        "The address your owner gave you",
+        "www.esourcebookkeeping.com",
+        "Your firm's email domain",
+        "The address is sent to you via email"
+      ],
+      "answer": 0,
+      "slide": 3,
+      "feedback_correct": "That's right—your owner provides your firm's specific web address, which you should bookmark for easy access.",
+      "feedback_incorrect": "The tool is customized for your firm, so you won't use a generic web address. Your owner will give you the specific address to use."
+    },
+    {
+      "question": "What happens if a computer goes 14 days without connecting to the internet?",
+      "choices": [
+        "You must add the client again",
+        "The books lock for safety until you sign in with a new code",
+        "Your backup files are deleted",
+        "Your staff member's email is removed from the License tab"
+      ],
+      "answer": 1,
+      "slide": 3,
+      "feedback_correct": "Correct—the tool locks the books as a security measure if a computer hasn't checked in for 14 days.",
+      "feedback_incorrect": "The tool has a built-in safety feature that prevents unauthorized access. After 14 days offline, you'll need to sign in again with a fresh code to unlock the books."
+    },
+    {
+      "question": "Which three things make this bookkeeping tool different from others?",
+      "choices": [
+        "It is free, cloud-based, and works offline",
+        "It carries your brand, your data stays with you, and everything is locked to your firm",
+        "It automatically files taxes, integrates with all banks, and requires no backups",
+        "It allows unlimited staff, stores data in the cloud, and provides tax advice"
+      ],
+      "answer": 1,
+      "slide": 2,
+      "feedback_correct": "Excellent—those three core features protect your firm's brand, data privacy, and security.",
+      "feedback_incorrect": "The tool is designed around three key principles: branding your firm, keeping data local on your computers, and encrypting everything so only approved people can access it."
+    },
+    {
+      "question": "What file formats can you upload for banks other than Wells Fargo?",
+      "choices": [
+        "Only PDF files",
+        "CSV, Quicken (QFX), QuickBooks (QBO), or OFX",
+        "Excel spreadsheets only",
+        "Only OFX and CSV files"
+      ],
+      "answer": 1,
+      "slide": 6,
+      "feedback_correct": "That's correct—most banks let you download in one of these four formats, with Quicken and QuickBooks files being ideal because they include account numbers and balances.",
+      "feedback_incorrect": "Different banks support different download formats. The tool accepts CSV, Quicken, QuickBooks, and OFX files from most banks to give you flexibility."
+    },
+    {
+      "question": "When should you download a backup of your books?",
+      "choices": [
+        "Once a month",
+        "Only when you add a new client",
+        "At the end of every work session",
+        "Once a year at tax time"
+      ],
+      "answer": 2,
+      "slide": 9,
+      "feedback_correct": "Perfect—consistent backups at the end of each session protect your firm's data.",
+      "feedback_incorrect": "Since your books live on your computer rather than in the cloud, backing up regularly is critical. Make it a habit to download a backup every time you finish working."
+    },
+    {
+      "question": "What is the 3-2-1 backup rule described in this course?",
+      "choices": [
+        "Keep 3 monthly backups, 2 yearly backups, and 1 quarterly backup",
+        "Keep 3 copies on 2 kinds of storage, with 1 away from the office",
+        "Keep 3 backups on a thumb drive, 2 on your computer, and 1 in email",
+        "Keep 3 copies encrypted, 2 copies unencrypted, and 1 in the cloud"
+      ],
+      "answer": 1,
+      "slide": 9,
+      "feedback_correct": "Exactly—this strategy ensures you have redundant copies across different media and locations for maximum protection.",
+      "feedback_incorrect": "The 3-2-1 rule is a data protection standard: three copies, on at least two different types of storage media, with at least one copy stored away from your office."
+    },
+    {
+      "question": "Why are bank and book statements never uploaded to ESource's servers?",
+      "choices": [
+        "It would slow down the tool's performance",
+        "Because your data stays with you and lives only on your firm's own computers",
+        "Because the company runs out of server space",
+        "Because clients prefer to manage their own data online"
+      ],
+      "answer": 1,
+      "slide": 2,
+      "feedback_correct": "Right—this is a core design principle that gives your firm complete control and privacy over sensitive financial data.",
+      "feedback_incorrect": "The tool is built so that sensitive financial data never leaves your office. This keeps your firm's data and your clients' information under your complete control."
+    },
+    {
+      "question": "If an owner wants to add a staff member, what must they do first?",
+      "choices": [
+        "Send the staff member a link to download the tool",
+        "Create a username and password for the staff member",
+        "Add the staff member with their own work email on the License tab",
+        "Have the staff member sign in and set up their own profile"
+      ],
+      "answer": 2,
+      "slide": 4,
+      "feedback_correct": "Correct—the owner must add each staff member individually with their own work email so they sign in as themselves.",
+      "feedback_incorrect": "The owner controls access through the License tab. Each person needs their own work email so they sign in individually and the system can track who accessed what."
+    },
+    {
+      "question": "When sorting transactions, what should you do if you mark \"Remember\" when picking a category?",
+      "choices": [
+        "The transaction will be sent to the tax preparer automatically",
+        "A rule is created so lines like that sort themselves next month",
+        "The category is saved only for that client",
+        "You must re-enter the category every time you see a similar line"
+      ],
+      "answer": 1,
+      "slide": 7,
+      "feedback_correct": "Exactly—leaving \"Remember\" checked builds rules that automate sorting over time, so you answer fewer questions each month.",
+      "feedback_incorrect": "The \"Remember\" feature is a learning tool. When you check it, the tool creates a rule, so similar transactions automatically sort themselves in the future and reduce your workload."
+    },
+    {
+      "question": "What should you do before sending an Excel report package to a client or their tax preparer?",
+      "choices": [
+        "Encrypt the file with a password",
+        "Ask the client to sign a confidentiality agreement",
+        "Review the reports first, as these are tools for trained professionals, not tax advice",
+        "Get approval from ESource AI Group"
+      ],
+      "answer": 2,
+      "slide": 8,
+      "feedback_correct": "Perfect—professional review is essential before sharing reports because the tool provides data organization, not tax advice.",
+      "feedback_incorrect": "These reports are powerful tools for bookkeeping professionals, but they don't include tax advice. It's your responsibility to review the reports before sending them to ensure accuracy and appropriateness."
+    }
+  ]
+}
