@@ -565,5 +565,34 @@
         "startSlide": 10
       }
     ]
+  },
+  "1180": {
+    "id": "getting_started_with_esource_bookkeeping_tool",
+    "title": "Getting Started with ESource Bookkeeping Tool",
+    "totalSlides": 10,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1180-Getting-Started-with-ESource-Bookkeeping-Tool.pdf",
+    "firstMessage": "Welcome to Getting Started with ESource Bookkeeping Tool. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Getting Started (slides 3-5)",
+        "startSlide": 3
+      },
+      {
+        "label": "Managing Your Books (slides 6-7)",
+        "startSlide": 6
+      },
+      {
+        "label": "Reports and Security (slides 8-9)",
+        "startSlide": 8
+      },
+      {
+        "label": "Ready to Begin (slide 10)",
+        "startSlide": 10
+      }
+    ]
   }
 }
