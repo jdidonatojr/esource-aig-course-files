@@ -6,134 +6,134 @@
   },
   "questions": [
     {
-      "question": "What are the three main reasons firms buy our white-label bookkeeping tool?",
+      "question": "What are the three main reasons that accounting firms buy the ESource white-label bookkeeping tool?",
       "choices": [
         "Their brand, data stays home, and lower cost per client",
-        "Bank feeds, unlimited staff, and mobile app access",
-        "Payroll integration, client login portal, and Excel exports",
-        "QuickBooks compatibility, Xero integration, and Wave support"
+        "Bank feeds, payroll integration, and client login portal",
+        "Mobile app, live bank feeds, and unlimited staff seats",
+        "Familiarity, ease of use, and built-in reporting"
       ],
       "answer": 0,
       "slide": 3,
-      "feedback_correct": "Exactly right—these three reasons are the core value proposition you should be able to say in one breath.",
-      "feedback_incorrect": "The three reasons are their brand on client reports, data security (stays home), and lower cost per client. The other options mix in competitor features or features we don't yet offer."
+      "feedback_correct": "Exactly—these three reasons are the core value proposition and should be deliverable in one breath during any sales conversation.",
+      "feedback_incorrect": "The second and third options describe features the tool doesn't yet have or competitor strengths. The fourth option misses the strategic advantages that drive firm buying decisions."
     },
     {
-      "question": "What is the ideal firm size and type to target with this tool?",
+      "question": "What is the ideal firm size (in monthly clients) that represents a great fit for this white-label tool?",
       "choices": [
-        "Solo CPAs with 1 to 5 clients who want mobile access",
-        "Large accounting firms with 200+ clients using QuickBooks Online",
-        "Bookkeeping and small CPA firms with roughly 5 to 100 monthly clients",
-        "Tax preparation firms that only do annual filings"
+        "1 to 5 clients",
+        "5 to 100 clients",
+        "100 to 500 clients",
+        "500+ clients"
       ],
-      "answer": 2,
+      "answer": 1,
       "slide": 2,
-      "feedback_correct": "That's the sweet spot—firms in that range have the scale to benefit and the independence to make their own software choice.",
-      "feedback_incorrect": "Our best fit is bookkeeping and small CPA firms with 5 to 100 monthly clients who want their own brand and care about client privacy. Solo practitioners or mega-firms don't match our positioning."
+      "feedback_correct": "Right—bookkeeping and small CPA firms with roughly five to one hundred monthly clients are the sweet spot for this solution.",
+      "feedback_incorrect": "Firms smaller than five or much larger than one hundred typically have different needs or may not benefit as much from this positioning."
     },
     {
-      "question": "According to the course, what should you do before running a demo?",
+      "question": "During the demo, which feature should you show first to create the \"moment that sells\"?",
       "choices": [
-        "Send the prospect a pricing sheet and ask them to review it",
-        "Ask discovery questions about their current tools, costs, brand visibility, and time spent on transactions",
-        "Show them the firm-branded screen with their logo immediately to create excitement",
-        "Schedule a follow-up meeting to discuss implementation details"
-      ],
-      "answer": 1,
-      "slide": 4,
-      "feedback_correct": "Discovery questions uncover pain and help you tailor the demo to what actually matters to them—you'll repeat their own words back to them during the demo and close.",
-      "feedback_incorrect": "While the logo is impactful, discovery questions come first so you understand their situation and can speak directly to their pain points instead of giving a generic demo."
-    },
-    {
-      "question": "What is the proposed pricing structure for our tool?",
-      "choices": [
-        "Flat rate of $20 per month per firm, unlimited clients",
-        "$20 for the first client, $17 for clients 2–10, $15 for 11–30, and $14 for 31–100",
-        "Tiered by staff seats: $10 per seat up to 5 seats, then $5 per additional seat",
-        "$26.60 per client per month, matching QuickBooks Online pricing"
-      ],
-      "answer": 1,
-      "slide": 6,
-      "feedback_correct": "Correct—the tiers are graduated per client, and staff seats are unlimited, which is a key advantage over competitors.",
-      "feedback_incorrect": "The proposed structure charges per active client book in graduated bands: $20, $17, $15, and $14 as the firm grows, and staff seats don't cost extra. Always remember to say 'proposed' until pricing is final."
-    },
-    {
-      "question": "How should you address a prospect's concern that their clients are already familiar with QuickBooks?",
-      "choices": [
-        "Agree it's a problem and suggest they switch to QuickBooks Online instead",
-        "Explain that clients get Excel reports with the firm's name on them and don't need to learn any software",
-        "Tell them QuickBooks is outdated and our tool is more modern",
-        "Offer a discount on the first three months to make the transition easier"
-      ],
-      "answer": 1,
-      "slide": 8,
-      "feedback_correct": "That's the right angle—clients never see or interact with the tool; they only see professional Excel reports with the firm's brand, so familiarity with QBO is irrelevant.",
-      "feedback_incorrect": "Clients don't use the software directly; they receive Excel reports branded with the accounting firm's name. Familiarity with QuickBooks is not a real objection once you explain this."
-    },
-    {
-      "question": "What does 'data stays home' mean as a value proposition?",
-      "choices": [
-        "Firms can only access the tool from their office building",
-        "Client bank statements never leave the firm's computers, and books and backups are locked so only signed-in staff can open them",
-        "The tool only works offline and requires manual syncing",
-        "Client data is stored in the firm's QuickBooks account, not in the cloud"
-      ],
-      "answer": 1,
-      "slide": 3,
-      "feedback_correct": "Perfect—this is a powerful differentiator because no competitor can claim data never leaves the firm's computers, and backups stay locked to the firm.",
-      "feedback_incorrect": "Data stays home means the firm maintains full control: bank statements and backups stay on their computers and are locked, so only their authorized staff can access the books."
-    },
-    {
-      "question": "If a prospect says they need bank feeds before they'll switch, how should you respond?",
-      "choices": [
-        "Tell them we're building feeds and will have them in three months",
-        "Acknowledge they're important and offer to connect them with our product team",
-        "Explain that monthly downloads take minutes and every month is proven to tie to the bank, which many firms prefer to feeds that silently miss transactions",
-        "Admit it's a gap and suggest they stay with their current system"
+        "The bank statement upload with the Bank Check tab",
+        "The Ask Client feature with grouped questions",
+        "The firm-branded screen with their logo on the demo profile",
+        "The help assistant answering questions in plain English"
       ],
       "answer": 2,
-      "slide": 8,
-      "feedback_correct": "Exactly—you're not dismissing the concern; you're reframing it honestly and showing how our approach actually solves the problem better in many cases.",
-      "feedback_incorrect": "This objection is common, and the response is to explain how monthly downloads actually work well in practice and offer a transparency advantage that live feeds don't have."
+      "slide": 5,
+      "feedback_correct": "Perfect—putting their logo on the demo profile ahead of time is explicitly called out as the moment that sells the firm-branding value.",
+      "feedback_incorrect": "While the other features are important parts of the demo, they come after the branded screen. The logo moment is the emotional anchor that resonates first."
     },
     {
-      "question": "What is the demo sequence you should follow, and why does the logo placement matter?",
+      "question": "What is the proposed monthly cost for a firm with exactly 10 active client books?",
       "choices": [
-        "Show the P&L first to prove financial accuracy, then upload the bank statement, then show the logo—this builds trust gradually",
-        "Open the firm-branded screen with their logo first (ideally pre-loaded), then upload a bank statement, show Ask Client, and finish with Health dashboard and reports—the logo is the moment that sells",
-        "Start with the pricing page so they understand the cost, then show the demo to confirm it fits their budget",
-        "Show all the advanced features first to demonstrate capability, then reveal the branding at the end as a bonus"
+        "$140 per month",
+        "$150 per month",
+        "$173 per month",
+        "$200 per month"
+      ],
+      "answer": 2,
+      "slide": 6,
+      "feedback_correct": "Correct—one client at $20 plus nine clients at $17 each equals $20 + $153 = $173 per month for ten clients.",
+      "feedback_incorrect": "Remember the pricing tiers are graduated: the first client is $20, then clients 2–10 are $17 each. Calculate at the firm's actual client count, not a flat rate."
+    },
+    {
+      "question": "According to the course, what should you do before running any demo?",
+      "choices": [
+        "Ask questions about their current tools, cost pain, brand visibility, and time spent on transactions",
+        "Show them the competitor comparison chart immediately",
+        "Display the firm-branded screen with their logo",
+        "Explain the pricing tiers and payment terms"
+      ],
+      "answer": 0,
+      "slide": 4,
+      "feedback_correct": "Exactly—discovery questions uncover the pain first, and you'll repeat their own words back to them during the demo and close.",
+      "feedback_incorrect": "Jumping straight to the demo or pricing before discovery means you miss the chance to tailor your pitch to their specific frustrations and priorities."
+    },
+    {
+      "question": "How should you respond to a prospect who says, \"Our clients are very familiar with QuickBooks Online\"?",
+      "choices": [
+        "Tell them QuickBooks is outdated and they should switch immediately",
+        "Explain that clients get Excel reports with the firm's name and don't need to learn new software",
+        "Suggest they keep QuickBooks and use your tool as a backup system",
+        "Acknowledge that QuickBooks is better and offer a discount to win the deal"
       ],
       "answer": 1,
-      "slide": 5,
-      "feedback_correct": "Yes—the branded screen with their logo is the emotional high point of the demo and seals the \"this is for me\" feeling before you show the mechanics.",
-      "feedback_incorrect": "The logo moment comes early in the demo (first thing after opening), not at the end. This is when they see their own brand on the screen, which is powerful and shouldn't be buried."
+      "slide": 8,
+      "feedback_correct": "That's the right response—clients get reports branded with the firm's name, so they don't see or need to learn the underlying software.",
+      "feedback_incorrect": "Dismissing QuickBooks or suggesting the tool is secondary misses the point: clients care about the report quality and the firm's brand, not which software generated it."
     },
     {
-      "question": "How should you close a sale with a prospect who is hesitant about switching all their clients at once?",
+      "question": "What is the key security story you should tell an owner who worries about employees leaving with client data?",
       "choices": [
-        "Push for a full commitment and offer a steep discount to overcome their objection",
-        "Propose a pilot of 3 to 5 clients for 60 days alongside their current system, agree on success measures, and then scale after the pilot succeeds",
-        "Suggest they take two weeks to decide while keeping the deal open",
-        "Start with one client free for 30 days as a trial to prove the value"
+        "The tool uses military-grade encryption that no one can break",
+        "Only people the owner adds can sign in; when they leave, their access locks immediately, and even lost laptops stay unreadable",
+        "ESource monitors all user activity and alerts you to suspicious behavior",
+        "Client data is backed up to the cloud so you never lose it"
+      ],
+      "answer": 1,
+      "slide": 9,
+      "feedback_correct": "Perfect—this is the owner's core concern, and the story reassures them that they retain complete control and their clients stay theirs.",
+      "feedback_incorrect": "The other options describe general security features but miss the specific human-control story that addresses the real fear: an employee walking out with client information."
+    },
+    {
+      "question": "What should you propose when closing the deal, and why?",
+      "choices": [
+        "Migrating all their clients immediately to prove the tool's reliability",
+        "A pilot of 3 to 5 clients for 60 days alongside their current system to reduce risk",
+        "A one-year contract with all their clients to lock in the discount",
+        "A free trial with no staff limits to show the full potential"
       ],
       "answer": 1,
       "slide": 10,
-      "feedback_correct": "Perfect—a small pilot removes risk and lets success speak for itself, which is how most deals close in this playbook.",
-      "feedback_incorrect": "The closing strategy is always a pilot: small scale (3–5 clients), limited time (60 days), alongside their current system for safety, with agreed success measures. This is how you overcome hesitation and move to a full rollout."
+      "feedback_correct": "Exactly—the pilot approach removes risk, allows them to measure success, and creates a natural path to scaling after the 60-day period.",
+      "feedback_incorrect": "A big switch or long commitment feels risky to the prospect. The pilot is how you build confidence and demonstrate value before they commit their full client base."
     },
     {
-      "question": "You're in a sales call and the prospect asks about data security after an employee leaves the firm. What story should you tell them?",
+      "question": "When discussing pricing, why should you always use the phrase \"proposed\" rather than stating rates as final?",
       "choices": [
-        "Explain that our cloud servers are protected by military-grade encryption and ESource never has access to client data",
-        "Tell them that employee access is logged and they can review the audit trail to see what was accessed",
-        "Describe how only the owner can add sign-in users, how removing someone locks their computer out at next check-in, and how backups are locked to the firm so an employee can't take data home",
-        "Admit that we don't have a perfect solution and suggest they keep their current system for sensitive client data"
+        "To make the pricing sound flexible and negotiable",
+        "Because the pricing tiers are still being finalized and you should confirm with Joe before anything is signed",
+        "To leave room to offer a discount if they push back",
+        "To make the prospect feel like they're getting insider information"
       ],
-      "answer": 2,
-      "slide": 9,
-      "feedback_correct": "Exactly—this is the owner's security story and it's your most powerful answer to a real concern: your clients stay yours, and you control exactly who can access them.",
-      "feedback_incorrect": "The security story focuses on the owner's control: they add users, they remove them, and the system locks former employees out even on their personal devices. Backups are locked too, so employees can't steal data. This is what owners care about most."
+      "answer": 1,
+      "slide": 1,
+      "feedback_correct": "Correct—the pricing is still proposed, so saying \"proposed\" and confirming with Joe before signing protects both you and the prospect from confusion.",
+      "feedback_incorrect": "Using \"proposed\" is not a sales tactic but a compliance measure. The pricing hasn't been finalized, and misrepresenting it could create legal or trust issues."
+    },
+    {
+      "question": "A prospect says, \"We need live bank feeds to use this tool.\" How should you respond based on the course?",
+      "choices": [
+        "Apologize and admit this is a major gap that makes the tool unsuitable for them",
+        "Explain that monthly downloads take minutes, every month ties to the bank, and many firms prefer this to feeds that can silently miss transactions",
+        "Offer to build live feeds for them as a custom feature at no extra cost",
+        "Suggest they use a third-party bank feed service instead"
+      ],
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "Well done—this response reframes the limitation as a benefit and builds confidence that the monthly reconciliation is robust and proven.",
+      "feedback_incorrect": "Apologizing or conceding the point weakens your position. The course teaches you to handle this objection honestly by highlighting why monthly proven reconciliation is actually an advantage."
     }
   ]
 }
