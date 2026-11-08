@@ -1,0 +1,152 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — How to Read Tarot Cards for Paying Clients",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "How many cards are in a standard tarot deck?",
+      "choices": [
+        "56 cards",
+        "78 cards",
+        "22 cards",
+        "76 cards"
+      ],
+      "answer": 1,
+      "slide": 3,
+      "feedback_correct": "Exactly right—78 cards is the fixed standard, divided into 22 Major Arcana and 56 Minor Arcana.",
+      "feedback_incorrect": "A standard deck has always contained exactly 78 cards since the 15th century. The 56 refers only to the Minor Arcana, and the 22 refers only to the Major Arcana."
+    },
+    {
+      "question": "What are the four suits of the Minor Arcana?",
+      "choices": [
+        "Hearts, Diamonds, Clubs, Spades",
+        "Wands, Cups, Swords, Pentacles",
+        "Fire, Water, Air, Earth",
+        "Kings, Queens, Knights, Pages"
+      ],
+      "answer": 1,
+      "slide": 5,
+      "feedback_correct": "Perfect—Wands, Cups, Swords, and Pentacles are the four suits, each tied to an element and a life domain.",
+      "feedback_incorrect": "While the suits do connect to the four classical elements (Fire, Water, Air, Earth), the actual suit names are Wands, Cups, Swords, and Pentacles."
+    },
+    {
+      "question": "What does the term 'querent' mean in tarot reading?",
+      "choices": [
+        "The person interpreting the cards",
+        "The specific question being asked",
+        "The person asking the question or your client",
+        "The layout pattern of the cards"
+      ],
+      "answer": 2,
+      "slide": 7,
+      "feedback_correct": "Exactly—the querent is your client, the person asking the question.",
+      "feedback_incorrect": "The querent is the person seeking the reading. The reader is the interpreter; the spread is the layout; and the question is what frames the reading."
+    },
+    {
+      "question": "Which suit in tarot governs emotions, relationships, intuition, and love?",
+      "choices": [
+        "Pentacles",
+        "Wands",
+        "Cups",
+        "Swords"
+      ],
+      "answer": 2,
+      "slide": 7,
+      "feedback_correct": "Yes—Cups and Water handle the emotional and relational domain, the inner life and connection.",
+      "feedback_incorrect": "Cups connect to the element of Water and rule the emotional realm. Wands handle drive and creativity; Swords handle thoughts and conflict; Pentacles handle material concerns."
+    },
+    {
+      "question": "In what year was the Rider-Waite-Smith deck published, and why did it become the standard for learning tarot?",
+      "choices": [
+        "1850, because it was the oldest deck",
+        "1909, because it was the first deck to fully illustrate all 78 cards including pip cards",
+        "1950, because it was more affordable than other decks",
+        "1999, because it used modern imagery"
+      ],
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "Correct—the 1909 Rider-Waite-Smith was revolutionary because Pamela Colman Smith illustrated every single card with a complete scene, not just suit symbols.",
+      "feedback_incorrect": "The RWS deck became the learning standard in 1909 because it was the first to show a full illustrated scene on every card, including the pip cards. Before that, most decks showed only symbols on numbered cards."
+    },
+    {
+      "question": "What is the most important first step before any tarot reading begins?",
+      "choices": [
+        "Shuffle the deck thoroughly",
+        "Choose a significator card",
+        "Form a strong, focused question with the client",
+        "Clear the deck by knocking on it"
+      ],
+      "answer": 2,
+      "slide": 9,
+      "feedback_correct": "Yes—the quality of the reading depends on the quality of the question. A focused question like 'What do I need to understand about this job offer right now?' will produce a clearer reading than a vague one.",
+      "feedback_incorrect": "While shuffling and clearing the deck are part of preparation, the reading truly begins with a strong question. A vague question produces a vague reading, so this is your first responsibility to the client."
+    },
+    {
+      "question": "How does the position of a card in a spread affect its interpretation?",
+      "choices": [
+        "The position has no effect; the card's meaning stays the same",
+        "The position provides the question and the card provides the answer",
+        "Only reversed cards change meaning based on position",
+        "The position only matters for Court Cards"
+      ],
+      "answer": 1,
+      "slide": 15,
+      "feedback_correct": "Exactly right—the same card means something different in different positions because the position defines what question that card is answering.",
+      "feedback_incorrect": "This is a core skill: the position acts as the lens that focuses the card's meaning. The same card in 'past' speaks to history; in 'obstacle' it speaks to what is blocking the client. Position shapes interpretation."
+    },
+    {
+      "question": "What does it mean when many Pentacles appear across a tarot spread?",
+      "choices": [
+        "Emotional and relational matters are dominating",
+        "Creative action and ambition are the key forces",
+        "Mental conflict and difficult decisions are central",
+        "Practical or financial concerns are at the heart of the situation"
+      ],
+      "answer": 3,
+      "slide": 17,
+      "feedback_correct": "Perfect—a dominant Pentacle pattern signals that the real story is about practical, financial, or material stability concerns, even if the client framed the question differently.",
+      "feedback_incorrect": "Pentacles are tied to Earth and the material world. Many Pentacles point to practical and financial concerns. Cups point to emotion; Wands to action; Swords to mental conflict."
+    },
+    {
+      "question": "When you read the Celtic Cross as a story, which two positions should you start with together?",
+      "choices": [
+        "Positions three and four (past and foundation)",
+        "Positions one and two (present and obstacle)",
+        "Positions five and six (crown and approaching future)",
+        "Positions nine and ten (hopes and fears and outcome)"
+      ],
+      "answer": 1,
+      "slide": 22,
+      "feedback_correct": "Yes—starting with the present situation and the main obstacle together frames the entire story and gives the reading its central tension.",
+      "feedback_incorrect": "The Celtic Cross tells a story in a deliberate sequence. Positions one and two together establish what is really at stake. Only after understanding the present moment and the challenge do you look backward to understand how it developed."
+    },
+    {
+      "question": "What is the most important ethical principle when reading the outcome card in a tarot spread?",
+      "choices": [
+        "Frame it as a fixed fate that will certainly occur",
+        "Never discuss the outcome with the client",
+        "Frame it as a projection of the current trajectory, not a verdict",
+        "Only read outcomes for clients who pay extra"
+      ],
+      "answer": 2,
+      "slide": 27,
+      "feedback_correct": "Correct—the language matters deeply. The outcome reflects where things are heading if nothing changes, not what must happen. That framing gives the client genuine agency.",
+      "feedback_incorrect": "The outcome is the most powerful position and carries ethical weight. You must frame it as 'based on where things are now, this is the direction things seem to be heading,' not as inevitable fact. This accuracy also empowers the client to change course if needed."
+    },
+    {
+      "question": "According to the course, what is the recommended first stage for building tarot reading skills before taking paying clients?",
+      "choices": [
+        "Start with three-card spreads on paying clients",
+        "Jump directly to Celtic Cross readings for everyone",
+        "Do daily one-card pulls with journal entries and master upright card meanings",
+        "Practice only reversed cards until they become automatic"
+      ],
+      "answer": 2,
+      "slide": 26,
+      "feedback_correct": "Exactly—Stage One is building genuine familiarity with the 78 cards through daily one-card pulls and journal practice, which is the foundation for everything that follows.",
+      "feedback_incorrect": "The course explicitly recommends a four-stage sequence starting with daily one-card pulls and journal entries. This builds real familiarity with individual cards before you move to multi-card spreads or reversals. Skipping this stage leaves you with shaky interpretations."
+    }
+  ]
+}
