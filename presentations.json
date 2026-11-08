@@ -379,5 +379,38 @@
         "startSlide": 23
       }
     ]
+  },
+  "13": {
+    "id": "esource_bookkeeper_reimagining_your_accounting_and_bookkeeping_practice",
+    "title": "ESource Bookkeeper: Reimagining Your Accounting and Bookkeeping Practice",
+    "totalSlides": 15,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/ESource-Bookkeeper-Reimagining-Your-Accounting-and-Bookkeeping-Practice.pdf",
+    "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting ESource Bookkeeper: Reimagining Your Accounting and Bookkeeping Practice. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "Your Brand and Control (slides 4-6)",
+        "startSlide": 4
+      },
+      {
+        "label": "Streamlined Workflows (slides 7-9)",
+        "startSlide": 7
+      },
+      {
+        "label": "Client Insights and Support (slides 10-11)",
+        "startSlide": 10
+      },
+      {
+        "label": "Security and Pricing (slides 12-13)",
+        "startSlide": 12
+      },
+      {
+        "label": "Getting Started (slides 14-15)",
+        "startSlide": 14
+      }
+    ]
   }
 }
