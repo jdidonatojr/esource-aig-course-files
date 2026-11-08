@@ -538,18 +538,18 @@
     ]
   },
   "1170": {
-    "id": "esource_team_how_to_activate_a_new_accounting_firm",
-    "title": "ESource Team: How to Activate a New Accounting Firm",
-    "totalSlides": 10,
-    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1170-ESource-Team-How-to-Activate-a-New-Accounting-Firm.pdf",
-    "firstMessage": "Welcome to ESource Team: How to Activate a New Accounting Firm. Are you ready to begin?",
+    "id": "activating_a_new_accounting_firm",
+    "title": "Activating a New Accounting Firm",
+    "totalSlides": 11,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1170-Activating-a-New-Accounting-Firm.pdf",
+    "firstMessage": "Welcome to Activating a New Accounting Firm. Are you ready to begin?",
     "sections": [
       {
         "label": "Introduction and Overview (slides 1-2)",
         "startSlide": 1
       },
       {
-        "label": "Pre-Activation Requirements (slides 3-3)",
+        "label": "Pre-Activation Requirements (slides 3)",
         "startSlide": 3
       },
       {
@@ -557,12 +557,16 @@
         "startSlide": 4
       },
       {
-        "label": "Launch and Ongoing Operations (slides 7-9)",
+        "label": "Launch and Access (slides 7-8)",
         "startSlide": 7
       },
       {
-        "label": "Recap and Readiness (slide 10-10)",
-        "startSlide": 10
+        "label": "Operations and Support (slides 9-10)",
+        "startSlide": 9
+      },
+      {
+        "label": "Recap and Readiness (slide 11)",
+        "startSlide": 11
       }
     ]
   },
