@@ -603,11 +603,11 @@
     "firstMessage": "Welcome to ESource WhiteLabel Sales Course. Are you ready to begin?",
     "sections": [
       {
-        "label": "Course Overview (slides 1-2)",
+        "label": "Introduction (slides 1-2)",
         "startSlide": 1
       },
       {
-        "label": "Discovery and Positioning (slides 3-4)",
+        "label": "Discovery and Pain (slides 3-4)",
         "startSlide": 3
       },
       {
@@ -631,7 +631,7 @@
         "startSlide": 10
       },
       {
-        "label": "Playbook Summary (slide 11)",
+        "label": "Recap and Resources (slide 11)",
         "startSlide": 11
       }
     ]
