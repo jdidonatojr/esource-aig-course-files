@@ -643,5 +643,46 @@
         "startSlide": 12
       }
     ]
+  },
+  "1200": {
+    "id": "how_to_read_tarot_cards_for_paying_clients",
+    "title": "How to Read Tarot Cards for Paying Clients",
+    "totalSlides": 34,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1200-How-to-Read-Tarot-Cards-for-Paying-Clients.pdf",
+    "firstMessage": "Welcome to How to Read Tarot Cards for Paying Clients. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Deck Structure and Vocabulary (slides 3-9)",
+        "startSlide": 3
+      },
+      {
+        "label": "Single and Three-Card Spreads (slides 10-12)",
+        "startSlide": 10
+      },
+      {
+        "label": "Celtic Cross Fundamentals (slides 13-16)",
+        "startSlide": 13
+      },
+      {
+        "label": "Reading Patterns and Reversals (slides 17-25)",
+        "startSlide": 17
+      },
+      {
+        "label": "Ethical Practice and Client Communication (slides 26-28)",
+        "startSlide": 26
+      },
+      {
+        "label": "Building Skills and Practice Tools (slides 29-31)",
+        "startSlide": 29
+      },
+      {
+        "label": "Sensitive Topics and Final Practice (slides 32-34)",
+        "startSlide": 32
+      }
+    ]
   }
 }
