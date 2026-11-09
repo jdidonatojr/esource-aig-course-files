@@ -619,32 +619,32 @@
     "firstMessage": "Welcome to ESource Bookkeeper: White-Label Sales Course. Are you ready to begin?",
     "sections": [
       {
-        "label": "Course Overview (slides 1-3)",
+        "label": "Introduction (slides 1-2)",
         "startSlide": 1
       },
       {
-        "label": "Discovery and Pain (slides 4-5)",
-        "startSlide": 4
+        "label": "Why Firms Buy (slides 3-4)",
+        "startSlide": 3
       },
       {
-        "label": "The Demo (slides 6-8)",
-        "startSlide": 6
+        "label": "Discovery and Demo (slides 5-8)",
+        "startSlide": 5
       },
       {
         "label": "Pricing Strategy (slides 9-10)",
         "startSlide": 9
       },
       {
-        "label": "Competition and Objections (slides 11-12)",
+        "label": "Competitive Positioning (slides 11-12)",
         "startSlide": 11
       },
       {
-        "label": "Security and Trust (slide 13)",
+        "label": "Security and Closing (slides 13-14)",
         "startSlide": 13
       },
       {
-        "label": "Closing and Next Steps (slides 14-15)",
-        "startSlide": 14
+        "label": "Recap (slide 15)",
+        "startSlide": 15
       }
     ]
   },
