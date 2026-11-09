@@ -400,16 +400,12 @@
         "startSlide": 7
       },
       {
-        "label": "Client Insights and Support (slides 10-11)",
+        "label": "Client Insights and Support (slides 10-12)",
         "startSlide": 10
       },
       {
-        "label": "Security and Pricing (slides 12-13)",
-        "startSlide": 12
-      },
-      {
-        "label": "Getting Started (slides 14-15)",
-        "startSlide": 14
+        "label": "Pricing and Next Steps (slides 13-15)",
+        "startSlide": 13
       }
     ]
   }
