@@ -6,134 +6,134 @@
   },
   "questions": [
     {
-      "question": "What are the three main reasons firms buy the white-label bookkeeping tool?",
+      "question": "What are the three main reasons firms buy the ESource white-label bookkeeping tool?",
       "choices": [
         "Their brand, data stays home, and lower cost per client",
-        "Bank feeds, unlimited staff seats, and client login portal",
-        "Mobile app, payroll integration, and live transaction updates",
-        "Quick implementation, free training, and 24/7 support"
+        "Bank feeds, payroll integration, and mobile app access",
+        "Client login portal, live bank feeds, and unlimited users",
+        "Free trial period, 24/7 support, and automatic tax filing"
       ],
       "answer": 0,
       "slide": 3,
-      "feedback_correct": "Exactly right—these three reasons are the core value proposition and should be deliverable in one breath.",
-      "feedback_incorrect": "These are either competitor features or capabilities the tool doesn't yet offer. Review Slide 3 and the gaps mentioned on Slide 2 to see what we don't sell yet."
+      "feedback_correct": "Exactly—those three reasons are what wins deals and should roll off your tongue in one breath.",
+      "feedback_incorrect": "While some of those features are valuable, the three core buying reasons are their brand on reports, client data staying on their computers, and lower per-client cost. Review Slide 3 to see how these three reasons set us apart."
     },
     {
-      "question": "What is the ideal firm size for the white-label bookkeeping tool?",
+      "question": "Which discovery question should you ask first when talking to a potential firm?",
       "choices": [
-        "Accounting firms with over 500 monthly clients",
-        "Bookkeeping and small CPA firms with roughly 5 to 100 monthly clients",
-        "Solo bookkeepers with 1 to 5 clients",
-        "Large national CPA networks with multiple offices"
-      ],
-      "answer": 1,
-      "slide": 2,
-      "feedback_correct": "Correct—this is our best-fit customer profile, and it's important to start with the right firms.",
-      "feedback_incorrect": "Our sweet spot is mid-sized firms that want their own brand and value client privacy. Firms much larger or much smaller may not be a fit at this stage."
-    },
-    {
-      "question": "According to the course, how should pricing be presented to firms?",
-      "choices": [
-        "As final rates locked in for three years",
-        "As a flat fee per firm regardless of client count",
-        "As proposed pricing, with confirmation from Joe before anything is signed",
-        "As negotiable rates that vary by region"
-      ],
-      "answer": 2,
-      "slide": 1,
-      "feedback_correct": "Right—always say 'proposed' and confirm with Joe, because the pricing tiers are still being finalized.",
-      "feedback_incorrect": "The course explicitly warns that pricing is proposed, not final. Always confirm final terms with Joe before any commitment is made."
-    },
-    {
-      "question": "What does the reminder feature show in the demo, and why does it matter to bookkeepers?",
-      "choices": [
-        "It reminds the bookkeeper to invoice clients monthly",
-        "It shows missing statements in red and allows texting the client from the bookkeeper's own phone, solving the monthly statement-chasing problem",
-        "It automatically files tax documents in the firm's cloud storage",
-        "It sends automated payroll reminders to the firm's accountant"
-      ],
-      "answer": 1,
-      "slide": 7,
-      "feedback_correct": "Perfect—this demo moment lands because chasing statements is a real monthly headache bookkeepers face.",
-      "feedback_incorrect": "The reminders feature specifically targets the pain of getting clients to submit statements. Review Slide 7 to see how this moment in the demo is staged and why it resonates."
-    },
-    {
-      "question": "What should be included in the discovery questions before showing a demo?",
-      "choices": [
-        "Ask about their marketing budget and office location",
-        "Ask about today's tools, cost pain, brand visibility, and time spent chasing transactions",
-        "Ask about their hiring plans and employee turnover",
-        "Ask about their revenue growth and tax filing deadlines"
+        "How many hours a month do you spend chasing clients about transactions?",
+        "Which software are your clients on, and who pays for it?",
+        "Whose name do your clients see when they get their reports?",
+        "How did this year's price increases hit you and your clients?"
       ],
       "answer": 1,
       "slide": 5,
-      "feedback_correct": "Exactly—these four discovery questions uncover the specific pain points that your demo will solve.",
-      "feedback_incorrect": "The discovery phase is about understanding their current tools, cost challenges, brand concerns, and time drain. Write down answers in their own words so you can mirror them back during the demo."
+      "feedback_correct": "Starting with today's tools sets the stage and helps you understand their current situation before moving into cost and brand.",
+      "feedback_incorrect": "The discovery questions have a specific order: start with today's tools, then move to cost, then brand, then time. This order builds naturally from their current situation to their pain points."
     },
     {
-      "question": "How are the pricing tiers structured for the white-label bookkeeping tool?",
+      "question": "In the demo, what should you show immediately after uploading a bank statement?",
       "choices": [
-        "One flat rate of $15 per client book for all firms",
-        "Graduated tiers where each band's rate applies only to books in that band: $20 first, $17 for 2–10, $15 for 11–30, $14 for 31–100, $13 for 100+",
-        "Tiered pricing based on the firm's annual revenue",
-        "A single per-seat cost multiplied by the number of staff"
+        "The Health dashboard colors and the P and L report",
+        "The Ask Client tab with grouped questions",
+        "The Bank Check tab to prove the numbers tie to the bank",
+        "The Status tab showing missing client statements in red"
+      ],
+      "answer": 2,
+      "slide": 6,
+      "feedback_correct": "The Bank Check tab showing \"Ties\" proves the math and builds confidence that the upload worked correctly.",
+      "feedback_incorrect": "While those other screens are part of the demo, the immediate next step after upload is to prove the numbers match the bank using the Bank Check tab. This builds credibility early."
+    },
+    {
+      "question": "How many staff seats does the firm pay for when they license the ESource tool?",
+      "choices": [
+        "One seat per staff member, at $10 per seat per month",
+        "Seats are unlimited, so no additional charge for adding people",
+        "Up to five seats included, then $5 per additional seat",
+        "One seat per client book, up to the size of their firm"
       ],
       "answer": 1,
-      "slide": 8,
-      "feedback_correct": "Correct—the graduated band structure is key, and it's important to explain that each rate applies only to books within that range.",
-      "feedback_incorrect": "The pricing is per active client book with graduated tiers, not per staff seat or per firm revenue. Review Slide 8 to see how to explain the band structure clearly."
+      "slide": 9,
+      "feedback_correct": "That's right—pricing is per active client book only, and unlimited staff can use the system without extra cost.",
+      "feedback_incorrect": "The pricing model charges per active client book, not per staff member. Unlimited staff seats means firms don't worry about adding people, which is a real selling point."
     },
     {
-      "question": "What is the most effective way to close a sale with a prospect?",
+      "question": "What is the correct way to calculate the monthly price for a firm with 38 client books?",
       "choices": [
-        "Ask them to switch all their clients at once to prove commitment",
-        "Propose a 3–5 client pilot for 60 days alongside their current system, with agreed success measures",
-        "Offer a one-time discount if they sign a multi-year contract",
-        "Require them to attend a full-day onboarding training before they can decide"
+        "Use the calculator at esourcebookkeeper.com/calculator and type 38",
+        "Multiply 38 by $17 and round down to the nearest dollar",
+        "Use the Competitor Battle Cards to cross-reference the tier",
+        "Add $20 + $17 + $15 + $14 + $13 and divide by 38"
+      ],
+      "answer": 0,
+      "slide": 10,
+      "feedback_correct": "Never do the math by hand—always open the calculator tool so you get the graduated tier math right every time.",
+      "feedback_incorrect": "While the tiers are real, doing the math manually is error-prone. The calculator at esourcebookkeeper.com/calculator handles the graduated pricing correctly: $20 for book one, $17 for books 2–10, $15 for books 11–30, and $14 for books 31–38."
+    },
+    {
+      "question": "When a firm says \"Our clients know QuickBooks,\" what is the best response?",
+      "choices": [
+        "Agree that QuickBooks is the industry standard and offer to integrate with it",
+        "Explain that clients get Excel reports with the firm's name and don't need to learn new software",
+        "Suggest they train their clients on the ESource interface over a few weeks",
+        "Offer a discount if they commit to switching all clients immediately"
       ],
       "answer": 1,
       "slide": 12,
-      "feedback_correct": "Right—the pilot approach removes risk and lets both parties prove success before full adoption.",
-      "feedback_incorrect": "The pilot strategy is core to closing without resistance. A small test build confidence and demonstrates value before a big commitment."
+      "feedback_correct": "That's the right objection handler—clients receive professional Excel reports with the firm's brand, so they never have to log into or learn any new software.",
+      "feedback_incorrect": "The key insight is that client familiarity with QuickBooks isn't a barrier because our reports come out as Excel files with the firm's name on them. Clients don't need to use or learn any software."
     },
     {
-      "question": "When a prospect says \"Our clients know QuickBooks,\" how should you respond?",
+      "question": "What is the key security message you should tell an owner who worries about an employee leaving with client data?",
       "choices": [
-        "Agree that QuickBooks is superior and suggest they stick with it",
-        "Explain that clients get Excel reports with the firm's name and don't need to learn any software",
-        "Offer free QuickBooks training to all their staff",
-        "Tell them QuickBooks is being discontinued anyway"
+        "ESource encrypts all data with military-grade algorithms that no one can break",
+        "Only people the owner adds can sign in, and when they leave, their access locks the books immediately",
+        "The firm must sign a legal non-compete agreement with every employee",
+        "All backups are stored in a secure cloud vault that ESource controls"
       ],
       "answer": 1,
-      "slide": 10,
-      "feedback_correct": "Exactly—this response acknowledges the objection but shows clients don't interact with the software, only the reports.",
-      "feedback_incorrect": "This is a classic objection. The key is that clients receive reports with the firm's brand, not the software's brand, so they never need to learn the tool."
+      "slide": 13,
+      "feedback_correct": "That's the core security story—access is controlled entirely by the owner, and removal is instant and device-wide, so client data stays theirs.",
+      "feedback_incorrect": "The winning security message is about the owner's control: they add and remove people, and removal locks the books immediately on every device, even lost laptops. That's what keeps clients truly safe."
     },
     {
-      "question": "Why is client data privacy a competitive advantage for the white-label tool compared to QuickBooks Online and Xero?",
+      "question": "What should you propose as the scope and duration of the pilot when closing a deal?",
       "choices": [
-        "It costs less to store data than QuickBooks",
-        "Client bank statements never leave the firm's computers, and books and backups are locked so only signed-in staff can access them",
-        "It includes a mobile app that competitors don't offer",
-        "It automatically files tax returns without leaving the firm"
-      ],
-      "answer": 1,
-      "slide": 3,
-      "feedback_correct": "Perfect—data privacy and ownership is a powerful differentiator that no competitor can match at this level.",
-      "feedback_incorrect": "The privacy advantage is that client data stays on the firm's computers and is fully controlled by the firm owner. Review Slides 3 and 11 to understand the security and privacy story."
-    },
-    {
-      "question": "According to the security story, what happens to the books on an employee's computer after the owner removes them from access?",
-      "choices": [
-        "The books stay readable on their personal laptop so they can finish their work",
-        "The books are deleted immediately from all devices",
-        "At the next check-in, the books lock and become unreadable, even on a personal laptop",
-        "The employee can request a one-time access pass to retrieve their files"
+        "All client books for 90 days to see full impact across the firm",
+        "One client book for 30 days to minimize risk and setup time",
+        "Three to five clients for 60 days, running alongside their current system",
+        "A full migration of 50% of clients for 120 days with a money-back guarantee"
       ],
       "answer": 2,
-      "slide": 11,
-      "feedback_correct": "Correct—this automatic locking mechanism is the heart of the security story and reassures owners that client data stays secure.",
-      "feedback_incorrect": "The security design ensures that when an employee is removed, their access is revoked at the next device check-in, protecting client data from being taken. This is a key differentiator in the pitch."
+      "slide": 14,
+      "feedback_correct": "Exactly—a small, low-risk pilot of a few clients for two months proves value without asking them to abandon their current system.",
+      "feedback_incorrect": "The pilot strategy is designed to minimize risk: three to five clients gives enough data to see real results, 60 days is long enough to run a full billing cycle or two, and running alongside their current system means they can always fall back if needed."
+    },
+    {
+      "question": "Before any pricing is finalized in a conversation with a prospect, what specific language must you use when discussing the price tiers?",
+      "choices": [
+        "Say \"final pricing\" to show confidence and lock in their commitment",
+        "Always say \"proposed\" pricing and confirm details with Joe before anything is signed",
+        "Quote the highest tier only to leave room for negotiation later",
+        "Use the language from the Competitor Battle Cards to match the market"
+      ],
+      "answer": 1,
+      "slide": 1,
+      "feedback_correct": "Perfect—that's the critical compliance point: our pricing tiers are still proposed, so you must say \"proposed\" and always confirm with Joe before anything is signed.",
+      "feedback_incorrect": "This is a key instruction from the course: since pricing is still being finalized, you must always use the word \"proposed\" and verify details with Joe before any agreement is reached. It protects both you and the prospect."
+    },
+    {
+      "question": "Based on the ideal customer profile, which type of firm is not yet a good fit for the ESource tool?",
+      "choices": [
+        "A bookkeeping firm with 30 monthly clients who uses QuickBooks and wants their own brand",
+        "A small CPA firm with 60 monthly clients annoyed by recent price increases from their current software",
+        "A bookkeeping firm with 80 monthly clients that needs live bank feeds and a client login portal",
+        "A bookkeeping firm with 12 monthly clients whose clients use Xero and care about data privacy"
+      ],
+      "answer": 2,
+      "slide": 2,
+      "feedback_correct": "That firm has real needs we don't yet support—live bank feeds and a client portal are on the gap list, so honesty is the best policy.",
+      "feedback_incorrect": "While we're a great fit for firms with 5–100 clients, brands, and privacy concerns, we're honest about our gaps: we don't yet have live bank feeds, built-in payroll, a client login portal, or a mobile app. Acknowledge these gaps early when they come up."
     }
   ]
 }
