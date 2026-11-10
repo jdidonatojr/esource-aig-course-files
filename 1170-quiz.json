@@ -8,132 +8,132 @@
     {
       "question": "What is the primary purpose of the License Service in the ESource system?",
       "choices": [
-        "To store client names, bank statements, and transactions securely",
-        "To send sign-in codes, enforce plan limits, keep book counts, and issue access keys",
-        "To manage the firm's logo and branding colors",
-        "To process monthly billing payments from firms"
+        "To store all client names and bank statements securely",
+        "To send sign-in codes, enforce plan limits, and hand out keys to unlock firm books",
+        "To manage the firm's branding and logo files",
+        "To process monthly billing payments from client firms"
       ],
       "answer": 1,
       "slide": 2,
-      "feedback_correct": "Exactly right—the License Service handles authentication, plan enforcement, and book counting without ever seeing sensitive client data.",
-      "feedback_incorrect": "The License Service is designed specifically for security and access control. It intentionally does not receive client names, bank statements, or transactions, keeping sensitive data on the firm's own computers."
+      "feedback_correct": "Exactly right! The License Service is the backend that manages authentication, plan enforcement, and book access without ever seeing sensitive client data.",
+      "feedback_incorrect": "Not quite. The License Service never receives client names or bank statements—it focuses on authentication, plan limits, and access control instead."
     },
     {
-      "question": "What should you collect from a firm before activation?",
+      "question": "What four things must be in place before you can activate a firm?",
       "choices": [
-        "Only the firm's legal name and web address",
-        "The firm's legal name, logo file, brand color, web address, and owner's name and work email",
-        "The firm's tier, plan limits, and the pricing agreement",
-        "A signed agreement and the firm's security lead contact information"
+        "A signed agreement, agreed tier and book limit, security plan and lead named, and firm details collected",
+        "A signed agreement, the firm's accounting records, a Firm ID, and a web address",
+        "Pricing tiers confirmed, the admin page set up, brand colors chosen, and staff members hired",
+        "The firm's legal name, logo file, Vercel account, and a backup plan document"
       ],
-      "answer": 1,
+      "answer": 0,
       "slide": 3,
-      "feedback_correct": "You've got it—those specific details are needed to set up the firm's profile and get the owner ready to sign in.",
-      "feedback_incorrect": "While some of those items are part of the activation checklist, the instructor notes specifically list the firm's details you need to collect: legal name, logo file, brand color, web address, and owner's name and work email."
+      "feedback_correct": "Perfect! These four prerequisites ensure the legal, technical, and security foundations are solid before activation begins.",
+      "feedback_incorrect": "Not quite. The four things are the signed agreement, the tier and book limit agreement, the security plan with a named lead, and the firm's details like name, logo, color, web address, and owner info."
     },
     {
-      "question": "What is a Firm ID and what are its key characteristics?",
+      "question": "What is a Firm ID and why must it be chosen carefully?",
       "choices": [
-        "The firm's legal name, which can include spaces and capital letters",
-        "A short, lowercase identifier with no spaces that never changes once chosen",
-        "The firm's web address, such as smithco.esourcebookkeeper.com",
-        "The owner's email address used to sign in to the admin page"
+        "The firm's web address, which can be changed anytime to match rebranding",
+        "A short, lowercase identifier with no spaces that never changes once set",
+        "The name of the firm's owner, used only for internal record-keeping",
+        "A numeric code assigned by the License Service for billing purposes"
       ],
       "answer": 1,
       "slide": 4,
-      "feedback_correct": "Perfect—the Firm ID is a permanent identifier, so it needs to be chosen carefully and follows strict formatting rules.",
-      "feedback_incorrect": "The Firm ID is a specific internal identifier, not the firm's legal name or web address. It's short, lowercase, has no spaces, and is permanent, so it requires careful selection."
+      "feedback_correct": "Correct! The Firm ID is permanent, so picking a good one at the start saves headaches later.",
+      "feedback_incorrect": "Not quite. The Firm ID is a short, lowercase identifier with no spaces—like 'smithco'—and it's permanent, so it must be chosen with care during step one."
     },
     {
       "question": "In the profiles.js file, what does the 'firm' setting control?",
       "choices": [
-        "The firm's web address and domain configuration",
-        "The name clients see on statement requests and Excel reports",
-        "The storage location where the firm's books are saved",
-        "The tier and book limit displayed on the admin page"
+        "The firm's legal name used for tax filings and contracts",
+        "The name the firm's clients see on statement requests and Excel reports",
+        "The internal Firm ID that links to the admin page",
+        "The storage location where client books are encrypted and saved"
       ],
       "answer": 1,
       "slide": 5,
-      "feedback_correct": "That's correct—the 'firm' setting determines how the firm appears to clients on reports and statements.",
-      "feedback_incorrect": "While 'name' shows at the top of the screen for staff, the 'firm' setting is specifically what clients see on statement requests and every sheet of the Excel reports."
+      "feedback_correct": "Exactly! The 'firm' setting is the client-facing name, like 'Smith and Company' on their reports and statements.",
+      "feedback_incorrect": "Not quite. The 'firm' setting in profiles.js controls what clients see—it appears on statement requests and every page of the Excel reports."
     },
     {
-      "question": "When setting up a domain in Vercel and Cloudflare, why is it important to set the proxy cloud to gray instead of orange?",
+      "question": "When setting up a domain in Vercel and Cloudflare, why is it important to set the proxy cloud to gray?",
       "choices": [
-        "Gray cloud is faster and reduces latency for the firm's users",
-        "Orange cloud prevents the firm from branding its profile correctly",
-        "Gray (DNS only) allows Vercel's security certificate to work; orange cloud blocks it",
-        "Gray cloud is required by the License Service to issue access keys"
+        "Because a gray cloud encrypts all data traffic between the firm and ESource servers",
+        "Because it reduces the monthly cost of using Vercel's hosting platform",
+        "Because an orange cloud blocks Vercel's security certificate from working properly",
+        "Because it allows ESource to monitor the firm's usage without the firm knowing"
       ],
       "answer": 2,
       "slide": 6,
-      "feedback_correct": "Exactly—this is a critical security step; the orange cloud would interfere with Vercel's SSL certificate.",
-      "feedback_incorrect": "The cloud color in Cloudflare controls how traffic is routed. Gray means DNS only, which allows Vercel's security certificate to function properly. An orange cloud would block that certificate."
+      "feedback_correct": "Exactly right! The gray cloud means DNS only, which allows Vercel's security certificate to function. An orange cloud would break it.",
+      "feedback_incorrect": "Not quite. Setting the proxy to gray (DNS only) is critical because an orange cloud blocks Vercel's security certificate. The correct setting ensures the firm's connection is secure."
     },
     {
-      "question": "How long does a sign-in code remain valid when the owner first tries to access the firm?",
+      "question": "What is the first action the owner must take after signing in for the first time?",
       "choices": [
-        "Five minutes",
-        "Ten minutes",
-        "Twenty minutes",
-        "One hour"
+        "Change their password and set up two-factor authentication",
+        "Add each staff member's name and work email on the License tab",
+        "Upload the firm's first client book and configure backup settings",
+        "Review the Help tab and enable reminders for monthly billing"
       ],
       "answer": 1,
       "slide": 7,
-      "feedback_correct": "Right—the six-digit code sent by email is only good for ten minutes, so the owner needs to act quickly.",
-      "feedback_incorrect": "The sign-in code is time-sensitive to protect security. According to the course, it works for ten minutes from when it is sent."
+      "feedback_correct": "Perfect! Adding staff members to the License tab is the first step because only people on that list can sign in.",
+      "feedback_incorrect": "Not quite. After the owner's first sign-in, their main task is to add staff members' names and emails to the License tab—this controls who can access the system."
     },
     {
-      "question": "What does the help assistant in the firm's profile do, and what information does it have access to?",
+      "question": "How is the help assistant configured differently for firms using their own domain versus an esourcebookkeeper.com domain?",
       "choices": [
-        "It answers how-to questions only and never sees client books",
-        "It provides technical support for Vercel and Cloudflare configuration",
-        "It processes billing and calculates monthly book counts",
-        "It manages the License Service and enforces plan limits"
+        "Firms using their own domain must disable the help assistant entirely for security",
+        "Firms using their own domain need to add that domain to the assistant's allowed websites in ElevenLabs",
+        "The help assistant works identically for both; no configuration difference is needed",
+        "Firms using their own domain must pay extra to access the help assistant feature"
       ],
-      "answer": 0,
+      "answer": 1,
       "slide": 8,
-      "feedback_correct": "Perfect—the assistant is designed for user support only and is intentionally kept separate from sensitive client data.",
-      "feedback_incorrect": "The help assistant is a limited feature focused on answering how-to questions. It is deliberately isolated from client books to maintain security and privacy."
+      "feedback_correct": "Correct! If the firm uses its own web address, you must add it to the assistant's allowed websites in ElevenLabs so the help button works.",
+      "feedback_incorrect": "Not quite. The help assistant works automatically on esourcebookkeeper.com subdomains, but if a firm uses its own domain, that domain must be added to the assistant's allowed websites in ElevenLabs."
     },
     {
-      "question": "How is a firm billed each month, and what specific metric determines the amount owed?",
+      "question": "According to the billing model, how much should you bill a firm that had 15 client books active at peak usage this month?",
       "choices": [
-        "The total number of books ever added to the firm's account",
-        "The highest number of active client books on any single day that month",
-        "A flat fee per staff member plus a per-book rate",
-        "The average number of books used throughout the month divided by the number of days"
+        "$20 + (13 × $17) = $241",
+        "$20 + (14 × $15) = $230",
+        "$20 + (14 × $17) = $258",
+        "$15 × 15 = $225"
       ],
-      "answer": 1,
+      "answer": 2,
       "slide": 9,
-      "feedback_correct": "Exactly—billing is based on peak usage in a month, not total or average, which makes the counting straightforward.",
-      "feedback_incorrect": "The License Service tracks the highest number of active books across any single day in the month. This peak-usage model is simpler and fairer than averaging or counting total books ever added."
+      "feedback_correct": "Exactly! The first book is $20, and books 2–10 are $17 each. So: $20 + (14 × $17) = $258.",
+      "feedback_incorrect": "Not quite. The billing tiers are: $20 for book 1, then $17 for books 2–10, $15 for books 11–30, $14 for books 31–100, and $13 after that. For 15 books: $20 + (14 × $17) = $258."
     },
     {
-      "question": "A firm's employee leaves the company—what steps must be taken to secure their access, and what happens to their offline books?",
+      "question": "A firm's staff member's laptop goes offline and stays offline for 16 days without internet. What happens next?",
       "choices": [
-        "The owner removes them from the License tab; their computer locks at the next check-in and books remain encrypted",
-        "The employee's access is removed by the admin page; all their books are immediately deleted",
-        "The firm must contact ESource support to revoke access; offline books are transferred to another user",
-        "The owner removes them from the License tab, but books remain accessible until the employee's laptop connects to the internet"
-      ],
-      "answer": 0,
-      "slide": 10,
-      "feedback_correct": "That's the right security procedure—the owner uses the License tab for access control, and the encryption on the laptop keeps data safe.",
-      "feedback_incorrect": "When an employee leaves, the firm's owner removes them from the License tab. The books on their computer stay encrypted and secure, and the device locks when it next checks in with the License Service."
-    },
-    {
-      "question": "Based on the activation checklist at the end of the course, why is it important to verify the signed agreement before any other activation steps?",
-      "choices": [
-        "The agreement contains the Firm ID that must be used on the admin page",
-        "It confirms the firm's tier and book limit are legally binding and establishes the terms you will use for billing",
-        "It provides the web address and logo that will be used in Vercel configuration",
-        "It includes the owner's sign-in credentials and the initial staff member list"
+        "The books on that laptop are permanently deleted to prevent data loss",
+        "The laptop locks for safety, and the user must simply connect and sign in again to regain access",
+        "The License Service automatically notifies the firm's owner to replace the laptop",
+        "The user loses access permanently and must be removed from the License tab"
       ],
       "answer": 1,
-      "slide": 11,
-      "feedback_correct": "Correct—the agreement is foundational because it locks in the tier, limits, and billing terms before you proceed with technical setup.",
-      "feedback_incorrect": "The signed agreement is the first item on the activation checklist because it establishes the legal and financial terms (tier and book limit) that will guide the rest of the setup and determine monthly billing."
+      "slide": 10,
+      "feedback_correct": "Correct! Laptops lock after 14 days offline as a safety measure, but the fix is simple: reconnect and sign in.",
+      "feedback_incorrect": "Not quite. Computers lock after 14 days without internet for safety, but this isn't permanent—the user simply connects to the internet and signs in again to unlock their books."
+    },
+    {
+      "question": "Why is it significant that the 'Ever added' count never goes down, even when a client book is deleted?",
+      "choices": [
+        "Because it protects against fraud by keeping a permanent audit trail",
+        "Because it means you should consider offering the next tier if a firm frequently adds and deletes books",
+        "Because the firm will be billed for the total ever added, not just current active books",
+        "Because deleted books are actually not removed but hidden to prevent accidental recovery"
+      ],
+      "answer": 2,
+      "slide": 9,
+      "feedback_correct": "Exactly right! The 'Ever added' count is used for billing, so deleting and re-adding books repeatedly to avoid tier upgrades won't work.",
+      "feedback_incorrect": "Not quite. The 'Ever added' count never decreases, which means the firm is billed based on this total. This prevents someone from gaming the system by repeatedly deleting and re-adding the same books to stay in a lower tier."
     }
   ]
 }
