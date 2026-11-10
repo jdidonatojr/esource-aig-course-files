@@ -604,11 +604,11 @@
     ]
   },
   "1190": {
-    "id": "esource_bookkeeper_white_label_sales_course",
-    "title": "ESource Bookkeeper: White-Label Sales Course",
-    "totalSlides": 15,
-    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1190-ESource-Bookkeeper-White-Label-Sales-Course.pdf",
-    "firstMessage": "Welcome to ESource Bookkeeper: White-Label Sales Course. Are you ready to begin?",
+    "id": "how_to_sell_the_white_label_bookkeeper",
+    "title": "How to Sell the White-Label Bookkeeper",
+    "totalSlides": 16,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1190-How-to-Sell-the-White-Label-Bookkeeper.pdf",
+    "firstMessage": "Welcome to How to Sell the White-Label Bookkeeper. Are you ready to begin?",
     "sections": [
       {
         "label": "Introduction (slides 1-2)",
@@ -623,19 +623,15 @@
         "startSlide": 5
       },
       {
-        "label": "Pricing Strategy (slides 9-10)",
+        "label": "Pricing and Competitors (slides 9-11)",
         "startSlide": 9
       },
       {
-        "label": "Competitive Positioning (slides 11-12)",
-        "startSlide": 11
+        "label": "Objections and Security (slides 12-14)",
+        "startSlide": 12
       },
       {
-        "label": "Security and Closing (slides 13-14)",
-        "startSlide": 13
-      },
-      {
-        "label": "Recap (slide 15)",
+        "label": "Closing and Recap (slides 15-16)",
         "startSlide": 15
       }
     ]
