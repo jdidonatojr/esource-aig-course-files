@@ -567,43 +567,39 @@
     ]
   },
   "1180": {
-    "id": "getting_started_with_the_esource_bookkeeping_tool",
-    "title": "Getting Started with the ESource Bookkeeping Tool",
-    "totalSlides": 15,
-    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1180-Getting-Started-with-the-ESource-Bookkeeping-Tool.pdf",
-    "firstMessage": "Welcome to Getting Started with the ESource Bookkeeping Tool. Are you ready to begin?",
+    "id": "getting_started_with_esource_bookkeeper",
+    "title": "Getting started with ESource Bookkeeper",
+    "totalSlides": 18,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1180-Getting-started-with-ESource-Bookkeeper.pdf",
+    "firstMessage": "Welcome to Getting started with ESource Bookkeeper. Are you ready to begin?",
     "sections": [
       {
-        "label": "Introduction and Overview (slides 1-3)",
+        "label": "Introduction (slides 1-3)",
         "startSlide": 1
       },
       {
-        "label": "Owner and Staff Setup (slides 4-4)",
+        "label": "Owner Controls and Setup (slides 4-5)",
         "startSlide": 4
       },
       {
-        "label": "Adding Clients and Bank Data (slides 5-6)",
-        "startSlide": 5
+        "label": "Migrating and Importing Data (slides 6-7)",
+        "startSlide": 6
       },
       {
-        "label": "Transaction Management (slides 7-7)",
-        "startSlide": 7
-      },
-      {
-        "label": "Client Communication (slides 8-11)",
+        "label": "Sorting Transactions (slides 8-10)",
         "startSlide": 8
       },
       {
-        "label": "Reports and Monitoring (slides 12-12)",
-        "startSlide": 12
+        "label": "Client Communication (slides 11-14)",
+        "startSlide": 11
       },
       {
-        "label": "Data Security and Support (slides 13-14)",
-        "startSlide": 13
-      },
-      {
-        "label": "Getting Started (slides 15-15)",
+        "label": "Reports and Maintenance (slides 15-17)",
         "startSlide": 15
+      },
+      {
+        "label": "Getting Started (slide 18)",
+        "startSlide": 18
       }
     ]
   },
