@@ -6,134 +6,134 @@
   },
   "questions": [
     {
-      "question": "What three things make this bookkeeping tool different from other tools?",
+      "question": "What three things make this bookkeeping tool different from others?",
       "choices": [
-        "It carries your brand, your data stays with you, and everything is locked to your firm",
-        "It is free, it works offline, and it automatically files taxes",
-        "It requires no internet, it syncs to the cloud, and it handles payroll",
-        "It integrates with all banks, it stores data on ESource servers, and it is open to all users"
+        "It carries your brand, your data stays with you, and everything is encrypted to your firm",
+        "It is free, it works offline, and it includes tax preparation",
+        "It connects to all banks automatically, it never needs backups, and it prepares tax returns",
+        "It requires no internet, it stores data in the cloud, and it shares data with accountants"
       ],
       "answer": 0,
       "slide": 2,
-      "feedback_correct": "Exactly right—your firm's brand appears on reports, bank data never leaves your computers, and encryption ensures only approved staff can access the books.",
-      "feedback_incorrect": "The tool does require internet at least weekly, does not store data on ESource servers, and is locked to your firm's approved staff only. Review Slide 2 for the three core differences."
+      "feedback_correct": "Exactly right—your firm's brand appears on reports, bank data never leaves your computers, and encryption locks everything to your firm only.",
+      "feedback_incorrect": "The tool does require internet connection at least weekly to check in, does not prepare taxes, and keeps data on your firm's computers rather than in the cloud. Review Slide 2 to see the three key differences."
     },
     {
-      "question": "How long does a 6-digit sign-in code remain valid?",
+      "question": "How long does a 6-digit sign-in code remain valid after you receive it by email?",
       "choices": [
-        "It never expires",
-        "10 minutes",
-        "24 hours",
-        "30 days"
+        "Twenty minutes",
+        "Ten minutes",
+        "Five minutes",
+        "One hour"
       ],
       "answer": 1,
       "slide": 3,
-      "feedback_correct": "That's correct—the code works for ten minutes, so you need to enter it promptly after receiving it in your email.",
-      "feedback_incorrect": "The code is time-limited to keep your account secure. Review Slide 3 to see exactly how long you have to use it."
+      "feedback_correct": "That's correct—the code works for ten minutes, so sign in promptly when you receive it.",
+      "feedback_incorrect": "The code expires after ten minutes, not five, twenty, or sixty. This timing protects your security by limiting the window someone could use an intercepted code."
     },
     {
-      "question": "What happens to a staff member's computer when they are removed from the License tab?",
+      "question": "What should an owner do on the day a staff member leaves the firm?",
       "choices": [
-        "They can still access the books if they know the password",
-        "The books lock at the next check-in, even if it is their personal laptop",
-        "They have 30 days to transfer the books to a new computer",
-        "Nothing changes until they try to sign in again"
+        "Ask the staff member to delete the tool from their computer",
+        "Remove them from the License tab so their computer locks at the next check-in",
+        "Wait until the end of the month to clean up their access",
+        "Change all the passwords on the client files"
       ],
       "answer": 1,
       "slide": 4,
-      "feedback_correct": "Correct—removing someone from the License tab immediately protects your client list by locking the books on their computer at the next check-in.",
-      "feedback_incorrect": "The tool automatically locks books on a removed staff member's computer for security, rather than relying on passwords or delayed actions. This is why owners should remove departing staff the same day they leave. See Slide 4."
+      "feedback_correct": "Correct—removing them the same day ensures their computer locks at the next check-in, protecting your client list.",
+      "feedback_incorrect": "Waiting until month-end leaves a security gap, and asking them to delete the tool trusts them to do so. The system automatically locks their access when you remove them from the License tab, even on a personal laptop."
     },
     {
-      "question": "What must happen before you can add a new client to your firm's account?",
+      "question": "What five reports must you export from QuickBooks Online before switching a client to this tool?",
       "choices": [
-        "Your internet connection must be active so the tool can verify your plan limit",
-        "You must wait for your owner to approve the new client",
-        "The client must first upload their bank statements",
-        "You must have filled in all of your own Setup information"
+        "Chart of accounts, trial balance, open invoices, unpaid bills, and last year's ledger",
+        "Chart of accounts, bank reconciliation, customer list, vendor list, and journal entries",
+        "Trial balance, invoices, bills, tax summary, and profit and loss",
+        "Chart of accounts, cash flow, balance sheet, income statement, and tax returns"
       ],
       "answer": 0,
-      "slide": 5,
-      "feedback_correct": "Right—adding a client requires internet because the tool checks your firm's plan limit across all staff at that moment.",
-      "feedback_incorrect": "Internet is needed at the moment of adding a client so the tool can verify your plan is not over the limit. Review Slide 5 for how adding a client works."
-    },
-    {
-      "question": "Which file format works best when uploading bank statements from non-Wells Fargo banks?",
-      "choices": [
-        "CSV only, because it is the smallest file size",
-        "Quicken or QuickBooks files work best because they include the account number and balance",
-        "PDF files, because they match Wells Fargo's format",
-        "OFX only, because it is the newest standard"
-      ],
-      "answer": 1,
       "slide": 6,
-      "feedback_correct": "Exactly—Quicken (QFX) and QuickBooks (QBO) files are best because they include account numbers and ending balances, which the tool needs to verify.",
-      "feedback_incorrect": "While CSV, QFX, QBO, and OFX formats all work, Quicken and QuickBooks formats include the account number and ending balance, making them the best choice. See Slide 6 for details."
+      "feedback_correct": "Perfect—those five reports give the tool everything it needs to set up the client's accounts and starting balances correctly.",
+      "feedback_incorrect": "The tool specifically needs the trial balance as of the day before the switch to establish opening balances, plus the chart of accounts, open invoices, unpaid bills, and last year's ledger. A switching guide shows exactly where to find each one in your old software."
     },
     {
-      "question": "What does leaving \"Remember\" checked after answering an Ask Client question accomplish?",
+      "question": "For banks other than Wells Fargo, which file formats work best for bank statements and why?",
       "choices": [
-        "It sends a reminder email to the client",
-        "It creates a rule so similar lines sort themselves automatically next month",
-        "It saves your answer to the cloud for backup",
-        "It locks the transaction so no one else can change it"
+        "CSV files are always best because they are smallest",
+        "Quicken or QuickBooks files work best because they include account number and balance",
+        "PDF files work best because they match Wells Fargo's format",
+        "OFX files work best because they encrypt the data"
       ],
       "answer": 1,
       "slide": 7,
-      "feedback_correct": "Correct—checking \"Remember\" creates a rule that automatically sorts similar lines in future months, reducing the number of questions you need to ask.",
-      "feedback_incorrect": "The \"Remember\" feature is about building automation through rules, not backup or permissions. By checking it when you categorize a line, the tool learns and sorts similar transactions in the future. Review Slide 7."
+      "feedback_correct": "Right—Quicken and QuickBooks files include the account number and balance, which lets the tool verify the math automatically.",
+      "feedback_incorrect": "While CSV, OFX, and PDF are all acceptable formats, Quicken and QuickBooks files are preferred because they contain more complete information. If you upload a file without a balance, the tool will ask you for the ending balance."
     },
     {
-      "question": "You set up a client reminder for day 3 of each month, and the client adds the calendar file to their phone. What happens next?",
+      "question": "What does the AI do when you click \"Suggest categories\" on the Ask Client tab?",
       "choices": [
-        "The client receives text messages from your firm every month on day 3",
-        "Their phone reminds them every month to send last month's statements, and you only set this up once",
-        "The client must re-download the file each month or the reminders stop",
-        "The reminder comes from ESource software, not from your firm"
+        "It automatically categorizes all unsorted lines and updates your books",
+        "It groups similar unsorted lines and suggests a category with a reason for each group",
+        "It sends a message to your client asking them to categorize the transactions",
+        "It deletes all uncategorized transactions from the books"
       ],
       "answer": 1,
       "slide": 9,
-      "feedback_correct": "Perfect—once the client adds the calendar file to their phone, it reminds them every month, and this is a one-time setup on your end.",
-      "feedback_incorrect": "The calendar reminder is a recurring, automatic reminder on the client's own device after the one-time setup. It is not a text message, does not require monthly re-downloads, and comes from your firm. See Slide 9."
+      "feedback_correct": "Exactly—the AI suggests a category and reason for each group, fills in the category menu, and nothing changes in your books until you accept.",
+      "feedback_incorrect": "The AI only suggests categories; it does not make changes automatically, send messages to clients, or delete transactions. You always review and accept before anything changes in your books."
     },
     {
-      "question": "Your firm's owner has not turned on automatic email reminders. Where does your data go when you click \"Email client\" on the Status tab?",
+      "question": "How should you set up a client's phone calendar reminder, and how often do you need to do it?",
       "choices": [
-        "It is sent to ESource servers and forwarded to the client",
-        "Your own email app opens with the message already typed, so it comes from your firm's address",
-        "It is stored in the tool's secure queue until the owner enables automatic email",
-        "It is encrypted and held in the backup file until manual sending is approved"
-      ],
-      "answer": 1,
-      "slide": 10,
-      "feedback_correct": "That's right—clicking \"Email client\" opens your own email app with the message pre-written, so the client knows it comes directly from your firm, not from the software.",
-      "feedback_incorrect": "When you use the \"Email client\" or \"Text client\" buttons, your own Messages or email app opens with the message ready to send from your account. This is different from the automatic email feature. Review Slide 10."
-    },
-    {
-      "question": "What is the relationship between your firm's plan tier and the number of Help assistant minutes available each month?",
-      "choices": [
-        "Every plan includes unlimited Help assistant minutes",
-        "Your firm gets ten help minutes per client book every month, and the owner can see this on the License tab",
-        "Help minutes are purchased separately and do not affect your plan tier",
-        "Each staff member gets five minutes per month regardless of plan"
-      ],
-      "answer": 1,
-      "slide": 4,
-      "feedback_correct": "Correct—your firm receives ten Help assistant minutes per client book each month, and the owner can track used and remaining minutes on the License tab.",
-      "feedback_incorrect": "Help assistant minutes are included with your plan and tracked per client book. The owner can see this information on the License tab to manage usage across the firm. Review Slide 4."
-    },
-    {
-      "question": "A backup file from your firm is accidentally left on a lost laptop. Why does this not put your client data at risk?",
-      "choices": [
-        "Backup files are uploaded to ESource servers automatically, so the laptop file is just a local copy",
-        "ESource support can track the laptop's location and retrieve the file",
-        "Backup files are locked (encrypted) to your firm, so a lost file cannot be read by anyone else",
-        "The file is only readable if the person has your firm's plan password"
+        "Email the client a list of statements each month; repeat monthly",
+        "Text the client on the reminder day; repeat monthly",
+        "Download the calendar file and send it to the client once; their phone reminds them every month automatically",
+        "Call the client on the reminder day; repeat weekly"
       ],
       "answer": 2,
-      "slide": 14,
-      "feedback_correct": "Exactly—backup files are encrypted and locked to your firm, so even if a backup file is lost, it remains unreadable to anyone outside your firm.",
-      "feedback_incorrect": "The security of backup files comes from encryption that is specific to your firm, not from server upload or password protection. This is why following the 3-2-1 backup rule keeps your data safe. See Slide 14."
+      "slide": 12,
+      "feedback_correct": "Perfect—you do this once per client, and then their own phone automatically reminds them every month.",
+      "feedback_incorrect": "The calendar reminder is set up just once. After the client taps the file and chooses Add, their phone takes over and reminds them every month in your firm's name without any action from you."
+    },
+    {
+      "question": "What information is safe to share with the Need Help assistant, and what must you never share?",
+      "choices": [
+        "You can share everything because the assistant is part of your firm's secure system",
+        "You can share client names and balances but not account numbers",
+        "You can ask how-to questions, but never share client names, account numbers, or balances because the assistant cannot see your books",
+        "You can only share information if you first get permission from your firm's owner"
+      ],
+      "answer": 2,
+      "slide": 16,
+      "feedback_correct": "That's right—the assistant helps with how-to questions but has no access to your books, so client details must stay private.",
+      "feedback_incorrect": "The assistant cannot see your books or your screen, so sharing client names, account numbers, or balances would expose confidential information unnecessarily. Keep your questions focused on how-to steps and let the assistant guide you to the right tabs and buttons."
+    },
+    {
+      "question": "According to the 3-2-1 backup rule, how should you store your backups and where should one copy be located?",
+      "choices": [
+        "Keep one copy on your computer, one at your office on external storage, and one in the cloud",
+        "Keep three copies on two kinds of storage, with one copy kept away from the office",
+        "Keep backups only in the cloud and never on local computers",
+        "Keep backups on your computer and email one copy to your firm's owner monthly"
+      ],
+      "answer": 1,
+      "slide": 17,
+      "feedback_correct": "Correct—three copies on two different types of storage, with one stored off-site, protects you against fire, theft, and computer failure.",
+      "feedback_incorrect": "The 3-2-1 rule is a professional backup standard: three copies, two different storage types (like computer and external drive), and one copy in a different location (like home if the office floods). This protects your client data comprehensively."
+    },
+    {
+      "question": "When bringing in statements from PayPal or Stripe, why is uploading the activity CSV better than using a simple bank deposit record?",
+      "choices": [
+        "The CSV file is smaller and uploads faster",
+        "The CSV captures full sales, fees, and refunds and prevents the tool from counting bank deposits twice",
+        "The CSV allows the tool to automatically categorize all transactions without your review",
+        "The CSV is required by law for payment processors"
+      ],
+      "answer": 1,
+      "slide": 7,
+      "feedback_correct": "Exactly—the activity CSV shows the full detail (sales, fees, refunds) and the tool is smart enough not to double-count the deposit, giving you accurate books.",
+      "feedback_incorrect": "While the CSV file is useful, the real reason to use it is that it captures the complete transaction detail and prevents double-counting. Simply uploading a deposit record misses the fees and refunds, leaving your books incomplete."
     }
   ]
 }
