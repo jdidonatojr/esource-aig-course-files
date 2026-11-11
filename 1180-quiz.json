@@ -6,134 +6,134 @@
   },
   "questions": [
     {
-      "question": "What three things make this bookkeeping tool different from others?",
+      "question": "What are the three key things that make this bookkeeping tool different from other options?",
       "choices": [
-        "It carries your brand, your data stays with you, and everything is encrypted to your firm",
-        "It is free, it works offline, and it includes tax preparation",
-        "It connects to all banks automatically, it never needs backups, and it prepares tax returns",
-        "It requires no internet, it stores data in the cloud, and it shares data with accountants"
+        "It is free, it works offline, and it has unlimited support",
+        "It carries your brand, your data stays with you, and everything is locked to your firm",
+        "It integrates with all banks, it automates all sorting, and it files taxes automatically",
+        "It requires no backups, it works on any device, and it stores data in the cloud"
       ],
-      "answer": 0,
+      "answer": 1,
       "slide": 2,
-      "feedback_correct": "Exactly right—your firm's brand appears on reports, bank data never leaves your computers, and encryption locks everything to your firm only.",
-      "feedback_incorrect": "The tool does require internet connection at least weekly to check in, does not prepare taxes, and keeps data on your firm's computers rather than in the cloud. Review Slide 2 to see the three key differences."
+      "feedback_correct": "Exactly right—your brand appears on reports, bank data stays on your computers, and encryption keeps everything secure.",
+      "feedback_incorrect": "The tool does offer powerful features, but the three core differences are about your brand, local data storage, and firm-level security. Review slide 2 to see how these protect your business."
     },
     {
-      "question": "How long does a 6-digit sign-in code remain valid after you receive it by email?",
+      "question": "How long does a sign-in code remain valid after it is emailed to you?",
       "choices": [
-        "Twenty minutes",
-        "Ten minutes",
-        "Five minutes",
-        "One hour"
+        "5 minutes",
+        "20 minutes",
+        "10 minutes",
+        "1 hour"
       ],
-      "answer": 1,
+      "answer": 2,
       "slide": 3,
-      "feedback_correct": "That's correct—the code works for ten minutes, so sign in promptly when you receive it.",
-      "feedback_incorrect": "The code expires after ten minutes, not five, twenty, or sixty. This timing protects your security by limiting the window someone could use an intercepted code."
+      "feedback_correct": "That's correct—the six-digit code works for ten minutes, so you need to enter it quickly.",
+      "feedback_incorrect": "The sign-in code has a specific time window to keep your account secure. Check slide 3 to find the exact duration."
     },
     {
-      "question": "What should an owner do on the day a staff member leaves the firm?",
+      "question": "As the firm owner, what action should you take on the day a staff member leaves your firm?",
       "choices": [
-        "Ask the staff member to delete the tool from their computer",
-        "Remove them from the License tab so their computer locks at the next check-in",
-        "Wait until the end of the month to clean up their access",
-        "Change all the passwords on the client files"
+        "Email them instructions on how to delete their files",
+        "Wait a week to see if they return before locking their access",
+        "Remove them from the License tab immediately so their computer locks at the next check-in",
+        "Ask them to sign out remotely from all their devices"
       ],
-      "answer": 1,
+      "answer": 2,
       "slide": 4,
-      "feedback_correct": "Correct—removing them the same day ensures their computer locks at the next check-in, protecting your client list.",
-      "feedback_incorrect": "Waiting until month-end leaves a security gap, and asking them to delete the tool trusts them to do so. The system automatically locks their access when you remove them from the License tab, even on a personal laptop."
+      "feedback_correct": "Correct—removing them right away ensures their computer locks on the next check-in, protecting your client list.",
+      "feedback_incorrect": "When staff leave, quick action is essential to protect client data. The owner must remove them from the License tab the same day so the books lock automatically. See slide 4 for details."
     },
     {
-      "question": "What five reports must you export from QuickBooks Online before switching a client to this tool?",
+      "question": "What is the first step you must take when adding a new client to the tool?",
       "choices": [
+        "Upload their most recent bank statements",
+        "Open the Status tab, type the client's full business name, pick Business or Nonprofit, and click Add client",
+        "Export five reports from their old accounting software",
+        "Set up automatic email reminders in the Setup tab"
+      ],
+      "answer": 1,
+      "slide": 5,
+      "feedback_correct": "Perfect—the first step is to open Status, enter the business name, select the entity type, and click Add client, and you need an internet connection.",
+      "feedback_incorrect": "Adding a client starts with the Status tab and basic information. Other tasks like uploading statements and setting reminders come later. Review slide 5 for the correct sequence."
+    },
+    {
+      "question": "If your client uses QuickBooks Online and you want to switch them to this tool, what five reports should you export from QuickBooks before dropping them in the Switching box?",
+      "choices": [
+        "Recent transactions, account balances, customer list, vendor list, and previous tax returns",
         "Chart of accounts, trial balance, open invoices, unpaid bills, and last year's ledger",
-        "Chart of accounts, bank reconciliation, customer list, vendor list, and journal entries",
-        "Trial balance, invoices, bills, tax summary, and profit and loss",
-        "Chart of accounts, cash flow, balance sheet, income statement, and tax returns"
+        "Monthly profit and loss, balance sheet, cash flow, accounts receivable aging, and accounts payable aging",
+        "General ledger, invoice register, bill register, bank reconciliation, and expense categories"
       ],
-      "answer": 0,
+      "answer": 1,
       "slide": 6,
-      "feedback_correct": "Perfect—those five reports give the tool everything it needs to set up the client's accounts and starting balances correctly.",
-      "feedback_incorrect": "The tool specifically needs the trial balance as of the day before the switch to establish opening balances, plus the chart of accounts, open invoices, unpaid bills, and last year's ledger. A switching guide shows exactly where to find each one in your old software."
+      "feedback_correct": "Exactly right—those five reports give the tool everything it needs to bring over the account structure, balances, and outstanding items.",
+      "feedback_incorrect": "The tool requires specific reports to switch clients smoothly from other software. Slide 6 lists the exact five reports you need to export before using the Switching box."
     },
     {
-      "question": "For banks other than Wells Fargo, which file formats work best for bank statements and why?",
+      "question": "Why is it important to choose the correct file format when downloading PayPal or Stripe activity for upload?",
       "choices": [
-        "CSV files are always best because they are smallest",
-        "Quicken or QuickBooks files work best because they include account number and balance",
-        "PDF files work best because they match Wells Fargo's format",
-        "OFX files work best because they encrypt the data"
+        "Because incorrect formats will crash the tool and lock your files",
+        "Because the wrong file might include duplicate deposits or miss refunds and fees, throwing off your reconciliation",
+        "Because the tool can only read CSV files and will reject any other format",
+        "Because using the wrong file requires you to re-enter all transactions manually"
       ],
       "answer": 1,
-      "slide": 7,
-      "feedback_correct": "Right—Quicken and QuickBooks files include the account number and balance, which lets the tool verify the math automatically.",
-      "feedback_incorrect": "While CSV, OFX, and PDF are all acceptable formats, Quicken and QuickBooks files are preferred because they contain more complete information. If you upload a file without a balance, the tool will ask you for the ending balance."
+      "slide": 8,
+      "feedback_correct": "Correct—the right files capture full sales, fees, and refunds, and the tool prevents double-counting deposits, keeping your numbers accurate.",
+      "feedback_incorrect": "File selection matters because certain PayPal and Stripe downloads capture different data. Using the wrong one could miss refunds or count deposits twice. Slide 8 shows exactly which files to use."
     },
     {
-      "question": "What does the AI do when you click \"Suggest categories\" on the Ask Client tab?",
+      "question": "How does the 'Remember' checkbox on the Ask Client tab help reduce your work each month?",
       "choices": [
-        "It automatically categorizes all unsorted lines and updates your books",
-        "It groups similar unsorted lines and suggests a category with a reason for each group",
-        "It sends a message to your client asking them to categorize the transactions",
-        "It deletes all uncategorized transactions from the books"
+        "It automatically emails the client reminders about missing statements",
+        "It saves the client's contact information so you don't type it twice",
+        "It creates a rule that sorts similar lines the same way next month, so fewer questions appear",
+        "It backs up your work so you don't lose unsaved answers"
       ],
-      "answer": 1,
+      "answer": 2,
       "slide": 9,
-      "feedback_correct": "Exactly—the AI suggests a category and reason for each group, fills in the category menu, and nothing changes in your books until you accept.",
-      "feedback_incorrect": "The AI only suggests categories; it does not make changes automatically, send messages to clients, or delete transactions. You always review and accept before anything changes in your books."
+      "feedback_correct": "That's right—when you check Remember and pick a category, a rule is created so those lines sort themselves next month.",
+      "feedback_incorrect": "The Remember checkbox is about building rules over time to make sorting easier. Slide 9 explains how checking it turns your answers into automatic sorting rules for future months."
     },
     {
-      "question": "How should you set up a client's phone calendar reminder, and how often do you need to do it?",
+      "question": "What information is safe to share with the AI assistant, and what must you never share?",
       "choices": [
-        "Email the client a list of statements each month; repeat monthly",
-        "Text the client on the reminder day; repeat monthly",
-        "Download the calendar file and send it to the client once; their phone reminds them every month automatically",
-        "Call the client on the reminder day; repeat weekly"
-      ],
-      "answer": 2,
-      "slide": 12,
-      "feedback_correct": "Perfect—you do this once per client, and then their own phone automatically reminds them every month.",
-      "feedback_incorrect": "The calendar reminder is set up just once. After the client taps the file and chooses Add, their phone takes over and reminds them every month in your firm's name without any action from you."
-    },
-    {
-      "question": "What information is safe to share with the Need Help assistant, and what must you never share?",
-      "choices": [
-        "You can share everything because the assistant is part of your firm's secure system",
-        "You can share client names and balances but not account numbers",
-        "You can ask how-to questions, but never share client names, account numbers, or balances because the assistant cannot see your books",
-        "You can only share information if you first get permission from your firm's owner"
-      ],
-      "answer": 2,
-      "slide": 16,
-      "feedback_correct": "That's right—the assistant helps with how-to questions but has no access to your books, so client details must stay private.",
-      "feedback_incorrect": "The assistant cannot see your books or your screen, so sharing client names, account numbers, or balances would expose confidential information unnecessarily. Keep your questions focused on how-to steps and let the assistant guide you to the right tabs and buttons."
-    },
-    {
-      "question": "According to the 3-2-1 backup rule, how should you store your backups and where should one copy be located?",
-      "choices": [
-        "Keep one copy on your computer, one at your office on external storage, and one in the cloud",
-        "Keep three copies on two kinds of storage, with one copy kept away from the office",
-        "Keep backups only in the cloud and never on local computers",
-        "Keep backups on your computer and email one copy to your firm's owner monthly"
+        "You can share anything because the AI is part of your tool and encrypted",
+        "You can only share how-to questions; never share client names, account numbers, or balances",
+        "You must share client details so the AI can give you specific advice about their accounts",
+        "You should share everything except passwords, which are handled separately"
       ],
       "answer": 1,
       "slide": 17,
-      "feedback_correct": "Correct—three copies on two different types of storage, with one stored off-site, protects you against fire, theft, and computer failure.",
-      "feedback_incorrect": "The 3-2-1 rule is a professional backup standard: three copies, two different storage types (like computer and external drive), and one copy in a different location (like home if the office floods). This protects your client data comprehensively."
+      "feedback_correct": "Exactly—the assistant can help with how-to questions in plain steps, but it can't see your books, so client details must never be shared.",
+      "feedback_incorrect": "The assistant is a helpful tool, but protecting client privacy is essential. Slide 17 reminds you never to share client names, account numbers, or balances when asking for help."
     },
     {
-      "question": "When bringing in statements from PayPal or Stripe, why is uploading the activity CSV better than using a simple bank deposit record?",
+      "question": "According to the 3-2-1 backup rule taught in this course, which backup storage arrangement best protects your firm's books?",
       "choices": [
-        "The CSV file is smaller and uploads faster",
-        "The CSV captures full sales, fees, and refunds and prevents the tool from counting bank deposits twice",
-        "The CSV allows the tool to automatically categorize all transactions without your review",
-        "The CSV is required by law for payment processors"
+        "One copy on your office computer and one in cloud storage",
+        "Two copies on external hard drives kept in the same office cabinet",
+        "Three copies: one on your office computer, one on a portable drive at home, and one in a second location like a safe deposit box",
+        "Three copies on three different cloud services so you always have access"
+      ],
+      "answer": 2,
+      "slide": 18,
+      "feedback_correct": "Perfect—three copies on two kinds of storage with one away from the office means protection against both hardware failure and office disasters.",
+      "feedback_incorrect": "The 3-2-1 rule balances convenience with protection. You need three copies on at least two different types of storage, with one kept physically away from your office. Slide 18 explains this essential backup principle."
+    },
+    {
+      "question": "Which combination of actions represents the complete workflow from signing in to finishing a work session?",
+      "choices": [
+        "Sign in, upload statements, sort transactions, download backup",
+        "Sign in, add a client, upload statements, answer questions, check reports, download backup",
+        "Sign in, update the License tab, draft questions, download backup",
+        "Add a client, email reminders, analyze answers, back up to cloud"
       ],
       "answer": 1,
-      "slide": 7,
-      "feedback_correct": "Exactly—the activity CSV shows the full detail (sales, fees, refunds) and the tool is smart enough not to double-count the deposit, giving you accurate books.",
-      "feedback_incorrect": "While the CSV file is useful, the real reason to use it is that it captures the complete transaction detail and prevents double-counting. Simply uploading a deposit record misses the fees and refunds, leaving your books incomplete."
+      "slide": 19,
+      "feedback_correct": "Correct—those are the core steps from sign-in through finishing your session, and slide 19 lists them as the roadmap to get started.",
+      "feedback_incorrect": "The workflow in slide 19 shows the essential steps in order: sign in, add a client, upload statements, answer questions, check reports, and back up. This keeps your firm's books current and secure."
     }
   ]
 }
