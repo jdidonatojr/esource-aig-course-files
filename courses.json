@@ -573,7 +573,7 @@
   "1180": {
     "id": "getting_started_with_esource_bookkeeper",
     "title": "Getting started with ESource Bookkeeper",
-    "totalSlides": 18,
+    "totalSlides": 19,
     "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1180-Getting-started-with-ESource-Bookkeeper.pdf",
     "firstMessage": "Welcome to Getting started with ESource Bookkeeper. Are you ready to begin?",
     "sections": [
@@ -582,28 +582,28 @@
         "startSlide": 1
       },
       {
-        "label": "Owner Controls and Setup (slides 4-5)",
+        "label": "Owner Controls (slides 4-4)",
         "startSlide": 4
       },
       {
-        "label": "Migrating and Importing Data (slides 6-7)",
-        "startSlide": 6
+        "label": "Client Setup (slides 5-8)",
+        "startSlide": 5
       },
       {
-        "label": "Sorting Transactions (slides 8-10)",
-        "startSlide": 8
+        "label": "Transaction Management (slides 9-11)",
+        "startSlide": 9
       },
       {
-        "label": "Client Communication (slides 11-14)",
-        "startSlide": 11
+        "label": "Client Communication (slides 12-15)",
+        "startSlide": 12
       },
       {
-        "label": "Reports and Maintenance (slides 15-17)",
-        "startSlide": 15
+        "label": "Reports and Maintenance (slides 16-18)",
+        "startSlide": 16
       },
       {
-        "label": "Getting Started (slide 18)",
-        "startSlide": 18
+        "label": "Getting Started (slides 19-19)",
+        "startSlide": 19
       }
     ]
   },
