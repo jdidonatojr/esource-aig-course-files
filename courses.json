@@ -540,7 +540,7 @@
   "1170": {
     "id": "how_to_activate_a_new_firm",
     "title": "How to activate a new firm",
-    "totalSlides": 11,
+    "totalSlides": 13,
     "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1170-How-to-activate-a-new-firm.pdf",
     "firstMessage": "Welcome to How to activate a new firm. Are you ready to begin?",
     "sections": [
@@ -549,24 +549,24 @@
         "startSlide": 1
       },
       {
-        "label": "Pre-Activation Requirements (slides 3)",
+        "label": "Pre-Activation Requirements (slides 3-3)",
         "startSlide": 3
       },
       {
-        "label": "Core Setup Steps (slides 4-7)",
+        "label": "Setup Steps (slides 4-8)",
         "startSlide": 4
       },
       {
-        "label": "Configuration and Features (slides 8)",
-        "startSlide": 8
-      },
-      {
-        "label": "Billing and Support (slides 9-10)",
+        "label": "Billing and Operations (slides 9-9)",
         "startSlide": 9
       },
       {
-        "label": "Recap and Checklist (slides 11)",
-        "startSlide": 11
+        "label": "Support and Troubleshooting (slides 10-12)",
+        "startSlide": 10
+      },
+      {
+        "label": "Feedback and Resources (slides 13-13)",
+        "startSlide": 13
       }
     ]
   },
