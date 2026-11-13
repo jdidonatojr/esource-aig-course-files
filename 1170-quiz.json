@@ -6,134 +6,134 @@
   },
   "questions": [
     {
-      "question": "What is the primary purpose of the License Service in the ESource system?",
+      "question": "What is the pricing structure for client books on the white-label platform?",
       "choices": [
-        "To store all client names and bank statements securely",
-        "To send sign-in codes, enforce plan limits, and hand out keys to unlock firm books",
-        "To manage the firm's branding and logo files",
-        "To process monthly billing payments from client firms"
-      ],
-      "answer": 1,
-      "slide": 2,
-      "feedback_correct": "Exactly right! The License Service is the backend that manages authentication, plan enforcement, and book access without ever seeing sensitive client data.",
-      "feedback_incorrect": "Not quite. The License Service never receives client names or bank statements—it focuses on authentication, plan limits, and access control instead."
-    },
-    {
-      "question": "What four things must be in place before you can activate a firm?",
-      "choices": [
-        "A signed agreement, agreed tier and book limit, security plan and lead named, and firm details collected",
-        "A signed agreement, the firm's accounting records, a Firm ID, and a web address",
-        "Pricing tiers confirmed, the admin page set up, brand colors chosen, and staff members hired",
-        "The firm's legal name, logo file, Vercel account, and a backup plan document"
+        "$20 for the first book, then $17, $15, $14, and $13 as the firm grows",
+        "$25 for the first book, then $20 for all additional books",
+        "$15 per book flat rate regardless of quantity",
+        "$20 per book with a 10% discount after ten books"
       ],
       "answer": 0,
       "slide": 3,
-      "feedback_correct": "Perfect! These four prerequisites ensure the legal, technical, and security foundations are solid before activation begins.",
-      "feedback_incorrect": "Not quite. The four things are the signed agreement, the tier and book limit agreement, the security plan with a named lead, and the firm's details like name, logo, color, web address, and owner info."
+      "feedback_correct": "Exactly right—the tiered pricing starts at $20 and decreases as firms add more books.",
+      "feedback_incorrect": "The pricing structure is tiered, not flat or based on discounts. Review Slide 3 for the correct tier rates."
     },
     {
-      "question": "What is a Firm ID and why must it be chosen carefully?",
+      "question": "When creating a Firm ID in Step 1, what are the naming requirements?",
       "choices": [
-        "The firm's web address, which can be changed anytime to match rebranding",
-        "A short, lowercase identifier with no spaces that never changes once set",
-        "The name of the firm's owner, used only for internal record-keeping",
-        "A numeric code assigned by the License Service for billing purposes"
+        "It must be uppercase with spaces, like \"Smith Co\"",
+        "Short, lowercase, with no spaces, such as \"smithco\"",
+        "It can be any format as long as it contains the firm's full legal name",
+        "It must include numbers and special characters for security"
       ],
       "answer": 1,
       "slide": 4,
-      "feedback_correct": "Correct! The Firm ID is permanent, so picking a good one at the start saves headaches later.",
-      "feedback_incorrect": "Not quite. The Firm ID is a short, lowercase identifier with no spaces—like 'smithco'—and it's permanent, so it must be chosen with care during step one."
+      "feedback_correct": "That's correct—Firm IDs are short, lowercase, with no spaces, and must be chosen carefully because they never change.",
+      "feedback_incorrect": "The Firm ID has specific formatting rules to ensure consistency. It should be short, lowercase, and contain no spaces, as shown in Slide 4."
     },
     {
-      "question": "In the profiles.js file, what does the 'firm' setting control?",
+      "question": "What is the primary purpose of the License Service in the ESource system?",
       "choices": [
-        "The firm's legal name used for tax filings and contracts",
-        "The name the firm's clients see on statement requests and Excel reports",
-        "The internal Firm ID that links to the admin page",
-        "The storage location where client books are encrypted and saved"
+        "It stores all client bank statements and transactions",
+        "It sends sign-in codes, enforces plan limits, keeps book counts, and distributes encryption keys",
+        "It manages the firm's branding and web address",
+        "It creates monthly billing invoices automatically"
       ],
       "answer": 1,
-      "slide": 5,
-      "feedback_correct": "Exactly! The 'firm' setting is the client-facing name, like 'Smith and Company' on their reports and statements.",
-      "feedback_incorrect": "Not quite. The 'firm' setting in profiles.js controls what clients see—it appears on statement requests and every page of the Excel reports."
+      "slide": 2,
+      "feedback_correct": "Perfect—the License Service handles sign-ins, plan enforcement, book counting, and key distribution while protecting data privacy.",
+      "feedback_incorrect": "The License Service has a specific set of functions focused on access control and counting, not data storage or billing. Review Slide 2 for its actual role."
     },
     {
-      "question": "When setting up a domain in Vercel and Cloudflare, why is it important to set the proxy cloud to gray?",
+      "question": "In Vercel's DNS configuration, what does setting the proxy cloud to gray mean?",
       "choices": [
-        "Because a gray cloud encrypts all data traffic between the firm and ESource servers",
-        "Because it reduces the monthly cost of using Vercel's hosting platform",
-        "Because an orange cloud blocks Vercel's security certificate from working properly",
-        "Because it allows ESource to monitor the firm's usage without the firm knowing"
+        "It enables Vercel's security certificate and speeds up the connection",
+        "It blocks all traffic to the firm's web address",
+        "DNS only—an orange cloud would block Vercel's security certificate",
+        "It allows the firm to use multiple domains at once"
       ],
       "answer": 2,
       "slide": 6,
-      "feedback_correct": "Exactly right! The gray cloud means DNS only, which allows Vercel's security certificate to function. An orange cloud would break it.",
-      "feedback_incorrect": "Not quite. Setting the proxy to gray (DNS only) is critical because an orange cloud blocks Vercel's security certificate. The correct setting ensures the firm's connection is secure."
+      "feedback_correct": "Correct—the gray cloud means DNS only, and it's critical because an orange cloud blocks Vercel's security certificate.",
+      "feedback_incorrect": "The proxy cloud setting is important for Vercel's security. Gray means DNS only, while orange would cause certificate issues. See Slide 6 for details."
     },
     {
-      "question": "What is the first action the owner must take after signing in for the first time?",
+      "question": "What information does the License Service never receive from the system?",
       "choices": [
-        "Change their password and set up two-factor authentication",
-        "Add each staff member's name and work email on the License tab",
-        "Upload the firm's first client book and configure backup settings",
-        "Review the Help tab and enable reminders for monthly billing"
+        "Sign-in codes and plan tier information",
+        "Client names, bank statements, and transactions",
+        "The firm's web address and branding settings",
+        "Monthly book usage counts"
       ],
       "answer": 1,
-      "slide": 7,
-      "feedback_correct": "Perfect! Adding staff members to the License tab is the first step because only people on that list can sign in.",
-      "feedback_incorrect": "Not quite. After the owner's first sign-in, their main task is to add staff members' names and emails to the License tab—this controls who can access the system."
+      "slide": 2,
+      "feedback_correct": "Right—the License Service is designed not to see sensitive client data like names, statements, or transactions.",
+      "feedback_incorrect": "The License Service is intentionally limited in what it can access to protect client privacy. Review Slide 2 to see what it does and does not handle."
     },
     {
-      "question": "How is the help assistant configured differently for firms using their own domain versus an esourcebookkeeper.com domain?",
+      "question": "How is monthly billing determined according to the \"Highest by month\" system?",
       "choices": [
-        "Firms using their own domain must disable the help assistant entirely for security",
-        "Firms using their own domain need to add that domain to the assistant's allowed websites in ElevenLabs",
-        "The help assistant works identically for both; no configuration difference is needed",
-        "Firms using their own domain must pay extra to access the help assistant feature"
+        "Bill the average number of books used per day across the entire month",
+        "Bill based on the peak number of client books active on any single day that month, using the firm's tier rates",
+        "Bill a flat fee regardless of how many books were used",
+        "Bill only for the books added during the month, not those deleted"
       ],
       "answer": 1,
-      "slide": 8,
-      "feedback_correct": "Correct! If the firm uses its own web address, you must add it to the assistant's allowed websites in ElevenLabs so the help button works.",
-      "feedback_incorrect": "Not quite. The help assistant works automatically on esourcebookkeeper.com subdomains, but if a firm uses its own domain, that domain must be added to the assistant's allowed websites in ElevenLabs."
+      "slide": 9,
+      "feedback_correct": "Exactly—\"Highest by month\" captures the maximum number of active books on any single day and that determines the bill.",
+      "feedback_incorrect": "The billing system uses the peak count, not averages or flat fees. This ensures firms are billed fairly based on their actual highest usage. See Slide 9."
     },
     {
-      "question": "According to the billing model, how much should you bill a firm that had 15 client books active at peak usage this month?",
+      "question": "What should you do before activating a firm if an employee's work laptop is lost or stolen?",
       "choices": [
-        "$20 + (13 × $17) = $241",
-        "$20 + (14 × $15) = $230",
-        "$20 + (14 × $17) = $258",
-        "$15 × 15 = $225"
+        "Ask the owner to pay a replacement fee before proceeding with activation",
+        "Skip the activation until the laptop is recovered",
+        "Remove that person's access on the License tab so books remain encrypted and unreadable",
+        "Reset all passwords for everyone at the firm immediately"
       ],
       "answer": 2,
-      "slide": 9,
-      "feedback_correct": "Exactly! The first book is $20, and books 2–10 are $17 each. So: $20 + (14 × $17) = $258.",
-      "feedback_incorrect": "Not quite. The billing tiers are: $20 for book 1, then $17 for books 2–10, $15 for books 11–30, $14 for books 31–100, and $13 after that. For 15 books: $20 + (14 × $17) = $258."
+      "slide": 10,
+      "feedback_correct": "That's right—removing their access is the correct security response, and the encrypted books on the device remain unreadable.",
+      "feedback_incorrect": "The proper response to lost or stolen devices is to remove the person's access immediately; encryption protects the data even if the device is compromised. Review Slide 10."
     },
     {
-      "question": "A firm's staff member's laptop goes offline and stays offline for 16 days without internet. What happens next?",
+      "question": "What is the most likely reason a user cannot add a new client book?",
       "choices": [
-        "The books on that laptop are permanently deleted to prevent data loss",
-        "The laptop locks for safety, and the user must simply connect and sign in again to regain access",
-        "The License Service automatically notifies the firm's owner to replace the laptop",
-        "The user loses access permanently and must be removed from the License tab"
+        "The firm's browser cache needs to be cleared",
+        "They are offline (because adding a client needs internet) or the firm's plan is full",
+        "The owner has not yet signed in for the first time",
+        "The License Service is down for scheduled maintenance"
       ],
       "answer": 1,
       "slide": 10,
-      "feedback_correct": "Correct! Laptops lock after 14 days offline as a safety measure, but the fix is simple: reconnect and sign in.",
-      "feedback_incorrect": "Not quite. Computers lock after 14 days without internet for safety, but this isn't permanent—the user simply connects to the internet and signs in again to unlock their books."
+      "feedback_correct": "Correct—the two primary causes are being offline or reaching the firm's book limit, and the latter is an upselling opportunity.",
+      "feedback_incorrect": "The most common reasons for not being able to add a client are connectivity or hitting the plan limit. This is a useful support insight from Slide 10."
     },
     {
-      "question": "Why is it significant that the 'Ever added' count never goes down, even when a client book is deleted?",
+      "question": "Which step must happen before the owner can add staff members to sign in to the firm's account?",
       "choices": [
-        "Because it protects against fraud by keeping a permanent audit trail",
-        "Because it means you should consider offering the next tier if a firm frequently adds and deletes books",
-        "Because the firm will be billed for the total ever added, not just current active books",
-        "Because deleted books are actually not removed but hidden to prevent accidental recovery"
+        "The firm must complete its first month of billing",
+        "The owner must sign in themselves and access the License tab",
+        "ESource must approve each staff member through an email verification",
+        "The firm must upgrade to a higher tier plan"
+      ],
+      "answer": 1,
+      "slide": 7,
+      "feedback_correct": "Exactly—the owner signs in first, then uses the License tab to add each staff member's name and work email.",
+      "feedback_incorrect": "The owner is the key to adding staff; they sign in first and then manage the team from the License tab. Review Slide 7 for this onboarding sequence."
+    },
+    {
+      "question": "Why is it important to confirm that all four prerequisites are in place before activating a firm?",
+      "choices": [
+        "It ensures the firm pays the highest tier rate",
+        "It prevents the License Service from crashing",
+        "A signed agreement, agreed plan limit, security plan, and security lead assignment protect legal standing and data security, and prevent billing disputes",
+        "It guarantees the firm will have no support questions"
       ],
       "answer": 2,
-      "slide": 9,
-      "feedback_correct": "Exactly right! The 'Ever added' count is used for billing, so deleting and re-adding books repeatedly to avoid tier upgrades won't work.",
-      "feedback_incorrect": "Not quite. The 'Ever added' count never decreases, which means the firm is billed based on this total. This prevents someone from gaming the system by repeatedly deleting and re-adding the same books to stay in a lower tier."
+      "slide": 3,
+      "feedback_correct": "Perfect—these four prerequisites cover legal compliance, capacity planning, and security readiness, forming a foundation for smooth activation.",
+      "feedback_incorrect": "The prerequisites exist to protect both ESource and the firm legally and operationally. They ensure clarity on terms, capacity, and security before the firm goes live. See Slide 3."
     }
   ]
 }
