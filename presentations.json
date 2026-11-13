@@ -383,7 +383,7 @@
   "13": {
     "id": "esource_bookkeeper_reimagining_your_accounting_and_bookkeeping_practice",
     "title": "ESource Bookkeeper: Reimagining Your Accounting and Bookkeeping Practice",
-    "totalSlides": 16,
+    "totalSlides": 19,
     "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/ESource-Bookkeeper-Reimagining-Your-Accounting-and-Bookkeeping-Practice.pdf",
     "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting ESource Bookkeeper: Reimagining Your Accounting and Bookkeeping Practice. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
     "sections": [
@@ -392,24 +392,32 @@
         "startSlide": 1
       },
       {
-        "label": "Your Brand and Client Management (slides 4-6)",
+        "label": "Your Brand and Control (slides 4-6)",
         "startSlide": 4
       },
       {
-        "label": "Workflow Automation and AI (slides 7-8)",
+        "label": "Workflow and Intelligence (slides 7-8)",
         "startSlide": 7
       },
       {
-        "label": "Financial Insights and Security (slides 9-12)",
+        "label": "Financial Management and Oversight (slides 9-11)",
         "startSlide": 9
       },
       {
-        "label": "Implementation and Pricing (slides 13-14)",
+        "label": "Security and Data Protection (slide 12)",
+        "startSlide": 12
+      },
+      {
+        "label": "Migration and Scalability (slides 13-14)",
         "startSlide": 13
       },
       {
-        "label": "Try It Now and Next Steps (slides 15-16)",
+        "label": "Getting Started (slides 15-16)",
         "startSlide": 15
+      },
+      {
+        "label": "Advanced Features and Compliance (slides 17-19)",
+        "startSlide": 17
       }
     ],
     "welcomeVideo": "https://vimeo.com/1245270873"
