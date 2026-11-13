@@ -392,31 +392,15 @@
         "startSlide": 1
       },
       {
-        "label": "Your Brand and Control (slides 4-6)",
+        "label": "Core Features and Workflow (slides 4-11)",
         "startSlide": 4
       },
       {
-        "label": "Workflow and Intelligence (slides 7-8)",
-        "startSlide": 7
-      },
-      {
-        "label": "Financial Management and Oversight (slides 9-11)",
-        "startSlide": 9
-      },
-      {
-        "label": "Security and Data Protection (slide 12)",
+        "label": "Security, Scalability and Integration (slides 12-16)",
         "startSlide": 12
       },
       {
-        "label": "Migration and Scalability (slides 13-14)",
-        "startSlide": 13
-      },
-      {
-        "label": "Getting Started (slides 15-16)",
-        "startSlide": 15
-      },
-      {
-        "label": "Advanced Features and Compliance (slides 17-19)",
+        "label": "Pricing and Getting Started (slides 17-19)",
         "startSlide": 17
       }
     ],
