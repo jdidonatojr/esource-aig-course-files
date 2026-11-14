@@ -388,28 +388,24 @@
     "firstMessage": "Welcome! I'm Bill Evans, and today I'll be presenting ESource Bookkeeper: Reimagining Your Accounting and Bookkeeping Practice. After each slide, I'll ask if you have any questions before we move on. If you have a question at any point, just start speaking. Are you ready to begin?",
     "sections": [
       {
-        "label": "Introduction (slides 1-3)",
+        "label": "Introduction and Vision (slides 1-3)",
         "startSlide": 1
       },
       {
-        "label": "Core Features (slides 4-7)",
+        "label": "Core Features and Workflow (slides 4-12)",
         "startSlide": 4
       },
       {
-        "label": "Workflow Automation (slides 8-11)",
-        "startSlide": 8
+        "label": "Security and Scalability (slides 13-17)",
+        "startSlide": 13
       },
       {
-        "label": "Client Management (slides 12-15)",
-        "startSlide": 12
+        "label": "Implementation and Pricing (slides 18-19)",
+        "startSlide": 18
       },
       {
-        "label": "Implementation (slides 16-18)",
-        "startSlide": 16
-      },
-      {
-        "label": "Data Security and Pricing (slides 19-21)",
-        "startSlide": 19
+        "label": "Getting Started (slides 20-21)",
+        "startSlide": 20
       }
     ],
     "welcomeVideo": "https://vimeo.com/1245270873"
