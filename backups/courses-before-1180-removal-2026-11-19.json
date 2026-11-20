@@ -1,0 +1,684 @@
+{
+  "11": {
+    "id": "gemini_notebook_in_action",
+    "title": "Gemini Notebook in Action",
+    "totalSlides": 16,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/11-Gemini-Notebook-in-Action.pdf",
+    "firstMessage": "Welcome to Gemini Notebook in Action. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Context (slides 1-4)",
+        "startSlide": 1
+      },
+      {
+        "label": "Exercise Overview (slides 5-5)",
+        "startSlide": 5
+      },
+      {
+        "label": "Hands-On Steps (slides 6-12)",
+        "startSlide": 6
+      },
+      {
+        "label": "Review and Takeaway (slides 13-14)",
+        "startSlide": 13
+      },
+      {
+        "label": "Knowledge Check and Closing (slides 15-16)",
+        "startSlide": 15
+      }
+    ]
+  },
+  "1000": {
+    "id": "an_introduction_to_the_esource_ai_sales_channel",
+    "title": "An Introduction to the ESource AI Sales Channel",
+    "totalSlides": 25,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1000-An-Introduction-to-the-ESource-AI-Sales-Channel.pdf",
+    "firstMessage": "Welcome to An Introduction to the ESource AI Sales Channel. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Welcome (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Company Architecture and Offers (slides 3-6)",
+        "startSlide": 3
+      },
+      {
+        "label": "Routing and Qualification Practice (slides 7-11)",
+        "startSlide": 7
+      },
+      {
+        "label": "Sales Methodology and Decision Instruments (slides 12-18)",
+        "startSlide": 12
+      },
+      {
+        "label": "Partner Authority and Compliance (slides 19-23)",
+        "startSlide": 19
+      },
+      {
+        "label": "Closing and Certification (slides 24-25)",
+        "startSlide": 24
+      }
+    ]
+  },
+  "1010": {
+    "id": "gemini_notebook_in_action_for_ministries",
+    "title": "Gemini Notebook in Action: For Ministries",
+    "totalSlides": 16,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1010-Gemini-Notebook-in-Action-For-Ministries.pdf",
+    "firstMessage": "Welcome to Gemini Notebook in Action: For Ministries. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-5)",
+        "startSlide": 1
+      },
+      {
+        "label": "Tool Setup and Navigation (slides 6-10)",
+        "startSlide": 6
+      },
+      {
+        "label": "Hands-On Exercise (slides 11-12)",
+        "startSlide": 11
+      },
+      {
+        "label": "Reinforcement and Next Steps (slides 13-16)",
+        "startSlide": 13
+      }
+    ]
+  },
+  "1020": {
+    "id": "your_business_brain_powered_by_gemini_notebook",
+    "title": "Your Business Brain Powered by Gemini Notebook",
+    "totalSlides": 11,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1020-Your-Business-Brain-Powered-by-Gemini-Notebook.pdf",
+    "firstMessage": "Welcome to Your Business Brain Powered by Gemini Notebook. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Core Capabilities (slides 3-7)",
+        "startSlide": 3
+      },
+      {
+        "label": "Workflow and Results (slides 8-9)",
+        "startSlide": 8
+      },
+      {
+        "label": "Getting Started (slides 10-11)",
+        "startSlide": 10
+      }
+    ]
+  },
+  "1030": {
+    "id": "the_esource_product_launcher_guide",
+    "title": "The ESource Product Launcher Guide",
+    "totalSlides": 8,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1030-The-ESource-Product-Launcher-Guide.pdf",
+    "firstMessage": "Welcome to The ESource Product Launcher Guide. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Challenge (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Product Launcher System (slides 3-5)",
+        "startSlide": 3
+      },
+      {
+        "label": "Pilot Implementation (slides 6-8)",
+        "startSlide": 6
+      }
+    ]
+  },
+  "1040": {
+    "id": "build_with_chatgpt_sites_from_professional_portfolio_to_practical_business_sites",
+    "title": "Build with ChatGPT Sites: From Professional Portfolio to Practical Business Sites",
+    "totalSlides": 15,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1040-Build-with-ChatGPT-Sites-From-Professional-Portfolio-to-Practical-Business-Sites.pdf",
+    "firstMessage": "Welcome to Build with ChatGPT Sites: From Professional Portfolio to Practical Business Sites. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "Fast Portfolio Build (slides 4-6)",
+        "startSlide": 4
+      },
+      {
+        "label": "Review and Refine (slides 7-11)",
+        "startSlide": 7
+      },
+      {
+        "label": "Polish and Benchmark (slides 12-13)",
+        "startSlide": 12
+      },
+      {
+        "label": "Checkpoint and Next Steps (slides 14-15)",
+        "startSlide": 14
+      }
+    ]
+  },
+  "1050": {
+    "id": "ctfs_for_techiq",
+    "title": "CTFS for TechIQ",
+    "totalSlides": 17,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1050-CTFS-for-TechIQ.pdf",
+    "firstMessage": "Welcome to CTFS for TechIQ. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Context (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "The CTFS Solution (slides 4-8)",
+        "startSlide": 4
+      },
+      {
+        "label": "Platform Capabilities (slides 9-13)",
+        "startSlide": 9
+      },
+      {
+        "label": "Implementation and Future (slides 14-17)",
+        "startSlide": 14
+      }
+    ]
+  },
+  "1060": {
+    "id": "john_f_pennebaker_handbook_and_onboarding",
+    "title": "John F. Pennebaker Handbook and Onboarding",
+    "totalSlides": 23,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1060-John-F-Pennebaker-Handbook-and-Onboarding.pdf",
+    "firstMessage": "Welcome to John F. Pennebaker Handbook and Onboarding. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Employment Relationship Basics (slides 3-6)",
+        "startSlide": 3
+      },
+      {
+        "label": "Harassment, Discrimination, and Reporting (slides 7-13)",
+        "startSlide": 7
+      },
+      {
+        "label": "Pay, Classification, and Conduct (slides 14-18)",
+        "startSlide": 14
+      },
+      {
+        "label": "Safety, Leave, and Legal Rights (slides 19-21)",
+        "startSlide": 19
+      },
+      {
+        "label": "Course Completion and Resources (slides 22-23)",
+        "startSlide": 22
+      }
+    ]
+  },
+  "1070": {
+    "id": "board_vision_and_mission_proposal",
+    "title": "Board Vision and Mission Proposal",
+    "totalSlides": 14,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1070-Board-Vision-and-Mission-Proposal.pdf",
+    "firstMessage": "Welcome to Board Vision and Mission Proposal. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Problem-First Vision (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "The Proposed Model (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "Mastery Loop in Action (slides 6-8)",
+        "startSlide": 6
+      },
+      {
+        "label": "Organizing Structure and Roles (slides 9-10)",
+        "startSlide": 9
+      },
+      {
+        "label": "Sustainability and Impact (slides 11-12)",
+        "startSlide": 11
+      },
+      {
+        "label": "Implementation and Alignment (slides 13-14)",
+        "startSlide": 13
+      }
+    ]
+  },
+  "1080": {
+    "id": "ai_execution_gap",
+    "title": "AI Execution Gap",
+    "totalSlides": 8,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1080-AI-Execution-Gap.pdf",
+    "firstMessage": "Welcome to AI Execution Gap. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Context (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "ESource Solution Model (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "Diagnostic Process (slides 6-7)",
+        "startSlide": 6
+      },
+      {
+        "label": "Getting Started (slide 8)",
+        "startSlide": 8
+      }
+    ]
+  },
+  "1090": {
+    "id": "esource_sales_channel_partner_program",
+    "title": "ESource Sales Channel Partner Program",
+    "totalSlides": 14,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1090-ESource-Sales-Channel-Partner-Program.pdf",
+    "firstMessage": "Welcome to ESource Sales Channel Partner Program. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Problem Statement (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "The Two-Business Model (slides 3-5)",
+        "startSlide": 3
+      },
+      {
+        "label": "Routing and Discovery Framework (slides 6-8)",
+        "startSlide": 6
+      },
+      {
+        "label": "Partner Authority and Boundaries (slides 9-11)",
+        "startSlide": 9
+      },
+      {
+        "label": "Practice and Application (slides 12-14)",
+        "startSlide": 12
+      }
+    ]
+  },
+  "1100": {
+    "id": "gt_apex_accelerator_services",
+    "title": "GT APEX Accelerator Services",
+    "totalSlides": 15,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1100-GT-APEX-Accelerator-Services.pdf",
+    "firstMessage": "Welcome to GT APEX Accelerator Services. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Welcome (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "EI2 and APEX Overview (slides 4-8)",
+        "startSlide": 4
+      },
+      {
+        "label": "Services and Assistance (slides 9-13)",
+        "startSlide": 9
+      },
+      {
+        "label": "Closing and Contact (slides 14-15)",
+        "startSlide": 14
+      }
+    ]
+  },
+  "1110": {
+    "id": "ai_decisions_at_work",
+    "title": "AI Decisions at Work",
+    "totalSlides": 25,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1110-AI-Decisions-at-Work.pdf",
+    "firstMessage": "Welcome to AI Decisions at Work. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Context (slides 1-7)",
+        "startSlide": 1
+      },
+      {
+        "label": "Decision Framework (slides 8-11)",
+        "startSlide": 8
+      },
+      {
+        "label": "Governance and Escalation (slides 12-16)",
+        "startSlide": 12
+      },
+      {
+        "label": "Program Evaluation (slides 17-23)",
+        "startSlide": 17
+      },
+      {
+        "label": "Next Steps and Resources (slides 24-25)",
+        "startSlide": 24
+      }
+    ]
+  },
+  "1120": {
+    "id": "project_management_bid_to_close",
+    "title": "Project Management - Bid to close",
+    "totalSlides": 24,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1120-Project-Management---Bid-to-close.pdf",
+    "firstMessage": "Welcome to Project Management - Bid to close. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Framework (slides 1-5)",
+        "startSlide": 1
+      },
+      {
+        "label": "Phase Ownership and Roles (slides 6-6)",
+        "startSlide": 6
+      },
+      {
+        "label": "Bid to Estimate (slides 7-10)",
+        "startSlide": 7
+      },
+      {
+        "label": "Award and Procurement (slides 11-13)",
+        "startSlide": 11
+      },
+      {
+        "label": "Scheduling and Execution (slides 14-16)",
+        "startSlide": 14
+      },
+      {
+        "label": "Progress Tracking and Financial Control (slides 17-19)",
+        "startSlide": 17
+      },
+      {
+        "label": "Closeout and Best Practices (slides 20-22)",
+        "startSlide": 20
+      },
+      {
+        "label": "Closing Resources (slides 23-24)",
+        "startSlide": 23
+      }
+    ]
+  },
+  "1130": {
+    "id": "baker_landscape_singleops_on_boarding",
+    "title": "Baker Landscape SingleOps on-boarding",
+    "totalSlides": 12,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1130-Baker-Landscape-SingleOps-on-boarding.pdf",
+    "firstMessage": "Welcome to Baker Landscape SingleOps on-boarding. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Context (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "Phased Implementation Strategy (slides 4-5)",
+        "startSlide": 4
+      },
+      {
+        "label": "Core Workflow Training (slides 6-8)",
+        "startSlide": 6
+      },
+      {
+        "label": "Reinforcement and Support (slides 8-9)",
+        "startSlide": 8
+      },
+      {
+        "label": "Transformation and Results (slides 9-10)",
+        "startSlide": 9
+      },
+      {
+        "label": "Success Metrics and Roadmap (slides 10-11)",
+        "startSlide": 10
+      },
+      {
+        "label": "Q&A and Closing (slides 11-12)",
+        "startSlide": 11
+      }
+    ]
+  },
+  "1140": {
+    "id": "what_do_you_know_about_your_rights_at_work",
+    "title": "What Do You Know About Your Rights at Work",
+    "totalSlides": 23,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1140-What-Do-You-Know-About-Your-Rights-at-Work.pdf",
+    "firstMessage": "Welcome to What Do You Know About Your Rights at Work. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Employment Relationship Basics (slides 3-6)",
+        "startSlide": 3
+      },
+      {
+        "label": "Harassment, Discrimination, and Reporting (slides 7-13)",
+        "startSlide": 7
+      },
+      {
+        "label": "Pay, Classification, and Conduct (slides 14-18)",
+        "startSlide": 14
+      },
+      {
+        "label": "Safety, Time Off, and Legal Rights (slides 19-21)",
+        "startSlide": 19
+      },
+      {
+        "label": "Knowledge Check and Closing (slides 22-23)",
+        "startSlide": 22
+      }
+    ]
+  },
+  "1150": {
+    "id": "human_centered_leadership",
+    "title": "Human-Centered Leadership",
+    "totalSlides": 14,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1150-Human-Centered-Leadership.pdf",
+    "firstMessage": "Welcome to Human-Centered Leadership. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Opening and Context (slides 1-4)",
+        "startSlide": 1
+      },
+      {
+        "label": "Human-Centered Leadership Principles (slides 5-9)",
+        "startSlide": 5
+      },
+      {
+        "label": "Real-World Example (slide 10)",
+        "startSlide": 10
+      },
+      {
+        "label": "Active Practice (slide 11)",
+        "startSlide": 11
+      },
+      {
+        "label": "Knowledge Consolidation (slide 12)",
+        "startSlide": 12
+      },
+      {
+        "label": "Takeaways and Next Steps (slides 13-14)",
+        "startSlide": 13
+      }
+    ]
+  },
+  "1160": {
+    "id": "building_a_course_with_the_esource_course_designer",
+    "title": "Building a Course with the ESource Course Designer",
+    "totalSlides": 24,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1160-Building-a-Course-with-the-ESource-Course-Designer.pdf",
+    "firstMessage": "Welcome to Building a Course with the ESource Course Designer. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "Getting Started (slides 4-8)",
+        "startSlide": 4
+      },
+      {
+        "label": "Loading and Preparing Content (slides 9-10)",
+        "startSlide": 9
+      },
+      {
+        "label": "Building the Course Outline (slides 11-16)",
+        "startSlide": 11
+      },
+      {
+        "label": "Generating Slides and Notes (slides 17-21)",
+        "startSlide": 17
+      },
+      {
+        "label": "Finalizing and Handoff (slides 22-24)",
+        "startSlide": 22
+      }
+    ]
+  },
+  "1170": {
+    "id": "how_to_activate_a_new_firm",
+    "title": "How to activate a new firm",
+    "totalSlides": 13,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1170-How-to-activate-a-new-firm.pdf",
+    "firstMessage": "Welcome to How to activate a new firm. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Pre-Activation Requirements (slides 3-3)",
+        "startSlide": 3
+      },
+      {
+        "label": "Setup Steps (slides 4-8)",
+        "startSlide": 4
+      },
+      {
+        "label": "Billing and Operations (slides 9-9)",
+        "startSlide": 9
+      },
+      {
+        "label": "Support and Troubleshooting (slides 10-12)",
+        "startSlide": 10
+      },
+      {
+        "label": "Feedback and Resources (slides 13-13)",
+        "startSlide": 13
+      }
+    ]
+  },
+  "1180": {
+    "id": "getting_started_with_esource_bookkeeper",
+    "title": "Getting started with ESource Bookkeeper",
+    "totalSlides": 19,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1180-Getting-started-with-ESource-Bookkeeper.pdf",
+    "firstMessage": "Welcome to Getting started with ESource Bookkeeper. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction (slides 1-3)",
+        "startSlide": 1
+      },
+      {
+        "label": "Owner Controls (slides 4-4)",
+        "startSlide": 4
+      },
+      {
+        "label": "Client Setup (slides 5-8)",
+        "startSlide": 5
+      },
+      {
+        "label": "Transaction Management (slides 9-11)",
+        "startSlide": 9
+      },
+      {
+        "label": "Client Communication (slides 12-15)",
+        "startSlide": 12
+      },
+      {
+        "label": "Reports and Maintenance (slides 16-18)",
+        "startSlide": 16
+      },
+      {
+        "label": "Getting Started (slides 19-19)",
+        "startSlide": 19
+      }
+    ]
+  },
+  "1190": {
+    "id": "how_to_sell_the_white_label_bookkeeper",
+    "title": "How to Sell the White-Label Bookkeeper",
+    "totalSlides": 16,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1190-How-to-Sell-the-White-Label-Bookkeeper.pdf",
+    "firstMessage": "Welcome to How to Sell the White-Label Bookkeeper. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Why Firms Buy (slides 3-4)",
+        "startSlide": 3
+      },
+      {
+        "label": "Discovery and Demo (slides 5-8)",
+        "startSlide": 5
+      },
+      {
+        "label": "Pricing and Competitors (slides 9-11)",
+        "startSlide": 9
+      },
+      {
+        "label": "Objections and Security (slides 12-14)",
+        "startSlide": 12
+      },
+      {
+        "label": "Closing and Recap (slides 15-16)",
+        "startSlide": 15
+      }
+    ]
+  },
+  "1200": {
+    "id": "how_to_read_tarot_cards_for_paying_clients",
+    "title": "How to Read Tarot Cards for Paying Clients",
+    "totalSlides": 34,
+    "pdfUrl": "https://raw.githubusercontent.com/jdidonatojr/esource-aig-course-files/main/1200-How-to-Read-Tarot-Cards-for-Paying-Clients.pdf",
+    "firstMessage": "Welcome to How to Read Tarot Cards for Paying Clients. Are you ready to begin?",
+    "sections": [
+      {
+        "label": "Introduction and Overview (slides 1-2)",
+        "startSlide": 1
+      },
+      {
+        "label": "Deck Structure and Vocabulary (slides 3-9)",
+        "startSlide": 3
+      },
+      {
+        "label": "Single and Three-Card Spreads (slides 10-12)",
+        "startSlide": 10
+      },
+      {
+        "label": "Celtic Cross Fundamentals (slides 13-16)",
+        "startSlide": 13
+      },
+      {
+        "label": "Reading Patterns and Reversals (slides 17-25)",
+        "startSlide": 17
+      },
+      {
+        "label": "Ethical Practice and Client Communication (slides 26-28)",
+        "startSlide": 26
+      },
+      {
+        "label": "Building Skills and Practice Tools (slides 29-31)",
+        "startSlide": 29
+      },
+      {
+        "label": "Sensitive Topics and Final Practice (slides 32-34)",
+        "startSlide": 32
+      }
+    ]
+  }
+}
