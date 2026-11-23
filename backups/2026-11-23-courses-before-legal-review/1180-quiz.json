@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — Getting Started with ESource Bookkeeping Tool",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "What are the three key things that make this bookkeeping tool different from other options?",
+      "choices": [
+        "It is free, it works offline, and it has unlimited support",
+        "It carries your brand, your data stays with you, and everything is locked to your firm",
+        "It integrates with all banks, it automates all sorting, and it files taxes automatically",
+        "It requires no backups, it works on any device, and it stores data in the cloud"
+      ],
+      "answer": 1,
+      "slide": 2,
+      "feedback_correct": "Exactly right—your brand appears on reports, bank data stays on your computers, and encryption keeps everything secure.",
+      "feedback_incorrect": "The tool does offer powerful features, but the three core differences are about your brand, local data storage, and firm-level security. Review slide 2 to see how these protect your business."
+    },
+    {
+      "question": "How long does a sign-in code remain valid after it is emailed to you?",
+      "choices": [
+        "5 minutes",
+        "20 minutes",
+        "10 minutes",
+        "1 hour"
+      ],
+      "answer": 2,
+      "slide": 3,
+      "feedback_correct": "That's correct—the six-digit code works for ten minutes, so you need to enter it quickly.",
+      "feedback_incorrect": "The sign-in code has a specific time window to keep your account secure. Check slide 3 to find the exact duration."
+    },
+    {
+      "question": "As the firm owner, what action should you take on the day a staff member leaves your firm?",
+      "choices": [
+        "Email them instructions on how to delete their files",
+        "Wait a week to see if they return before locking their access",
+        "Remove them from the License tab immediately so their computer locks at the next check-in",
+        "Ask them to sign out remotely from all their devices"
+      ],
+      "answer": 2,
+      "slide": 4,
+      "feedback_correct": "Correct—removing them right away ensures their computer locks on the next check-in, protecting your client list.",
+      "feedback_incorrect": "When staff leave, quick action is essential to protect client data. The owner must remove them from the License tab the same day so the books lock automatically. See slide 4 for details."
+    },
+    {
+      "question": "What is the first step you must take when adding a new client to the tool?",
+      "choices": [
+        "Upload their most recent bank statements",
+        "Open the Status tab, type the client's full business name, pick Business or Nonprofit, and click Add client",
+        "Export five reports from their old accounting software",
+        "Set up automatic email reminders in the Setup tab"
+      ],
+      "answer": 1,
+      "slide": 5,
+      "feedback_correct": "Perfect—the first step is to open Status, enter the business name, select the entity type, and click Add client, and you need an internet connection.",
+      "feedback_incorrect": "Adding a client starts with the Status tab and basic information. Other tasks like uploading statements and setting reminders come later. Review slide 5 for the correct sequence."
+    },
+    {
+      "question": "If your client uses QuickBooks Online and you want to switch them to this tool, what five reports should you export from QuickBooks before dropping them in the Switching box?",
+      "choices": [
+        "Recent transactions, account balances, customer list, vendor list, and previous tax returns",
+        "Chart of accounts, trial balance, open invoices, unpaid bills, and last year's ledger",
+        "Monthly profit and loss, balance sheet, cash flow, accounts receivable aging, and accounts payable aging",
+        "General ledger, invoice register, bill register, bank reconciliation, and expense categories"
+      ],
+      "answer": 1,
+      "slide": 6,
+      "feedback_correct": "Exactly right—those five reports give the tool everything it needs to bring over the account structure, balances, and outstanding items.",
+      "feedback_incorrect": "The tool requires specific reports to switch clients smoothly from other software. Slide 6 lists the exact five reports you need to export before using the Switching box."
+    },
+    {
+      "question": "Why is it important to choose the correct file format when downloading PayPal or Stripe activity for upload?",
+      "choices": [
+        "Because incorrect formats will crash the tool and lock your files",
+        "Because the wrong file might include duplicate deposits or miss refunds and fees, throwing off your reconciliation",
+        "Because the tool can only read CSV files and will reject any other format",
+        "Because using the wrong file requires you to re-enter all transactions manually"
+      ],
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "Correct—the right files capture full sales, fees, and refunds, and the tool prevents double-counting deposits, keeping your numbers accurate.",
+      "feedback_incorrect": "File selection matters because certain PayPal and Stripe downloads capture different data. Using the wrong one could miss refunds or count deposits twice. Slide 8 shows exactly which files to use."
+    },
+    {
+      "question": "How does the 'Remember' checkbox on the Ask Client tab help reduce your work each month?",
+      "choices": [
+        "It automatically emails the client reminders about missing statements",
+        "It saves the client's contact information so you don't type it twice",
+        "It creates a rule that sorts similar lines the same way next month, so fewer questions appear",
+        "It backs up your work so you don't lose unsaved answers"
+      ],
+      "answer": 2,
+      "slide": 9,
+      "feedback_correct": "That's right—when you check Remember and pick a category, a rule is created so those lines sort themselves next month.",
+      "feedback_incorrect": "The Remember checkbox is about building rules over time to make sorting easier. Slide 9 explains how checking it turns your answers into automatic sorting rules for future months."
+    },
+    {
+      "question": "What information is safe to share with the AI assistant, and what must you never share?",
+      "choices": [
+        "You can share anything because the AI is part of your tool and encrypted",
+        "You can only share how-to questions; never share client names, account numbers, or balances",
+        "You must share client details so the AI can give you specific advice about their accounts",
+        "You should share everything except passwords, which are handled separately"
+      ],
+      "answer": 1,
+      "slide": 17,
+      "feedback_correct": "Exactly—the assistant can help with how-to questions in plain steps, but it can't see your books, so client details must never be shared.",
+      "feedback_incorrect": "The assistant is a helpful tool, but protecting client privacy is essential. Slide 17 reminds you never to share client names, account numbers, or balances when asking for help."
+    },
+    {
+      "question": "According to the 3-2-1 backup rule taught in this course, which backup storage arrangement best protects your firm's books?",
+      "choices": [
+        "One copy on your office computer and one in cloud storage",
+        "Two copies on external hard drives kept in the same office cabinet",
+        "Three copies: one on your office computer, one on a portable drive at home, and one in a second location like a safe deposit box",
+        "Three copies on three different cloud services so you always have access"
+      ],
+      "answer": 2,
+      "slide": 18,
+      "feedback_correct": "Perfect—three copies on two kinds of storage with one away from the office means protection against both hardware failure and office disasters.",
+      "feedback_incorrect": "The 3-2-1 rule balances convenience with protection. You need three copies on at least two different types of storage, with one kept physically away from your office. Slide 18 explains this essential backup principle."
+    },
+    {
+      "question": "Which combination of actions represents the complete workflow from signing in to finishing a work session?",
+      "choices": [
+        "Sign in, upload statements, sort transactions, download backup",
+        "Sign in, add a client, upload statements, answer questions, check reports, download backup",
+        "Sign in, update the License tab, draft questions, download backup",
+        "Add a client, email reminders, analyze answers, back up to cloud"
+      ],
+      "answer": 1,
+      "slide": 19,
+      "feedback_correct": "Correct—those are the core steps from sign-in through finishing your session, and slide 19 lists them as the roadmap to get started.",
+      "feedback_incorrect": "The workflow in slide 19 shows the essential steps in order: sign in, add a client, upload statements, answer questions, check reports, and back up. This keeps your firm's books current and secure."
+    }
+  ]
+}

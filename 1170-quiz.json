@@ -6,17 +6,17 @@
   },
   "questions": [
     {
-      "question": "What is the pricing structure for client books on the white-label platform?",
+      "question": "How are client books priced for a firm?",
       "choices": [
-        "$20 for the first book, then $17, $15, $14, and $13 as the firm grows",
+        "$20 for the first book, $17 for books 2-10, $15 for 11-30, $14 for 31-100, and $13 after that, each rate only for the books in its band",
         "$25 for the first book, then $20 for all additional books",
         "$15 per book flat rate regardless of quantity",
         "$20 per book with a 10% discount after ten books"
       ],
       "answer": 0,
       "slide": 3,
-      "feedback_correct": "Exactly right—the tiered pricing starts at $20 and decreases as firms add more books.",
-      "feedback_incorrect": "The pricing structure is tiered, not flat or based on discounts. Review Slide 3 for the correct tier rates."
+      "feedback_correct": "Exactly right. Each rate applies only to the books in its band.",
+      "feedback_incorrect": "The price is set in bands, and each rate applies only to the books in its band. Review slide 3."
     },
     {
       "question": "When creating a Firm ID in Step 1, what are the naming requirements?",
@@ -32,17 +32,17 @@
       "feedback_incorrect": "The Firm ID has specific formatting rules to ensure consistency. It should be short, lowercase, and contain no spaces, as shown in Slide 4."
     },
     {
-      "question": "What is the primary purpose of the License Service in the ESource system?",
+      "question": "What does the License Service do?",
       "choices": [
-        "It stores all client bank statements and transactions",
-        "It sends sign-in codes, enforces plan limits, keeps book counts, and distributes encryption keys",
+        "It stores the firm's books and bank statements",
+        "It sends sign-in codes, enforces plan limits, keeps book counts, and hands out the key that unlocks the firm's books",
         "It manages the firm's branding and web address",
         "It creates monthly billing invoices automatically"
       ],
       "answer": 1,
       "slide": 2,
-      "feedback_correct": "Perfect—the License Service handles sign-ins, plan enforcement, book counting, and key distribution while protecting data privacy.",
-      "feedback_incorrect": "The License Service has a specific set of functions focused on access control and counting, not data storage or billing. Review Slide 2 for its actual role."
+      "feedback_correct": "Right. It handles sign-in, plan limits, book counts and the unlock key.",
+      "feedback_incorrect": "Review slide 2 to see what the License Service does."
     },
     {
       "question": "In Vercel's DNS configuration, what does setting the proxy cloud to gray mean?",
@@ -58,17 +58,17 @@
       "feedback_incorrect": "The proxy cloud setting is important for Vercel's security. Gray means DNS only, while orange would cause certificate issues. See Slide 6 for details."
     },
     {
-      "question": "What information does the License Service never receive from the system?",
+      "question": "A firm asks exactly how its client data is stored and what AI processes. What should you do?",
       "choices": [
-        "Sign-in codes and plan tier information",
-        "Client names, bank statements, and transactions",
-        "The firm's web address and branding settings",
-        "Monthly book usage counts"
+        "Tell them their data never leaves their office",
+        "Say every competitor is less safe",
+        "Set up a walkthrough with the product owner, and don't make promises from memory",
+        "Tell them it's confidential and can't be discussed"
       ],
-      "answer": 1,
+      "answer": 2,
       "slide": 2,
-      "feedback_correct": "Right—the License Service is designed not to see sensitive client data like names, statements, or transactions.",
-      "feedback_incorrect": "The License Service is intentionally limited in what it can access to protect client privacy. Review Slide 2 to see what it does and does not handle."
+      "feedback_correct": "Correct. Bring in the product owner, and don't promise more than has been confirmed.",
+      "feedback_incorrect": "Don't answer data questions from memory or make promises. Review slide 2."
     },
     {
       "question": "How is monthly billing determined according to the \"Highest by month\" system?",
@@ -84,17 +84,17 @@
       "feedback_incorrect": "The billing system uses the peak count, not averages or flat fees. This ensures firms are billed fairly based on their actual highest usage. See Slide 9."
     },
     {
-      "question": "What should you do before activating a firm if an employee's work laptop is lost or stolen?",
+      "question": "An employee's work laptop is lost or stolen. What should happen first?",
       "choices": [
-        "Ask the owner to pay a replacement fee before proceeding with activation",
-        "Skip the activation until the laptop is recovered",
-        "Remove that person's access on the License tab so books remain encrypted and unreadable",
-        "Reset all passwords for everyone at the firm immediately"
+        "Ask the owner to pay a replacement fee",
+        "Wait until the laptop is recovered",
+        "The owner removes that person's access on the License page right away",
+        "Reset everyone's passwords at the firm"
       ],
       "answer": 2,
       "slide": 10,
-      "feedback_correct": "That's right—removing their access is the correct security response, and the encrypted books on the device remain unreadable.",
-      "feedback_incorrect": "The proper response to lost or stolen devices is to remove the person's access immediately; encryption protects the data even if the device is compromised. Review Slide 10."
+      "feedback_correct": "That's right. The owner removes that person's access right away.",
+      "feedback_incorrect": "The first step is to remove that person's access. Review slide 10."
     },
     {
       "question": "What is the most likely reason a user cannot add a new client book?",

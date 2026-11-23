@@ -6,17 +6,17 @@
   },
   "questions": [
     {
-      "question": "What are the three key things that make this bookkeeping tool different from other options?",
+      "question": "Which three things does the course say make this tool different?",
       "choices": [
+        "Your brand on screen and reports, client questions grouped, and missing statements tracked",
         "It is free, it works offline, and it has unlimited support",
-        "It carries your brand, your data stays with you, and everything is locked to your firm",
-        "It integrates with all banks, it automates all sorting, and it files taxes automatically",
-        "It requires no backups, it works on any device, and it stores data in the cloud"
+        "It connects live to every bank, runs payroll, and has a client portal",
+        "It replaces your tax preparer, your bank, and your accountant"
       ],
-      "answer": 1,
+      "answer": 0,
       "slide": 2,
-      "feedback_correct": "Exactly right—your brand appears on reports, bank data stays on your computers, and encryption keeps everything secure.",
-      "feedback_incorrect": "The tool does offer powerful features, but the three core differences are about your brand, local data storage, and firm-level security. Review slide 2 to see how these protect your business."
+      "feedback_correct": "Right: your brand, grouped client questions, and tracked statements.",
+      "feedback_incorrect": "Review slide 2: brand, grouped questions, and tracked statements."
     },
     {
       "question": "How long does a sign-in code remain valid after it is emailed to you?",
@@ -58,17 +58,17 @@
       "feedback_incorrect": "Adding a client starts with the Status tab and basic information. Other tasks like uploading statements and setting reminders come later. Review slide 5 for the correct sequence."
     },
     {
-      "question": "If your client uses QuickBooks Online and you want to switch them to this tool, what five reports should you export from QuickBooks before dropping them in the Switching box?",
+      "question": "A client is moving from your current bookkeeping software. Which five reports do you export before dropping them in the Switching box?",
       "choices": [
-        "Recent transactions, account balances, customer list, vendor list, and previous tax returns",
-        "Chart of accounts, trial balance, open invoices, unpaid bills, and last year's ledger",
-        "Monthly profit and loss, balance sheet, cash flow, accounts receivable aging, and accounts payable aging",
-        "General ledger, invoice register, bill register, bank reconciliation, and expense categories"
+        "Chart of accounts, trial balance, open invoices, unpaid bills, and last year's general ledger",
+        "Bank statements, tax returns, payroll reports, receipts, and invoices",
+        "Profit and loss, balance sheet, cash flow, budget, and forecast",
+        "Customer list, vendor list, item list, employee list, and class list"
       ],
-      "answer": 1,
+      "answer": 0,
       "slide": 6,
-      "feedback_correct": "Exactly right—those five reports give the tool everything it needs to bring over the account structure, balances, and outstanding items.",
-      "feedback_incorrect": "The tool requires specific reports to switch clients smoothly from other software. Slide 6 lists the exact five reports you need to export before using the Switching box."
+      "feedback_correct": "Correct. Those five reports bring over balances, invoices, bills and sorting rules.",
+      "feedback_incorrect": "Review slide 6 for the five reports."
     },
     {
       "question": "Why is it important to choose the correct file format when downloading PayPal or Stripe activity for upload?",
@@ -97,17 +97,17 @@
       "feedback_incorrect": "The Remember checkbox is about building rules over time to make sorting easier. Slide 9 explains how checking it turns your answers into automatic sorting rules for future months."
     },
     {
-      "question": "What information is safe to share with the AI assistant, and what must you never share?",
+      "question": "What should you never share with Bill, the help assistant?",
       "choices": [
-        "You can share anything because the AI is part of your tool and encrypted",
-        "You can only share how-to questions; never share client names, account numbers, or balances",
-        "You must share client details so the AI can give you specific advice about their accounts",
-        "You should share everything except passwords, which are handled separately"
+        "How-to questions about the tool",
+        "Client names, account numbers or balances",
+        "Which page you're on",
+        "The name of the button you're looking for"
       ],
       "answer": 1,
       "slide": 17,
-      "feedback_correct": "Exactly—the assistant can help with how-to questions in plain steps, but it can't see your books, so client details must never be shared.",
-      "feedback_incorrect": "The assistant is a helpful tool, but protecting client privacy is essential. Slide 17 reminds you never to share client names, account numbers, or balances when asking for help."
+      "feedback_correct": "Right. Ask how-to questions, and keep client details out of it.",
+      "feedback_incorrect": "Bill answers how-to questions; don't share client names, account numbers or balances. Review slide 17."
     },
     {
       "question": "According to the 3-2-1 backup rule taught in this course, which backup storage arrangement best protects your firm's books?",

@@ -1,0 +1,139 @@
+{
+  "brand": {
+    "title": "ESourceAIG (Production)",
+    "subtitle": "Knowledge Check — ESource Team: How to Activate a New Accounting Firm",
+    "color": "#1a73e8"
+  },
+  "questions": [
+    {
+      "question": "What is the pricing structure for client books on the white-label platform?",
+      "choices": [
+        "$20 for the first book, then $17, $15, $14, and $13 as the firm grows",
+        "$25 for the first book, then $20 for all additional books",
+        "$15 per book flat rate regardless of quantity",
+        "$20 per book with a 10% discount after ten books"
+      ],
+      "answer": 0,
+      "slide": 3,
+      "feedback_correct": "Exactly right—the tiered pricing starts at $20 and decreases as firms add more books.",
+      "feedback_incorrect": "The pricing structure is tiered, not flat or based on discounts. Review Slide 3 for the correct tier rates."
+    },
+    {
+      "question": "When creating a Firm ID in Step 1, what are the naming requirements?",
+      "choices": [
+        "It must be uppercase with spaces, like \"Smith Co\"",
+        "Short, lowercase, with no spaces, such as \"smithco\"",
+        "It can be any format as long as it contains the firm's full legal name",
+        "It must include numbers and special characters for security"
+      ],
+      "answer": 1,
+      "slide": 4,
+      "feedback_correct": "That's correct—Firm IDs are short, lowercase, with no spaces, and must be chosen carefully because they never change.",
+      "feedback_incorrect": "The Firm ID has specific formatting rules to ensure consistency. It should be short, lowercase, and contain no spaces, as shown in Slide 4."
+    },
+    {
+      "question": "What is the primary purpose of the License Service in the ESource system?",
+      "choices": [
+        "It stores all client bank statements and transactions",
+        "It sends sign-in codes, enforces plan limits, keeps book counts, and distributes encryption keys",
+        "It manages the firm's branding and web address",
+        "It creates monthly billing invoices automatically"
+      ],
+      "answer": 1,
+      "slide": 2,
+      "feedback_correct": "Perfect—the License Service handles sign-ins, plan enforcement, book counting, and key distribution while protecting data privacy.",
+      "feedback_incorrect": "The License Service has a specific set of functions focused on access control and counting, not data storage or billing. Review Slide 2 for its actual role."
+    },
+    {
+      "question": "In Vercel's DNS configuration, what does setting the proxy cloud to gray mean?",
+      "choices": [
+        "It enables Vercel's security certificate and speeds up the connection",
+        "It blocks all traffic to the firm's web address",
+        "DNS only—an orange cloud would block Vercel's security certificate",
+        "It allows the firm to use multiple domains at once"
+      ],
+      "answer": 2,
+      "slide": 6,
+      "feedback_correct": "Correct—the gray cloud means DNS only, and it's critical because an orange cloud blocks Vercel's security certificate.",
+      "feedback_incorrect": "The proxy cloud setting is important for Vercel's security. Gray means DNS only, while orange would cause certificate issues. See Slide 6 for details."
+    },
+    {
+      "question": "What information does the License Service never receive from the system?",
+      "choices": [
+        "Sign-in codes and plan tier information",
+        "Client names, bank statements, and transactions",
+        "The firm's web address and branding settings",
+        "Monthly book usage counts"
+      ],
+      "answer": 1,
+      "slide": 2,
+      "feedback_correct": "Right—the License Service is designed not to see sensitive client data like names, statements, or transactions.",
+      "feedback_incorrect": "The License Service is intentionally limited in what it can access to protect client privacy. Review Slide 2 to see what it does and does not handle."
+    },
+    {
+      "question": "How is monthly billing determined according to the \"Highest by month\" system?",
+      "choices": [
+        "Bill the average number of books used per day across the entire month",
+        "Bill based on the peak number of client books active on any single day that month, using the firm's tier rates",
+        "Bill a flat fee regardless of how many books were used",
+        "Bill only for the books added during the month, not those deleted"
+      ],
+      "answer": 1,
+      "slide": 9,
+      "feedback_correct": "Exactly—\"Highest by month\" captures the maximum number of active books on any single day and that determines the bill.",
+      "feedback_incorrect": "The billing system uses the peak count, not averages or flat fees. This ensures firms are billed fairly based on their actual highest usage. See Slide 9."
+    },
+    {
+      "question": "What should you do before activating a firm if an employee's work laptop is lost or stolen?",
+      "choices": [
+        "Ask the owner to pay a replacement fee before proceeding with activation",
+        "Skip the activation until the laptop is recovered",
+        "Remove that person's access on the License tab so books remain encrypted and unreadable",
+        "Reset all passwords for everyone at the firm immediately"
+      ],
+      "answer": 2,
+      "slide": 10,
+      "feedback_correct": "That's right—removing their access is the correct security response, and the encrypted books on the device remain unreadable.",
+      "feedback_incorrect": "The proper response to lost or stolen devices is to remove the person's access immediately; encryption protects the data even if the device is compromised. Review Slide 10."
+    },
+    {
+      "question": "What is the most likely reason a user cannot add a new client book?",
+      "choices": [
+        "The firm's browser cache needs to be cleared",
+        "They are offline (because adding a client needs internet) or the firm's plan is full",
+        "The owner has not yet signed in for the first time",
+        "The License Service is down for scheduled maintenance"
+      ],
+      "answer": 1,
+      "slide": 10,
+      "feedback_correct": "Correct—the two primary causes are being offline or reaching the firm's book limit, and the latter is an upselling opportunity.",
+      "feedback_incorrect": "The most common reasons for not being able to add a client are connectivity or hitting the plan limit. This is a useful support insight from Slide 10."
+    },
+    {
+      "question": "Which step must happen before the owner can add staff members to sign in to the firm's account?",
+      "choices": [
+        "The firm must complete its first month of billing",
+        "The owner must sign in themselves and access the License tab",
+        "ESource must approve each staff member through an email verification",
+        "The firm must upgrade to a higher tier plan"
+      ],
+      "answer": 1,
+      "slide": 7,
+      "feedback_correct": "Exactly—the owner signs in first, then uses the License tab to add each staff member's name and work email.",
+      "feedback_incorrect": "The owner is the key to adding staff; they sign in first and then manage the team from the License tab. Review Slide 7 for this onboarding sequence."
+    },
+    {
+      "question": "Why is it important to confirm that all four prerequisites are in place before activating a firm?",
+      "choices": [
+        "It ensures the firm pays the highest tier rate",
+        "It prevents the License Service from crashing",
+        "A signed agreement, agreed plan limit, security plan, and security lead assignment protect legal standing and data security, and prevent billing disputes",
+        "It guarantees the firm will have no support questions"
+      ],
+      "answer": 2,
+      "slide": 3,
+      "feedback_correct": "Perfect—these four prerequisites cover legal compliance, capacity planning, and security readiness, forming a foundation for smooth activation.",
+      "feedback_incorrect": "The prerequisites exist to protect both ESource and the firm legally and operationally. They ensure clarity on terms, capacity, and security before the firm goes live. See Slide 3."
+    }
+  ]
+}
