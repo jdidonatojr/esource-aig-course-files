@@ -6,134 +6,134 @@
   },
   "questions": [
     {
-      "question": "How are client books priced for a firm?",
+      "question": "What is the web address of the admin page where you add a new firm?",
       "choices": [
-        "$20 for the first book, $17 for books 2-10, $15 for 11-30, $14 for 31-100, and $13 after that, each rate only for the books in its band",
-        "$25 for the first book, then $20 for all additional books",
-        "$15 per book flat rate regardless of quantity",
-        "$20 per book with a 10% discount after ten books"
+        "app.esourcebookkeeper.com/admin.html",
+        "app.esourcebookkeeper.com/setup.html",
+        "admin.esourcebookkeeper.com/firms",
+        "dashboard.esourcebookkeeper.com/control"
       ],
       "answer": 0,
-      "slide": 3,
-      "feedback_correct": "Exactly right. Each rate applies only to the books in its band.",
-      "feedback_incorrect": "The price is set in bands, and each rate applies only to the books in its band. Review slide 3."
+      "slide": 4,
+      "feedback_correct": "That's right—app.esourcebookkeeper.com/admin.html is where you open the admin page with the admin key.",
+      "feedback_incorrect": "The admin page is found at app.esourcebookkeeper.com/admin.html. This is the central place where you manage firm activation and billing."
     },
     {
-      "question": "When creating a Firm ID in Step 1, what are the naming requirements?",
+      "question": "How much does the first client book cost under the standard pricing plan?",
       "choices": [
-        "It must be uppercase with spaces, like \"Smith Co\"",
-        "Short, lowercase, with no spaces, such as \"smithco\"",
-        "It can be any format as long as it contains the firm's full legal name",
-        "It must include numbers and special characters for security"
+        "Seventeen dollars",
+        "Twenty dollars",
+        "Fifteen dollars",
+        "Thirteen dollars"
+      ],
+      "answer": 1,
+      "slide": 3,
+      "feedback_correct": "Correct—the first book costs twenty dollars, then the rates drop for books in higher bands.",
+      "feedback_incorrect": "The first book is twenty dollars. Books two through ten are seventeen dollars, books eleven through thirty are fifteen dollars, and so on."
+    },
+    {
+      "question": "What must you choose carefully in Step 1 because it never changes?",
+      "choices": [
+        "The firm's logo color",
+        "The firm's Firm ID",
+        "The owner's email address",
+        "The client book limit"
       ],
       "answer": 1,
       "slide": 4,
-      "feedback_correct": "That's correct—Firm IDs are short, lowercase, with no spaces, and must be chosen carefully because they never change.",
-      "feedback_incorrect": "The Firm ID has specific formatting rules to ensure consistency. It should be short, lowercase, and contain no spaces, as shown in Slide 4."
+      "feedback_correct": "Exactly—the Firm ID is short, lowercase with no spaces, and once chosen it cannot be changed.",
+      "feedback_incorrect": "The Firm ID is the unique identifier you pick in Step 1 (like smithco) and it's permanent, so it must be chosen with care. Other settings like logo and limits can be adjusted later."
     },
     {
-      "question": "What does the License Service do?",
+      "question": "In Step 3, what should the proxy cloud setting be in Cloudflare?",
       "choices": [
-        "It stores the firm's books and bank statements",
-        "It sends sign-in codes, enforces plan limits, keeps book counts, and hands out the key that unlocks the firm's books",
-        "It manages the firm's branding and web address",
-        "It creates monthly billing invoices automatically"
-      ],
-      "answer": 1,
-      "slide": 2,
-      "feedback_correct": "Right. It handles sign-in, plan limits, book counts and the unlock key.",
-      "feedback_incorrect": "Review slide 2 to see what the License Service does."
-    },
-    {
-      "question": "In Vercel's DNS configuration, what does setting the proxy cloud to gray mean?",
-      "choices": [
-        "It enables Vercel's security certificate and speeds up the connection",
-        "It blocks all traffic to the firm's web address",
-        "DNS only—an orange cloud would block Vercel's security certificate",
-        "It allows the firm to use multiple domains at once"
+        "Orange, to enable full proxying",
+        "Blue, to enable encryption",
+        "Gray, meaning DNS only",
+        "Red, to block external access"
       ],
       "answer": 2,
       "slide": 6,
-      "feedback_correct": "Correct—the gray cloud means DNS only, and it's critical because an orange cloud blocks Vercel's security certificate.",
-      "feedback_incorrect": "The proxy cloud setting is important for Vercel's security. Gray means DNS only, while orange would cause certificate issues. See Slide 6 for details."
+      "feedback_correct": "That's correct—set the proxy cloud to gray (DNS only); an orange cloud would block Vercel's security certificate.",
+      "feedback_incorrect": "The proxy cloud must be set to gray, which means DNS only. An orange cloud blocks Vercel's security certificate and prevents the domain from working properly."
     },
     {
-      "question": "A firm asks exactly how its client data is stored and what AI processes. What should you do?",
+      "question": "What is the name of the AI assistant mentioned in the course that answers how-to questions for firms?",
       "choices": [
-        "Tell them their data never leaves their office",
-        "Say every competitor is less safe",
-        "Set up a walkthrough with the product owner, and don't make promises from memory",
-        "Tell them it's confidential and can't be discussed"
+        "Alex",
+        "Bill",
+        "Samuel",
+        "ESource Helper"
       ],
-      "answer": 2,
-      "slide": 2,
-      "feedback_correct": "Correct. Bring in the product owner, and don't promise more than has been confirmed.",
-      "feedback_incorrect": "Don't answer data questions from memory or make promises. Review slide 2."
+      "answer": 1,
+      "slide": 8,
+      "feedback_correct": "Right—Bill is the help assistant, and his assistant ID can be kept in the firm's profile to provide the Ask Bill button.",
+      "feedback_incorrect": "The help assistant is named Bill. You can keep ESource's assistant ID in the firm's profile settings to give them access to Bill, or leave it blank to hide the Ask Bill button."
     },
     {
-      "question": "How is monthly billing determined according to the \"Highest by month\" system?",
+      "question": "How often should you check the License Service to bill each firm for their client books?",
       "choices": [
-        "Bill the average number of books used per day across the entire month",
-        "Bill based on the peak number of client books active on any single day that month, using the firm's tier rates",
-        "Bill a flat fee regardless of how many books were used",
-        "Bill only for the books added during the month, not those deleted"
+        "Once a week",
+        "Once a month",
+        "Once a quarter",
+        "Whenever a client is added or removed"
       ],
       "answer": 1,
       "slide": 9,
-      "feedback_correct": "Exactly—\"Highest by month\" captures the maximum number of active books on any single day and that determines the bill.",
-      "feedback_incorrect": "The billing system uses the peak count, not averages or flat fees. This ensures firms are billed fairly based on their actual highest usage. See Slide 9."
+      "feedback_correct": "Correct—you open the admin page once a month and click Load firms to read each firm's highest book count for billing.",
+      "feedback_incorrect": "Billing happens monthly. You load the firms from the admin page once per month and bill based on the 'Highest by month' number, which tracks the peak client book count on any single day that month."
     },
     {
-      "question": "An employee's work laptop is lost or stolen. What should happen first?",
+      "question": "What must be true before you activate a new firm, according to the \"Before you activate\" slide?",
       "choices": [
-        "Ask the owner to pay a replacement fee",
-        "Wait until the laptop is recovered",
-        "The owner removes that person's access on the License page right away",
-        "Reset everyone's passwords at the firm"
-      ],
-      "answer": 2,
-      "slide": 10,
-      "feedback_correct": "That's right. The owner removes that person's access right away.",
-      "feedback_incorrect": "The first step is to remove that person's access. Review slide 10."
-    },
-    {
-      "question": "What is the most likely reason a user cannot add a new client book?",
-      "choices": [
-        "The firm's browser cache needs to be cleared",
-        "They are offline (because adding a client needs internet) or the firm's plan is full",
-        "The owner has not yet signed in for the first time",
-        "The License Service is down for scheduled maintenance"
-      ],
-      "answer": 1,
-      "slide": 10,
-      "feedback_correct": "Correct—the two primary causes are being offline or reaching the firm's book limit, and the latter is an upselling opportunity.",
-      "feedback_incorrect": "The most common reasons for not being able to add a client are connectivity or hitting the plan limit. This is a useful support insight from Slide 10."
-    },
-    {
-      "question": "Which step must happen before the owner can add staff members to sign in to the firm's account?",
-      "choices": [
-        "The firm must complete its first month of billing",
-        "The owner must sign in themselves and access the License tab",
-        "ESource must approve each staff member through an email verification",
-        "The firm must upgrade to a higher tier plan"
-      ],
-      "answer": 1,
-      "slide": 7,
-      "feedback_correct": "Exactly—the owner signs in first, then uses the License tab to add each staff member's name and work email.",
-      "feedback_incorrect": "The owner is the key to adding staff; they sign in first and then manage the team from the License tab. Review Slide 7 for this onboarding sequence."
-    },
-    {
-      "question": "Why is it important to confirm that all four prerequisites are in place before activating a firm?",
-      "choices": [
-        "It ensures the firm pays the highest tier rate",
-        "It prevents the License Service from crashing",
-        "A signed agreement, agreed plan limit, security plan, and security lead assignment protect legal standing and data security, and prevent billing disputes",
-        "It guarantees the firm will have no support questions"
+        "The firm must have at least one staff member already hired",
+        "The firm's web address must already be live",
+        "The white-label license agreement must be signed by both sides",
+        "The first client must already be imported into the system"
       ],
       "answer": 2,
       "slide": 3,
-      "feedback_correct": "Perfect—these four prerequisites cover legal compliance, capacity planning, and security readiness, forming a foundation for smooth activation.",
-      "feedback_incorrect": "The prerequisites exist to protect both ESource and the firm legally and operationally. They ensure clarity on terms, capacity, and security before the firm goes live. See Slide 3."
+      "feedback_correct": "Exactly—the signed license agreement is the first of four things that must be in place before activation begins.",
+      "feedback_incorrect": "The white-label license agreement must be signed by both sides before you activate. The other three requirements are the agreed plan and tier, a quote confirming the client book limit, and the owner's details. Staff and clients come later."
+    },
+    {
+      "question": "If a computer goes without internet for fourteen days, what happens to its access to the firm's books?",
+      "choices": [
+        "The user receives a warning but can continue working",
+        "The computer automatically syncs and catches up when reconnected",
+        "The computer locks for safety until the user connects and signs in again",
+        "The firm's owner must manually unlock the computer on the admin page"
+      ],
+      "answer": 2,
+      "slide": 10,
+      "feedback_correct": "That's right—a fourteen-day internet outage triggers a lock for safety, and the user must reconnect and sign in to restore access.",
+      "feedback_incorrect": "For security, any computer offline for fourteen days is locked automatically. The user just needs to reconnect to the internet and sign in again to regain access to the books."
+    },
+    {
+      "question": "When billing a firm with the highest book count of 15 clients in a month, which price bands apply?",
+      "choices": [
+        "Twenty dollars for book 1, seventeen dollars for books 2–10, and fifteen dollars for books 11–15",
+        "Seventeen dollars for all 15 books",
+        "Twenty dollars for book 1 and fifteen dollars for books 2–15",
+        "Twenty dollars for book 1, seventeen dollars for books 2–10, and fourteen dollars for books 11–15"
+      ],
+      "answer": 0,
+      "slide": 9,
+      "feedback_correct": "Perfect—you apply each rate only to books in its band: the first book is twenty dollars, books two through ten are seventeen dollars each, and books eleven through thirty are fifteen dollars each.",
+      "feedback_incorrect": "The band pricing is specific: $20 for book 1, $17 for books 2–10, $15 for books 11–30, $14 for books 31–100, and $13 after that. Each band's rate applies only to the books in that range, so a firm with 15 books pays all three rates."
+    },
+    {
+      "question": "According to the course, what should you do when a firm asks about how its data is handled or about other accounting software?",
+      "choices": [
+        "Provide detailed explanations about ESource's data storage and promise the firm will own their data",
+        "Refer them to the data security section in the user guide they receive",
+        "Speak only about ESource and bring in the product owner for other questions",
+        "Explain that ESource uses standard cloud encryption like all modern software"
+      ],
+      "answer": 2,
+      "slide": 2,
+      "feedback_correct": "Correct—when firms ask about data or other software, you should speak only about ESource and bring the product owner into the conversation.",
+      "feedback_incorrect": "The course emphasizes that you should speak only about ESource when discussing data handling or other software. If the firm has questions beyond that, involve the product owner rather than making promises on your own."
     }
   ]
 }
